@@ -13,14 +13,27 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 
 ## Introduction 介绍
 
-- ＳＴＡＹ ＵＰＴＯＤＡＴＥ 保持最新<br/>
+- UPTODATE 保持最新<br/>
   Merge　everyday　每天同步更新
-- ＰＯＷＥＲＦＵＬ　 强大有效<br/>
+- POWERFUL　 强大有效<br/>
   To block all ad / tracking  有效拦截广告追踪　
-- ＦＲＩＥＮＤＬＹ　友善使用<br/>
+- FRIENDLY　友善使用<br/>
    Easy to use and welcome to report issues　简单使用欢迎回报问题
    
- 
+## Supported Platform 支持平台
+-Windows<br/>
+-Android<br/>
+-Linux<br/>
+-Mac OS<br/>
+
+### Supported adblocker 广告拦截器
+-Pihole<br/>
+-Blokada<br/>
+-DNS66<br/>
+-Adaway<br/>
+-gasmask<br/>
+-Hostman<br/>
+
 ## Download 下载 
 
 ### AD host 去广告 [hosts]
@@ -29,10 +42,17 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 ### Whitelist 域名白名单 [whitelist]
 > https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist.txt
 
-## How To Use 如何使用 
+## How To Use 如何使用
+1.Download both files/copy link of files<br/>
+2.Add host and whitelist file/link into adblocker<br/>
+3.Update the data source in the app<br/>
+
+1.下载两个文件/复制下载链接<br/>
+2.添加文件或者下载链接到广告拦截器<br/>
+3.更新数据规则<br/>
 
 
-## 　Sources of AD-hosts data 去广告host源
+## Sources of AD-hosts data 去广告host源
 1.https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts<br/>
 2.https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts<br/>
 3.https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts<br/>
@@ -54,9 +74,9 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 19.https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt<br/>
 20.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt<br/>
 
-## 　Sources of Whitelist data 域名白名单源
-１．https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
-２．https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt<br/>
-３．https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list<br/>
-４．https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt<br/>
-５．https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt<br/>
+## Sources of Whitelist data 域名白名单源
+1.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
+2.https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt<br/>
+3.https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list<br/>
+4.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt<br/>
+5.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt<br/>
