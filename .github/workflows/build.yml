@@ -26,3 +26,16 @@ jobs:
     - name: Run a one-line script
       run: bash ./host.sh
       
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+           commit_message: Apply automatic changes
+           commit_options: '--no-verify --signoff'
+           repository: .
+           commit_user_name: FusionPlmH
+           commit_user_email: leemenhin@gmail.com
+    
+    
+    
+
+    
+    
