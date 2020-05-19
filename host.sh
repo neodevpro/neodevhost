@@ -1,5 +1,6 @@
 host=./hosts.txt
 whitelist=./whitelist.txt
+time=$(date "+%Y-%m-%d %H:%M:%S")
 
 echo " "
 echo "Clean..."
@@ -69,6 +70,11 @@ sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' 
 sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' $whitelist
 sed -i '/^$/d' $whitelist
 sort -n $whitelist | uniq -u
+
+sed -i '13c/Total ad / tracking block list 屏蔽追踪广告总数: wc -l $host<br/>' ./README.md  
+sed -i '14c/Total whitelist list 白名单总数: wc -l $whitelist<br/>' ./README.md  
+sed -i '15c/Update 更新时间: $time<br/>' ./README.md  
+
 
 echo " "
 echo "Done!"
