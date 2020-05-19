@@ -54,6 +54,7 @@ sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;
 sed -i '/</d' $host
 sed -i '/>/d' $host
 sed -i '/:/d' $host
+sed -i '/。/d' $host
 sort -n $host | uniq -u
 
 echo " "
