@@ -1,12 +1,19 @@
 # Ｎｅｏ　Ｈｏｓｔ
 
 强大友善的去广告白名单
-The Powerful Friendly Host whitelist 
+The Powerful Friendly Uptodate Hosts
 
 [![Build Status](https://img.shields.io/github/workflow/status/neodevpro/Custom_ADHost_Whitelist/CI/master)](https://github.com/neodevpro/Custom_ADHost_Whitelist/actions?workflow=CI)
 [![Last commit](https://img.shields.io/github/last-commit/neodevpro/Custom_ADHost_Whitelist.svg)](https://github.com/neodevpro/Custom_ADHost_Whitelist/commit/master)
 
-### 去广告host源　Sources of AD-hosts data 
+## Introduction 介绍
+
+- ＳＴＡＹ ＵＰＴＯＤＡＴＥ 保持最新　－　Ｍｅｒｇｅ　ｅｖｅｒｙ　ｄａｙ　每天同步更新
+- ＰＯＷＥＲＦＵＬ　 强大有效　－　Ｔｏ　ｂｌｏｃｋ　ａｌｌ　ａｄ　/ ｔｒａｃｋｉｎｇ  有效拦截广告追踪　**
+-　ＦＲＩＥＮＤＬＹ　友善使用　－　Ｅａｓｙ　ｔｏ　ｕｓｅ　ａｎｄ　ｒｅｐｏｒｔ　ｉｓｓｕｅ　简单使用欢迎回报问题**
+
+
+### 　Sources of AD-hosts data 去广告host源
 １．https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts<br/>
 ２．https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts<br/>
 ３．https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts<br/>
@@ -24,7 +31,7 @@ The Powerful Friendly Host whitelist
 １５．https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext<br/>
 １６．https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts<br/>
 
-### 域名白名单源　Sources of Whitelist data 
+### 　Sources of Whitelist data 域名白名单源
 １．https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
 ２．https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt<br/>
 ３．https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list<br/>
