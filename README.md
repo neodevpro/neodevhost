@@ -49,11 +49,10 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 14.https://adaway.org/hosts.txt<br/>
 15.https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext<br/>
 16.https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts<br/>
-17.https://hosts.ubuntu101.co.za/hosts<br/>
-18.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts<br/>
-19.https://github.com/logroid/adaway-hosts/raw/master/hosts_no_white.txt<br/>
-20.https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt<br/>
-21.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt<br/>
+17.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts<br/>
+18.https://github.com/logroid/adaway-hosts/raw/master/hosts_no_white.txt<br/>
+19.https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt<br/>
+20.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt<br/>
 
 ## 　Sources of Whitelist data 域名白名单源
 １．https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
