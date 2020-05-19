@@ -1,12 +1,12 @@
 # ＮＥＯ ＤＥＶ　Ｈｏｓｔ
 
-![Logo](https://raw.githubusercontent.com/neodevpro/Custom_ADHost_Whitelist/master/logo.png)
+![Logo](https://raw.githubusercontent.com/neodevpro/neodevhost/master/logo.png)
 
 强大友善的去广告白名单
 The Powerful Friendly Uptodate Hosts
 
-[![Build Status](https://img.shields.io/github/workflow/status/neodevpro/Custom_ADHost_Whitelist/CI/master)](https://github.com/neodevpro/Custom_ADHost_Whitelist/actions?workflow=CI)
-[![Last commit](https://img.shields.io/github/last-commit/neodevpro/Custom_ADHost_Whitelist.svg)](https://github.com/neodevpro/Custom_ADHost_Whitelist/commit/master)
+[![Build Status](https://img.shields.io/github/workflow/status/neodevpro/neodevhost/CI/master)](https://github.com/neodevpro/neodevhost/actions?workflow=CI)
+[![Last commit](https://img.shields.io/github/last-commit/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/commit/master)
 
 ## Introduction 介绍
 
@@ -21,10 +21,10 @@ The Powerful Friendly Uptodate Hosts
 ## Download 下载 
 
 ### AD host 去广告 [hosts]
-> https://raw.githubusercontent.com/neodevpro/Custom_ADHost_Whitelist/master/hosts.txt
+> https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts.txt
 
 ### Whitelist 域名白名单 [whitelist]
-> https://raw.githubusercontent.com/neodevpro/Custom_ADHost_Whitelist/master/whitelist.txt
+> https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist.txt
 
 
 ## 　Sources of AD-hosts data 去广告host源
