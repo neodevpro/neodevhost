@@ -27,6 +27,7 @@ https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
 https://adaway.org/hosts.txt
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
 https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts
+https://hosts.ubuntu101.co.za/hosts
 EOF
 
 echo " "
