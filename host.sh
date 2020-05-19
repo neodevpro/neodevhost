@@ -72,10 +72,10 @@ sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' $whitelist
 sed -i '/^$/d' $whitelist
 sort -n $whitelist | uniq -u
 
-echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$totalad' <br/>' ./README.md  
-echo | sed -i '14cTotal whitelist list 白名单总数: '$totalwhite' <br/>' ./README.md  
-echo | sed -i '15cUpdate 更新时间: '$(date "+%Y-%m-%d %H:%M:%S")' <br/>' ./README.md  
-
+echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$totalad' ' ./README.md  
+echo | sed -i '14cTotal whitelist list 白名单总数: '$totalwhite' ' ./README.md  
+echo | sed -i '15cUpdate 更新时间: '$(date "+%Y-%m-%d %H:%M:%S")'' ./README.md  
+sed '13 15c/$/&<br/>/g' test.file
 
 echo " "
 echo "Done!"
