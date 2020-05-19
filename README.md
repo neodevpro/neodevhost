@@ -9,8 +9,8 @@ The Powerful Friendly Uptodate Hosts
 ## Introduction 介绍
 
 - ＳＴＡＹ ＵＰＴＯＤＡＴＥ 保持最新　　Merge　everyday　每天同步更新
-- ＰＯＷＥＲＦＵＬ　 强大有效　　To block all ad / tracking  有效拦截广告追踪　**
--　ＦＲＩＥＮＤＬＹ　友善使用　　Easy to use and welcome to report issues　简单使用欢迎回报问题**
+- ＰＯＷＥＲＦＵＬ　 强大有效　　To block all ad / tracking  有效拦截广告追踪　
+-　ＦＲＩＥＮＤＬＹ　友善使用　　Easy to use and welcome to report issues　简单使用欢迎回报问题
 
 
 ### 　Sources of AD-hosts data 去广告host源
