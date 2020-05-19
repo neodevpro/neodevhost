@@ -29,6 +29,8 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 ### Whitelist 域名白名单 [whitelist]
 > https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist.txt
 
+## How To Use 如何使用 
+
 
 ## 　Sources of AD-hosts data 去广告host源
 1.https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts<br/>
@@ -47,11 +49,11 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 14.https://adaway.org/hosts.txt<br/>
 15.https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext<br/>
 16.https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts<br/>
-17.https://hosts.ubuntu101.co.za/hosts
-18.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
-19.https://github.com/logroid/adaway-hosts/raw/master/hosts_no_white.txt
-20.https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt
-21.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt
+17.https://hosts.ubuntu101.co.za/hosts<br/>
+18.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts<br/>
+19.https://github.com/logroid/adaway-hosts/raw/master/hosts_no_white.txt<br/>
+20.https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt<br/>
+21.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt<br/>
 
 ## 　Sources of Whitelist data 域名白名单源
 １．https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
