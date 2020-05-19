@@ -14,6 +14,15 @@ The Powerful Friendly Uptodate Hosts
   To block all ad / tracking  有效拦截广告追踪　
 - ＦＲＩＥＮＤＬＹ　友善使用<br/>
    Easy to use and welcome to report issues　简单使用欢迎回报问题
+   
+ 
+## Download 下载 
+
+### AD host 去广告 [hosts]
+> https://raw.githubusercontent.com/neodevpro/Custom_ADHost_Whitelist/master/hosts.txt
+
+### Whitelist 域名白名单 [whitelist]
+> https://raw.githubusercontent.com/neodevpro/Custom_ADHost_Whitelist/master/whitelist.txt
 
 
 ## 　Sources of AD-hosts data 去广告host源
