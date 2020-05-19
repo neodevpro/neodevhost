@@ -10,9 +10,9 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 [![Last commit](https://img.shields.io/github/last-commit/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/commit/master)<br/>
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)
 
-Total ad / tracking block list 屏蔽追踪广告总数: $(totalad)<br/>
-Total whitelist list 白名单总数: $(totalwhite) <br/>
-Update 更新时间: $(time) <br/>
+Total ad / tracking block list 屏蔽追踪广告总数: $totalad <br/>
+Total whitelist list 白名单总数: $totalwhite <br/>
+Update 更新时间: $time <br/>
 
 ## Introduction 介绍
 
