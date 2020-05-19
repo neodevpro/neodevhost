@@ -2,7 +2,6 @@ host=./hosts.txt
 whitelist=./whitelist.txt
 totalad=$(wc -l $host)
 totalwhite=$(wc -l $whitelist)
-time=$(date "+%Y-%m-%d %H:%M:%S")
 
 echo " "
 echo "Clean..."
