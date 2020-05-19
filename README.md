@@ -2,8 +2,9 @@
 
 ![Logo](https://raw.githubusercontent.com/neodevpro/neodevhost/master/logo.png)
 
+
+The Powerful Friendly Uptodate Hosts<br/>
 强大友善的去广告白名单
-The Powerful Friendly Uptodate Hosts
 
 [![Build Status](https://img.shields.io/github/workflow/status/neodevpro/neodevhost/CI/master)](https://github.com/neodevpro/neodevhost/actions?workflow=CI)
 [![Last commit](https://img.shields.io/github/last-commit/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/commit/master)
