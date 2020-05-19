@@ -29,22 +29,27 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 
 
 ## 　Sources of AD-hosts data 去广告host源
-１．https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts<br/>
-２．https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts<br/>
-３．https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts<br/>
-４．https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts<br/>
-５．https://hosts.nfz.moe/full/hosts<br/>
-６．https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts<br/>
-７．https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts<br/>
-８．https://mirror1.malwaredomains.com/files/justdomains <br/>
-９．https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt<br/>
-１０．https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt<br/>
-１１．https://hblock.molinero.xyz/hosts<br/>
-１２．http://winhelp2002.mvps.org/hosts.txt<br/>
-１３．https://raw.githubusercontent.com/yous/YousList/master/hosts.txt<br/>
-１４．https://adaway.org/hosts.txt<br/>
-１５．https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext<br/>
-１６．https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts<br/>
+1.https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts<br/>
+2.https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts<br/>
+3.https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts<br/>
+4.https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts<br/>
+5.https://hosts.nfz.moe/full/hosts<br/>
+6.https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts<br/>
+7.https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts<br/>
+8.https://mirror1.malwaredomains.com/files/justdomains <br/>
+9.https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt<br/>
+10.https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt<br/>
+11.https://hblock.molinero.xyz/hosts<br/>
+12.http://winhelp2002.mvps.org/hosts.txt<br/>
+13.https://raw.githubusercontent.com/yous/YousList/master/hosts.txt<br/>
+14.https://adaway.org/hosts.txt<br/>
+15.https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext<br/>
+16.https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts<br/>
+17.https://hosts.ubuntu101.co.za/hosts
+18.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
+19.https://github.com/logroid/adaway-hosts/raw/master/hosts_no_white.txt
+20.https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt
+21.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt
 
 ## 　Sources of Whitelist data 域名白名单源
 １．https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
