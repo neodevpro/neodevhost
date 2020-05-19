@@ -9,6 +9,9 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/15 * * * *
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
