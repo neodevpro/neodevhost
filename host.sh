@@ -28,6 +28,10 @@ https://adaway.org/hosts.txt
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
 https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts
 https://hosts.ubuntu101.co.za/hosts
+https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
+https://raw.githubusercontent.com/logroid/adaway-hosts/master/hosts_no_white.txt
+https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt
 EOF
 
 echo " "
@@ -39,6 +43,7 @@ https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
+
 EOF
 
 echo " "
