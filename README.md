@@ -1,4 +1,4 @@
-# ＮＥＯ ＤＥＶ　Ｈｏｓｔ
+ＮＥＯ ＤＥＶ　Ｈｏｓｔ
 
 ![Logo](https://raw.githubusercontent.com/neodevpro/neodevhost/master/logo.png)
 
@@ -10,17 +10,17 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 [![Last commit](https://img.shields.io/github/last-commit/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/commit/master)<br/>
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)
 
-###Total ad / tracking block list 屏蔽追踪广告总数: 370812
-###Total whitelist list 白名单总数: 1570
-###Update 更新时间: 2020-05-19
+Total ad / tracking block list 屏蔽追踪广告总数: 370812
+Total whitelist list 白名单总数: 1570
+Update 更新时间: 2020-05-19
 
 ## Introduction 介绍
 
-- UPTODATE 保持最新<br/>
+###- UPTODATE 保持最新<br/>
   Merge　everyday　每天同步更新
-- POWERFUL　 强大有效<br/>
+###- POWERFUL　 强大有效<br/>
   To block all ad / tracking  有效拦截广告追踪　
-- FRIENDLY　友善使用<br/>
+###- FRIENDLY　友善使用<br/>
    Easy to use and welcome to report issues　简单使用欢迎回报问题
    
 ## Supported Platform 支持平台
