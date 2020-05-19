@@ -1,4 +1,6 @@
-# Custom_ADHost_Whitelist
+# Ｎｅｏ　Ｈｏｓｔ
+
+强大友善的去广告白名单
 The Powerful Friendly Host whitelist 
 
 [![Build Status](https://img.shields.io/github/workflow/status/neodevpro/Custom_ADHost_Whitelist/CI/master)](https://github.com/neodevpro/Custom_ADHost_Whitelist/actions?workflow=CI)
