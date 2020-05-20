@@ -1,7 +1,6 @@
 host=./hosts.txt
 whitelist=./whitelist.txt
 
-
 echo " "
 echo "Merge AD list..."
 wait
