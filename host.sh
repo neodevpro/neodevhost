@@ -56,7 +56,7 @@ sed -i '/</d' $host
 sed -i '/>/d' $host
 sed -i '/:/d' $host
 sed -i '/。/d' $host
-sed -i '/^\(127\|0\|::\)/!d;s/127.0.0.1/0.0.0.0/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
+sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
 sort -n $host | uniq
 sort -n $host | awk '{if ($0!=line) print;line=$0}'
 sort -n $host | sed '$!N; /^.∗\n\1$/!P; D'
