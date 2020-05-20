@@ -1,9 +1,11 @@
+#!/bin/bash
 host=./hosts.txt
 whitelist=./whitelist.txt
+title=./title.txt
+readme=./README.md 
 
 echo " "
 echo "Clean..."
-wait
 if [ -f $host ]; then
     rm -rf ./hosts.txt
 fi
@@ -13,7 +15,6 @@ fi
 
 echo " "
 echo "Merge AD list..."
-wait
 while read i;do curl -s "$i">>$host&&echo "$i"||echo "fail";done<<EOF
 https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
@@ -34,7 +35,6 @@ EOF
 
 echo " "
 echo "Merge Whitelist..."
-wait
 while read g;do curl -s "$g">>$whitelist&&echo "$g"||echo "fail";done<<EOF
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
 https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt
@@ -46,7 +46,6 @@ EOF
 
 echo " "
 echo "Geanera AD host file..."
-wait
 sed -i '/^#/'d $host
 sed -i '/</d' $host
 sed -i '/>/d' $host
@@ -60,12 +59,11 @@ sort -d -i $host | uniq
 
 echo " "
 echo "Geanera whitelist..."
-wait
 sed -i '/</d' $whitelist
 sed -i '/>/d' $whitelist
 sed -i '/::/d' $whitelist
 sed -i '/。/d' $whitelist
-sed -i '/:/d' $host
+sed -i '/:/d' $whitelist
 sed -i '/#/d' $whitelist
 sed -i 's/127.0.0.1 //' $whitelist
 sed -i "s/http:\/\///" $whitelist
@@ -82,12 +80,22 @@ sed -i '/address=\/.bcebos.com\/0.0.0.0 baidu maps /d' $whitelist
 sed -i '/ALL ./d' $whitelist
 sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "/^$/d" -e 's/^/127.0.0.1 &/g' $whitelist
 sed -i '/^$/d' $whitelist
-sed '/^.\{,3\}$/d' -i $host
+sed '/^.\{,3\}$/d' -i $whitelist
 sort -d -i $whitelist | uniq
 
-echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l ./hosts.txt)' ' ./README.md  
-echo | sed -i '15cTotal whitelist list 白名单总数: '$(wc -l ./whitelist.txt)' ' ./README.md  
-echo | sed -i '17cUpdate 更新时间: '$(date "+%Y-%m-%d")'' ./README.md  
+echo " "
+echo "Adding Title and SYNC data..."
+cp $title $title.1
+cat $host >>$title.1
+rm -rf $host
+mv $title.1 $host
+
+echo | sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' $host
+echo | sed -i '11c# Number of domains:  '$(wc -l ./hosts.txt)' ' $host    
+
+echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l ./hosts.txt)' ' $readme  
+echo | sed -i '15cTotal whitelist list 白名单总数: '$(wc -l ./whitelist.txt)' ' $readme  
+echo | sed -i '17cUpdate 更新时间: '$(date "+%Y-%m-%d")'' $readme 
 
 echo " "
 echo "Done!"

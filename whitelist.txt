@@ -192,7 +192,6 @@ xsts.auth.xboxlive.com
 youtu.be
 youtube-nocookie.com
 yt3.ggpht.com
-cdn.staticfile.org/jquery/1.7.2/jquery.min.js
 acstatic-dun.126.net 
 b.bdstatic.com
 static.ws.126.net
@@ -202,15 +201,12 @@ woocall.sina.com.cn
 vd.l.qq.com
 union-click.jd.com
 ccc-x.jd.com
-wifiapi02.51y5.net/wifiapi/rd.do?a=&v=&c=&d=&u=&ssid=&bssid=&f=wnk_apply_open&b=8__wifihome__wifihome__pc__unknow__&_t=1546925013958
-mastersim.wifi.com/h5/apply_4.html?utm_source=wifihome&utm_campaign=pc&v=12&channel=02
 pcbrowser.dd.qq.com
 stdl.qq.com
 g.163.com
 gma.alicdn.com
 app.adjust.com
 www.3533.com 
-acs4baichuan.m.taobao.com/gw-open/com.alibaba.havana.login.applink.generatetopapplinktoken/1.0/
 acs4baichuan.m.taobao.com 
 adashbc.m.taobao.com 
 adashbc.ut.taobao.com
@@ -227,7 +223,6 @@ w.m.taobao.com
 api.waptest.taobao.com
 paimgcdn.baidu.com
 map-mobile-lbsapp.cdn.bcebos.com
-lbsnavi.cdn.bcebos.com:443
 api.xk.miui.com
 corpext.msitadfs.glbdns2.microsoft.com
 corp.sts.microsoft.com
@@ -248,33 +243,23 @@ image.ibb.co
 treezip.baofeng.net
 treexml.baofeng.net
 config5.update.baofeng.com
-de.imgbb.com
-github.com/notracking/hosts-blocklists/issues/75
 lib.baomitu.com
 union.video.qq.com
 web-disp.titan.mgtv.com
 web-disp1.titan.mgtv.com
 web-disp2.titan.mgtv.com
-jobsfe.funshion.com/query/v1/mp4/291FBCA4F09F5CE8F70EB2732DEC136FDA283AD2.json?file=58143483.mp4
 pingtcss.qq.com
-cc.vidown.cn/vidown/update.php?version=2.1.4.1_v&id=34127211
 appc.baidu.com
 hmma.baidu.com
 dxp.baidu.com
 ib.snssdk.com
 newapi.shouji.baofeng.com
-api.open.uc.cn
-cdn.staticfile.org/jquery/2.1.4/jquery.min.js id97.com
 mp.weixinbridge.com
-puui.qpic.cn/
-sta.ganji.com/public/css/ued/vip/vip.cmb.__1468520149__.css
-image.uczzd.cn/761945378583441460.jpg?id=0&width=212&height=120 tudou 
 subhd.com
 b.bst.126.net 
 i8.chinanews.com
 js.passport.qihucdn.com
 jspassport.ssl.qhimg.com
-i8.chinanews.com/2013/home/images/logo.jpg
 www.gugeys.com
 img.alicdn.com
 s.wasu.cn css js
@@ -282,27 +267,14 @@ shark.douyucdn.cn
 staticlive.douyucdn.cn
 i.flow.browser.oppomobile.com
 dhfs.oppomobile.com oppo 
-b.bst.126.net/common/face60.png
 yun.duiba.com.cn 
 wd.geilicdn.com weidian image
-miuiboot.tracking.miui.com
 address=/.tracking.miui.com/0.0.0.0
 images2015.cnblogs.com
-images2015.cnblogs.com/blog/641601/201511/641601-20151114215342837-1838001118.jpg
-data.mistat.xiaomi.com/mistats/v2
 abtest.mistat.xiaomi.com
 data.mistat.xiaomi.com
 img.alicdn.com
-sdkinit.taobao.com/init.htm
-sdkinit.taobao.com/sdkConfigVersion.htm?sdkVersion=2.1.0&platformName=android
-app.migc.g.mi.com/migcoss/coss.htm?msgType=register&fuid=5803774
-app.migc.g.mi.com/migcoss/coss.htm
-t1.g.mi.com/thumbnail/webp/w156q90/Wali/1ac20257c6d4e45750acb3e2ed937d2ba85f8488b
 weatherapi.market.xiaomi.com
-milink.pandora.xiaomi.com/milink/probe?mac_address=8715650f394a2cbe65336688e6ebaa22be29cc3e&opaque=302d0531df4653ea755c9057642bb83bdc6b2035
-assistant.pandora.xiaomi.com/config
-stat.duokanbox.com/tvservice/reportmessage
-data.mistat.xiaomi.com:443
 dl.op.wpscdn.cn
 ip.cms.sohu.com
 s0.mp.sohu.com
