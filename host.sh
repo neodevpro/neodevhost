@@ -4,12 +4,6 @@ totalad=$(wc -l $host)
 totalwhite=$(wc -l $whitelist)
 
 echo " "
-echo "Clean..."
-rm $host
-rm $whitelist
-
-
-echo " "
 echo "Merge AD list..."
 wait
 while read i;do curl -s "$i">>$host&&echo "$i"||echo "fail";done<<EOF
