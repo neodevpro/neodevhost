@@ -20,7 +20,6 @@ https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
 https://hosts.nfz.moe/full/hosts
-https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://mirror1.malwaredomains.com/files/justdomains 
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
