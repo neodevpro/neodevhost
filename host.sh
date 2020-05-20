@@ -56,6 +56,7 @@ sort -n $host | uniq
 sort -n $host | awk '{if ($0!=line) print;line=$0}'
 sort -n $host | sed -i '$!N; /^.∗\n\1$/!P; D'
 
+
 echo " "
 echo "Geanera whitelist..."
 wait
