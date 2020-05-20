@@ -65,7 +65,6 @@ sort -n $host | sed -i '$!N; /^.∗\n\1$/!P; D'
 echo " "
 echo "Geanera whitelist..."
 wait
-sed -i '/^#/'d $host
 sed -i '/</d' $host
 sed -i '/>/d' $host
 sed -i '/::/d' $host
