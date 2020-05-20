@@ -1,7 +1,3 @@
-echo -e "Adding NEODEV AD TRACKING BLOCK HOST..."
-echo '##NEO DEV HOST' > /etc/pihole/adlists.list 
-echo 'https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts.txt' > /etc/pihole/adlists.list  
-
 echo -e "Downloading Whitelist..."
 curl -sS https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 sleep 0.5
