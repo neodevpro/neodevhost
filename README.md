@@ -14,7 +14,7 @@ Total ad / tracking block list 屏蔽追踪广告总数:
 <br/>
 Total whitelist list 白名单总数:  
 <br/>
-Update 更新时间: 2020-05-20
+Update 更新时间: 
 
 ## Introduction 介绍
 
