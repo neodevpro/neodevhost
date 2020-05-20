@@ -58,25 +58,25 @@ Update 更新时间: 2020-05-20
 
 ## Pihole
 
-For Import and Installation
-1.Login to pihole website
-2.Go to Groupmanagement > Adlists
-3.copy the NEODEV AD host link into "Address:"
-4.open terminal
+For Import and Installation<br/>
+1.Login to pihole website<br/>
+2.Go to Groupmanagement > Adlists<br/>
+3.copy the NEODEV AD host link into "Address:"<br/>
+4.open terminal<br/>
 5. Run the following command :
--sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash
--pihole -g
-6.Then it will import both NEODEV host and whitelist into your Pihole 
+-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash<br/>
+-pihole -g<br/>
+6.Then it will import both NEODEV host and whitelist into your Pihole <br/>
 
-FOR Remove and Uninstall
-1.Login to pihole website
-2.Go to Groupmanagement > Adlists
-3.click the red trash can button
-4.open terminal
-5. Run the following command :
--sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash
--pihole -g
-6.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole 
+FOR Remove and Uninstall<br/>
+1.Login to pihole website<br/>
+2.Go to Groupmanagement > Adlists<br/>
+3.click the red trash can button<br/>
+4.open terminal<br/>
+5. Run the following command :<br/>
+-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash<br/>
+-pihole -g<br/>
+6.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole <br/>
 
 
 ## Sources of AD-hosts data 去广告host源
