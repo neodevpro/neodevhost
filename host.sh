@@ -65,11 +65,11 @@ sort -n $host | uniq
 echo " "
 echo "Geanera whitelist..."
 wait
-sed -i '/</d' $host
-sed -i '/>/d' $host
-sed -i '/::/d' $host
-sed -i '/。/d' $host
-sed -i '/#/d' $host
+sed -i '/</d' $whitelist
+sed -i '/>/d' $whitelist
+sed -i '/::/d' $whitelist
+sed -i '/。/d' $whitelist
+sed -i '/#/d' $whitelist
 sed -i 's/127.0.0.1 //' $whitelist
 sed -i "s/http:\/\///" $whitelist
 sed -i "s/https:\/\///" $whitelist
