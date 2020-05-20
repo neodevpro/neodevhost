@@ -194,12 +194,18 @@ youtube-nocookie.com
 yt3.ggpht.com
 address=/.bcebos.com/0.0.0.0 baidu maps 
 cdn.staticfile.org/jquery/1.7.2/jquery.min.js
+#安全中心无法登陆
 acstatic-dun.126.net 
+#贴吧帖子缩略图
 b.bdstatic.com
 static.ws.126.net
+#一个 js cdn 库，不应该在黑名单
 code.createjs.com
+#网址 禁了没法看新浪财经的股票查询历史
 current.sina.com.cn
+#屏蔽了没法看新浪财经的股票信息
 woocall.sina.com.cn
+#腾讯视频vip，旧的vip电视剧无法播放
 vd.l.qq.com
 union-click.jd.com
 ccc-x.jd.com
@@ -208,8 +214,11 @@ mastersim.wifi.com/h5/apply_4.html?utm_source=wifihome&utm_campaign=pc&v=12&chan
 pcbrowser.dd.qq.com
 stdl.qq.com
 g.163.com
+#这个禁用了淘宝特卖网加载不出图片
 gma.alicdn.com
+#微软安全相关通知等
 app.adjust.com
+#网页图片被误杀：p.abcache.com
 www.3533.com 
 acs4baichuan.m.taobao.com/gw-open/com.alibaba.havana.login.applink.generatetopapplinktoken/1.0/
 acs4baichuan.m.taobao.com 
@@ -242,6 +251,7 @@ vortex-win.data.microsoft.com
 vortex.data.microsoft.com
 statsfe1.ws.microsoft.com
 statsfe2.ws.microsoft.com
+#netease
 img4.cache.netease.com
 img6.cache.netease.com
 img5.cache.netease.com
@@ -260,18 +270,25 @@ web-disp2.titan.mgtv.com
 jobsfe.funshion.com/query/v1/mp4/291FBCA4F09F5CE8F70EB2732DEC136FDA283AD2.json?file=58143483.mp4
 pingtcss.qq.com
 cc.vidown.cn/vidown/update.php?version=2.1.4.1_v&id=34127211
+#vidown 升级
+#百度手机助手下载
+#pan.baidu.com/
 appc.baidu.com
 hmma.baidu.com
 dxp.baidu.com
 ib.snssdk.com
+#fix baofeng
 newapi.shouji.baofeng.com
 api.open.uc.cn
+#会导致交易猫无法购买
 cdn.staticfile.org/jquery/2.1.4/jquery.min.js id97.com
+#无法查看原文
 mp.weixinbridge.com
 puui.qpic.cn/
 sta.ganji.com/public/css/ued/vip/vip.cmb.__1468520149__.css
 image.uczzd.cn/761945378583441460.jpg?id=0&width=212&height=120 tudou 
 subhd.com
+#image
 b.bst.126.net 
 i8.chinanews.com
 js.passport.qihucdn.com
@@ -282,18 +299,25 @@ img.alicdn.com
 s.wasu.cn css js
 shark.douyucdn.cn
 staticlive.douyucdn.cn
+# oppo 浏览器无法登陆但又可以去除资讯
 i.flow.browser.oppomobile.com
+#浏览器站点无图标
 dhfs.oppomobile.com oppo 
+#这个会导致网易博客的评论区头像不见了blog.163.com/seo_technology/blog/static/195684049201302592952295/
 b.bst.126.net/common/face60.png
 yun.duiba.com.cn 
 wd.geilicdn.com weidian image
 miuiboot.tracking.miui.com
+#刷机后第一开机校验
 address=/.tracking.miui.com/0.0.0.0
+#cnblogs.com
 images2015.cnblogs.com
+#影响阿里云图片
 images2015.cnblogs.com/blog/641601/201511/641601-20151114215342837-1838001118.jpg
 data.mistat.xiaomi.com/mistats/v2
 abtest.mistat.xiaomi.com
 data.mistat.xiaomi.com
+#恢复云数据时会卡住的问题
 img.alicdn.com
 sdkinit.taobao.com/init.htm
 sdkinit.taobao.com/sdkConfigVersion.htm?sdkVersion=2.1.0&platformName=android
@@ -303,16 +327,21 @@ t1.g.mi.com/thumbnail/webp/w156q90/Wali/1ac20257c6d4e45750acb3e2ed937d2ba85f8488
 weatherapi.market.xiaomi.com
 milink.pandora.xiaomi.com/milink/probe?mac_address=8715650f394a2cbe65336688e6ebaa22be29cc3e&opaque=302d0531df4653ea755c9057642bb83bdc6b2035
 assistant.pandora.xiaomi.com/config
+#tv消息？
 stat.duokanbox.com/tvservice/reportmessage
 data.mistat.xiaomi.com:443
+#影响wps下载
 dl.op.wpscdn.cn
+#疑似ip判断，暂时删除
 ip.cms.sohu.com
 s0.mp.sohu.com
 zz.m.sohu.com
 you.ctrip.com
+#知道css
 gss0.bdstatic.com
 gss2.bdstatic.com
 ss0.bdstatic.com
+#miui-mi
 d.g.mi.com
 migc.g.mi.com
 migcreport.g.mi.com
@@ -335,7 +364,9 @@ a.stat.xiaomi.com
 mlog.search.xiaomi.net
 cdn.abc.eamobile.com
 union.dbba.cn
+#cm-ksmobile
 ads.dh.duba.com
+#cm-wps
 ad.docer.wps.cn
 docerad.wps.cn
 gou.wps.cn
@@ -1351,13 +1382,19 @@ zeustracker.abuse.ch
 zippyshare.com
 ziprecruiter.com
 zoso.ro
+# Contributed by Anudeep <anudeep@protonmail.com>
+# Project home page: github.com/anudeepND/whitelist
+# Licence: github.com/anudeepND/whitelist/blob/master/LICENSE
+# Adult Swim Videos on Amazon Firestick
 pmd.cdn.turner.com
 i.cdn.turner.com
 s.cdn.turner.com
 z.cdn.turner.com
 amd.cdn.turner.com
+# Amazon Alexa and Amazon Shopping app
 device-metrics-us-2.amazon.com
 device-metrics-us.amazon.com
+# Amazon Kindle
 cognito-identity.us-east-1.amazonaws.com
 unagi-na.amazon.com
 ocsp.rootg2.amazontrust.com
@@ -1366,14 +1403,18 @@ todo-ta-g7g.amazon.com
 device-messaging-na.amazon.com
 s3-eu-west-1.amazonaws.com
 us-east-1.amazonaws.com
+# Amazon AWS (???) - whitelist to make Kryptonite work
 sqs.us-east-1.amazonaws.com
+# Bild.de
 acdn.adnxs.com
 cdn1.smartadserver.com
 ec-ns.sascdn.com
+# DirectTV Now
 js.maxmind.com
 directvnow.com
 directvapplications.hb.omtrdc.net
 s.zkcdn.net
+# Facebook
 creative.ak.fbcdn.net
 external-lhr0-1.xx.fbcdn.net
 external-lhr10-1.xx.fbcdn.net
@@ -1407,10 +1448,14 @@ edge-mqtt.facebook.com
 6-edge-chat.facebook.com
 edge-chat.facebook.com
 mqtt-mini.facebook.com
+# Fix - Images not loading on www.thecut.com
 pixel.nymag.com
+# GeForce Experience
 events.gfe.nvidia.com
 gfwsl.geforce.com
+# GTA Online telemetry. Whitelist this domain to prevent the game from crashing.
 prod.telemetry.ros.rockstargames.com
+# Host files
 hosts-file.net
 raw.githubusercontent.com
 v.firebog.net
@@ -1421,20 +1466,28 @@ winhelp2002.mvps.org
 sysctl.org
 pgl.yoyo.org
 zeustracker.abuse.ch
+# Images not loading on aliexpress.com
 ae01.alicdn.com
+# Jackbox.tv
 www.google-analytics.com
 google-analytics.com
 ssl.google-analytics.com
+# Lotus talk
 lotustalk.com
 www.lotustalk.com
+# National Express, UK (nationalexpress.com/en) - Unable to book journey
 cdns.gigya.com
+# Netflix - Domains needed for netlix to work correctly
 api-global.netflix.com
 ichnaea.netflix.com
 appboot.netflix.com
 secure.netflix.com
+# Nvidia updates
 ota-downloads.nvidia.com
+# Openload - media serving site
 openload.co
 www.openload.co
+# Pluto.tv
 images.pluto.tv
 stitcher.pluto.tv
 siloh.pluto.tv
@@ -1442,17 +1495,24 @@ silo.pluto.tv
 cdn-mobile.api.pluto.tv
 api.pluto.tv
 players.pluto.tv
+# Roku HGTV app: Failed to play previous episodes
 dcs-vod.apis.anvato.net
+# Roku TNT app: Failed to play videos
 z.cdn.turner.com
 manifest.auditude.com
+# Refersion.com (affiliate marketing)
 cdn.refersion.com
 refersion.com
 www.refersion.com
+# Roku TV CW and NBC app
 cwtv-mrss-akamai.cwtv.com
 cwtv-prod-elb.digitalsmiths.net
 redirector.googlevideo.com
+# Samsung TV's Amazon Prime Video app
 time.samsungcloudsolution.com
+# Samsung smart TV's network issue
 cdn.samsungcloudsolution.com
+# SBS Online videos not playing
 www.sbs.com.au
 sbs.com.au
 api.sbs.com.au
@@ -1464,19 +1524,27 @@ link.theplatform.com
 e7065.e2.akamaiedge.net
 a463.w10.akamai.net
 a790.w16.akamai.net
+# Share buttons on websites
 dsms0mj1bbhn4.cloudfront.net
 shareaholic.com
+# Sky Go (skygo.sky.de)
 assets.adobedtm.com
+# Spotify premium with Denon Heos speakers
+# github.com/anudeepND/whitelist/issues/93
 mobile-ap.spotify.com
 apresolve.spotify.com
 upgrade.scdn.com
 market.spotify.com
 spclient.wg.spotify.com
 audio-ake.spotify.com.edgesuite.net
+# Target's Weekly Ads
 weeklyad.target.com
 m.weeklyad.target.com
 weeklyad.target.com.edgesuite.net
+# UK University application website
+# github.com/anudeepND/whitelist/issues/30
 track.ucas.com
+# URL shorteners
 adf.ly
 www.adf.ly
 bit.ly
@@ -1486,13 +1554,19 @@ ow.ly
 www.ow.ly
 amzn.to
 amzn.com
+# Videos not playing on  arstechnica/wired/vogue/newyorker
+# Note: ads before videos may appear after whitelisting this domain
 d2c8v52ll5s99u.cloudfront.net
+# Videos not playing on www.jacquielawson.com
 f1.media.brightcove.com
+# WatchESPN
 fpdownload.adobe.com
 entitlement.auth.adobe.com
 livepassdl.conviva.com
+# Xbox Achievements and game stats sync
 v10.events.data.microsoft.com
 v20.events.data.microsoft.com
+# streamelements.com (Blocked by Pi-hole regex)
 stats.streamelements.com
 7eer.net
 ad.doubleclick.net
