@@ -44,7 +44,7 @@ https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
-
+https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list
 EOF
 
 echo " "
