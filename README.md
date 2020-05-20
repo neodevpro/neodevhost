@@ -27,19 +27,19 @@ Update 更新时间: 2020-05-20
    
 ## Supported Platform 支持平台
 ```
--Windows<br/>
--Android<br/>
--Linux<br/>
--Mac OS<br/>
+-Windows
+-Android
+-Linux
+-Mac OS
 ```
 ### Supported adblocker 广告拦截器
 ```
--Pihole<br/>
--Blokada<br/>
--DNS66<br/>
--Adaway<br/>
--gasmask<br/>
--Hostman<br/>
+-Pihole
+-Blokada
+-DNS66
+-Adaway
+-gasmask
+-Hostman
 ```
 ## Download 下载 
 
@@ -68,52 +68,52 @@ Update 更新时间: 2020-05-20
 
 Import and Installation<br/>
 ```
-1.Login to pihole website<br/>
-2.Go to Groupmanagement > Adlists<br/>
-3.copy the NEODEV AD host link into "Address:"<br/>
+1.Login to pihole website
+2.Go to Groupmanagement > Adlists
+3.copy the NEODEV AD host link into "Address:"
 4.open terminal<br/>
 5. Run the following command :<br/>
-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash<br/>
-pihole -g<br/>
-6.Then it will import both NEODEV host and whitelist into your Pihole <br/>
+sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash
+pihole -g
+6.Then it will import both NEODEV host and whitelist into your Pihole 
 ```
 
 Remove and Uninstall<br/>
 ```
-1.Login to pihole website<br/>
-2.Go to Groupmanagement > Adlists<br/>
-3.click the red trash can button<br/>
-4.open terminal<br/>
-5. Run the following command :<br/>
--sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash<br/>
--pihole -g<br/>
-6.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole <br/>
+1.Login to pihole website
+2.Go to Groupmanagement > Adlists
+3.click the red trash can button
+4.open terminal
+5. Run the following command :
+-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash
+-pihole -g
+6.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole 
 ```
 
 ## Sources of AD-hosts data 去广告host源
 ```
-1.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt<br/>
-2.https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts<br/>
-3.https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts<br/>
-4.https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts<br/>
-5.https://hosts.nfz.moe/full/hosts<br/>
-7.https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts<br/>
-8.https://mirror1.malwaredomains.com/files/justdomains <br/>
-9.https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt<br/>
-10.https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt<br/>
-11.https://hblock.molinero.xyz/hosts<br/>
-12.http://winhelp2002.mvps.org/hosts.txt<br/>
-13.https://raw.githubusercontent.com/yous/YousList/master/hosts.txt<br/>
-14.https://adaway.org/hosts.txt<br/>
-15.https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext<br/>
-16.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts<br/>
+1.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt
+2.https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
+3.https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+4.https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
+5.https://hosts.nfz.moe/full/hosts
+7.https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+8.https://mirror1.malwaredomains.com/files/justdomains
+9.https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+10.https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+11.https://hblock.molinero.xyz/hosts
+12.http://winhelp2002.mvps.org/hosts.txt
+13.https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
+14.https://adaway.org/hosts.txt
+15.https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
+16.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
 ```
 
 ## Sources of Whitelist data 域名白名单源
 ```
-1.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
-2.https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt<br/>
-3.https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list<br/>
-4.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt<br/>
-5.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt<br/>
+1.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
+2.https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt
+3.https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list
+4.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
+5.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
 ```
