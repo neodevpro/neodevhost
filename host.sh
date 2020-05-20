@@ -56,8 +56,10 @@ sed -i '/</d' $host
 sed -i '/>/d' $host
 sed -i '/:/d' $host
 sed -i '/。/d' $host
-sort -n $host | uniq -u
 sed -i '/^\(127\|0\|::\)/!d;s/127.0.0.1/0.0.0.0/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
+sort -n $host | uniq
+sort -n $host | awk '{if ($0!=line) print;line=$0}'
+sort -n $host | sed '$!N; /^.∗\n\1$/!P; D'
 
 echo " "
 echo "Geanera whitelist..."
@@ -71,7 +73,9 @@ sed -i 's/只要有这一条，//' $whitelist
 sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' $whitelist
 sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' $whitelist
 sed -i '/^$/d' $whitelist
-sort -n $whitelist | uniq -u
+sort -n $whitelist | uniq
+sort -n $whitelist | awk '{if ($0!=line) print;line=$0}'
+sort -n $whitelist | sed '$!N; /^.∗\n\1$/!P; D'
 
 echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$totalad' ' ./README.md  
 echo | sed -i '15cTotal whitelist list 白名单总数: '$totalwhite' ' ./README.md  
