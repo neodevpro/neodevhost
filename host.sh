@@ -55,7 +55,7 @@ sed -i '/。/d' $host
 sed -i '/:/d' $host
 sed -i '/#/d' $host
 sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
-sort -n -d -i $host | uniq
+sort -d -i $host | uniq
 
 echo " "
 echo "Geanera whitelist..."
@@ -79,7 +79,7 @@ sed -i '/address=\/.bcebos.com\/0.0.0.0 baidu maps /d' $whitelist
 sed -i '/ALL ./d' $whitelist
 sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "/^$/d" -e 's/^/127.0.0.1 &/g' $whitelist
 sed -i '/^$/d' $whitelist
-sort -n -d -i $whitelist | uniq
+sort -d -i $whitelist | uniq
 
 echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l ./hosts.txt)' ' ./README.md  
 echo | sed -i '15cTotal whitelist list 白名单总数: '$(wc -l ./whitelist.txt)' ' ./README.md  
