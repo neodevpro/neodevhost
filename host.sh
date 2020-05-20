@@ -66,7 +66,7 @@ sed -i "s/ip6-loopback//" $host
 sed -i "s/ip6-localhost//" $host
 #sed -i -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "s/[ \t][ \t]*/ /g" -e "/^$/d" $host
 #sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
-#sed 's/^/127.0.0.1&/g' $host
+sed 's/^/127.0.0.1 &/g' $host
 sort -n $host | uniq
 sort -n $host | awk '{if ($0!=line) print;line=$0}'
 sort -n $host | sed '$!N; /^.∗\n\1$/!P; D'
