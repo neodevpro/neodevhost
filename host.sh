@@ -55,7 +55,7 @@ sed -i '/。/d' $host
 sed -i '/:/d' $host
 sed -i '/#/d' $host
 sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
-sed -r '/^.{,14}$/d' $host
+sed -i '/^.{,14}$/d' $host
 sort -d -i $host | uniq
 
 echo " "
@@ -80,7 +80,7 @@ sed -i '/address=\/.bcebos.com\/0.0.0.0 baidu maps /d' $whitelist
 sed -i '/ALL ./d' $whitelist
 sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "/^$/d" -e 's/^/127.0.0.1 &/g' $whitelist
 sed -i '/^$/d' $whitelist
-sed -r '/^.{,4}$/d' $whitelist
+sed -i '/^.{,4}$/d' $whitelist
 sort -d -i $whitelist | uniq
 
 echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l ./hosts.txt)' ' ./README.md  
