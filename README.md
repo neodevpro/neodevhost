@@ -19,11 +19,11 @@ Update 更新时间: 2020-05-20
 ## Introduction 介绍
 
 ### UPTODATE 保持最新<br/>
-  Merge　everyday　每天同步更新
+    Merge everyday　每天同步更新
 ### POWERFUL　 强大有效<br/>
-  To block all ad / tracking  有效拦截广告追踪　
+    To block all ad / tracking  有效拦截广告追踪　
 ### FRIENDLY　友善使用<br/>
-   Easy to use and welcome to report issues　简单使用欢迎回报问题
+    Easy to use and welcome to report issues　简单使用欢迎回报问题
    
 ## Supported Platform 支持平台
 ```
@@ -44,10 +44,14 @@ Update 更新时间: 2020-05-20
 ## Download 下载 
 
 ### AD host 去广告 [hosts]
+```
 > https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts.txt
+```
 
 ### Whitelist 域名白名单 [whitelist]
+```
 > https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist.txt
+```
 
 ## How To Use 如何使用
 ```
