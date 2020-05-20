@@ -56,6 +56,28 @@ Update 更新时间: 2020-05-20
 2.添加文件或者下载链接到广告拦截器<br/>
 3.更新数据规则<br/>
 
+## Pihole
+
+For Import and Installation
+1.Login to pihole website
+2.Go to Groupmanagement > Adlists
+3.copy the NEODEV AD host link into "Address:"
+4.open terminal
+5. Run the following command :
+-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash
+-pihole -g
+6.Then it will import both NEODEV host and whitelist into your Pihole 
+
+FOR Remove and Uninstall
+1.Login to pihole website
+2.Go to Groupmanagement > Adlists
+3.click the red trash can button
+4.open terminal
+5. Run the following command :
+-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash
+-pihole -g
+6.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole 
+
 
 ## Sources of AD-hosts data 去广告host源
 1.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt<br/>
