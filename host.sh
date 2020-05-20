@@ -58,6 +58,7 @@ sed -i '/</d' $host
 sed -i '/>/d' $host
 sed -i '/::/d' $host
 sed -i '/。/d' $host
+sed -i '/:/d' $host
 sed -i '/#/d' $host
 sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
 sort -n $host | uniq
@@ -69,6 +70,7 @@ sed -i '/</d' $whitelist
 sed -i '/>/d' $whitelist
 sed -i '/::/d' $whitelist
 sed -i '/。/d' $whitelist
+sed -i '/:/d' $host
 sed -i '/#/d' $whitelist
 sed -i 's/127.0.0.1 //' $whitelist
 sed -i "s/http:\/\///" $whitelist
