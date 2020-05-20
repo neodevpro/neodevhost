@@ -26,6 +26,23 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
+    - name: Remove hosts
+      run: rm ./hosts.txt
+      
+    - name: Remove whiteslist
+      run: rm ./whitelist.txt      
+      
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+           commit_message: Remove Old Files
+           commit_options: '--no-verify --signoff'
+           repository: .
+           commit_user_name: FusionPlmH
+           commit_user_email: leemenhin@gmail.com
+    
+
+    
+        # Runs a single command using the runners shell
     - name: Run a one-line script
       run: bash ./host.sh
       
@@ -36,9 +53,5 @@ jobs:
            repository: .
            commit_user_name: FusionPlmH
            commit_user_email: leemenhin@gmail.com
-    
-    
-    
-
     
     
