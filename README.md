@@ -58,14 +58,14 @@ Update 更新时间: 2020-05-20
 
 ## How To Use 如何使用
 ```
-1.Download both files/copy link of files<br/>
-2.Add host and whitelist file/link into adblocker<br/>
-3.Update the data source in the app<br/>
+1.Download both files/copy link of files
+2.Add host and whitelist file/link into adblocker
+3.Update the data source in the app
 ```
 ```
-1.下载两个文件/复制下载链接<br/>
-2.添加文件或者下载链接到广告拦截器<br/>
-3.更新数据规则<br/>
+1.下载两个文件/复制下载链接
+2.添加文件或者下载链接到广告拦截器
+3.更新数据规则
 ```
 ## Pihole Installation 安装导入教程
 
