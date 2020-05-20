@@ -48,12 +48,12 @@ Update 更新时间: 2020-05-20
 
 ### AD host 去广告 [hosts]
 ```
-> https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts.txt
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts.txt
 ```
 
 ### Whitelist 域名白名单 [whitelist]
 ```
-> https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist.txt
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist.txt
 ```
 
 ## How To Use 如何使用
