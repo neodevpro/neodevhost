@@ -1,15 +1,14 @@
 host=./hosts.txt
 whitelist=./whitelist.txt
 
-
 echo " "
 echo "Clean..."
 wait
-if [ -f ./hosts.txt ]; then
-    rm -rf ./hosts.txt
+if [ -f $host ]; then
+    rm -rf /tmp/hosts.txt
 fi
-if [ -f ./whitelist.txt ]; then
-    rm -rf ./whitelist.txt
+if [ -f $whitelist ]; then 
+    rm -rf /tmp/whitelist.txt
 fi
 
 echo " "
@@ -62,9 +61,6 @@ sed -i '/。/d' $host
 sed -i '/#/d' $host
 sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
 sort -n $host | uniq
-sort -n $host | awk '{if ($0!=line) print;line=$0}'
-sort -n $host | sed -i '$!N; /^.∗\n\1$/!P; D'
-
 
 echo " "
 echo "Geanera whitelist..."
@@ -84,16 +80,10 @@ sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' $whitelist
 sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "/^$/d" -e 's/^/127.0.0.1 &/g' $whitelist
 sed -i '/^$/d' $whitelist
 sort -n $whitelist | uniq
-sort -n $whitelist | awk '{if ($0!=line) print;line=$0}'
-sort -n $whitelist | sed -i '$!N; /^.∗\n\1$/!P; D'
 
-
-echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l $host)' ' ./README.md  
-echo | sed -i '15cTotal whitelist list 白名单总数: '$(wc -l $whitelist)' ' ./README.md  
-echo | sed -i '17cUpdate 更新时间: '$(date "+%Y-%m-%d %H:%M:%S")'' ./README.md  
-
-
+echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l ./hosts.txt)' ' ./README.md  
+echo | sed -i '15cTotal whitelist list 白名单总数: '$(wc -l ./whitelist.txt)' ' ./README.md  
+echo | sed -i '17cUpdate 更新时间: '$(date "+%Y-%m-%d")'' ./README.md  
 
 echo " "
 echo "Done!"
-
