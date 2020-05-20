@@ -423,15 +423,15 @@ akamai.net
 akamaiedge.net
 albert.apple.com
 alexa.com
-ALL .debian.org
-ALL .freebsd.org
-ALL .kernel.org
-ALL .netbsd.org
-ALL .openbsd.org
-ALL .pfsense.org
-ALL .redhat.com
-ALL .report-uri.com
-ALL .videolan.org
+debian.org
+freebsd.org
+kernel.org
+netbsd.org
+openbsd.org
+pfsense.org
+redhat.com
+report-uri.com
+videolan.org
 allegro.pl
 alluremedia.com.au
 alternativeto.net
