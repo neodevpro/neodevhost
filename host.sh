@@ -76,11 +76,9 @@ sort -n $whitelist | uniq
 sort -n $whitelist | awk '{if ($0!=line) print;line=$0}'
 sort -n $whitelist | sed -i '$!N; /^.∗\n\1$/!P; D'
 
-totalad=$(wc -l $host)
-totalwhite=$(wc -l $whitelist)
 
-echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$totalad' ' ./README.md  
-echo | sed -i '15cTotal whitelist list 白名单总数: '$totalwhite' ' ./README.md  
+echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l $host)' ' ./README.md  
+echo | sed -i '15cTotal whitelist list 白名单总数: '$(wc -l $whitelist)' ' ./README.md  
 echo | sed -i '17cUpdate 更新时间: '$(date "+%Y-%m-%d %H:%M:%S")'' ./README.md  
 
 
