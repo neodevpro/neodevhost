@@ -45,3 +45,4 @@ discord.gg
 discordapp.com
 media.discordapp.net
 mesu.apple.com
+discourse.pi-hole.net
