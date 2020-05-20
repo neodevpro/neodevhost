@@ -69,7 +69,8 @@ sed '/^$/d' $host
 sort -n $host | uniq
 sort -n $host | awk '{if ($0!=line) print;line=$0}'
 sort -n $host | sed '$!N; /^.∗\n\1$/!P; D'
-
+$ sed -i '1,3d' $host
+$ sed -i '$d' $host
 echo " "
 echo "Geanera whitelist..."
 wait
