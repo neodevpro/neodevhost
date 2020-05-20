@@ -12,7 +12,7 @@ The Powerful Friendly Uptodate AD Blocking Hosts<br/>
 
 Total ad / tracking block list 屏蔽追踪广告总数: 369097
 <br/>
-Total whitelist list 白名单总数: 2552
+Total whitelist list 白名单总数: 2598
 <br/>
 Update 更新时间: 2020-05-20
 
