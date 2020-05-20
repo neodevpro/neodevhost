@@ -1,4 +1,4 @@
-ＮＥＯ ＤＥＶ　Ｈｏｓｔ
+NEODEV HOST
 
 ![Logo](https://raw.githubusercontent.com/neodevpro/neodevhost/master/logo.png)
 
@@ -64,9 +64,9 @@ Update 更新时间: 2020-05-20
 2.添加文件或者下载链接到广告拦截器<br/>
 3.更新数据规则<br/>
 ```
-## Pihole
+## Pihole Installation 安装导入教程
 
-For Import and Installation<br/>
+Import and Installation<br/>
 ```
 1.Login to pihole website<br/>
 2.Go to Groupmanagement > Adlists<br/>
@@ -78,7 +78,7 @@ pihole -g<br/>
 6.Then it will import both NEODEV host and whitelist into your Pihole <br/>
 ```
 
-FOR Remove and Uninstall<br/>
+Remove and Uninstall<br/>
 ```
 1.Login to pihole website<br/>
 2.Go to Groupmanagement > Adlists<br/>
