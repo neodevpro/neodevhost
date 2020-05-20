@@ -26,19 +26,21 @@ Update 更新时间: 2020-05-20
    Easy to use and welcome to report issues　简单使用欢迎回报问题
    
 ## Supported Platform 支持平台
+```
 -Windows<br/>
 -Android<br/>
 -Linux<br/>
 -Mac OS<br/>
-
+```
 ### Supported adblocker 广告拦截器
+```
 -Pihole<br/>
 -Blokada<br/>
 -DNS66<br/>
 -Adaway<br/>
 -gasmask<br/>
 -Hostman<br/>
-
+```
 ## Download 下载 
 
 ### AD host 去广告 [hosts]
@@ -48,27 +50,32 @@ Update 更新时间: 2020-05-20
 > https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist.txt
 
 ## How To Use 如何使用
+```
 1.Download both files/copy link of files<br/>
 2.Add host and whitelist file/link into adblocker<br/>
 3.Update the data source in the app<br/>
-
+```
+```
 1.下载两个文件/复制下载链接<br/>
 2.添加文件或者下载链接到广告拦截器<br/>
 3.更新数据规则<br/>
-
+```
 ## Pihole
 
 For Import and Installation<br/>
-####1.Login to pihole website<br/>
-####2.Go to Groupmanagement > Adlists<br/>
-####3.copy the NEODEV AD host link into "Address:"<br/>
-####4.open terminal<br/>
-####5. Run the following command :<br/>
-####-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash<br/>
-####-pihole -g<br/>
-####6.Then it will import both NEODEV host and whitelist into your Pihole <br/>
+```
+1.Login to pihole website<br/>
+2.Go to Groupmanagement > Adlists<br/>
+3.copy the NEODEV AD host link into "Address:"<br/>
+4.open terminal<br/>
+5. Run the following command :<br/>
+sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash<br/>
+pihole -g<br/>
+6.Then it will import both NEODEV host and whitelist into your Pihole <br/>
+```
 
 FOR Remove and Uninstall<br/>
+```
 1.Login to pihole website<br/>
 2.Go to Groupmanagement > Adlists<br/>
 3.click the red trash can button<br/>
@@ -77,9 +84,10 @@ FOR Remove and Uninstall<br/>
 -sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash<br/>
 -pihole -g<br/>
 6.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole <br/>
-
+```
 
 ## Sources of AD-hosts data 去广告host源
+```
 1.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt<br/>
 2.https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts<br/>
 3.https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts<br/>
@@ -95,12 +103,13 @@ FOR Remove and Uninstall<br/>
 14.https://adaway.org/hosts.txt<br/>
 15.https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext<br/>
 16.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts<br/>
-
+```
 
 ## Sources of Whitelist data 域名白名单源
+```
 1.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
 2.https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt<br/>
 3.https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list<br/>
 4.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt<br/>
 5.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt<br/>
-
+```
