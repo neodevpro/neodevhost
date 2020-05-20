@@ -5,10 +5,10 @@ echo " "
 echo "Clean..."
 wait
 if [ -f $host ]; then
-    rm -rf /tmp/hosts.txt
+    rm -rf ./hosts.txt
 fi
 if [ -f $whitelist ]; then 
-    rm -rf /tmp/whitelist.txt
+    rm -rf ./whitelist.txt
 fi
 
 echo " "
