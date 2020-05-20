@@ -1,6 +1,17 @@
 host=./hosts.txt
 whitelist=./whitelist.txt
 
+
+echo " "
+echo "Clean..."
+wait
+if [ -f ./hosts.txt ]; then
+    rm -rf ./hosts.txt
+fi
+if [ -f ./whitelist.txt ]; then
+    rm -rf ./whitelist.txt
+fi
+
 echo " "
 echo "Merge AD list..."
 wait
