@@ -1,7 +1,7 @@
 #!/bin/sh
 if [ -f ./hosts.txt ]; then
-    rm ./hosts.txt
+    rm -rf ./hosts.txt
 fi
 if [ -f ./whitelist.txt ]; then
-    rm ./whitelist.txt
+    rm -rf ./whitelist.txt
 fi
