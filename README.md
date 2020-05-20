@@ -85,3 +85,4 @@ Update 更新时间: 2020-05-20
 3.https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list<br/>
 4.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt<br/>
 5.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt<br/>
+6.https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list<br/>
