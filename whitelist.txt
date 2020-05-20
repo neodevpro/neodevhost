@@ -192,7 +192,6 @@ xsts.auth.xboxlive.com
 youtu.be
 youtube-nocookie.com
 yt3.ggpht.com
-address=/.bcebos.com/0.0.0.0 baidu maps 
 cdn.staticfile.org/jquery/1.7.2/jquery.min.js
 acstatic-dun.126.net 
 b.bdstatic.com
@@ -423,15 +422,6 @@ akamai.net
 akamaiedge.net
 albert.apple.com
 alexa.com
-debian.org
-freebsd.org
-kernel.org
-netbsd.org
-openbsd.org
-pfsense.org
-redhat.com
-report-uri.com
-videolan.org
 allegro.pl
 alluremedia.com.au
 alternativeto.net
@@ -1093,11 +1083,6 @@ recaptcha.net
 reddit.com
 redfin.com
 reebok.com
-(?!.*\.?(oem)).*\.twimg\.com$
-(?!.*\.?(popcon)).*\.ubuntu\.com$
-(?!.*\.?(vstats)).*\.digitaltrends\.com$
-(?!.*\.?(watchdog\.ohio|dap\.digitalgov|stats\.ssa|adgallery\.whitehousedrugpolicy)).*\.gov$
-.*\.oloadcdn\.net$
 releases.flowplayer.org
 res.cloudinary.com
 road.adblock.ro
@@ -1105,10 +1090,6 @@ roku.com
 rover.ebay.com
 rsi.hotmail.com
 rutube.ru
-ebay
-google
-openload
-pulsar.ebay
 rzeszow.tvp.pl
 s-passets-cache-ak0.pinimg.com
 s-static.ak.facebook.com
