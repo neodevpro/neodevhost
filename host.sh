@@ -1,7 +1,6 @@
 host=./hosts.txt
 whitelist=./whitelist.txt
-totalad=$(wc -l $host)
-totalwhite=$(wc -l $whitelist)
+
 
 echo " "
 echo "Merge AD list..."
@@ -77,6 +76,9 @@ sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "/^$/d" -e 's/^/127.0.0.
 sort -n $whitelist | uniq
 sort -n $whitelist | awk '{if ($0!=line) print;line=$0}'
 sort -n $whitelist | sed -i '$!N; /^.∗\n\1$/!P; D'
+
+totalad=$(wc -l $host)
+totalwhite=$(wc -l $whitelist)
 
 echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$totalad' ' ./README.md  
 echo | sed -i '15cTotal whitelist list 白名单总数: '$totalwhite' ' ./README.md  
