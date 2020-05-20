@@ -58,12 +58,11 @@ Update 更新时间: 2020-05-20
 
 
 ## Sources of AD-hosts data 去广告host源
-1.https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts<br/>
+1.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt<br/>
 2.https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts<br/>
 3.https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts<br/>
 4.https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts<br/>
 5.https://hosts.nfz.moe/full/hosts<br/>
-6.https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/xiaobeita/hosts<br/>
 7.https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts<br/>
 8.https://mirror1.malwaredomains.com/files/justdomains <br/>
 9.https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt<br/>
@@ -73,11 +72,8 @@ Update 更新时间: 2020-05-20
 13.https://raw.githubusercontent.com/yous/YousList/master/hosts.txt<br/>
 14.https://adaway.org/hosts.txt<br/>
 15.https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext<br/>
-16.https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts<br/>
-17.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts<br/>
-18.https://github.com/logroid/adaway-hosts/raw/master/hosts_no_white.txt<br/>
-19.https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt<br/>
-20.https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt<br/>
+16.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts<br/>
+
 
 ## Sources of Whitelist data 域名白名单源
 1.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
@@ -85,4 +81,4 @@ Update 更新时间: 2020-05-20
 3.https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list<br/>
 4.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt<br/>
 5.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt<br/>
-6.https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list<br/>
+
