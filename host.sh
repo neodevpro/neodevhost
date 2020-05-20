@@ -64,7 +64,7 @@ sed -i "s/ip6-//" $host
 sed -i "s/loopback//" $host
 sed -i "s/ip6-loopback//" $host
 sed -i "s/ip6-localhost//" $host
-sed -i -e '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
+sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
 sed '/^$/d' $host
 sort -n $host | uniq
 sort -n $host | awk '{if ($0!=line) print;line=$0}'
@@ -83,7 +83,7 @@ sed -i 's/pp助手淘宝登录授权拉起//' $whitelist
 sed -i 's/只要有这一条，//' $whitelist
 sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' $whitelist
 sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' $whitelist
-sed -i -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "/^$/d" -e 's/^/127.0.0.1 &/g' $whitelist
+sed -i "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "/^$/d" -e 's/^/127.0.0.1 &/g' $whitelist
 sed -i '/^$/d' $whitelist
 sort -n $whitelist | uniq
 sort -n $whitelist | awk '{if ($0!=line) print;line=$0}'
