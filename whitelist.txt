@@ -248,8 +248,7 @@ image.ibb.co
 treezip.baofeng.net
 treexml.baofeng.net
 config5.update.baofeng.com
-de.imgbb.com to use them in an forum.
-imgbb is a free service for uploading and sharing pictures.
+de.imgbb.com
 github.com/notracking/hosts-blocklists/issues/75
 lib.baomitu.com
 union.video.qq.com
