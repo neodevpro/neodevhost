@@ -95,9 +95,9 @@ mv $title.1 $host
 echo | sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' $host
 echo | sed -i '11c# Number of domains:  '$(wc -l ./hosts.txt)' ' $host    
 
-echo | sed -i '13cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l ./hosts.txt)' ' $readme  
-echo | sed -i '15cTotal whitelist list 白名单总数: '$(wc -l ./whitelist.txt)' ' $readme  
-echo | sed -i '17cUpdate 更新时间: '$(date "+%Y-%m-%d")'' $readme 
+echo | sed -i '14cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l ./hosts.txt)' ' $readme  
+echo | sed -i '16cTotal whitelist list 白名单总数: '$(wc -l ./whitelist.txt)' ' $readme  
+echo | sed -i '18cUpdate 更新时间: '$(date "+%Y-%m-%d")'' $readme 
 
 echo " "
 echo "Done!"
