@@ -56,7 +56,9 @@ sed -i '/</d' $host
 sed -i '/>/d' $host
 sed -i '/:/d' $host
 sed -i '/。/d' $host
-sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
+sed -i '/#/d' $host
+sed -i -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "s/[ \t][ \t]*/ /g" -e "/^$/d" $host
+#sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
 sort -n $host | uniq
 sort -n $host | awk '{if ($0!=line) print;line=$0}'
 sort -n $host | sed '$!N; /^.∗\n\1$/!P; D'
@@ -73,6 +75,7 @@ sed -i 's/只要有这一条，//' $whitelist
 sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' $whitelist
 sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' $whitelist
 sed -i '/^$/d' $whitelist
+sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "/^$/d" -e 's/^/127.0.0.1 &/g' $whitelist
 sort -n $whitelist | uniq
 sort -n $whitelist | awk '{if ($0!=line) print;line=$0}'
 sort -n $whitelist | sed '$!N; /^.∗\n\1$/!P; D'
