@@ -59,14 +59,14 @@ Update 更新时间: 2020-05-20
 ## Pihole
 
 For Import and Installation<br/>
-1.Login to pihole website<br/>
-2.Go to Groupmanagement > Adlists<br/>
-3.copy the NEODEV AD host link into "Address:"<br/>
-4.open terminal<br/>
-5. Run the following command :
--sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash<br/>
--pihole -g<br/>
-6.Then it will import both NEODEV host and whitelist into your Pihole <br/>
+####1.Login to pihole website<br/>
+####2.Go to Groupmanagement > Adlists<br/>
+####3.copy the NEODEV AD host link into "Address:"<br/>
+####4.open terminal<br/>
+####5. Run the following command :<br/>
+####-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash<br/>
+####-pihole -g<br/>
+####6.Then it will import both NEODEV host and whitelist into your Pihole <br/>
 
 FOR Remove and Uninstall<br/>
 1.Login to pihole website<br/>
