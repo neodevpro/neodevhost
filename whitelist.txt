@@ -1093,11 +1093,11 @@ recaptcha.net
 reddit.com
 redfin.com
 reebok.com
-REG ^(?!.*\.?(oem)).*\.twimg\.com$
-REG ^(?!.*\.?(popcon)).*\.ubuntu\.com$
-REG ^(?!.*\.?(vstats)).*\.digitaltrends\.com$
-REG ^(?!.*\.?(watchdog\.ohio|dap\.digitalgov|stats\.ssa|adgallery\.whitehousedrugpolicy)).*\.gov$
-REG ^.*\.oloadcdn\.net$
+(?!.*\.?(oem)).*\.twimg\.com$
+(?!.*\.?(popcon)).*\.ubuntu\.com$
+(?!.*\.?(vstats)).*\.digitaltrends\.com$
+(?!.*\.?(watchdog\.ohio|dap\.digitalgov|stats\.ssa|adgallery\.whitehousedrugpolicy)).*\.gov$
+.*\.oloadcdn\.net$
 releases.flowplayer.org
 res.cloudinary.com
 road.adblock.ro
@@ -1105,10 +1105,10 @@ roku.com
 rover.ebay.com
 rsi.hotmail.com
 rutube.ru
-RZD ebay
-RZD google
-RZD openload
-RZD pulsar.ebay
+ebay
+google
+openload
+pulsar.ebay
 rzeszow.tvp.pl
 s-passets-cache-ak0.pinimg.com
 s-static.ak.facebook.com
