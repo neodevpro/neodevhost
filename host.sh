@@ -49,7 +49,7 @@ https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/doma
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
 https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list
-https://raw.githubusercontent.com/neodevpro/neodevhost/master/customwhitelist.txt
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/customwhitelist
 EOF
 
 echo " "
