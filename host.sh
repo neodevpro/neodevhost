@@ -1,21 +1,35 @@
 #!/bin/bash
 host=./hosts.txt
+tmphosts=./tmphosts.txt
+tmpwhitelist=./tmpwhitelist.txt
 whitelist=./whitelist.txt
 title=./title.txt
 readme=./README.md 
+combine=./combine.txt
 
 echo " "
 echo "Clean..."
 if [ -f $host ]; then
-    rm -rf ./hosts.txt
+    rm ./hosts.txt
 fi
 if [ -f $whitelist ]; then 
-    rm -rf ./whitelist.txt
+    rm ./whitelist.txt
 fi
+
+if [ -f $combine ]; then 
+    rm ./combine.txt
+fi
+if [ -f $tmphosts ]; then
+    rm ./tmphosts.txt
+fi
+if [ -f $tmpwhitelist ]; then 
+    rm ./tmpwhitelist.txt
+fi
+
 
 echo " "
 echo "Merge AD list..."
-while read i;do curl -s "$i">>$host&&echo "$i"||echo "fail";done<<EOF
+while read i;do curl -s "$i">>$tmphosts&&echo "$i"||echo "fail";done<<EOF
 https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
@@ -35,7 +49,7 @@ EOF
 
 echo " "
 echo "Merge Whitelist..."
-while read g;do curl -s "$g">>$whitelist&&echo "$g"||echo "fail";done<<EOF
+while read g;do curl -s "$g">>$tmpwhitelist&&echo "$g"||echo "fail";done<<EOF
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
 https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list
@@ -46,59 +60,81 @@ EOF
 
 echo " "
 echo "Geanera AD host file..."
-sed -i '/^#/'d $host
-sed -i '/</d' $host
-sed -i '/>/d' $host
-sed -i '/::/d' $host
-sed -i '/。/d' $host
-sed -i '/:/d' $host
-sed -i '/#/d' $host
-sed -i '/ö/d' $host
-sed -i '/ä/d' $host
-sed -i '/^\(127\|0\|::\)/!d;s/0.0.0.0/127.0.0.1/g;/ip6-/d;/localhost/d;s/#.*//g;s/\s\{2,\}//g' $host
-sed '/^.\{,13\}$/d' -i $host
-sort -d -i $host | uniq
+sed -i '/^#/'d $tmphosts
+sed -i '/</d' $tmphosts
+sed -i '/>/d' $tmphosts
+sed -i '/::/d' $tmphosts
+sed -i '/。/d' $tmphosts
+sed -i '/:/d' $tmphosts
+sed -i '/#/d' $tmphosts
+sed -i '/ö/d' $tmphosts
+sed -i '/ä/d' $tmphosts
+sed -i 's/#.*//g;s/\s\{2,\}//g' $tmphosts
+sed '/^.\{,13\}$/d' -i $tmphosts
+sed -i 's/127.0.0.1 //' $tmphosts
+sed -i 's/0.0.0.0 //' $tmphosts
+sed -i 's/255.255.255.255 //' $tmphosts
+sed -i '/ip6-/d' $tmphosts
+sed -i '/localhost/d' $tmphosts
+
+sort -n $tmphosts | uniq > $host
+sed -i 's/^/127.0.0.1 &/g' $host
+rm $tmphosts
 
 echo " "
 echo "Geanera whitelist..."
-sed -i '/</d' $whitelist
-sed -i '/>/d' $whitelist
-sed -i '/::/d' $whitelist
-sed -i '/。/d' $whitelist
-sed -i '/:/d' $whitelist
-sed -i '/#/d' $whitelist
-sed -i 's/127.0.0.1 //' $whitelist
-sed -i "s/http:\/\///" $whitelist
-sed -i "s/https:\/\///" $whitelist
-sed -i 's/pp助手淘宝登录授权拉起//' $whitelist
-sed -i 's/只要有这一条，//' $whitelist
-sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' $whitelist
-sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' $whitelist
-sed -i 's/ to use them in an forum.//' $whitelist
-sed -i 's/imgbb is a free service for uploading and sharing pictures.//' $whitelist
-sed -i '/REG ^/d' $whitelist
-sed -i '/RZD /d' $whitelist
-sed -i '/address=\/.bcebos.com\/0.0.0.0 baidu maps /d' $whitelist
-sed -i '/ALL ./d' $whitelist
-sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g" -e "/^$/d" -e 's/^/127.0.0.1 &/g' $whitelist
-sed -i '/^$/d' $whitelist
-sed '/^.\{,3\}$/d' -i $whitelist
-sort -d -i $whitelist | uniq
+sed -i '/</d' $tmpwhitelist
+sed -i '/>/d' $tmpwhitelist
+sed -i '/::/d' $tmpwhitelist
+sed -i '/。/d' $tmpwhitelist
+sed -i '/:/d' $tmpwhitelist
+sed -i '/#/d' $tmpwhitelist
+sed -i 's/127.0.0.1 //' $tmpwhitelist
+sed -i "s/http:\/\///" $tmpwhitelist
+sed -i "s/https:\/\///" $tmpwhitelist
+sed -i 's/pp助手淘宝登录授权拉起//' $tmpwhitelist
+sed -i 's/只要有这一条，//' $tmpwhitelist
+sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' $tmpwhitelist
+sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' $tmpwhitelist
+sed -i 's/ to use them in an forum.//' $tmpwhitelist
+sed -i 's/imgbb is a free service for uploading and sharing pictures.//' $tmpwhitelist
+sed -i '/REG ^/d' $tmpwhitelist
+sed -i '/RZD /d' $tmpwhitelist
+sed -i '/address=\/.bcebos.com\/0.0.0.0 baidu maps /d' $tmpwhitelist
+sed -i '/ALL ./d' $tmpwhitelist
+sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g"  $tmpwhitelist
+sed -i '/^$/d' $tmpwhitelist
+sed '/^.\{,3\}$/d' -i $tmpwhitelist
+sort -n $tmpwhitelist | uniq > $whitelist
+rm $tmpwhitelist
 
-echo | sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' $host
-echo | sed -i '11c# Number of domains:  '$(wc -l ./hosts.txt)' ' $host    
+cp $host $tmphosts
+sed -i 's/127.0.0.1 //' $tmphosts
+sort -n $tmphosts $whitelist $whitelist | uniq -u > $combine
+sed -i 's/^/127.0.0.1 &/g' $combine
+sort -d -i $host | uniq
+rm $tmphosts
 
 echo | sed -i '14cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l ./hosts.txt)' ' $readme  
 echo | sed -i '16cTotal whitelist list 白名单总数: '$(wc -l ./whitelist.txt)' ' $readme  
-echo | sed -i '18cUpdate 更新时间: '$(date "+%Y-%m-%d")'' $readme 
+echo | sed -i '18cTotal combine list 结合总数： '$(wc -l ./combine.txt)' ' $readme 
+echo | sed -i '20cUpdate 更新时间: '$(date "+%Y-%m-%d")'' $readme 
+
 
 echo " "
 echo "Adding Title and SYNC data..."
 cp $title $title.1
+echo | sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' $title.1
+echo | sed -i '11c# Number of blocked domains:  '$(wc -l ./hosts.txt)' ' $title.1   
+cp $title $title.2
+echo | sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' $title.2
+echo | sed -i '11c# Number of blocked domains:  '$(wc -l ./combine.txt)' ' $title.2   
 cat $host >>$title.1
-rm -rf $host
+cat $combine >>$title.2
+rm $host
+rm $combine
 mv $title.1 $host
-
+mv $title.2 $combine
 
 echo " "
 echo "Done!"
