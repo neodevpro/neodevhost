@@ -106,7 +106,7 @@ sed -i '/ALL ./d' $tmpwhitelist
 sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g"  $tmpwhitelist
 sed -i '/^$/d' $tmpwhitelist
 sed '/^.\{,3\}$/d' -i $tmpwhitelist
-sed -i 's/^.//g' $tmpwhitelist
+#sed -i 's/^.//g' $tmpwhitelist
 sort -n $tmpwhitelist | uniq > $whitelist
 rm $tmpwhitelist
 
