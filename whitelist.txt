@@ -27,6 +27,7 @@ adb.juvander.net
 adblock.dk
 adblock.ee
 adblock.mahakala.is
+address=/.bcebos.com/0.0.0.0 baidu maps 
 address=/.tracking.miui.com/0.0.0.0
 adf.ly
 adidas.com
