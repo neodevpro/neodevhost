@@ -34,15 +34,14 @@ Update 更新时间: 2020-05-21
 -Android
 -Linux
 -Mac OS
+-Openwrt
+-etc
 ```
 ### Supported adblocker 广告拦截器
 ```
 -Pihole
--Blokada
--DNS66
 -Adaway
--gasmask
--Hostman
+-etc
 ```
 ## Download 下载 
 
