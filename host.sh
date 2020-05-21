@@ -74,6 +74,7 @@ sed '/^.\{,13\}$/d' -i $tmphosts
 sed -i 's/127.0.0.1 //' $tmphosts
 sed -i 's/0.0.0.0 //' $tmphosts
 sed -i 's/255.255.255.255 //' $tmphosts
+sed -i '/0.0.0.0/d' $tmphosts
 sed -i '/ip6-/d' $tmphosts
 sed -i '/localhost/d' $tmphosts
 
