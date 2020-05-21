@@ -78,6 +78,7 @@ sed -i '/ip6-/d' $tmphosts
 sed -i '/localhost/d' $tmphosts
 sed -i 's/#.*//g;s/\s\{2,\}//g' $tmphosts
 sort -n $tmphosts | uniq > $host
+sed -i 's/^.//g' $host
 sed -i 's/^/127.0.0.1 &/g' $host
 rm $tmphosts
 
@@ -105,6 +106,7 @@ sed -i '/ALL ./d' $tmpwhitelist
 sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g"  $tmpwhitelist
 sed -i '/^$/d' $tmpwhitelist
 sed '/^.\{,3\}$/d' -i $tmpwhitelist
+sed -i 's/^.//g' $tmpwhitelist
 sort -n $tmpwhitelist | uniq > $whitelist
 rm $tmpwhitelist
 
