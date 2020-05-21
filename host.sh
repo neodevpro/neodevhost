@@ -105,7 +105,8 @@ rm tmpwhitelist
 
 
 cp host tmphosts
-sed -i 's/127.0.0.1  //' tmphosts
+sed -i 's/127.0.0.1//' tmphosts
+sed -i 's/ //g' tmphosts
 sort -n tmphosts whitelist whitelist | uniq -u > combine
 sed -i 's/^/127.0.0.1  &/g' combine
 sort -d -i combine | uniq
