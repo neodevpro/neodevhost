@@ -70,16 +70,16 @@ sed -i '/#/d' $tmphosts
 sed -i '/ö/d' $tmphosts
 sed -i '/ä/d' $tmphosts
 sed '/^.\{,13\}$/d' -i $tmphosts
-sed -i 's/127.0.0.1 //' $tmphosts
-sed -i 's/0.0.0.0 //' $tmphosts
+#sed -i 's/127.0.0.1 //' $tmphosts
+#sed -i 's/0.0.0.0 //' $tmphosts
 #sed -i '/127.0.0.1 0.0.0.0/d' $tmphosts
 sed -i 's/255.255.255.255 //' $tmphosts
 sed -i '/ip6-/d' $tmphosts
 sed -i '/localhost/d' $tmphosts
-sed -i 's/#.*//g;s/\s\{2,\}//g' $tmphosts
+sed -i '/^\(127\|0\)/!d;s/0.0.0.0/127.0.0.1/g;s/#.*//g;s/\s\{2,\}//g' $tmphosts
 sort -n $tmphosts | uniq > $host
 sed -i 's/^.//g' $host
-sed -i 's/^/127.0.0.1 &/g' $host
+#sed -i 's/^/127.0.0.1 &/g' $host
 rm $tmphosts
 
 echo " "
