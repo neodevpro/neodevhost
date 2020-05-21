@@ -61,22 +61,27 @@ EOF
 
 echo " "
 echo "Geanera AD host file..."
-sed -i '/^#/'d $tmphosts
-sed -i '/</d' $tmphosts
-sed -i '/>/d' $tmphosts
-sed -i '/::/d' $tmphosts
-sed -i '/。/d' $tmphosts
-sed -i '/:/d' $tmphosts
-sed -i '/#/d' $tmphosts
-sed -i '/ö/d' $tmphosts
-sed -i '/ä/d' $tmphosts
-sed '/^.\{,13\}$/d' -i $tmphosts
-sed -i 's/255.255.255.255 //' $tmphosts
-sed -i '/ip6-/d' $tmphosts
-sed -i '/localhost/d' $tmphosts
-sed -i '/^\(127\|0\)/!d;s/0.0.0.0/127.0.0.1/g;s/#.*//g;s/\s\{2,\}//g' $tmphosts
-sort -n $tmphosts | uniq > $host
-rm $tmphosts
+sed -i '/</d' tmphost
+sed -i '/>/d' tmphost
+sed -i '/::/d' tmphost
+sed -i '/。/d' tmphost
+sed -i '/:/d' tmphost
+sed -i '/#/d' tmphost
+sed -i '/ö/d' tmphost
+sed -i '/ä/d' tmphost
+sed '/^.\{,3\}$/d' -i tmphost
+sed -i 's/255.255.255.255 //' tmphost
+sed -i '/ip6-/d' tmphost
+sed -i '/localhost/d' tmphost
+sed -i 's/127.0.0.1 //g' tmphost
+sed -i 's/0.0.0.0 //g' tmphost
+sort -n tmphost | uniq > host
+rm tmphost
+sed -i 's/0.0.0.0.//' host
+sed -i 's/0.0.0.0//' host
+sed -i 's/ //g' host
+sed -i '1,1d' host
+sed -i 's/^/127.0.0.1  &/' host
 
 echo " "
 echo "Geanera whitelist..."
