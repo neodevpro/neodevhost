@@ -1737,6 +1737,7 @@ twitch.tv
 twitter.com
 ubuntuforums.org
 ui.skype.com
+umcdn.uc.cn
 unagi-na.amazon.com
 underarmour.scene7.com
 unibytes.com

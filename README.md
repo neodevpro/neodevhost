@@ -13,7 +13,7 @@ NEODEV HOST
 ```
 Total ad / tracking block list 屏蔽追踪广告总数: 138939
 
-Total whitelist list 白名单总数: 2147
+Total whitelist list 白名单总数: 2148
 
 Total combine list 结合总数： 138741
 
