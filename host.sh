@@ -115,10 +115,10 @@ rm $tmphosts
 
 
 
-sed -i '14cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l host)' ' $readme  
-sed -i '16cTotal whitelist list 白名单总数: '$(wc -l whitelist)' ' $readme  
-sed -i '18cTotal combine list 结合总数： '$(wc -l combine)' ' $readme 
-sed -i '20cUpdate 更新时间: '$(date "+%Y-%m-%d")'' $readme 
+sed -i '14cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l host)' ' README.md  
+sed -i '16cTotal whitelist list 白名单总数: '$(wc -l whitelist)' ' README.md 
+sed -i '18cTotal combine list 结合总数： '$(wc -l combine)' ' README.md
+sed -i '20cUpdate 更新时间: '$(date "+%Y-%m-%d")'' README.md
 
 
 echo " "
