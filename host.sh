@@ -73,7 +73,7 @@ sed '/^.\{,13\}$/d' -i $tmphosts
 sed -i 's/255.255.255.255 //' $tmphosts
 sed -i '/ip6-/d' $tmphosts
 sed -i '/localhost/d' $tmphosts
-sed -i '/^\(127\|0\)/!d;s/0.0.0.0/127.0.0.1/g;s/#.*//g;s/\s\{2,\}//g' $tmphosts
+sed -i 's/0.0.0.0/127.0.0.1/g;s/#.*//g;s/\s\{2,\}//g' $tmphosts
 sed -i 's/0/127.0.0.1 0/g' $tmphosts
 sort -n $tmphosts | uniq > $host
 rm $tmphosts
@@ -93,7 +93,7 @@ sed -i 's/pp助手淘宝登录授权拉起//' $tmpwhitelist
 sed -i 's/只要有这一条，//' $tmpwhitelist
 sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' $tmpwhitelist
 sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' $tmpwhitelist
-sed -i '/address=\/d' $tmpwhitelist
+sed -i '/address=\//d' $tmpwhitelist
 sed -i 's/ to use them in an forum.//' $tmpwhitelist
 sed -i 's/imgbb is a free service for uploading and sharing pictures.//' $tmpwhitelist
 sed -i '/REG ^/d' $tmpwhitelist
