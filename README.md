@@ -11,7 +11,7 @@ NEODEV HOST
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)
 
 ```
-Total ad / tracking block list 屏蔽追踪广告总数: 188356
+Total ad / tracking block list 屏蔽追踪广告总数: 188256
 
 Total whitelist list 白名单总数: 1524
 
