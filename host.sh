@@ -55,6 +55,7 @@ https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
+https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/customwhitelist.txt
 EOF
 
@@ -74,7 +75,6 @@ sed -i 's/255.255.255.255 //' $tmphosts
 sed -i '/ip6-/d' $tmphosts
 sed -i '/localhost/d' $tmphosts
 sed -i 's/0.0.0.0/127.0.0.1/g;s/#.*//g;s/\s\{2,\}//g' $tmphosts
-sed -i 's/0/127.0.0.1 0/g' $tmphosts
 sort -n $tmphosts | uniq > $host
 rm $tmphosts
 
