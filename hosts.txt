@@ -8,7 +8,7 @@
 #
 # Last update: 2020-05-21
 #
-# Number of blocked domains:  138938
+# Number of blocked domains:  138939
 #
 # ===============================================================
 
@@ -74911,6 +74911,7 @@ ff02::3 ip6-allhosts
 127.0.0.1 moafoche.com
 127.0.0.1 moapi.wps.cn
 127.0.0.1 moapteeg.net
+127.0.0.1 moartraffic.com
 127.0.0.1 moat.bfmio.com
 127.0.0.1 moat.com
 127.0.0.1 moat.pxl.ace.advertising.com
