@@ -46,6 +46,11 @@ Update 更新时间: 2020-05-21
 ```
 ## Download 下载 
 
+### Recommend 建议下载　: AD host + Whitelist 去广告＋白名单
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/combine.txt
+```
+
 ### AD host 去广告 [hosts]
 ```
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts.txt
