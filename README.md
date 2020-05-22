@@ -45,19 +45,53 @@ Update 更新时间: 2020-05-22
 ```
 ## Download 下载 
 
-### Recommend 建议下载　: AD host + Whitelist 去广告＋白名单
+### Recommend （adaway）建议下载　: AD + Whitelist [Host] 去广告＋白名单　结合拦截
 ```
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/combine
 ```
 
+### For Adblocker (Adguard)　广告拦截器　: AD 去广告
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker
+```
+
+### For Adblocker (Adguard)　广告拦截器　: Whitelist 白名单（防止拦截错误）
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblockerwhite
+```
+
+### For Adblocker (Adguard)　广告拦截器　: ＡD + Whitelist 去广告＋白名单　结合拦截
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblockercombine
+```
+
 ### AD host 去广告 [hosts]
 ```
-https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/host
 ```
 
 ### Whitelist 域名白名单 [whitelist]
 ```
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist
+```
+
+### Dnsmasq AD List [Dnsmasq] Dnsmasq广告拦截格式
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts_dnsmasq.conf
+```
+
+### Dnsmasq AD + Whitelist　List [Dnsmasq] Dnsmasq　广告＋白名单　结合拦截格式
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/combinehosts_dnsmasq.conf
+```
+### Domain AD 普通广告域名
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain
+```
+
+### Domain AD + Whitelist　普通 广告＋白名单　域名结合
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/domaincombine
 ```
 
 ## How To Use 如何使用
@@ -85,7 +119,8 @@ sudo -i
 sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash
 pihole -g
 ```
-6.Then it will import both NEODEV host and whitelist into your Pihole <br/>
+6.Wait for 20 mins around  <br/>
+7.Then it will import both NEODEV host and whitelist into your Pihole <br/>
 
 
 Remove and Uninstall<br/>
@@ -100,7 +135,8 @@ sudo -i
 sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash
 pihole -g
 ```
-6.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole <br/>
+6.Wait for 20 mins around  <br/> <br/>
+7.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole <br/>
 
 ## Sources of AD-hosts data 去广告host源
 ```
