@@ -6,6 +6,7 @@ on:
     branches: [ master ]
   schedule:
     - cron:  "* 1 * * *"
+      
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,3 +31,5 @@ jobs:
            commit_user_name: FusionPlmH
            commit_user_email: leemenhin@gmail.com
            push_options: '--force'
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
