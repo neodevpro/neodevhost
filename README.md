@@ -46,7 +46,7 @@ Update 更新时间: 2020-05-22
 ```
 ## Download 下载 
 
-### Recommend （adaway）建议下载　: AD + Whitelist [Host] 去广告＋白名单　结合拦截
+### Recommend （adaway）建议下载　: AD + Whitelist [Host] 去广告+白名单　结合拦截
 ```
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/combine
 ```
@@ -61,7 +61,7 @@ https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblockerwhite
 ```
 
-### For Adblocker (Adguard)　广告拦截器　: ＡD + Whitelist 去广告＋白名单　结合拦截
+### For Adblocker (Adguard)　广告拦截器　: AD + Whitelist 去广告+白名单　结合拦截
 ```
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblockercombine
 ```
@@ -81,7 +81,7 @@ https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts_dnsmasq.conf
 ```
 
-### Dnsmasq AD + Whitelist　List [Dnsmasq] Dnsmasq　广告＋白名单　结合拦截格式
+### Dnsmasq AD + Whitelist　List [Dnsmasq] Dnsmasq　广告+白名单　结合拦截格式
 ```
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/combinehosts_dnsmasq.conf
 ```
@@ -90,7 +90,7 @@ https://raw.githubusercontent.com/neodevpro/neodevhost/master/combinehosts_dnsma
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain
 ```
 
-### Domain AD + Whitelist　普通 广告＋白名单　域名结合
+### Domain AD + Whitelist　普通 广告+白名单　域名结合
 ```
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/domaincombine
 ```
