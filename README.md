@@ -81,6 +81,7 @@ Import and Installation<br/>
 4.open terminal<br/>
 5. Run the following command :<br/>
 ```
+sudo -i
 sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash
 pihole -g
 ```
@@ -95,6 +96,7 @@ Remove and Uninstall<br/>
 4.open terminal<br/>
 5. Run the following command :<br/>
 ```
+sudo -i
 sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash
 pihole -g
 ```
