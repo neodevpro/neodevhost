@@ -87,6 +87,7 @@ for url in `cat black` ;do
     sed -i '/:/d' tmphost
     sed -i '/#/d' tmphost
     sed -i 's/||//' tmphost
+    sed -i 's/*.//' tmphost
     sed -i 's/^//' tmphost
     sed -i 's/^/@@||&//' tmphost 
     sed -i 's/broadcasthost//' tmphost
