@@ -104,9 +104,8 @@ for url in `cat black` ;do
     sort -n host whitelist whitelist | uniq -u > combine
     rm tmphost
 done
-sed -i 's/*.//' host
-sed -i 's/*.//' combine
-sed -i '1,46d' combine
+
+#sed -i '1,46d' combine
 cp host domain
 cp host adblocker
 cp combine domaincombine
