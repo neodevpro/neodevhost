@@ -45,6 +45,7 @@ for url in `cat white` ;do
     sed -i '/ALL ./d' tmpwhitelist
     sed -i '/^$/d' tmpwhitelist
     sed '/^.\{,3\}$/d' -i tmpwhitelist
+    sed -e "s/^[ \t]*//g" -e "s/[ \t]*$//g" -e "s/\r//g"  tmpwhitelist
     cat tmpwhitelist >> whitelist
     sort -n whitelist | uniq -u
     rm tmpwhitelist
@@ -67,6 +68,7 @@ for url in `cat black` ;do
     sed -i 's/0.0.0.0 //g' tmphost
     sed -i 's/ //g' tmphost
     sed '/^.\{,3\}$/d' -i tmphost
+    sed -i 's/#.*//g;s/\s\{2,\}//g' tmphost
     cat tmphost >> host
     sort -n host | uniq -u
     sort -n host whitelist whitelist | uniq -u > combine
