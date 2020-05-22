@@ -3,8 +3,8 @@ cd /etc/pihole
 wget https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist
 sleep 0.5
 echo -e "Editing..."
-sudo mv ./whitelist ./whitelist.old
-sudo cat ./whitelist.old | sort | uniq >> /etc/pihole/whitelist
+mv ./whitelist ./whitelist.old
+cat ./whitelist.old | sort | uniq >> /etc/pihole/whitelist
 wait
 echo -e "Patching(Need some time)..."
 pihole -w -q $(cat /etc/pihole/whitelist.txt | xargs) > /dev/null
