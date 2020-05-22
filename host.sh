@@ -132,7 +132,6 @@ sed -i 's/^/address=\/&/g' combinehosts_dnsmasq.conf
 sed -i 's/$/&\/0.0.0.0/g' hosts_dnsmasq.conf  
 sed -i 's/$/&\/0.0.0.0/g' combinehosts_dnsmasq.conf 
 
-
 sed -i '14cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l host)' ' README.md  
 sed -i '16cTotal whitelist list 白名单总数: '$(wc -l whitelist)' ' README.md 
 sed -i '18cTotal combine list 结合总数： '$(wc -l combine)' ' README.md
