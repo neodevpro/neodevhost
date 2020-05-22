@@ -22,7 +22,7 @@ jobs:
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-           commit_message: Update
+           commit_message: Auto Update
            commit_options: '--no-verify --signoff'
            repository: .
            commit_user_name: FusionPlmH
