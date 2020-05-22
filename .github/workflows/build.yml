@@ -5,14 +5,15 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron:  "* 23 * * *"
+    - cron:  "* 1 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-      
+      with:
+       ref: ${{ github.head_ref }}  
     
     - name: Run a one-line script
       run: sudo apt update && sudo apt install axel -y
@@ -23,7 +24,9 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
            commit_message: Auto Update
+           branch: master
            commit_options: '--no-verify --signoff'
            repository: .
            commit_user_name: FusionPlmH
            commit_user_email: leemenhin@gmail.com
+           push_options: '--force'
