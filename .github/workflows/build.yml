@@ -13,8 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-       ref: ${{ github.head_ref }}  
     
     - name: Run a one-line script
       run: sudo apt update && sudo apt install axel -y
@@ -31,5 +29,3 @@ jobs:
            commit_user_name: FusionPlmH
            commit_user_email: leemenhin@gmail.com
            push_options: '--force'
-      env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
