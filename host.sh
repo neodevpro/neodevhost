@@ -89,6 +89,7 @@ for url in `cat black` ;do
     sed -i 's/||//' tmphost
     sed -i 's/^//' tmphost
     sed -i 's/^/@@||&//' tmphost 
+    sed -i 's/broadcasthost//' tmphost
     sed -i 's/255.255.255.255 //' tmphost
     sed -i '/ip6-/d' tmphost
     sed -i '/localhost/d' tmphost
