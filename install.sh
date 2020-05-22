@@ -1,5 +1,6 @@
 echo -e "Downloading Whitelist..."
-wget -o ./whitelist https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist
+wget -o ./whitelist https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist /etc/pihole/whitelist
+cd /etc/pihole
 sleep 0.5
 echo -e "Editing..."
 sudo mv ./whitelist ./whitelist.old
