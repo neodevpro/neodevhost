@@ -28,10 +28,6 @@ if [ -f adblockerwhite ]; then
     rm adblockerwhite
 fi
 
-if [ -f domain ]; then 
-    rm domain
-fi
-
 if [ -f domaincombine ]; then 
     rm domaincombine
 fi
