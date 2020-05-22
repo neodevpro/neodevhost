@@ -144,10 +144,11 @@ pihole -g
 1.https://hblock.molinero.xyz/hosts
 2.https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 3.https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-4.https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
-5.https://hosts.nfz.moe/full/hosts
-6.https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
-7.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
+4.https://raw.githubusercontent.com/jdlingyu/ad-wars/master/sha_ad_hosts
+5.https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
+6.https://hosts.nfz.moe/full/hosts
+7.https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
+8.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
 ```
 
 ## Sources of Whitelist data 域名白名单源
