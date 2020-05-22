@@ -1,4 +1,5 @@
 #!bin/bash
+
 echo " "
 echo "Clean..."
 if [ -f host ]; then
