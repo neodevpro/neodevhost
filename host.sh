@@ -103,6 +103,7 @@ for url in `cat black` ;do
     rm tmphost
 done
 
+$ sed -i '1,46d' combine
 cp host domain
 cp host adblocker
 cp combine domaincombine
