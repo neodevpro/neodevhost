@@ -46,10 +46,20 @@ Update 更新时间: 2020-05-23
 ```
 ## Download 下载 
 
-### Recommend （adaway）建议下载　: AD + Whitelist [Host] 去广告+白名单　结合拦截
+### Recommend 建议下载　: AD + Whitelist [Host] 去广告+白名单　结合拦截
 ```
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/combine
 ```
+### AD host 去广告 [hosts]
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/host
+```
+
+### Whitelist 域名白名单 [whitelist]
+```
+https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist
+```
+
 
 ### For Adblocker (Adguard)　广告拦截器　: AD 去广告
 ```
@@ -66,23 +76,13 @@ https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblockerwhite
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblockercombine
 ```
 
-### AD host 去广告 [hosts]
-```
-https://raw.githubusercontent.com/neodevpro/neodevhost/master/host
-```
-
-### Whitelist 域名白名单 [whitelist]
-```
-https://raw.githubusercontent.com/neodevpro/neodevhost/master/whitelist
-```
-
-### Dnsmasq AD List [Dnsmasq] Dnsmasq广告拦截格式
+### Dnsmasq AD List Dnsmasq 广告拦截格式 [Dnsmasq] 
 ```
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/hosts_dnsmasq.conf
 ```
 
-### Dnsmasq AD + Whitelist　List [Dnsmasq] Dnsmasq　广告+白名单　结合拦截格式
-```
+### Dnsmasq AD + Whitelist　List Dnsmasq　广告+白名单　结合拦截格式  [Dnsmasq] 
+``` 
 https://raw.githubusercontent.com/neodevpro/neodevhost/master/combinehosts_dnsmasq.conf
 ```
 ### Domain AD 普通广告域名
