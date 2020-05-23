@@ -22,7 +22,7 @@ Update 更新时间: 2020-05-23
 ## Introduction 介绍
 
 ### UPTODATE 保持最新<br/>
-    Merge everyday　每天同步更新
+    Merge everyday　每小时更新
 ### POWERFUL　 强大有效<br/>
     To block all ad / tracking  有效拦截广告追踪　
 ### FRIENDLY　友善使用<br/>
