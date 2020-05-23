@@ -144,6 +144,7 @@ pihole -g
 >https://hblock.molinero.xyz/hosts<br/>
 >https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts<br/>
 >https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts<br/>
+>https://raw.githubusercontent.com/jdlingyu/ad-wars/master/sha_ad_hosts<br/>
 >https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts<br/>
 >https://hosts.nfz.moe/full/hosts<br/>
 >https://raw.githubusercontent.com/yous/YousList/master/hosts.txt<br/>
