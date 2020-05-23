@@ -141,20 +141,20 @@ pihole -g
 
 ## Sources of AD-hosts data 去广告host源
 
->https://hblock.molinero.xyz/hosts
->https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
->https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
->https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
->https://hosts.nfz.moe/full/hosts
->https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
->https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
->https://raw.githubusercontent.com/Licolnlee/blog-cloud-storage/master/adblock.txt
+>https://hblock.molinero.xyz/hosts<br/>
+>https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts<br/>
+>https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts<br/>
+>https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts<br/>
+>https://hosts.nfz.moe/full/hosts<br/>
+>https://raw.githubusercontent.com/yous/YousList/master/hosts.txt<br/>
+>https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts<br/>
+>https://raw.githubusercontent.com/Licolnlee/blog-cloud-storage/master/adblock.txt<br/>
 
 ## Sources of Whitelist data 域名白名单源
 
->https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
->https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt
->https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list
->https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
->https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
+>https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt<br/>
+>https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt<br/>
+>https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list<br/>
+>https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt<br/>
+>https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt<br/>
 
