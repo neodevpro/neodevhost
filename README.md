@@ -140,21 +140,21 @@ pihole -g
 7.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole <br/>
 
 ## Sources of AD-hosts data 去广告host源
-```
-1.https://hblock.molinero.xyz/hosts
-2.https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
-3.https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-4.https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
-5.https://hosts.nfz.moe/full/hosts
-6.https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
-7.https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
-```
+
+>https://hblock.molinero.xyz/hosts
+>https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
+>https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+>https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
+>https://hosts.nfz.moe/full/hosts
+>https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
+>https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
+>https://raw.githubusercontent.com/Licolnlee/blog-cloud-storage/master/adblock.txt
 
 ## Sources of Whitelist data 域名白名单源
-```
-1.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
-2.https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt
-3.https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list
-4.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
-5.https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
-```
+
+>https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
+>https://raw.githubusercontent.com/VeleSila/yhosts/master/whitelist.txt
+>https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list
+>https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
+>https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
+
