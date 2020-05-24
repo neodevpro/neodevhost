@@ -48,7 +48,7 @@ fi
 echo " "
 echo "Merge Whitelist..."
 for url in `cat white` ;do
-    axel -n10 -a -k -o tmpwhitelist $url
+    wget --no-check-certificate -t 1 -T 10 -O tmpwhitelist $url 
     sed -i '/</d' tmpwhitelist
     sed -i '/>/d' tmpwhitelist
     sed -i '/::/d' tmpwhitelist
@@ -56,11 +56,10 @@ for url in `cat white` ;do
     sed -i '/:/d' tmpwhitelist
     sed -i '/#/d' tmpwhitelist
     sed -i 's/||//' tmpwhitelist
-    sed -i 's/^//' tmpwhitelist
     sed -i 's/^/@@||&//' tmpwhitelist
     sed -i 's/127.0.0.1 //' tmpwhitelist
-    sed -i "s/http:\/\///" tmpwhitelist
-    sed -i "s/https:\/\///" tmpwhitelist
+    sed -i "s/http:\\//" tmpwhitelist
+    sed -i "s/https:\\//" tmpwhitelist
     sed -i 's/pp助手淘宝登录授权拉起//' tmpwhitelist
     sed -i 's/只要有这一条，//' tmpwhitelist
     sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' tmpwhitelist
@@ -71,37 +70,41 @@ for url in `cat white` ;do
     sed -i '/REG ^/d' tmpwhitelist
     sed -i '/RZD /d' tmpwhitelist
     sed -i '/ALL ./d' tmpwhitelist
-    sed -i 's/ //g' tmphost
+    sed -i 's/^//' tmpwhitelist
+    sed -i 's/*.//' tmpwhitelist
+    sed -i 's/ //g' tmpwhitelist
     sed -i '/^$/d' tmpwhitelist
-    sed '/^.\{,3\}$/d' -i tmpwhitelist
+    sed -i '/^.\{,3\}$/d' tmpwhitelist
     cat tmpwhitelist >> whitelist
-    sort -n whitelist | uniq -u
+    sort -n whitelist | uniq
     rm tmpwhitelist
 done
 
 echo " "
 echo "Merge ADlist..."
 for url in `cat black` ;do
-    axel -n10 -a -k -o tmphost $url
+    wget --no-check-certificate -t 1 -T 10 -O tmphost $url 
     sed -i '/::/d' tmphost
     sed -i '/。/d' tmphost
     sed -i '/:/d' tmphost
     sed -i '/#/d' tmphost
     sed -i 's/||//' tmphost
-    sed -i 's/*.//' tmphost
+    sed -i '/！/d' tmphost
     sed -i 's/^//' tmphost
-    sed -i 's/^/@@||&//' tmphost 
     sed -i 's/broadcasthost//' tmphost
     sed -i 's/255.255.255.255 //' tmphost
     sed -i '/ip6-/d' tmphost
     sed -i '/localhost/d' tmphost
     sed -i 's/127.0.0.1 //g' tmphost
     sed -i 's/0.0.0.0 //g' tmphost
+    sed -i 's/^//' tmphost
+    sed -i 's/*.//' tmphost
     sed -i 's/ //g' tmphost
-    sed -i '/^$/d' tmpwhitelist
-    sed '/^.\{,3\}$/d' -i tmphost
+    sed -i '/^$/d' tmphost
+    sed -i '/^.\{,3\}$/d' tmphost
+
     cat tmphost >> host
-    sort -n host | uniq -u
+    sort -n host | uniq
     sort -n host whitelist whitelist | uniq -u > combine
     rm tmphost
 done

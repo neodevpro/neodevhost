@@ -1,4 +1,3 @@
-https://hblock.molinero.xyz/hosts
 https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts
 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/sha_ad_hosts
@@ -7,3 +6,10 @@ https://hosts.nfz.moe/full/hosts
 https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
 https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts
 https://raw.githubusercontent.com/Licolnlee/blog-cloud-storage/master/adblock.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+http://someonewhocares.org/hosts/hosts
+https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts
