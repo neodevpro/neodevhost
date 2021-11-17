@@ -136,36 +136,36 @@ sed -i 's/$/&\/0.0.0.0/' lite_host_dnsmasq.conf
 
 echo " "
 echo "Adding Title and SYNC data..."
-sed -i -n '14cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l block)' ' README.md  
-sed -i -n '16cTotal allowlist list 允许名单总数: '$(wc -l allow)' ' README.md 
-sed -i -n '18cTotal combine list 结合总数： '$(wc -l host)' ' README.md
-sed -i -n '20cTotal deadblock list 失效屏蔽广告域名： '$(wc -l deadblock)' ' README.md
-sed -i -n '22cTotal deadallow list 失效允许广告域名： '$(wc -l deadallow)' ' README.md
-sed -i -n '24cUpdate 更新时间: '$(date "+%Y-%m-%d")'' README.md
+sed -i '14cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l block)' ' README.md  
+sed -i '16cTotal allowlist list 允许名单总数: '$(wc -l allow)' ' README.md 
+sed -i '18cTotal combine list 结合总数： '$(wc -l host)' ' README.md
+sed -i '20cTotal deadblock list 失效屏蔽广告域名： '$(wc -l deadblock)' ' README.md
+sed -i '22cTotal deadallow list 失效允许广告域名： '$(wc -l deadallow)' ' README.md
+sed -i '24cUpdate 更新时间: '$(date "+%Y-%m-%d")'' README.md
 
-sed -i -n '53cNumber of Domain 域名数目： '$(wc -l host)' ' README.md
-sed -i -n '63cNumber of Domain 域名数目： '$(wc -l lite_host)' ' README.md
+sed -i '53cNumber of Domain 域名数目： '$(wc -l host)' ' README.md
+sed -i '63cNumber of Domain 域名数目： '$(wc -l lite_host)' ' README.md
 
  
 cp title title.2
-sed -i -n '9c# Last update: '$(date "+%Y-%m-%d")'' title.2
-sed -i -n '11c# Number of blocked domains:  '$(wc -l host)' ' title.2   
+sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.2 
+sed -i '11c# Number of blocked domains:  '$(wc -l host)' ' title.2  
 cp title title.4
-sed -i -n '9c# Last update: '$(date "+%Y-%m-%d")'' title.4
-sed -i -n '11c# Number of blocked domains:  '$(wc -l adblocker)' ' title.4   
+sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.4 
+sed -i '11c# Number of blocked domains:  '$(wc -l adblocker)' ' title.4
 cp title title.6
-sed -i -n '9c# Last update: '$(date "+%Y-%m-%d")'' title.6
-sed -i -n '11c# Number of blocked domains:  '$(wc -l host_dnsmasq.conf)' ' title.6       
+sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.6
+sed -i '11c# Number of blocked domains:  '$(wc -l host_dnsmasq.conf)' ' title.6       
 
 cp title title.1
-sed -i -n '9c# Last update: '$(date "+%Y-%m-%d")'' title.1
-sed -i -n '11c# Number of blocked domains:  '$(wc -l lite_host)' ' title.1   
+sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.1
+sed -i '11c# Number of blocked domains:  '$(wc -l lite_host)' ' title.1   
 cp title title.3
-sed -i -n '9c# Last update: '$(date "+%Y-%m-%d")'' title.3
-sed -i -n '11c# Number of blocked domains:  '$(wc -l lite_adblocker)' ' title.3   
+sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.3
+sed -i '11c# Number of blocked domains:  '$(wc -l lite_adblocker)' ' title.3   
 cp title title.5
-sed -i -n '9c# Last update: '$(date "+%Y-%m-%d")'' title.5
-sed -i -n '11c# Number of blocked domains:  '$(wc -l lite_host_dnsmasq.conf)' ' title.5  
+sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.5
+sed -i '11c# Number of blocked domains:  '$(wc -l lite_host_dnsmasq.conf)' ' title.5  
 
 cat host >>title.2
 cat adblocker >>title.4
