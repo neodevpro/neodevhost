@@ -3,7 +3,7 @@
 echo " "
 echo "Clean..."
 
-rm -f host lite_host block lite_adblocker adblocker lite_host_dnsmasq.conf host_dnsmasq.conf deadallow deadblock checkblock check allow
+rm -f host lite_host block lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock check allow
 
 echo " "
 echo "Merge allow..."
@@ -111,10 +111,13 @@ echo " "
 echo "Adding Compatibility..."
 
 cp host adblocker
-cp host host_dnsmasq.conf
+cp host dnsmasq.conf
+cp host smartdns.conf
 
 cp lite_host lite_adblocker
-cp lite_host lite_host_dnsmasq.conf
+cp lite_host lite_dnsmasq.conf
+cp lite_host lite_smartdns.conf
+
 
 sed -i 's/^/||&/' adblocker
 sed -i 's/$/&^/' adblocker 
@@ -126,13 +129,21 @@ sed -i 's/^/0.0.0.0  &/' host
 
 sed -i 's/^/0.0.0.0  &/' lite_host
 
-sed -i 's/^/address=\/&/' host_dnsmasq.conf 
+sed -i 's/^/address=\/&/' dnsmasq.conf 
 
-sed -i 's/$/&\/0.0.0.0/' host_dnsmasq.conf  
+sed -i 's/$/&\/0.0.0.0/' dnsmasq.conf  
 
-sed -i 's/^/address=\/&/' lite_host_dnsmasq.conf 
+sed -i 's/^/address=\/&/' lite_dnsmasq.conf 
 
-sed -i 's/$/&\/0.0.0.0/' lite_host_dnsmasq.conf 
+sed -i 's/$/&\/0.0.0.0/' lite_dnsmasq.conf 
+
+sed -i 's/^/address \/&/' smartdns.conf 
+
+sed -i 's/$/&\/#/' smartdns.conf  
+
+sed -i 's/^/address \/&/' lite_smartdns.conf 
+
+sed -i 's/$/&\/#/' lite_smartdns.conf 
 
 echo " "
 echo "Adding Title and SYNC data..."
@@ -143,7 +154,7 @@ sed -i '20cTotal deadblock list 失效屏蔽广告域名： '$(wc -l deadblock)'
 sed -i '22cTotal deadallow list 失效允许广告域名： '$(wc -l deadallow)' ' README.md
 sed -i '24cUpdate 更新时间: '$(date "+%Y-%m-%d")'' README.md
 
-sed -i '53cNumber of Domain 域名数目： '$(wc -l host)' ' README.md
+sed -i '54cNumber of Domain 域名数目： '$(wc -l host)' ' README.md
 sed -i '63cNumber of Domain 域名数目： '$(wc -l lite_host)' ' README.md
 
  
@@ -155,7 +166,10 @@ sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.4
 sed -i '11c# Number of blocked domains:  '$(wc -l adblocker)' ' title.4
 cp title title.6
 sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.6
-sed -i '11c# Number of blocked domains:  '$(wc -l host_dnsmasq.conf)' ' title.6       
+sed -i '11c# Number of blocked domains:  '$(wc -l dnsmasq.conf)' ' title.6
+cp title title.8
+sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.8
+sed -i '11c# Number of blocked domains:  '$(wc -l smartdns.conf)' ' title.8            
 
 cp title title.1
 sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.1
@@ -165,25 +179,33 @@ sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.3
 sed -i '11c# Number of blocked domains:  '$(wc -l lite_adblocker)' ' title.3   
 cp title title.5
 sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.5
-sed -i '11c# Number of blocked domains:  '$(wc -l lite_host_dnsmasq.conf)' ' title.5  
+sed -i '11c# Number of blocked domains:  '$(wc -l lite_dnsmasq.conf)' ' title.5  
+cp title title.7
+sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.7
+sed -i '11c# Number of blocked domains:  '$(wc -l lite_smartdns.conf)' ' title.7  
+
 
 cat host >>title.2
 cat adblocker >>title.4
-cat host_dnsmasq.conf >>title.6
+cat dnsmasq.conf >>title.6
+cat smartdns.conf >>title.8
 
 cat lite_host >>title.1
 cat lite_adblocker >>title.3
-cat lite_host_dnsmasq.conf >>title.5
+cat lite_dnsmasq.conf >>title.5
+cat lite_smartdns.conf >>title.7
 
-rm -f host adblocker host_dnsmasq.conf lite_host lite_adblocker lite_host_dnsmasq.conf deadallow deadblock allow lite_block block
+rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf deadallow deadblock allow lite_block block
 
 mv title.2 host
 mv title.4 adblocker
-mv title.6 host_dnsmasq.conf
+mv title.6 dnsmasq.conf
+mv title.8 smartdns.conf
 
 mv title.1 lite_host
 mv title.3 lite_adblocker
-mv title.5 lite_host_dnsmasq.conf
+mv title.5 lite_dnsmasq.conf
+mv title.7 lite_smartdns.conf
 
 echo " "
 echo "Done!"
