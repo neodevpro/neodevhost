@@ -3,7 +3,7 @@
 echo " "
 echo "Clean..."
 
-rm -f host lite_host block lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock check allow
+rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock checkallow smartdns.conf lite_smartdns.conf
 
 echo " "
 echo "Merge allow..."
@@ -155,7 +155,7 @@ sed -i '22cTotal deadallow list 失效允许广告域名： '$(wc -l deadallow)'
 sed -i '24cUpdate 更新时间: '$(date "+%Y-%m-%d")'' README.md
 
 sed -i '54cNumber of Domain 域名数目： '$(wc -l host)' ' README.md
-sed -i '63cNumber of Domain 域名数目： '$(wc -l lite_host)' ' README.md
+sed -i '65cNumber of Domain 域名数目： '$(wc -l lite_host)' ' README.md
 
  
 cp title title.2
@@ -195,7 +195,7 @@ cat lite_adblocker >>title.3
 cat lite_dnsmasq.conf >>title.5
 cat lite_smartdns.conf >>title.7
 
-rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf deadallow deadblock allow lite_block block
+rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf deadallow deadblock allow lite_block block smartdns.conf lite_smartdns.conf
 
 mv title.2 host
 mv title.4 adblocker
