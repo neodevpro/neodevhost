@@ -24,7 +24,7 @@ Total deadallow list 失效允许广告域名： 103
 Update 更新时间: 2021-11-21
 ```
 ### UPTODATE 保持最新<br/>
-    Merge everyhours　每小时更新
+    Merge every day　每天更新
 ### POWERFUL　 强大有效<br/>
     To block all ad / tracking  有效拦截广告追踪　
 ### FRIENDLY　友善使用<br/>
