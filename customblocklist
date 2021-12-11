@@ -38,8 +38,6 @@ cdn.luckyorange.com
 w1.luckyorange.com
 browser.sentry-cdn.com
 ads.facebook.com
-data.mistat.xiaomi.com
-tracking.miui.com
 tracking.miui.com
 samsung-com.112.2o7.net
 
@@ -80,3 +78,11 @@ d.reddit.com
 appmetrica.yandex.com
 yandexadexchange.net
 business.samsungusa.com
+
+mediavisor.doubleclick.net
+affiliationjs.s3.amazonaws.com
+advertising-api-eu.amazon.com
+app.bugsnag.com
+metrics1.data.hicloud.com
+metrics2.data.hicloud.com
+metrics5.data.hicloud.com 
