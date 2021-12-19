@@ -157,7 +157,7 @@ sed -i '22cTotal deadallow list 失效允许广告域名： '$(wc -l deadallow)'
 sed -i '24cUpdate 更新时间: '$(date "+%Y-%m-%d")'' README.md
 
 sed -i '54cNumber of Domain 域名数目： '$(wc -l domain)' ' README.md
-sed -i '65cNumber of Domain 域名数目： '$(wc -l lite_domain)' ' README.md
+sed -i '66cNumber of Domain 域名数目： '$(wc -l lite_domain)' ' README.md
 
  
 cp title title.2
