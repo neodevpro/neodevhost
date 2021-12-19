@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2021-12-18
+# Last update: 2021-12-19
 #
-# Number of blocked domains:  136233
+# Number of blocked domains:  136262
 #
 #=====================================
 0.0.0.0  0-132.net.daraz.com
@@ -11177,6 +11177,7 @@
 0.0.0.0  aip.actonservice.com
 0.0.0.0  aipmedia.com
 0.0.0.0  aipofeem.net
+0.0.0.0  aiptu.cn
 0.0.0.0  aiqruwinhkrxk.xyz
 0.0.0.0  aiqua-config.c.appier.net
 0.0.0.0  aiqua-sdk.c.appier.net
@@ -18045,8 +18046,10 @@
 0.0.0.0  beiven.pw
 0.0.0.0  beiwaicd.com
 0.0.0.0  beiwc.com
+0.0.0.0  beiwf.com
 0.0.0.0  beiwh.com
 0.0.0.0  beiwm.com
+0.0.0.0  beiwz.com
 0.0.0.0  beixbw.cn
 0.0.0.0  beixcw.cn
 0.0.0.0  beiyc.com
@@ -19213,6 +19216,7 @@
 0.0.0.0  bkrkv.com
 0.0.0.0  bkrntr.netmng.com
 0.0.0.0  bkrtx.com
+0.0.0.0  bksijiunc.com
 0.0.0.0  bksoup.v.qq.com
 0.0.0.0  bkt.clouddn.com
 0.0.0.0  bktr2-06hdl.ads.tremorhub.com
@@ -20571,6 +20575,7 @@
 0.0.0.0  bts05.site
 0.0.0.0  bts2dvz.taguiginfo.com
 0.0.0.0  btsaffiliations.com
+0.0.0.0  btser.cn
 0.0.0.0  btsernmanets.weebly.com
 0.0.0.0  btserve.com
 0.0.0.0  btssy.net
@@ -21483,6 +21488,7 @@
 0.0.0.0  c04.adsummos.net
 0.0.0.0  c0563.com
 0.0.0.0  c0594.com
+0.0.0.0  c09.xyz
 0.0.0.0  c0c.xyz
 0.0.0.0  c0i.ckoi.com
 0.0.0.0  c0metome.com
@@ -28749,6 +28755,7 @@
 0.0.0.0  csxmhkahpy9y6cwwr.ay.delivery
 0.0.0.0  csxsyp.cn
 0.0.0.0  csxvsd.cn
+0.0.0.0  csyfe.com
 0.0.0.0  csyn-r.cxense.com
 0.0.0.0  csyn.cxense.com
 0.0.0.0  csync.loopme.me
@@ -30988,6 +30995,7 @@
 0.0.0.0  d3hs51abvkuanv.cloudfront.net
 0.0.0.0  d3htmfkawd0yq.cloudfront.net
 0.0.0.0  d3hw0n2j9oa7eo.cloudfront.net
+0.0.0.0  d3hyoy1d16gfg0.cloudfront.net
 0.0.0.0  d3i34lp0la2dpk.cloudfront.net
 0.0.0.0  d3i5vr4re6dmxd.cloudfront.net
 0.0.0.0  d3i729001rrtd7.cloudfront.net
@@ -31558,6 +31566,7 @@
 0.0.0.0  dalianhengtai.com
 0.0.0.0  dalianruosen.com
 0.0.0.0  daliantong.com.cn
+0.0.0.0  dalingjia.ren
 0.0.0.0  dalj98ktasppa.cloudfront.net
 0.0.0.0  dallavel.com
 0.0.0.0  dalmiavihar.com
@@ -34887,7 +34896,6 @@
 0.0.0.0  dpjszs.com
 0.0.0.0  dpkb8wsd5bmct.cloudfront.net
 0.0.0.0  dplastingt.biz
-0.0.0.0  dpm.demdex.net
 0.0.0.0  dpmsrv.com
 0.0.0.0  dppn96depxyay.cloudfront.net
 0.0.0.0  dppnv4z069tpc.cloudfront.net
@@ -42163,6 +42171,7 @@
 0.0.0.0  fqab5xq7qlgt.info
 0.0.0.0  fqbucxkfcya.com
 0.0.0.0  fqceyqo.com
+0.0.0.0  fqcltrhcblpupm.top
 0.0.0.0  fqfqf.com
 0.0.0.0  fqigyr.xyz
 0.0.0.0  fqjgxtyaqftpt.com
@@ -48214,6 +48223,7 @@
 0.0.0.0  hebadu.com
 0.0.0.0  hebdotop.com
 0.0.0.0  hebeixingfei.com
+0.0.0.0  hebeiyichen.com
 0.0.0.0  hebhec.cn
 0.0.0.0  hebiichigo.com
 0.0.0.0  hebkb.cn
@@ -51524,6 +51534,7 @@
 0.0.0.0  immenseh.site
 0.0.0.0  immensehoney.com
 0.0.0.0  immersedcopythinking.com
+0.0.0.0  immf.me
 0.0.0.0  immi360.com
 0.0.0.0  immigrantarchipelagopoetic.com
 0.0.0.0  immigrateignorantdual.com
@@ -54061,6 +54072,7 @@
 0.0.0.0  ipinyou.com
 0.0.0.0  ipinyou.com.cn
 0.0.0.0  ipjackets.com
+0.0.0.0  ipjvrkudtfxwodj.top
 0.0.0.0  ipko-bisznes.com
 0.0.0.0  ipko-biznes-log.com
 0.0.0.0  ipko-biznesbp.com
@@ -56321,6 +56333,7 @@
 0.0.0.0  jyzae.cn
 0.0.0.0  jyzai.cn
 0.0.0.0  jyzaj.cn
+0.0.0.0  jyzap.cn
 0.0.0.0  jyzaw.cn
 0.0.0.0  jyzce.cn
 0.0.0.0  jyzmsy.com.cn
@@ -59706,6 +59719,7 @@
 0.0.0.0  livecamgirls.streamray.com
 0.0.0.0  livechat.oncustomer.asia
 0.0.0.0  livechatinc.org
+0.0.0.0  livecheersharder.com
 0.0.0.0  liveclix.net
 0.0.0.0  livecounter.dk
 0.0.0.0  livecounter.theyosh.nl
@@ -64714,6 +64728,7 @@
 0.0.0.0  mediagauge.com
 0.0.0.0  mediageneral.com
 0.0.0.0  mediaglacier.com
+0.0.0.0  mediago.io
 0.0.0.0  mediagridwork.com
 0.0.0.0  mediaid.click
 0.0.0.0  mediaiexpert.club
@@ -66788,6 +66803,7 @@
 0.0.0.0  mistrzmotywacji.pl
 0.0.0.0  mistydeblasiophotography.com
 0.0.0.0  misunderstanddependableour.com
+0.0.0.0  misunderstandlosingaffluent.com
 0.0.0.0  misusefreeze.com
 0.0.0.0  misxgkvnlf.com
 0.0.0.0  mit.db.com
@@ -66883,6 +66899,7 @@
 0.0.0.0  mkavkaz.ru
 0.0.0.0  mkazanc.com
 0.0.0.0  mkcthehomemarketplace.112.2o7.net
+0.0.0.0  mkdrrqtfnpyw.top
 0.0.0.0  mke2morrow.com
 0.0.0.0  mkec.co.in
 0.0.0.0  mkg.bespinglobal.com
@@ -68045,6 +68062,7 @@
 0.0.0.0  mrvineforum.pk
 0.0.0.0  mrvio.com
 0.0.0.0  mrw.so
+0.0.0.0  mrwen.xyz
 0.0.0.0  mryang.cloud
 0.0.0.0  mrzfjsbjj.com
 0.0.0.0  mrzhifu.net
@@ -72350,6 +72368,7 @@
 0.0.0.0  oia.outdoorindustry.org
 0.0.0.0  oiat.dow.com
 0.0.0.0  oicchina.com
+0.0.0.0  oicode.com
 0.0.0.0  oicssiq.com
 0.0.0.0  oid-csr11.net.zooplus.de
 0.0.0.0  oidah.com
@@ -75936,6 +75955,7 @@
 0.0.0.0  pays-olx.gq
 0.0.0.0  pays38.info
 0.0.0.0  payservice.space
+0.0.0.0  payslipsplunge.com
 0.0.0.0  payslipsprolong.com
 0.0.0.0  payslipsscowl.com
 0.0.0.0  payu-zamowienie901941.pl
@@ -76004,6 +76024,7 @@
 0.0.0.0  pbstck.com
 0.0.0.0  pbterra.com
 0.0.0.0  pbtxt.win
+0.0.0.0  pbxai.com
 0.0.0.0  pc-ads.com
 0.0.0.0  pc-agency24.de
 0.0.0.0  pc-cmsgov-collect.tealiumiq.com
@@ -81575,6 +81596,7 @@
 0.0.0.0  qfs365.com
 0.0.0.0  qfszmlxypcqqyb.com
 0.0.0.0  qfwjclpckrdehi.com
+0.0.0.0  qfxdvti.cn
 0.0.0.0  qfy.innotechx.com
 0.0.0.0  qfzcwlvmhjgjmi.com
 0.0.0.0  qgamsa.com
@@ -81906,6 +81928,7 @@
 0.0.0.0  qttbfdygj.com
 0.0.0.0  qttmjwno.com
 0.0.0.0  qtxxdm.levi.jp
+0.0.0.0  qtzvsufbkpxin.com
 0.0.0.0  quackexclusfdfjd.com
 0.0.0.0  quacksquirrel.com
 0.0.0.0  quad-cleaner.com
@@ -89846,6 +89869,7 @@
 0.0.0.0  sippansy.com
 0.0.0.0  sipulo.katies.com.au
 0.0.0.0  siqwqjza.m.yikanxiaoshuo.net
+0.0.0.0  sirdata.io
 0.0.0.0  siredonlacs.com
 0.0.0.0  sireundermineoperative.com
 0.0.0.0  sirinlabs.co
@@ -104150,6 +104174,7 @@
 0.0.0.0  ujccccb.com
 0.0.0.0  ujian.cc
 0.0.0.0  ujiasm.com
+0.0.0.0  ujjhemhlax.top
 0.0.0.0  ujlvongqbjouubp.xyz
 0.0.0.0  ujm.clr9t.com
 0.0.0.0  ujm.hansel.io
@@ -132556,6 +132581,7 @@
 0.0.0.0  xc.08an.com
 0.0.0.0  xc.gdt.qq.com
 0.0.0.0  xc.macd.cn
+0.0.0.0  xc7789.top
 0.0.0.0  xcads.cn
 0.0.0.0  xcclzs.com
 0.0.0.0  xccpro.vip
@@ -132821,6 +132847,7 @@
 0.0.0.0  xingshenfang.cn
 0.0.0.0  xingtu.net
 0.0.0.0  xingxingdm.com
+0.0.0.0  xingyou46.icu
 0.0.0.0  xingzhu.top
 0.0.0.0  xinhaogong.xyz
 0.0.0.0  xinheshengmce.com
@@ -135398,6 +135425,7 @@
 0.0.0.0  zhangjunying.top
 0.0.0.0  zhangkc.com
 0.0.0.0  zhangshiyuan.com
+0.0.0.0  zhangtiantian.cc
 0.0.0.0  zhangxinzhixun.com
 0.0.0.0  zhangyiqian.top
 0.0.0.0  zhangyumo.top
@@ -135426,6 +135454,7 @@
 0.0.0.0  zhengyejixie.com
 0.0.0.0  zhengyuanguojimc.com
 0.0.0.0  zhengzhoupengbo.com
+0.0.0.0  zhenxinchicken.xyz
 0.0.0.0  zhenxingkuangchanpin.com
 0.0.0.0  zherimo.ru
 0.0.0.0  zhggw.dre8.com
