@@ -62,7 +62,7 @@ SmartDNS | SmartDNS |[link](https://raw.githubusercontent.com/neodevpro/neodevho
 Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain)
 
 ### Lite version (Without Dead Domain inside) 精简版（不包含过期域名）：
-
+Number of Domain 域名数目： 136262
 Number of Domain 域名数目： 136262
 
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
