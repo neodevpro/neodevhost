@@ -8,7 +8,7 @@
 #
 # Last update: 2021-12-25
 #
-# Number of blocked domains:  137063
+# Number of blocked domains:  137073
 #
 #=====================================
 ||0-132.net.daraz.com^
@@ -35932,6 +35932,7 @@
 ||dzais.com^
 ||dzansin.com^
 ||dzbrr144kh0m6.cloudfront.net^
+||dzc-metrics.mzstatic.com^
 ||dzctkjj.cn^
 ||dzd9.cn^
 ||dzfkr6hihj9by.cloudfront.net^
@@ -40967,8 +40968,10 @@
 ||feedaty.com^
 ||feedback.adrecover.com^
 ||feedback.cn.ronghub.com^
+||feedback.search.microsoft.com^
 ||feedback.uc.cn^
 ||feedback.vegasgoldenknights.com^
+||feedback.windows.com^
 ||feedbackexplorer.com^
 ||feedbackresearch.com^
 ||feedblitz.com^
@@ -65960,6 +65963,7 @@
 ||metrics.dallasnews.com^
 ||metrics.damart.fr^
 ||metrics.darty.com^
+||metrics.data.hicloud.com^
 ||metrics.datafeedtoolbox.com^
 ||metrics.dcshoes.com^
 ||metrics.defenseone.com^
@@ -66669,7 +66673,9 @@
 ||metrics1.thankyou.com^
 ||metrics2.data.hicloud.com^
 ||metrics2.houselogic.com^
+||metrics3.data.hicloud.com^
 ||metrics34.com^
+||metrics4.data.hicloud.com^
 ||metrics5.data.hicloud.com^
 ||metricscollector.lp.xcal.tv^
 ||metricsdirect.com^
@@ -68641,6 +68647,7 @@
 ||msite.baidu.com^
 ||mskjf.com^
 ||mslinks-downloads.com^
+||msmetrics-test.ws.sonos.com^
 ||msmetrics.ws.sonos.com^
 ||msmobiles.de.intellitxt.com^
 ||msn-cdn.effectivemeasure.net^
@@ -80512,6 +80519,7 @@
 ||prod.justpremium.com^
 ||prod.leanplum.com^
 ||prod.letswinstuff.com^
+||prod.nexusrules.live.com.akadns.net^
 ||prod.search.deployads.com^
 ||prod.sift.co^
 ||prod.untd.com^
@@ -89427,6 +89435,7 @@
 ||setting.rayjump.com^
 ||setting.snswin.qq.com^
 ||settings-win-ppe.data.microsoft.com^
+||settings-win.data.microsoft.com^
 ||settings.luckyorange.net^
 ||settingsfd-geo.trafficmanager.net^
 ||settlehorizon.com^
@@ -107511,6 +107520,7 @@
 ||vorrireer.com^
 ||vorseh.com^
 ||vortex-win-sandbox.data.microsoft.com^
+||vortex.data.microsoft.com.akadns.net^
 ||vortex.data.msn.com^
 ||vortex.hulu.com^
 ||vote.sparklit.com^

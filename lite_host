@@ -8,7 +8,7 @@
 #
 # Last update: 2021-12-25
 #
-# Number of blocked domains:  137063
+# Number of blocked domains:  137073
 #
 #=====================================
 0.0.0.0  0-132.net.daraz.com
@@ -35932,6 +35932,7 @@
 0.0.0.0  dzais.com
 0.0.0.0  dzansin.com
 0.0.0.0  dzbrr144kh0m6.cloudfront.net
+0.0.0.0  dzc-metrics.mzstatic.com
 0.0.0.0  dzctkjj.cn
 0.0.0.0  dzd9.cn
 0.0.0.0  dzfkr6hihj9by.cloudfront.net
@@ -40967,8 +40968,10 @@
 0.0.0.0  feedaty.com
 0.0.0.0  feedback.adrecover.com
 0.0.0.0  feedback.cn.ronghub.com
+0.0.0.0  feedback.search.microsoft.com
 0.0.0.0  feedback.uc.cn
 0.0.0.0  feedback.vegasgoldenknights.com
+0.0.0.0  feedback.windows.com
 0.0.0.0  feedbackexplorer.com
 0.0.0.0  feedbackresearch.com
 0.0.0.0  feedblitz.com
@@ -65960,6 +65963,7 @@
 0.0.0.0  metrics.dallasnews.com
 0.0.0.0  metrics.damart.fr
 0.0.0.0  metrics.darty.com
+0.0.0.0  metrics.data.hicloud.com
 0.0.0.0  metrics.datafeedtoolbox.com
 0.0.0.0  metrics.dcshoes.com
 0.0.0.0  metrics.defenseone.com
@@ -66669,7 +66673,9 @@
 0.0.0.0  metrics1.thankyou.com
 0.0.0.0  metrics2.data.hicloud.com
 0.0.0.0  metrics2.houselogic.com
+0.0.0.0  metrics3.data.hicloud.com
 0.0.0.0  metrics34.com
+0.0.0.0  metrics4.data.hicloud.com
 0.0.0.0  metrics5.data.hicloud.com
 0.0.0.0  metricscollector.lp.xcal.tv
 0.0.0.0  metricsdirect.com
@@ -68641,6 +68647,7 @@
 0.0.0.0  msite.baidu.com
 0.0.0.0  mskjf.com
 0.0.0.0  mslinks-downloads.com
+0.0.0.0  msmetrics-test.ws.sonos.com
 0.0.0.0  msmetrics.ws.sonos.com
 0.0.0.0  msmobiles.de.intellitxt.com
 0.0.0.0  msn-cdn.effectivemeasure.net
@@ -80512,6 +80519,7 @@
 0.0.0.0  prod.justpremium.com
 0.0.0.0  prod.leanplum.com
 0.0.0.0  prod.letswinstuff.com
+0.0.0.0  prod.nexusrules.live.com.akadns.net
 0.0.0.0  prod.search.deployads.com
 0.0.0.0  prod.sift.co
 0.0.0.0  prod.untd.com
@@ -89427,6 +89435,7 @@
 0.0.0.0  setting.rayjump.com
 0.0.0.0  setting.snswin.qq.com
 0.0.0.0  settings-win-ppe.data.microsoft.com
+0.0.0.0  settings-win.data.microsoft.com
 0.0.0.0  settings.luckyorange.net
 0.0.0.0  settingsfd-geo.trafficmanager.net
 0.0.0.0  settlehorizon.com
@@ -107511,6 +107520,7 @@
 0.0.0.0  vorrireer.com
 0.0.0.0  vorseh.com
 0.0.0.0  vortex-win-sandbox.data.microsoft.com
+0.0.0.0  vortex.data.microsoft.com.akadns.net
 0.0.0.0  vortex.data.msn.com
 0.0.0.0  vortex.hulu.com
 0.0.0.0  vote.sparklit.com
