@@ -123,6 +123,7 @@ Adguard | [link](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 Ad-wars | [link](https://github.com/jdlingyu/ad-wars)
 Anti-ad | [link](https://github.com/privacy-protection-tools/anti-AD)
 StevenBlack | [link](https://github.com/StevenBlack/hosts)
+Energized Protection | [link](https://github.com/EnergizedProtection/block)
 
 ## Sources of Allowlist 允许名单
 Allowlist | Link  
@@ -130,6 +131,7 @@ Allowlist | Link
 AnudeepND | [link](https://github.com/anudeepND/whitelist)
 Ultimate-Hosts-Blacklist | [link](https://github.com/Ultimate-Hosts-Blacklist/whitelist)
 Yhosts | [link](https://github.com/VeleSila/yhosts)
+Energized Protection | [link](https://github.com/EnergizedProtection/unblock)
 
 ## Dead Domain List 过期域名名单
 Allowlist | Link  
