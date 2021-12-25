@@ -3,7 +3,7 @@
 echo " "
 echo "Clean..."
 
-rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock checkallow smartdns.conf lite_smartdns.conf doamin lite_domain
+rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock checkallow smartdns.conf lite_smartdns.conf doamin lite_domain allow
 
 echo " "
 echo "Merge allow..."
@@ -208,7 +208,7 @@ cat lite_dnsmasq.conf >>title.5
 cat lite_smartdns.conf >>title.7
 cat lite_domain >>title.9
 
-rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf deadallow deadblock allow lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain
+rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf deadallow deadblock lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain
 
 mv title.2 host
 mv title.4 adblocker
