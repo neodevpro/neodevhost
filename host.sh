@@ -17,16 +17,16 @@ sed -i '/]/d' tmpallow
 sed -i '/#/d' tmpallow
 sed -i '/\!/d' tmpallow
 sed -i 's/127.0.0.1 //' tmpallow
-sed -i 's/https:\/\///' tmpallow
-sed -i 's/http:\/\///' tmpallow
-sed -i 's/pp助手淘宝登录授权拉起//' tmpallow
-sed -i 's/只要有这一条，//' tmpallow
-sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' tmpallow
-sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' tmpallow
-sed -i '/address/d' tmpallow
-sed -i '/REG ^/d' tmpallow
-sed -i '/RZD/d' tmpallow
-sed -i 's/ALL ./ /g' tmpallow
+#sed -i 's/https:\/\///' tmpallow
+#sed -i 's/http:\/\///' tmpallow
+#sed -i 's/pp助手淘宝登录授权拉起//' tmpallow
+#sed -i 's/只要有这一条，//' tmpallow
+#sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' tmpallow
+#sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' tmpallow
+#sed -i '/address/d' tmpallow
+#sed -i '/REG ^/d' tmpallow
+#sed -i '/RZD/d' tmpallow
+#sed -i 's/ALL ./ /g' tmpallow
 sed -i '/^$/d' tmpallow
 sed -i s/[[:space:]]//g tmpallow
 sort -u tmpallow > allow
@@ -58,24 +58,25 @@ sed -i '/}/d' tmpblock
 sed -i '/\!/d' tmpblock
 sed -i 's/@@//' tmpblock
 sed -i 's/*//' tmpblock
+sed -i 's/0.0.0.0 0.0.0.0//' tmpblock
 sed -i 's/0.0.0.0 //' tmpblock
-sed -i 's/0.0.0.0//' tmpblock
+#sed -i 's/0.0.0.0//' tmpblock
 sed -i 's/127.0.0.1 //' tmpblock
-sed -i 's/||//' tmpblock
-sed -i 's/\^adshow//' tmpblock
-sed -i 's/\^showAd//' tmpblock
-sed -i 's/\^ad//' tmpblock
-sed -i 's/\^tracker\^//' tmpblock
-sed -i 's/:443//' tmpblock
-sed -i 's/\^//' tmpblock
-sed -i 's/|//' tmpblock
-sed -i 's/$important//' tmpblock
-sed -i 's/$badfilter//' tmpblock
-sed -i 's/:://' tmpblock
-sed -i 's/:\/\///' tmpblock
-sed -i 's/^\.//' tmpblock
-sed -i 's/^\-//' tmpblock
-sed -i 's/:\/\///' tmpblock
+#sed -i 's/||//' tmpblock
+#sed -i 's/\^adshow//' tmpblock
+#sed -i 's/\^showAd//' tmpblock
+#sed -i 's/\^ad//' tmpblock
+#sed -i 's/\^tracker\^//' tmpblock
+#sed -i 's/:443//' tmpblock
+#sed -i 's/\^//' tmpblock
+#sed -i 's/|//' tmpblock
+#sed -i 's/$important//' tmpblock
+#sed -i 's/$badfilter//' tmpblock
+#sed -i 's/:://' tmpblock
+#sed -i 's/:\/\///' tmpblock
+#sed -i 's/^\.//' tmpblock
+#sed -i 's/^\-//' tmpblock
+#sed -i 's/:\/\///' tmpblock
 sed -i '/*/d' tmpblock
 sed -i '/^$/d' tmpblock
 sed -i s/[[:space:]]//g tmpblock
