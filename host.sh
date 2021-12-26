@@ -13,10 +13,10 @@ for url in `cat allowlist` ;do
     rm -f tmp
 done
 
-sed -i '/]/d' tmpallow
+#sed -i '/]/d' tmpallow
 sed -i '/#/d' tmpallow
-sed -i '/\!/d' tmpallow
-sed -i 's/127.0.0.1 //' tmpallow
+#sed -i '/\!/d' tmpallow
+#sed -i 's/127.0.0.1 //' tmpallow
 #sed -i 's/https:\/\///' tmpallow
 #sed -i 's/http:\/\///' tmpallow
 #sed -i 's/pp助手淘宝登录授权拉起//' tmpallow
@@ -24,9 +24,9 @@ sed -i 's/127.0.0.1 //' tmpallow
 #sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' tmpallow
 #sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' tmpallow
 #sed -i '/address/d' tmpallow
-#sed -i '/REG ^/d' tmpallow
-#sed -i '/RZD/d' tmpallow
-#sed -i 's/ALL ./ /g' tmpallow
+sed -i '/REG ^/d' tmpallow
+sed -i '/RZD/d' tmpallow
+sed -i 's/ALL ./ /g' tmpallow
 sed -i '/^$/d' tmpallow
 sed -i s/[[:space:]]//g tmpallow
 sort -u tmpallow > allow
@@ -49,15 +49,27 @@ for url in `cat blocklist` ;do
 done
 
 sed -i '/#/d' tmpblock
-sed -i '/255.255.255.255/d' tmpblock
-sed -i '/ip6-/d' tmpblock
-sed -i '/local/d' tmpblock
-sed -i '/{/d' tmpblock
-sed -i '/]/d' tmpblock
-sed -i '/}/d' tmpblock
-sed -i '/\!/d' tmpblock
-sed -i 's/@@//' tmpblock
-sed -i 's/*//' tmpblock
+sed -i '/127.0.0.1 localhost.localdomain/d' tmpblock
+sed -i '/127.0.0.1 localhost/d' tmpblock
+sed -i '/127.0.0.1 local/d' tmpblock
+sed -i '/::1 localhost/d' tmpblock
+sed -i '/::1 ip6-localhost/d' tmpblock
+sed -i '/::1 ip6-loopback/d' tmpblock
+sed -i '/fe80::1%lo0 localhost/d' tmpblock
+sed -i '/ff00::0 ip6-localnet/d' tmpblock
+sed -i '/ff00::0 ip6-mcastprefix/d' tmpblock
+sed -i '/ff02::1 ip6-allnodes/d' tmpblock
+sed -i '/ff02::2 ip6-allrouters/d' tmpblock
+sed -i '/ff02::3 ip6-allhosts/d' tmpblock
+sed -i '/255.255.255.255 broadcasthost/d' tmpblock
+#sed -i '/ip6-/d' tmpblock
+#sed -i '/local/d' tmpblock
+#sed -i '/{/d' tmpblock
+#sed -i '/]/d' tmpblock
+#sed -i '/}/d' tmpblock
+#sed -i '/\!/d' tmpblock
+#sed -i 's/@@//' tmpblock
+#sed -i 's/*//' tmpblock
 sed -i 's/0.0.0.0 0.0.0.0//' tmpblock
 sed -i 's/0.0.0.0 //' tmpblock
 #sed -i 's/0.0.0.0//' tmpblock
