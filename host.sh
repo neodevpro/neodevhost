@@ -38,10 +38,10 @@ rm -f tmpallow
 echo " "
 echo "Check Dead Allow..."
 cp allow checkallow
-#wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/neodevpro/dead-allow/master/deadallow
-#sort -n allow deadallow deadallow | uniq -u > tmp && mv tmp tmpallow
-#sort -u tmpallow > allow
-#rm -f tmpallow
+wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/neodevpro/dead-allow/master/deadallow
+sort -n allow deadallow deadallow | uniq -u > tmp && mv tmp tmpallow
+sort -u tmpallow > allow
+rm -f tmpallow
 
 echo " "
 echo "Merge block..."
