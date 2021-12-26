@@ -24,6 +24,9 @@ sed -i '/#/d' tmpallow
 #sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' tmpallow
 #sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' tmpallow
 #sed -i '/address/d' tmpallow
+## special case fix ##
+sed -i '/live.fc2.com/d' allow
+## special case fix ##
 sed -i '/REG ^/d' tmpallow
 sed -i '/RZD/d' tmpallow
 sed -i 's/ALL ./ /g' tmpallow
