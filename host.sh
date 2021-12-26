@@ -25,7 +25,7 @@ sed -i '/#/d' tmpallow
 #sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' tmpallow
 #sed -i '/address/d' tmpallow
 ## special case fix ##
-sed -i '/live.fc2.com/d' allow
+sed -i '/live.fc2.com/d' tmpallow
 ## special case fix ##
 sed -i '/REG ^/d' tmpallow
 sed -i '/RZD/d' tmpallow
