@@ -130,7 +130,6 @@ Allowlist | Link
 --------- |:-------------:
 AnudeepND | [link](https://github.com/anudeepND/whitelist)
 Ultimate-Hosts-Blacklist | [link](https://github.com/Ultimate-Hosts-Blacklist/whitelist)
-Yhosts | [link](https://github.com/VeleSila/yhosts)
 Energized Protection | [link](https://github.com/EnergizedProtection/unblock)
 
 ## Dead Domain List 过期域名名单
