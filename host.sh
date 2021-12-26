@@ -62,6 +62,8 @@ sed -i '/ff02::1 ip6-allnodes/d' tmpblock
 sed -i '/ff02::2 ip6-allrouters/d' tmpblock
 sed -i '/ff02::3 ip6-allhosts/d' tmpblock
 sed -i '/255.255.255.255 broadcasthost/d' tmpblock
+sed -i '/0.0.0.0 0.0.0.0/d' tmpblock
+
 #sed -i '/ip6-/d' tmpblock
 #sed -i '/local/d' tmpblock
 #sed -i '/{/d' tmpblock
@@ -70,7 +72,6 @@ sed -i '/255.255.255.255 broadcasthost/d' tmpblock
 #sed -i '/\!/d' tmpblock
 #sed -i 's/@@//' tmpblock
 #sed -i 's/*//' tmpblock
-sed -i 's/0.0.0.0 0.0.0.0//' tmpblock
 sed -i 's/0.0.0.0 //' tmpblock
 #sed -i 's/0.0.0.0//' tmpblock
 sed -i 's/127.0.0.1 //' tmpblock
