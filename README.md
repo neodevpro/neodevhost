@@ -124,6 +124,8 @@ Ad-wars | [link](https://github.com/jdlingyu/ad-wars)
 Anti-ad | [link](https://github.com/privacy-protection-tools/anti-AD)
 StevenBlack | [link](https://github.com/StevenBlack/hosts)
 Energized Protection | [link](https://github.com/EnergizedProtection/block)
+Hblock | [link](https://hblock.molinero.dev)
+
 
 ## Sources of Allowlist 允许名单
 Allowlist | Link  
