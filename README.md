@@ -21,7 +21,7 @@ Total deadblock list 失效屏蔽广告域名： 25471
 
 Total deadallow list 失效允许广告域名： 1106
 
-Update 更新时间: 2022-01-27
+Update 更新时间: 2022-01-28
 ```
 ### UPTODATE 保持最新<br/>
     Merge every day　每天更新
