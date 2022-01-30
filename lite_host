@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2022-01-29
+# Last update: 2022-01-30
 #
-# Number of blocked domains:  143841
+# Number of blocked domains:  143840
 #
 #=====================================
 0.0.0.0  .weixingshexiangji.net
@@ -91483,7 +91483,6 @@
 0.0.0.0  sg-trc-events.taboola.com
 0.0.0.0  sg-vid-events.taboola.com
 0.0.0.0  sg-wf.taboola.com
-0.0.0.0  sg.a.stat.mi.com
 0.0.0.0  sg.adserver.yahoo.com
 0.0.0.0  sg.c.appier.net
 0.0.0.0  sg.cityads.com
