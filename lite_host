@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2022-02-14
+# Last update: 2022-02-15
 #
-# Number of blocked domains:  141828
+# Number of blocked domains:  141826
 #
 #=====================================
 0.0.0.0  .weixingshexiangji.net
@@ -12136,6 +12136,7 @@
 0.0.0.0  analytics.cynapse.com
 0.0.0.0  analytics.data.lloydsbankinggroup.com
 0.0.0.0  analytics.datahc.com
+0.0.0.0  analytics.dealmoon.com
 0.0.0.0  analytics.designspiration.com
 0.0.0.0  analytics.deutscher-apotheker-verlag.de
 0.0.0.0  analytics.dev.htmedia.in
@@ -34237,7 +34238,6 @@
 0.0.0.0  dowjones.hb.omtrdc.net
 0.0.0.0  dowmarkets.com
 0.0.0.0  down.360.cn
-0.0.0.0  down.360safe.com
 0.0.0.0  down.91wangmeng.com
 0.0.0.0  down.dashendown.com
 0.0.0.0  down.diannaodian.com
@@ -59719,7 +59719,6 @@
 0.0.0.0  live-cams-5.livejasmin.com
 0.0.0.0  live-en.com
 0.0.0.0  live-tag.bannersnack.com
-0.0.0.0  live-trace.bilibili.com
 0.0.0.0  live.alljobs.co.il
 0.0.0.0  live.chartboost.com
 0.0.0.0  live.cxo.name
@@ -59738,7 +59737,6 @@
 0.0.0.0  live1powerlife.com
 0.0.0.0  live24info.rf.gd
 0.0.0.0  live4sport.net
-0.0.0.0  live800.com
 0.0.0.0  livead.jp
 0.0.0.0  liveadexchanger.com
 0.0.0.0  liveadoptimizer.com
