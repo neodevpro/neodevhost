@@ -6,7 +6,7 @@ echo "Clean..."
 sort -u customallowlist > customallowlist
 
 
-sort -u customblocklist > customblocklist
+sort -u customblocklist%0D > customblocklist
 
 
 echo " "
