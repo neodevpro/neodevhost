@@ -3,13 +3,11 @@
 echo " "
 echo "Clean..."
 
-sort -u customallowlist > customallowlist.temp
-rm -f customallowlist
-mv customallowlist.temp customallowlist
+sort -u customallowlist > customallowlist
 
-sort -u customblocklist > customblocklist.temp
-rm -f customblocklist
-mv customblocklist.temp customblocklist
+
+sort -u customblocklist > customblocklist
+
 
 echo " "
 echo "Done..."
