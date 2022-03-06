@@ -2,6 +2,7 @@ active.tc.skysrt.com
 ad2.plugmedia.hk
 adclick.g.doubleclick.net
 ads.facebook.com
+ads.google.com
 ads.pinterest.com
 ads.superad.cc
 ads.xfastest.com
@@ -20,7 +21,6 @@ api.device.skysrt.com
 api.hoisin.hw.coocaatv.com
 api.tvinfo.skysrt.com
 api.upgrade.skysrt.com
-api.upgrade.skysrt.com/tv
 apk.sky.fs.skysrt.com
 app.bugsnag.com
 app.getsentry.com
@@ -52,9 +52,11 @@ e.av924.com
 feedback.search.microsoft.com
 feedback.windows.com
 gallery.pandora.xiaomi.com
+globalapi.ad.xiaomi.com
 go.onelink.me
 gvod.aiseejapp.atianqi.com
 hoisin.coocaatv.com
+hotjar.com
 i1.services.social.microsoft.com
 insights.samsung.com
 jellyfish.pandora.xiaomi.com
@@ -78,11 +80,13 @@ metrics5.data.hicloud.com
 metrics5.data.hicloud.com 
 mishop.pandora.xiaomi.com
 movie.tc.skysrt.com
+mouseflow.com
 msmetrics-test.ws.sonos.com
 msmetrics.ws.sonos.com
 nmetrics.samsung.com
 o2o.api.xiaomi.com
 onecollector.cloudapp.aria.akadns.net
+open.oneplus.net
 passport.coocaa.com
 pay.coocaa.com
 prod.nexusrules.live.com.akadns.net
