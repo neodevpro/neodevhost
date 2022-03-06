@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2022-03-05
+# Last update: 2022-03-06
 #
-# Number of blocked domains:  140235
+# Number of blocked domains:  140234
 #
 #=====================================
 0.0.0.0  .weixingshexiangji.net
@@ -13683,7 +13683,6 @@
 0.0.0.0  api.uniplayad.com
 0.0.0.0  api.unthem.com
 0.0.0.0  api.upgrade.skysrt.com
-0.0.0.0  api.upgrade.skysrt.com/tv
 0.0.0.0  api.uprivaladserver.net
 0.0.0.0  api.us-east-1.aiv-delivery.net
 0.0.0.0  api.usabilla.com
