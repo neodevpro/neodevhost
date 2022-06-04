@@ -67,7 +67,7 @@ sed -i '/ip6-mcastprefix/d' tmpblock
 sed -i '/broadcasthost/d' tmpblock
 sed -i '/ip6-loopback/d' tmpblock
 sed -i '/0.0.0.0 0.0.0.0/d' tmpblock
-sed -i 's/::1 localhost' tmpblock
+sed -i '/::1 localhost/d' tmpblock
 sed -i 's/0.0.0.0 //' tmpblock
 sed -i 's/127.0.0.1 //' tmpblock
 sed -i '/@/d' tmpblock
