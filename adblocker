@@ -8,7 +8,7 @@
 #
 # Last update: 2022-06-04
 #
-# Number of blocked domains:  118897
+# Number of blocked domains:  118876
 #
 #=====================================
 ||0-132.net.daraz.com^
@@ -20,6 +20,10 @@
 ||0-infotrac.net.daraz.com^
 ||0-partner.net.daraz.com^
 ||0-transit.net.zooplus.de^
+||0.0.0.0^
+||0.0.0.0.beeglivesex.com^
+||0.0.0.0.creative.hpyrdr.com^
+||0.0.0.0.hpyrdr.com^
 ||0.github.net.zooplus.de^
 ||0.net.daraz.com^
 ||0.net.zooplus.it^
@@ -626,6 +630,8 @@
 ||090-078.net.daraz.com^
 ||0900-telefonerotik.de^
 ||090334.space^
+||09040102navigation.net.daraz.com^
+||090906042103.c.mystat-in.net^
 ||092706152958.c.mystat-in.net^
 ||098-validate-binary-search-tree.net.daraz.com^
 ||09_19.supfree.net^
@@ -1050,7 +1056,6 @@
 ||1-interia.azureedge.net^
 ||1-koreastrologie.net.daraz.com^
 ||1-lib-oa-1.net.daraz.com^
-||1-localhost.net.daraz.com^
 ||1-makedb.net.daraz.com^
 ||1-marketing.net.daraz.com^
 ||1-onet.azureedge.net^
@@ -2365,7 +2370,6 @@
 ||1lab3-games.net.daraz.com^
 ||1link2020.com^
 ||1lnvyeq0suwvn9jn.net.daraz.com^
-||1localhost.net.daraz.com^
 ||1login-wp.pl^
 ||1man1jar.org^
 ||1man2needles.com^
@@ -2455,7 +2459,6 @@
 ||2-interia.azureedge.net^
 ||2-lib-ln-2.net.daraz.com^
 ||2-lib-oa-2.net.daraz.com^
-||2-localhost.net.daraz.com^
 ||2-marketing.net.daraz.com^
 ||2-mono-development-build.net.daraz.com^
 ||2-morse-code-signaller.net.daraz.com^
@@ -2754,7 +2757,6 @@
 ||254.c752sa3k9oeb2eg2ehpgc8fnhkeyyyyyn.domsearch.net^
 ||2542116.fls.doubleclick.net^
 ||255.190.c752sa3k9oeb2eg2ehpgc8fnhkeyyyyyn.domsearch.net^
-||255.255.255.255broadcasthost^
 ||2560.fd.mobile.tv.sms13.de^
 ||257639.com^
 ||2578.api.swrve.com^
@@ -4333,8 +4335,6 @@
 ||9y467u8yz8puc4rl.net.daraz.com^
 ||9yw0kqapzmk3e9ts.net.daraz.com^
 ||9zr0vqn3l61kvl30.net.daraz.com^
-||::1ip6-localhost^
-||::1localhost^
 ||XiaoQiang^
 ||a-5.info^
 ||a-ad.adwo.com^
@@ -6101,7 +6101,6 @@
 ||accion-promocional.ru^
 ||acckalaharinet.112.2o7.net^
 ||acclaro.actonservice.com^
-||acclocalhost.net.daraz.com^
 ||accmetaprotec.com^
 ||accmobiledockersecurity.net.zooplus.de^
 ||accnfreya.net.daraz.com^
@@ -6168,7 +6167,6 @@
 ||accountinging-beta-www.net.zooplus.nl^
 ||accountinging.net.daraz.com^
 ||accountingingclient.net.zooplus.nl^
-||accountinglocalhost.net.daraz.com^
 ||accountingmarketing.net.daraz.com^
 ||accountingobongnet.net.daraz.com^
 ||accountingpatner.net.daraz.com^
@@ -7842,8 +7840,6 @@
 ||adm-car31.net.daraz.com^
 ||adm-csr21.net.daraz.com^
 ||adm-ht-1.net.daraz.com^
-||adm-localhost-partneri.net.daraz.com^
-||adm-localhost.net.daraz.com^
 ||adm-mailassets.net.zooplus.de^
 ||adm-marketing.net.daraz.com^
 ||adm-n-switch.net.daraz.com^
@@ -8032,7 +8028,6 @@
 ||administratorfreya.net.daraz.com^
 ||administratorgadministratort.docker.2lab.net.zooplus.de^
 ||administratoring.net.zooplus.de^
-||administratorlocalhost.net.daraz.com^
 ||administratorr-dw-1.net.daraz.com^
 ||administrators-awsvision.net.daraz.com^
 ||administrators-beta-interaction.net.daraz.com^
@@ -8062,7 +8057,6 @@
 ||administratorsviviotech.net.daraz.com^
 ||administratorwinter.net.daraz.com^
 ||adminlications.net.daraz.com^
-||adminlocalhost.net.daraz.com^
 ||adminmail.net.zooplus.it^
 ||adminmoviemp4hd.net.daraz.com^
 ||adminpartner.net.daraz.com^
@@ -8090,7 +8084,6 @@
 ||adminsesvcgatewayvision.net.daraz.com^
 ||adminsext.net.zooplus.de^
 ||adminshop.com^
-||adminslocalhost.net.daraz.com^
 ||adminsnfreya.net.daraz.com^
 ||adminspartner.net.daraz.com^
 ||adminspartnerevelynn.net.daraz.com^
@@ -12187,7 +12180,6 @@
 ||analytics-ingress-global.bitmovin.com^
 ||analytics-lib-ht-2.net.daraz.com^
 ||analytics-listener.trafficmanager.net^
-||analytics-localhost.net.daraz.com^
 ||analytics-patner.net.daraz.com^
 ||analytics-patnercgi.net.daraz.com^
 ||analytics-phi-nfl.yinzcam.com^
@@ -14940,7 +14932,6 @@
 ||assetscsr21.net.daraz.com^
 ||assetsdockerapi.net.zooplus.de^
 ||assetslib-ln-2.net.daraz.com^
-||assetslocalhost.net.daraz.com^
 ||assetssupport.mobile.api.net.zooplus.de^
 ||assetssupport.vpnapi.net.zooplus.de^
 ||assetssupportadmindata.mail.car40-3.net.zooplus.de^
@@ -16952,7 +16943,6 @@
 ||beta.galleries.paperstreetcash.com^
 ||beta.glenbowcollege.ca^
 ||beta.hotkeys.com^
-||beta.localhost.net.daraz.com^
 ||beta.newopenx.detik.com^
 ||beta.oncustomer.asia^
 ||beta.onfluencer.net^
@@ -34326,7 +34316,6 @@
 ||fwmqki.eckerle.de^
 ||fwmrm.net^
 ||fwvc.adsafeprotected.com^
-||fwwww.localhost.applications.net.daraz.com^
 ||fx.gtop.ro^
 ||fx24options.org^
 ||fxadviceformeandyou.com^
@@ -47634,9 +47623,6 @@
 ||localcamsfinder.com^
 ||localdates19.com^
 ||localh0st.info^
-||localhost.9.net.daraz.com^
-||localhost.accounting.net.daraz.com^
-||localhost.apac.net.daraz.com^
 ||localshutter.store^
 ||localytics.com^
 ||locate.pricespider.com^
@@ -55390,7 +55376,6 @@
 ||nljjem.honeys-onlineshop.com^
 ||nllruakeborckior.com^
 ||nln99engheydgf.bar^
-||nlocalhost.wordtheminer.com^
 ||nlog.baidu.com^
 ||nlp-japan.life-and-mind.com^
 ||nltihf.fashiondays.ro^
@@ -90555,7 +90540,6 @@
 ||www.certified-toolbar.com^
 ||www.certifiedprotradebot.cyou^
 ||www.certifieds-employee-exam.school^
-||www.certlocalhost.applications.net.daraz.com^
 ||www.certoko.xyz^
 ||www.cervan.link^
 ||www.ceryle.pl^
@@ -90619,7 +90603,6 @@
 ||www.chayotesdealtura.com^
 ||www.chcemyschudnac.pl^
 ||www.chckmailabig32.web.app^
-||www.chd-localhost.applications.net.daraz.com^
 ||www.chd.net.daraz.com^
 ||www.cheap-ads.net^
 ||www.cheap-online-stamp.cast.cc^
@@ -93545,7 +93528,6 @@
 ||www.dh7lrn945d1xq.cloudfront.net^
 ||www.dharanamoxor.ga^
 ||www.dhc6wkg91bshz.cloudfront.net^
-||www.dhcmslocalhost.applications.net.daraz.com^
 ||www.dhdx24qjjzwfc.cloudfront.net^
 ||www.dhe09zz3ayx3p.cloudfront.net^
 ||www.dhenr54m.com^
@@ -116722,7 +116704,6 @@
 ||wwwf15.mitsubishielectric.co.jp^
 ||wwwfile.applications.net.daraz.com^
 ||wwwfrontpage.applications.net.daraz.com^
-||wwwgetter.localhost.applications.net.daraz.com^
 ||wwwgh.partner.net.daraz.com^
 ||wwwgitlab.applications.net.daraz.com^
 ||wwwglobal.applications.net.daraz.com^
@@ -116778,7 +116759,6 @@
 ||wwwnetpct.123pago.test1.net.daraz.com^
 ||wwwnettwitch-statickorea0rdc8nnckw6jq3te0vv27mh6.net.daraz.com^
 ||wwwnwa.com^
-||wwwopen.localhost.applications.net.daraz.com^
 ||wwwp.buildingiq.com^
 ||wwwpartner-pay.applications.net.daraz.com^
 ||wwwpaywall.applications.net.daraz.com^
@@ -116793,7 +116773,6 @@
 ||wwwshop-wall-preview-zooplus-at.login-wafarketing.net.zooplus.de^
 ||wwwtarget.com^
 ||wwwtest.partner.net.daraz.com^
-||wwwtrial.localhost.applications.net.daraz.com^
 ||wwwtwa.com^
 ||wwwv.stjohnvic.com.au^
 ||wwww-olx.pl^

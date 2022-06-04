@@ -8,7 +8,7 @@
 #
 # Last update: 2022-06-04
 #
-# Number of blocked domains:  118897
+# Number of blocked domains:  118876
 #
 #=====================================
 0.0.0.0  0-132.net.daraz.com
@@ -20,6 +20,10 @@
 0.0.0.0  0-infotrac.net.daraz.com
 0.0.0.0  0-partner.net.daraz.com
 0.0.0.0  0-transit.net.zooplus.de
+0.0.0.0  0.0.0.0
+0.0.0.0  0.0.0.0.beeglivesex.com
+0.0.0.0  0.0.0.0.creative.hpyrdr.com
+0.0.0.0  0.0.0.0.hpyrdr.com
 0.0.0.0  0.github.net.zooplus.de
 0.0.0.0  0.net.daraz.com
 0.0.0.0  0.net.zooplus.it
@@ -626,6 +630,8 @@
 0.0.0.0  090-078.net.daraz.com
 0.0.0.0  0900-telefonerotik.de
 0.0.0.0  090334.space
+0.0.0.0  09040102navigation.net.daraz.com
+0.0.0.0  090906042103.c.mystat-in.net
 0.0.0.0  092706152958.c.mystat-in.net
 0.0.0.0  098-validate-binary-search-tree.net.daraz.com
 0.0.0.0  09_19.supfree.net
@@ -1050,7 +1056,6 @@
 0.0.0.0  1-interia.azureedge.net
 0.0.0.0  1-koreastrologie.net.daraz.com
 0.0.0.0  1-lib-oa-1.net.daraz.com
-0.0.0.0  1-localhost.net.daraz.com
 0.0.0.0  1-makedb.net.daraz.com
 0.0.0.0  1-marketing.net.daraz.com
 0.0.0.0  1-onet.azureedge.net
@@ -2365,7 +2370,6 @@
 0.0.0.0  1lab3-games.net.daraz.com
 0.0.0.0  1link2020.com
 0.0.0.0  1lnvyeq0suwvn9jn.net.daraz.com
-0.0.0.0  1localhost.net.daraz.com
 0.0.0.0  1login-wp.pl
 0.0.0.0  1man1jar.org
 0.0.0.0  1man2needles.com
@@ -2455,7 +2459,6 @@
 0.0.0.0  2-interia.azureedge.net
 0.0.0.0  2-lib-ln-2.net.daraz.com
 0.0.0.0  2-lib-oa-2.net.daraz.com
-0.0.0.0  2-localhost.net.daraz.com
 0.0.0.0  2-marketing.net.daraz.com
 0.0.0.0  2-mono-development-build.net.daraz.com
 0.0.0.0  2-morse-code-signaller.net.daraz.com
@@ -2754,7 +2757,6 @@
 0.0.0.0  254.c752sa3k9oeb2eg2ehpgc8fnhkeyyyyyn.domsearch.net
 0.0.0.0  2542116.fls.doubleclick.net
 0.0.0.0  255.190.c752sa3k9oeb2eg2ehpgc8fnhkeyyyyyn.domsearch.net
-0.0.0.0  255.255.255.255broadcasthost
 0.0.0.0  2560.fd.mobile.tv.sms13.de
 0.0.0.0  257639.com
 0.0.0.0  2578.api.swrve.com
@@ -4333,8 +4335,6 @@
 0.0.0.0  9y467u8yz8puc4rl.net.daraz.com
 0.0.0.0  9yw0kqapzmk3e9ts.net.daraz.com
 0.0.0.0  9zr0vqn3l61kvl30.net.daraz.com
-0.0.0.0  ::1ip6-localhost
-0.0.0.0  ::1localhost
 0.0.0.0  XiaoQiang
 0.0.0.0  a-5.info
 0.0.0.0  a-ad.adwo.com
@@ -6101,7 +6101,6 @@
 0.0.0.0  accion-promocional.ru
 0.0.0.0  acckalaharinet.112.2o7.net
 0.0.0.0  acclaro.actonservice.com
-0.0.0.0  acclocalhost.net.daraz.com
 0.0.0.0  accmetaprotec.com
 0.0.0.0  accmobiledockersecurity.net.zooplus.de
 0.0.0.0  accnfreya.net.daraz.com
@@ -6168,7 +6167,6 @@
 0.0.0.0  accountinging-beta-www.net.zooplus.nl
 0.0.0.0  accountinging.net.daraz.com
 0.0.0.0  accountingingclient.net.zooplus.nl
-0.0.0.0  accountinglocalhost.net.daraz.com
 0.0.0.0  accountingmarketing.net.daraz.com
 0.0.0.0  accountingobongnet.net.daraz.com
 0.0.0.0  accountingpatner.net.daraz.com
@@ -7842,8 +7840,6 @@
 0.0.0.0  adm-car31.net.daraz.com
 0.0.0.0  adm-csr21.net.daraz.com
 0.0.0.0  adm-ht-1.net.daraz.com
-0.0.0.0  adm-localhost-partneri.net.daraz.com
-0.0.0.0  adm-localhost.net.daraz.com
 0.0.0.0  adm-mailassets.net.zooplus.de
 0.0.0.0  adm-marketing.net.daraz.com
 0.0.0.0  adm-n-switch.net.daraz.com
@@ -8032,7 +8028,6 @@
 0.0.0.0  administratorfreya.net.daraz.com
 0.0.0.0  administratorgadministratort.docker.2lab.net.zooplus.de
 0.0.0.0  administratoring.net.zooplus.de
-0.0.0.0  administratorlocalhost.net.daraz.com
 0.0.0.0  administratorr-dw-1.net.daraz.com
 0.0.0.0  administrators-awsvision.net.daraz.com
 0.0.0.0  administrators-beta-interaction.net.daraz.com
@@ -8062,7 +8057,6 @@
 0.0.0.0  administratorsviviotech.net.daraz.com
 0.0.0.0  administratorwinter.net.daraz.com
 0.0.0.0  adminlications.net.daraz.com
-0.0.0.0  adminlocalhost.net.daraz.com
 0.0.0.0  adminmail.net.zooplus.it
 0.0.0.0  adminmoviemp4hd.net.daraz.com
 0.0.0.0  adminpartner.net.daraz.com
@@ -8090,7 +8084,6 @@
 0.0.0.0  adminsesvcgatewayvision.net.daraz.com
 0.0.0.0  adminsext.net.zooplus.de
 0.0.0.0  adminshop.com
-0.0.0.0  adminslocalhost.net.daraz.com
 0.0.0.0  adminsnfreya.net.daraz.com
 0.0.0.0  adminspartner.net.daraz.com
 0.0.0.0  adminspartnerevelynn.net.daraz.com
@@ -12187,7 +12180,6 @@
 0.0.0.0  analytics-ingress-global.bitmovin.com
 0.0.0.0  analytics-lib-ht-2.net.daraz.com
 0.0.0.0  analytics-listener.trafficmanager.net
-0.0.0.0  analytics-localhost.net.daraz.com
 0.0.0.0  analytics-patner.net.daraz.com
 0.0.0.0  analytics-patnercgi.net.daraz.com
 0.0.0.0  analytics-phi-nfl.yinzcam.com
@@ -14940,7 +14932,6 @@
 0.0.0.0  assetscsr21.net.daraz.com
 0.0.0.0  assetsdockerapi.net.zooplus.de
 0.0.0.0  assetslib-ln-2.net.daraz.com
-0.0.0.0  assetslocalhost.net.daraz.com
 0.0.0.0  assetssupport.mobile.api.net.zooplus.de
 0.0.0.0  assetssupport.vpnapi.net.zooplus.de
 0.0.0.0  assetssupportadmindata.mail.car40-3.net.zooplus.de
@@ -16952,7 +16943,6 @@
 0.0.0.0  beta.galleries.paperstreetcash.com
 0.0.0.0  beta.glenbowcollege.ca
 0.0.0.0  beta.hotkeys.com
-0.0.0.0  beta.localhost.net.daraz.com
 0.0.0.0  beta.newopenx.detik.com
 0.0.0.0  beta.oncustomer.asia
 0.0.0.0  beta.onfluencer.net
@@ -34326,7 +34316,6 @@
 0.0.0.0  fwmqki.eckerle.de
 0.0.0.0  fwmrm.net
 0.0.0.0  fwvc.adsafeprotected.com
-0.0.0.0  fwwww.localhost.applications.net.daraz.com
 0.0.0.0  fx.gtop.ro
 0.0.0.0  fx24options.org
 0.0.0.0  fxadviceformeandyou.com
@@ -47634,9 +47623,6 @@
 0.0.0.0  localcamsfinder.com
 0.0.0.0  localdates19.com
 0.0.0.0  localh0st.info
-0.0.0.0  localhost.9.net.daraz.com
-0.0.0.0  localhost.accounting.net.daraz.com
-0.0.0.0  localhost.apac.net.daraz.com
 0.0.0.0  localshutter.store
 0.0.0.0  localytics.com
 0.0.0.0  locate.pricespider.com
@@ -55390,7 +55376,6 @@
 0.0.0.0  nljjem.honeys-onlineshop.com
 0.0.0.0  nllruakeborckior.com
 0.0.0.0  nln99engheydgf.bar
-0.0.0.0  nlocalhost.wordtheminer.com
 0.0.0.0  nlog.baidu.com
 0.0.0.0  nlp-japan.life-and-mind.com
 0.0.0.0  nltihf.fashiondays.ro
@@ -90555,7 +90540,6 @@
 0.0.0.0  www.certified-toolbar.com
 0.0.0.0  www.certifiedprotradebot.cyou
 0.0.0.0  www.certifieds-employee-exam.school
-0.0.0.0  www.certlocalhost.applications.net.daraz.com
 0.0.0.0  www.certoko.xyz
 0.0.0.0  www.cervan.link
 0.0.0.0  www.ceryle.pl
@@ -90619,7 +90603,6 @@
 0.0.0.0  www.chayotesdealtura.com
 0.0.0.0  www.chcemyschudnac.pl
 0.0.0.0  www.chckmailabig32.web.app
-0.0.0.0  www.chd-localhost.applications.net.daraz.com
 0.0.0.0  www.chd.net.daraz.com
 0.0.0.0  www.cheap-ads.net
 0.0.0.0  www.cheap-online-stamp.cast.cc
@@ -93545,7 +93528,6 @@
 0.0.0.0  www.dh7lrn945d1xq.cloudfront.net
 0.0.0.0  www.dharanamoxor.ga
 0.0.0.0  www.dhc6wkg91bshz.cloudfront.net
-0.0.0.0  www.dhcmslocalhost.applications.net.daraz.com
 0.0.0.0  www.dhdx24qjjzwfc.cloudfront.net
 0.0.0.0  www.dhe09zz3ayx3p.cloudfront.net
 0.0.0.0  www.dhenr54m.com
@@ -116722,7 +116704,6 @@
 0.0.0.0  wwwf15.mitsubishielectric.co.jp
 0.0.0.0  wwwfile.applications.net.daraz.com
 0.0.0.0  wwwfrontpage.applications.net.daraz.com
-0.0.0.0  wwwgetter.localhost.applications.net.daraz.com
 0.0.0.0  wwwgh.partner.net.daraz.com
 0.0.0.0  wwwgitlab.applications.net.daraz.com
 0.0.0.0  wwwglobal.applications.net.daraz.com
@@ -116778,7 +116759,6 @@
 0.0.0.0  wwwnetpct.123pago.test1.net.daraz.com
 0.0.0.0  wwwnettwitch-statickorea0rdc8nnckw6jq3te0vv27mh6.net.daraz.com
 0.0.0.0  wwwnwa.com
-0.0.0.0  wwwopen.localhost.applications.net.daraz.com
 0.0.0.0  wwwp.buildingiq.com
 0.0.0.0  wwwpartner-pay.applications.net.daraz.com
 0.0.0.0  wwwpaywall.applications.net.daraz.com
@@ -116793,7 +116773,6 @@
 0.0.0.0  wwwshop-wall-preview-zooplus-at.login-wafarketing.net.zooplus.de
 0.0.0.0  wwwtarget.com
 0.0.0.0  wwwtest.partner.net.daraz.com
-0.0.0.0  wwwtrial.localhost.applications.net.daraz.com
 0.0.0.0  wwwtwa.com
 0.0.0.0  wwwv.stjohnvic.com.au
 0.0.0.0  wwww-olx.pl
