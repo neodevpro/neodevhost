@@ -8,7 +8,7 @@
 #
 # Last update: 2022-06-04
 #
-# Number of blocked domains:  118934
+# Number of blocked domains:  118897
 #
 #=====================================
 ||0-132.net.daraz.com^
@@ -4335,43 +4335,6 @@
 ||9zr0vqn3l61kvl30.net.daraz.com^
 ||::1ip6-localhost^
 ||::1localhost^
-||@android^
-||@app-browser^
-||@cibn^
-||@cps-jd^
-||@cps-shopping^
-||@cps-taobao-click^
-||@cps-taobao-simba^
-||@direct/1os^
-||@direct/official^
-||@down^
-||@down/virus^
-||@errorpage/click^
-||@errorpage/daohang^
-||@errorpage/inside^
-||@errorpage/sns^
-||@errorpage/weixin^
-||@hijack/apk-down^
-||@hijack/domain^
-||@hijack/homepage^
-||@hijack/netbar^
-||@hijack/operators^
-||@hijack/wifi^
-||@hijack/x-router^
-||@popup^
-||@site-foregin/adult^
-||@site-foregin/down^
-||@site-foregin/news^
-||@site-foregin/sns^
-||@site-foregin/tools^
-||@site-foregin/union^
-||@site-us^
-||@union-cn^
-||@union-cn-plus^
-||@union-en^
-||@union-india^
-||@union-jp^
-||@union-ru^
 ||XiaoQiang^
 ||a-5.info^
 ||a-ad.adwo.com^
