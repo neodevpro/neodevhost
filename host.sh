@@ -55,44 +55,14 @@ sed -i '/#/d' tmpblock
 sed -i '/127.0.0.1 localhost.localdomain/d' tmpblock
 sed -i '/127.0.0.1 localhost/d' tmpblock
 sed -i '/127.0.0.1 local/d' tmpblock
-sed -i '/::1 localhost/d' tmpblock
-sed -i '/::1 ip6-localhost/d' tmpblock
-sed -i '/::1 ip6-loopback/d' tmpblock
-sed -i '/fe80::1%lo0 localhost/d' tmpblock
-sed -i '/ff00::0 ip6-localnet/d' tmpblock
-sed -i '/ff00::0 ip6-mcastprefix/d' tmpblock
-sed -i '/ff02::1 ip6-allnodes/d' tmpblock
-sed -i '/ff02::2 ip6-allrouters/d' tmpblock
-sed -i '/ff02::3 ip6-allhosts/d' tmpblock
-sed -i '/255.255.255.255 broadcasthost/d' tmpblock
-sed -i '/0.0.0.0 0.0.0.0/d' tmpblock
-
-#sed -i '/ip6-/d' tmpblock
-#sed -i '/local/d' tmpblock
-#sed -i '/{/d' tmpblock
-#sed -i '/]/d' tmpblock
-#sed -i '/}/d' tmpblock
-#sed -i '/\!/d' tmpblock
-#sed -i 's/@@//' tmpblock
-#sed -i 's/*//' tmpblock
+sed -i '/localhost/d' tmpblock
+sed -i '/ip6-local/d' tmpblock
+sed -i '/ip6-all/d' tmpblock
+sed -i '/ip6-mcastprefix/d' tmpblock
+sed -i '/broadcasthost/d' tmpblock
+sed -i '/ip6-loopback/d' tmpblock
 sed -i 's/0.0.0.0 //' tmpblock
-#sed -i 's/0.0.0.0//' tmpblock
 sed -i 's/127.0.0.1 //' tmpblock
-#sed -i 's/||//' tmpblock
-#sed -i 's/\^adshow//' tmpblock
-#sed -i 's/\^showAd//' tmpblock
-#sed -i 's/\^ad//' tmpblock
-#sed -i 's/\^tracker\^//' tmpblock
-#sed -i 's/:443//' tmpblock
-#sed -i 's/\^//' tmpblock
-#sed -i 's/|//' tmpblock
-#sed -i 's/$important//' tmpblock
-#sed -i 's/$badfilter//' tmpblock
-#sed -i 's/:://' tmpblock
-#sed -i 's/:\/\///' tmpblock
-#sed -i 's/^\.//' tmpblock
-#sed -i 's/^\-//' tmpblock
-#sed -i 's/:\/\///' tmpblock
 sed -i '/@/d' tmpblock
 sed -i '/*/d' tmpblock
 sed -i '/^$/d' tmpblock
