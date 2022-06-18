@@ -8,7 +8,7 @@
 #
 # Last update: 2022-06-18
 #
-# Number of blocked domains:  135054
+# Number of blocked domains:  135050
 #
 #=====================================
 ||0-158.net.daraz.com^
@@ -983,7 +983,6 @@
 ||1-koreastrologie.net.daraz.com^
 ||1-lax1strologie.net.daraz.com^
 ||1-lib-oa-1.net.daraz.com^
-||1-localhost.net.daraz.com^
 ||1-machine-account.confluence.net.zooplus.de^
 ||1-machine-backend.confluence.net.zooplus.de^
 ||1-machine-mail-node-net-preview-wwwowa.net.zooplus.de^
@@ -4165,7 +4164,6 @@
 ||9uqde16efz7pd2pr.net.daraz.com^
 ||9usnhymgixf6ih1i.net.daraz.com^
 ||9www.net.daraz.com^
-||::1localhost^
 ||a-5.info^
 ||a-ad.adwo.com^
 ||a-ads.com^
@@ -7898,7 +7896,6 @@
 ||adm-client-ns.stgmservice-emailvision.net.zooplus.es^
 ||adm-freya.net.daraz.com^
 ||adm-idsc.3457owa-analyticsns.controlmarketing-emailvision-tomcat.net.zooplus.nl^
-||adm-localhost-partneri.net.daraz.com^
 ||adm-s3.marketing.net.zooplus.fr^
 ||adm.10jqka.com.cn^
 ||adm.265g.com^
@@ -56593,6 +56590,7 @@
 ||loboclick.com^
 ||lobster.justunderwear.com^
 ||loc1.hitsprocessor.com^
+||local^
 ||local-analytics.uberinternal.com^
 ||local-connect-usage.net.daraz.com^
 ||local-download.com^
@@ -56605,7 +56603,6 @@
 ||localdates19.com^
 ||localgovcorp.net.daraz.com^
 ||localh0st.info^
-||localhostatner.net.daraz.com^
 ||localmail.net.zooplus.es^
 ||localshutter.store^
 ||localytics.com^
@@ -65443,7 +65440,6 @@
 ||nljjem.honeys-onlineshop.com^
 ||nllruakeborckior.com^
 ||nln99engheydgf.bar^
-||nlocalhost.wordtheminer.com^
 ||nlog.baidu.com^
 ||nlp-japan.life-and-mind.com^
 ||nltzqx.autodoc.co.uk^
