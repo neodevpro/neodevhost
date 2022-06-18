@@ -13,17 +13,9 @@ for url in `cat allowlist` ;do
     rm -f tmp
 done
 
-#sed -i '/]/d' tmpallow
+
 sed -i '/#/d' tmpallow
-#sed -i '/\!/d' tmpallow
-#sed -i 's/127.0.0.1 //' tmpallow
-#sed -i 's/https:\/\///' tmpallow
-#sed -i 's/http:\/\///' tmpallow
-#sed -i 's/pp助手淘宝登录授权拉起//' tmpallow
-#sed -i 's/只要有这一条，//' tmpallow
-#sed -i 's/，腾讯视频网页下一集按钮灰色，也不能选集播放//' tmpallow
-#sed -i 's/会导致腾讯动漫安卓版的逗比商城白屏//' tmpallow
-#sed -i '/address/d' tmpallow
+
 ## special case fix ##
 sed -i '/live.fc2.com/d' tmpallow
 ## special case fix ##
