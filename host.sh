@@ -54,15 +54,15 @@ done
 sed -i '/#/d' tmpblock
 sed -i '/@/d' tmpblock
 sed -i '/*/d' tmpblock
-sed -i '/127.0.0.1 localhost.localdomain/d' tmpblock
-sed -i '/fe80::1%lo0 localhost/d' tmpblock
-sed -i '/1 localhost/d' tmpblock
+#sed -i '/127.0.0.1 localhost.localdomain/d' tmpblock
+#sed -i '/fe80::1%lo0 localhost/d' tmpblock
+sed -i '/localhost/d' tmpblock
 
 
-sed -i '/127.0.0.1 localhost/d' tmpblock
-sed -i '/127.0.0.1 local/d' tmpblock
+#sed -i '/127.0.0.1 localhost/d' tmpblock
+#sed -i '/127.0.0.1 local/d' tmpblock
 
-sed -i '/::1 ip6-localhost/d' tmpblock
+#sed -i '/::1 ip6-localhost/d' tmpblock
 
 sed -i '/ip6-local/d' tmpblock
 sed -i '/ip6-all/d' tmpblock
