@@ -56,7 +56,7 @@ sed -i '/@/d' tmpblock
 sed -i '/*/d' tmpblock
 sed -i '/127.0.0.1 localhost.localdomain/d' tmpblock
 sed -i '/fe80::1%lo0 localhost/d' tmpblock
-sed -i '/::1 localhost/d' tmpblock
+sed -i '/1 localhost/d' tmpblock
 
 
 sed -i '/127.0.0.1 localhost/d' tmpblock
