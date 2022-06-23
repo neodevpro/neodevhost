@@ -71,12 +71,6 @@ sed -i s/[[:space:]]//g tmpblock
 sort -u tmpblock > block
 rm -f tmpblock
 
-while read line; do
-    if ! grep -q "." ; then
-        sed -i "/$line/d" block
-    fi
-done < block
-
 echo " "
 echo "Check Dead Block..."
 cp block checkblock
