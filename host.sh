@@ -27,10 +27,16 @@ sed -i s/[[:space:]]//g tmpallow
 sort -u tmpallow > allow
 rm -f tmpallow
 
+
 echo " "
 echo "Check Dead Allow..."
 cp allow checkallow
 wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/neodevpro/dead-allow/master/deadallow
+while read line; do
+    if ! expr index "$line" "." ; then
+        echo "$line" >> deadallow
+    fi
+done < allow
 sort -n allow deadallow deadallow | uniq -u > tmp && mv tmp tmpallow
 sort -u tmpallow > allow
 rm -f tmpallow
@@ -73,9 +79,14 @@ rm -f tmpblock
 
 echo " "
 echo "Check Dead Block..."
+wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock
+while read line; do
+    if ! expr index "$line" "." ; then
+        echo "$line" >> deadblock
+    fi
+done < block
 cp block checkblock
 cp block lite_block
-wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock
 sort -n lite_block deadblock deadblock | uniq -u > tmp && mv tmp tmplite_block
 sort -u tmplite_block > lite_block
 rm -f tmplite_block 
