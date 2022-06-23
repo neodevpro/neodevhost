@@ -19,7 +19,7 @@ Total combine list 结合总数： 109281
 
 Total deadblock list 失效屏蔽广告域名： 25473
 
-Total deadallow list 失效允许广告域名： 1115
+Total deadallow list 失效允许广告域名： 1113
 
 Update 更新时间: 2022-06-23
 ```
