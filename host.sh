@@ -73,7 +73,7 @@ rm -f tmpblock
 
 while read line; do
     if ! grep -q "." ; then
-        sed -i "/$line/d"
+        sed -i "/$line/d" block
     fi
 done < block
 
