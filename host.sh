@@ -16,6 +16,9 @@ done
 
 sed -i '/#/d' tmpallow
 sed -i '/^$/d' tmpallow
+sed -i '/REG ^/d' tmpallow
+sed -i '/RZD/d' tmpallow
+sed -i 's/ALL ./ /g' tmpallow
 sed -i s/[[:space:]]//g tmpallow
 sort -u tmpallow > allow
 rm -f tmpallow
