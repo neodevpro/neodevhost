@@ -15,13 +15,6 @@ done
 
 
 sed -i '/#/d' tmpallow
-
-## special case fix ##
-sed -i '/live.fc2.com/d' tmpallow
-## special case fix ##
-sed -i '/REG ^/d' tmpallow
-sed -i '/RZD/d' tmpallow
-sed -i 's/ALL ./ /g' tmpallow
 sed -i '/^$/d' tmpallow
 sed -i s/[[:space:]]//g tmpallow
 sort -u tmpallow > allow
