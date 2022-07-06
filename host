@@ -8,7 +8,7 @@
 #
 # Last update: 2022-07-06
 #
-# Number of blocked domains:  110864
+# Number of blocked domains:  110863
 #
 #=====================================
 0.0.0.0  0-gkm-portal.net.daraz.com
@@ -35936,7 +35936,6 @@
 0.0.0.0  info.apbspeakers.com
 0.0.0.0  info.apexfoot.com
 0.0.0.0  info.api-odm.com
-0.0.0.0  info.apnic.net
 0.0.0.0  info.appspace.com
 0.0.0.0  info.aps.org
 0.0.0.0  info.aramex.com
