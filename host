@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2022-07-06
+# Last update: 2022-07-07
 #
-# Number of blocked domains:  110863
+# Number of blocked domains:  110862
 #
 #=====================================
 0.0.0.0  0-gkm-portal.net.daraz.com
@@ -54213,7 +54213,6 @@
 0.0.0.0  pi.idealist.org
 0.0.0.0  pi.ispot.tv
 0.0.0.0  pi.legalandgeneral.com
-0.0.0.0  pi.pardot.com
 0.0.0.0  pi.revlocal.com
 0.0.0.0  pi.subsplash.com
 0.0.0.0  pi.unox.com
