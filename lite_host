@@ -8,7 +8,7 @@
 #
 # Last update: 2022-07-13
 #
-# Number of blocked domains:  106707
+# Number of blocked domains:  106706
 #
 #=====================================
 0.0.0.0  0-gkm-portal.net.daraz.com
@@ -106423,7 +106423,6 @@
 0.0.0.0  zhihu-web-analytics.zhihu.com
 0.0.0.0  zhivir.com
 0.0.0.0  zhiziyun.com
-0.0.0.0  zhuti.xiaomi.com
 0.0.0.0  zhuysga.com
 0.0.0.0  zhwnlapi.etouch.cn
 0.0.0.0  ziber.io
