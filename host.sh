@@ -23,6 +23,19 @@ sed -i s/[[:space:]]//g tmpallow
 sort -u tmpallow > allow
 rm -f tmpallow
 
+echo " "
+echo "Check Allow format..."
+
+while read line; do
+    if ! expr index "$line" "." ; then
+        echo "$line" >> formatallow
+    fi
+done < allow
+
+sort -n allow formatallow formatallow | uniq -u > tmp && mv tmp tmpallow
+sort -u tmpallow > allow
+rm -f tmpallow formatallow
+
 
 echo " "
 echo "Check Dead Allow..."
@@ -70,17 +83,8 @@ rm -f tmpblock
 
 
 echo " "
-echo "Check format..."
+echo "Check Block format..."
 
-while read line; do
-    if ! expr index "$line" "." ; then
-        echo "$line" >> formatallow
-    fi
-done < allow
-
-sort -n allow formatallow formatallow | uniq -u > tmp && mv tmp tmpallow
-sort -u tmpallow > allow
-rm -f tmpallow formatallow
 
 while read line; do
     if ! expr index "$line" "." ; then
