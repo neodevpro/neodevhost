@@ -14,7 +14,7 @@ jobs:
       run: bash ./host.sh
       
     - name: Git Auto Commit
-      uses: stefanzweifel/git-auto-commit-action@v4.15
+      uses: stefanzweifel/git-auto-commit-action@v4.15.0
       with:
            commit_message: Auto Update
            branch: master
