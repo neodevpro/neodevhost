@@ -12,4 +12,3 @@ host adb
 lite_adblocker adb
 lite_domain adb
 lite_host adb
-title adb
