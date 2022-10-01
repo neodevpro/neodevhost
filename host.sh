@@ -69,28 +69,28 @@ sort -u tmpblock > block
 rm -f tmpblock
 
 
-echo " "
-echo "Check format..."
+#echo " "
+#echo "Check format..."
 
-while read line; do
-    if ! expr index "$line" "." ; then
-        echo "$line" >> formatallow
-    fi
-done < allow
+#while read line; do
+#    if ! expr index "$line" "." ; then
+#        echo "$line" >> formatallow
+#    fi
+#done < allow
 
-sort -n allow formatallow formatallow | uniq -u > tmp && mv tmp tmpallow
-sort -u tmpallow > allow
-rm -f tmpallow formatallow
+#sort -n allow formatallow formatallow | uniq -u > tmp && mv tmp tmpallow
+#sort -u tmpallow > allow
+#rm -f tmpallow formatallow
 
-while read line; do
-    if ! expr index "$line" "." ; then
-        echo "$line" >> formatblock
-    fi
-done < block
+#while read line; do
+#    if ! expr index "$line" "." ; then
+#        echo "$line" >> formatblock
+#    fi
+#done < block
 
-sort -n block formatblock formatblock | uniq -u > tmp && mv tmp tmpblock
-sort -u tmpblock > block
-rm -f tmpblock formatblock
+#sort -n block formatblock formatblock | uniq -u > tmp && mv tmp tmpblock
+#sort -u tmpblock > block
+#rm -f tmpblock formatblock
 
 
 echo " "
