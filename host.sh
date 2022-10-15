@@ -63,6 +63,7 @@ sed -i 's/127.0.0.1 //' tmpblock
 
 sed -i '/:/d' tmpblock
 sed -i '/!/d' tmpblock
+sed -i '/|/d' tmpblock
 sed -i '/^$/d' tmpblock
 sed -i s/[[:space:]]//g tmpblock
 sort -u tmpblock > block
