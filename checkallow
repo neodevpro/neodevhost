@@ -1523,6 +1523,7 @@ appcloud.ironbeast.io
 appdown.naver.com
 appdownload.alicdn.com
 appengine.google.com
+appimg.dbankcdn.com
 appldnld.apple.com
 apple-dns.net
 apple.com
@@ -3078,6 +3079,7 @@ dashboard.stripe.com
 dashbox.sndcdn.com
 dashbox.soundcloud.com
 data-sdk-uuid-report.dreport.meituan.net
+data.bilibili.com
 data.flurry.com
 data.fotmob.com
 data.game.xiaomi.com
@@ -3979,6 +3981,7 @@ findercdn.video.qq.com
 findmymobile.samsung.com
 fiplabcdn.com
 fir.im
+firebaseinstallations.googleapis.com
 firebaseio.com
 firefox.settings.services.mozilla.com
 firevent.jd.com
@@ -4334,6 +4337,7 @@ gigapurbalingga.net
 gigya.com
 ginjfo.com
 giphy.com
+giscus.app
 gist.github.com
 gist.githubusercontent.com
 git.io
@@ -4690,6 +4694,7 @@ groups.google.com
 growingio.com
 growth.pusher.com
 grp02.trc.ashiato.rakuten.co.jp
+grpc.biliapi.net
 gs-sec.ww.np.dl.playstation.net
 gs.apple.com
 gs.statcounter.com
@@ -4836,6 +4841,7 @@ highcharts.com
 hike-res.cloudinary.com
 hilp.it
 hilton.com
+himg.bdimg.com
 hindilinks4u.to
 hindustantimes.com
 hink.de
@@ -5773,6 +5779,7 @@ lf-cdn-tos.bytescm.com
 lf1-cdn-tos.bytegoofy.com
 lf3-cdn-tos.bdxiguastatic.com
 lf3-cdn-tos.bytegoofy.com
+lf3-cdn-tos.bytescm.com
 lf3-short.bytegoofy.com
 lf3-short.ibytedapm.com
 lf6-cdn-tos.bytescm.com
@@ -5875,6 +5882,7 @@ live-redpackrain.ksapisrv.com
 live-rio.twitch.tv
 live-sel.twitch.tv
 live-sin.twitch.tv
+live-trace.bilibili.com
 live-vie.twitch.tv
 live-www.funimation.com
 live.adyen.com
@@ -6276,6 +6284,7 @@ majorgeeks.com
 making.vimeo.com
 mal.ly
 malc0de.com
+mall.bilibili.com
 mall.mi.com
 malwaredomainlist.com
 malwaredomains.lehigh.edu
@@ -6827,6 +6836,7 @@ networks.feedburner.com
 networksolutions.com
 neu1-urlp.secure.skypeassets.com
 neustar.biz
+new-service.biliapi.net
 new.ow.ly
 new.www.huffingtonpost.com
 newbiecontest.com
@@ -9017,6 +9027,7 @@ storage.sketch.sonymobile.com
 storage.snap.com
 storage11.360buyimg.com.volcgslb.com
 store-bill.line.me
+store-drcn.hispace.dbankcloud.cn
 store-images.s-microsoft.com
 store-images.s-microsoft.com-c.edgekey.net
 store-locator.sonymobile.com
@@ -10128,6 +10139,7 @@ weiboimgwx.gslb.sinaedge.com
 weixin.qq.com
 welcome.indihome.co.id
 wer.org
+weread.qq.com
 weri.com
 werl.com
 wetransfer.com
@@ -10398,6 +10410,7 @@ www.apple.com
 www.appleiphonecell.com
 www.appnee.com
 www.appsumo.com
+www.aqours.today
 www.aquacard.co.uk
 www.aras.com
 www.archive.org
