@@ -75,13 +75,13 @@ echo " "
 echo "Check format..."
 
 while read line; do
-    if [[ $line = $domain_name_regex ]]; then
+    if [[ $line =~ $domain_name_regex ]]; then
         echo "$line" >> cleanallow
     fi
 done < allow
 
 while read line; do
-    if [[ $line = $domain_name_regex ]]; then
+    if [[ $line =~ $domain_name_regex ]]; then
         echo "$line" >> cleanblock
     fi
 done < block
