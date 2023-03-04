@@ -75,6 +75,9 @@ checkip=$(nslookup "$domain" | awk '/^Address: / { print $2 }')
 echo " "
 echo "Check format..."
 
+sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' allow
+sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
+
 while read line; do
   if [[ $domain =~ $domain_name_regex ]]; then
     if nslookup "$domain" > /dev/null; then
