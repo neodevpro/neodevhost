@@ -79,14 +79,14 @@ sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' allow
 sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
 
 while read line; do
-  if [[ $domain =~ $domain_name_regex ]]; then
-    echo "$domain" >> cleanallow
+  if [[ $line =~ $domain_name_regex ]]; then
+    echo "$lineline" >> cleanallow
   fi
 done < allow
 
 while read line; do
-  if [[ $domain =~ $domain_name_regex ]]; then
-    echo "$domain" >> cleanblock
+  if [[ $line =~ $domain_name_regex ]]; then
+    echo "$line" >> cleanblock
   fi
 done < block
 
