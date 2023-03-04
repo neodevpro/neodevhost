@@ -88,7 +88,7 @@ done < block
 
 echo " "
 echo "Check Dead Block..."
-rm allow block
+rm -rf allow block
 mv cleanallow allow
 mv cleanblock block
 cp block checkblock
