@@ -70,21 +70,36 @@ sort -u tmpblock > block
 rm -f tmpblock
 
 domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
+checkip=$(nslookup "$domain" | awk '/^Address: / { print $2 }')
 
 echo " "
 echo "Check format..."
 
-while read line; do
-    if [[ $line =~ $domain_name_regex ]]; then
-        echo "$line" >> cleanallow
-    fi
-done < allow
+domains_allow="allow"
+domains_block="block"
 
-while read line; do
-    if [[ $line =~ $domain_name_regex ]]; then
-        echo "$line" >> cleanblock
+function check_cleanallow {
+  domain=$1
+  if [[ $line =~ $domain_name_regex ]]; then
+    if nslookup "$line" > /dev/null; then
+        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "$line" >> cleanallow
     fi
-done < block
+  fi
+}
+ 
+function check_cleanblock {
+  domain=$1
+  if [[ $line =~ $domain_name_regex ]]; then
+    if nslookup "$line" > /dev/null; then
+        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "$line" >> cleanblock
+    fi
+  fi
+}
+
+cat "$domains_allow" | xargs -I % -P 64 sh -c 'check_cleanallow %'
+#cat "$domains_block" | xargs -I % -P 64 sh -c 'check_cleanblock %'
 
 echo " "
 echo "Check Dead Block..."
