@@ -80,21 +80,13 @@ sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
 
 while read line; do
   if [[ $domain =~ $domain_name_regex ]]; then
-    if nslookup "$domain" > /dev/null; then
-        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "$domain" >> cleanallow
-        fi
-    fi
+    echo "$domain" >> cleanallow
   fi
 done < allow
 
 while read line; do
   if [[ $domain =~ $domain_name_regex ]]; then
-    if nslookup "$domain" > /dev/null; then
-        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "$domain" >> cleanblock
-        fi
-    fi
+    echo "$domain" >> cleanblock
   fi
 done < block
 
