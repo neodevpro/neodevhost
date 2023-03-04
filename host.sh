@@ -80,7 +80,7 @@ domains_block="block"
 
 function check_cleanallow() {
   domain=$1
-  if [[ $line =~ $domain_name_regex ]]; then
+  if [[ $domain =~ $domain_name_regex ]]; then
     if nslookup "$line" > /dev/null; then
         if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             echo "$line" >> cleanallow
@@ -90,7 +90,7 @@ function check_cleanallow() {
  
 function check_cleanblock {
   domain=$1
-  if [[ $line =~ $domain_name_regex ]]; then
+  if [[ $domain =~ $domain_name_regex ]]; then
     if nslookup "$line" > /dev/null; then
         if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             echo "$line" >> cleanblock
