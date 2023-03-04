@@ -75,41 +75,32 @@ checkip=$(nslookup "$domain" | awk '/^Address: / { print $2 }')
 echo " "
 echo "Check format..."
 
-domains_allow="allow"
-domains_block="block"
-
-
-#function check_cleanallow() {
-#  domain=$1
-#  if [[ $domain =~ $domain_name_regex ]]; then
-#    if nslookup "$domain" > /dev/null; then
-#        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-#            echo "$domain" >> cleanallow
-#        fi
-#    fi
-#  fi
-#}
- 
-
-#cat "$domains_allow" | xargs -I % -P 64 bash -c 'check_cleanallow "{}"'
-#cat "$domains_block" | xargs -I % -P 64 sh -c 'check_cleanblock %'
-
-
-
-
-cat "$domains_allow" | xargs -n 1 -P 8 -I {} sh -c '
-    domain=$1
-    if [[ $domain =~ $domain_name_regex ]]; then
-        echo "$domain" >> cleanblock
+while read line; do
+  if [[ $domain =~ $domain_name_regex ]]; then
+    if nslookup "$domain" > /dev/null; then
+        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "$domain" >> cleanallow
+        fi
     fi
-'
+  fi
+done < allow
+
+while read line; do
+  if [[ $domain =~ $domain_name_regex ]]; then
+    if nslookup "$domain" > /dev/null; then
+        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "$domain" >> checkblock
+        fi
+    fi
+  fi
+done < block
+
 
 echo " "
 echo "Check Dead Block..."
-rm -rf allow 
-#rm -rf block
+rm -rf allow block
 mv cleanallow allow
-#mv cleanblock block
+mv cleanblock block
 cp block checkblock
 cp block lite_block
 wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock
