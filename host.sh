@@ -70,7 +70,7 @@ sort -u tmpblock > block
 rm -f tmpblock
 
 domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
-checkip=$(nslookup "$domain" | awk '/^Address: / { print $2 }')
+#checkip=$(nslookup "$domain" | awk '/^Address: / { print $2 }')
 
 echo " "
 echo "Check format..."
@@ -82,9 +82,9 @@ function check_cleanallow() {
   domain=$1
   if [[ $domain =~ $domain_name_regex ]]; then
     if nslookup "$domain" > /dev/null; then
-        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+#        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             echo "$domain" >> cleanallow
-    fi
+#    fi
   fi
 }
  
