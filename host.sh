@@ -70,7 +70,7 @@ sort -u tmpblock > block
 rm -f tmpblock
 
 domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
-checkip=$(nslookup "$domain" | awk '/^Address: / { print $2 }')
+
 
 echo " "
 echo "Check format..."
