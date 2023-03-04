@@ -80,7 +80,7 @@ sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
 
 while read line; do
   if [[ $line =~ $domain_name_regex ]]; then
-    echo "$lineline" >> cleanallow
+    echo "$line" >> cleanallow
   fi
 done < allow
 
