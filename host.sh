@@ -94,7 +94,7 @@ function check_cleanallow() {
     if nslookup "$domain" > /dev/null; then
         echo "$domain" >> cleanallow
   fi
-}
+  }
  
 function check_cleanblock {
   domain=$1
