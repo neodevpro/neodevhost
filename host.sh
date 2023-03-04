@@ -101,8 +101,18 @@ function check_cleanblock() {
   fi
  }
 
-cat "$domains_allow" | xargs -I % -P 64 bash -c 'check_cleanallow "{}"'
+#cat "$domains_allow" | xargs -I % -P 64 bash -c 'check_cleanallow "{}"'
 #cat "$domains_block" | xargs -I % -P 64 sh -c 'check_cleanblock %'
+
+
+
+
+cat "$domains_allow" | xargs -n 1 -P $THREADS -I {} sh -c '
+    # 检查域名是否符合规范
+    if [[ "{}" =~ ^[a-zA-Z0-9]([-a-zA-Z0-9]{0,61}[a-zA-Z0-9])?(\.[a-zA-Z]{2,})+$ ]]; then
+        echo "$domain" >> cleanblock
+    fi
+'
 
 echo " "
 echo "Check Dead Block..."
