@@ -78,13 +78,21 @@ echo "Check format..."
 domains_allow="allow"
 domains_block="block"
 
+#function check_cleanallow() {
+#  domain=$1
+#  if [[ $domain =~ $domain_name_regex ]]; then
+#    if nslookup "$domain" > /dev/null; then
+#        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+#            echo "$domain" >> cleanallow
+#    fi
+#  fi
+#}
+
 function check_cleanallow() {
   domain=$1
   if [[ $domain =~ $domain_name_regex ]]; then
     if nslookup "$domain" > /dev/null; then
-#        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "$domain" >> cleanallow
-#    fi
+        echo "$domain" >> cleanallow
   fi
 }
  
