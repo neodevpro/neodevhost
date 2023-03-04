@@ -100,13 +100,8 @@ function check_cleanblock() {
     fi
   fi
  }
- 
-cat "$domains_allow" | while read domain; do
-    (process_domain "$domain") &
-done
-wait
 
-#cat "$domains_allow" | xargs -I % -P 64 sh -c 'check_cleanallow %'
+cat "$domains_allow" | xargs -I % -P 64 bash -c 'check_cleanallow "{}"'
 #cat "$domains_block" | xargs -I % -P 64 sh -c 'check_cleanblock %'
 
 echo " "
