@@ -90,14 +90,11 @@ while read line; do
   fi
 done < block
 
-awk '{a[$0]++}END{for(i in a){if(a[i]==1){print i}}}' cleanblock > muchcleanblock
-
-
 echo " "
 echo "Check Dead Block..."
 rm -rf allow block
 mv cleanallow allow
-mv muchcleanblock block
+mv cleanblock block
 rm -rf cleanblock
 cp block checkblock
 cp block lite_block
