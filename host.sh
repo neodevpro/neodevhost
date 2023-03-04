@@ -109,7 +109,7 @@ function check_cleanblock() {
 
 cat "$domains_allow" | xargs -n 1 -P 64 -I {} sh -c '
     # 检查域名是否符合规范
-    if [[ "{}" =~ ^[a-zA-Z0-9]([-a-zA-Z0-9]{0,61}[a-zA-Z0-9])?(\.[a-zA-Z]{2,})+$ ]]; then
+    if [[ $domain =~ $domain_name_regex ]]; then
         echo "$domain" >> cleanblock
     fi
 '
