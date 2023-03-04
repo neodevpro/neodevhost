@@ -79,27 +79,17 @@ domains_allow="allow"
 domains_block="block"
 
 
-function check_cleanallow() {
-  domain=$1
-  if [[ $domain =~ $domain_name_regex ]]; then
-    if nslookup "$domain" > /dev/null; then
-        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "$domain" >> cleanallow
-        fi
-    fi
-  fi
- }
+#function check_cleanallow() {
+#  domain=$1
+#  if [[ $domain =~ $domain_name_regex ]]; then
+#    if nslookup "$domain" > /dev/null; then
+#        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+#            echo "$domain" >> cleanallow
+#        fi
+#    fi
+#  fi
+#}
  
-function check_cleanblock() {
-  domain=$1
-  if [[ $domain =~ $domain_name_regex ]]; then
-    if nslookup "$domain" > /dev/null; then
-        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "$domain" >> cleanblock
-        fi
-    fi
-  fi
- }
 
 #cat "$domains_allow" | xargs -I % -P 64 bash -c 'check_cleanallow "{}"'
 #cat "$domains_block" | xargs -I % -P 64 sh -c 'check_cleanblock %'
@@ -107,8 +97,8 @@ function check_cleanblock() {
 
 
 
-cat "$domains_allow" | xargs -n 1 -P 64 -I {} sh -c '
-    # 检查域名是否符合规范
+cat "$domains_allow" | xargs -n 1 -P 8 -I {} sh -c '
+    domain=$1
     if [[ $domain =~ $domain_name_regex ]]; then
         echo "$domain" >> cleanblock
     fi
