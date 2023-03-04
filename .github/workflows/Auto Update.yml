@@ -10,8 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: prepare enc
-      run: sudo apt update && sudo apt install -y dnsutils findutils
       
     - name: Run a one-line script
       run: bash ./host.sh
