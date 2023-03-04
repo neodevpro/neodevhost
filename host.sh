@@ -103,13 +103,14 @@ function check_cleanblock() {
  
 
 cat "$domains_allow" | xargs -I % -P 64 sh -c 'check_cleanallow %'
-cat "$domains_block" | xargs -I % -P 64 sh -c 'check_cleanblock %'
+#cat "$domains_block" | xargs -I % -P 64 sh -c 'check_cleanblock %'
 
 echo " "
 echo "Check Dead Block..."
-rm -rf allow block
+rm -rf allow 
+#rm -rf block
 mv cleanallow allow
-mv cleanblock block
+#mv cleanblock block
 cp block checkblock
 cp block lite_block
 wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock
