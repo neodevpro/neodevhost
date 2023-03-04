@@ -93,8 +93,8 @@ function check_cleanallow() {
   if [[ $domain =~ $domain_name_regex ]]; then
     if nslookup "$domain" > /dev/null; then
         echo "$domain" >> cleanallow
-  fi
-  }
+    fi
+ }
  
 function check_cleanblock {
   domain=$1
