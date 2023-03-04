@@ -76,27 +76,21 @@ echo "Check format..."
 
 while read line; do
     if [[ $line = $domain_name_regex ]]; then
-        echo "$line" >> formatallow
+        echo "$line" >> cleanallow
     fi
 done < allow
 
-sort -n allow formatallow formatallow | uniq -u > tmp && mv tmp tmpallow
-sort -u tmpallow > allow
-rm -f tmpallow formatallow
-
 while read line; do
     if [[ $line = $domain_name_regex ]]; then
-        echo "$line" >> formatblock
+        echo "$line" >> cleanblock
     fi
 done < block
 
-sort -n block formatblock formatblock | uniq -u > tmp && mv tmp tmpblock
-sort -u tmpblock > block
-rm -f tmpblock formatblock
-
-
 echo " "
 echo "Check Dead Block..."
+rm allow block
+mv cleanallow allow
+mv cleanblock block
 cp block checkblock
 cp block lite_block
 wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock
