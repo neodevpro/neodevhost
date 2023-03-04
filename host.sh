@@ -78,38 +78,32 @@ echo "Check format..."
 domains_allow="allow"
 domains_block="block"
 
-#function check_cleanallow() {
-#  domain=$1
-#  if [[ $domain =~ $domain_name_regex ]]; then
-#    if nslookup "$domain" > /dev/null; then
-#        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-#            echo "$domain" >> cleanallow
-#    fi
-#  fi
-#}
 
 function check_cleanallow() {
   domain=$1
   if [[ $domain =~ $domain_name_regex ]]; then
     if nslookup "$domain" > /dev/null; then
-        echo "$domain" >> cleanallow
+        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "$domain" >> cleanallow
+        fi
     fi
   fi
  }
  
-#function check_cleanblock {
-#  domain=$1
-#  if [[ $domain =~ $domain_name_regex ]]; then
-#    if nslookup "$domain" > /dev/null; then
-#        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-#            echo "$domain" >> cleanblock
-#            return
-#    fi
-#  fi
-#}
+function check_cleanblock() {
+  domain=$1
+  if [[ $domain =~ $domain_name_regex ]]; then
+    if nslookup "$domain" > /dev/null; then
+        if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "$domain" >> cleanblock
+        fi
+    fi
+  fi
+ }
+ 
 
 cat "$domains_allow" | xargs -I % -P 64 sh -c 'check_cleanallow %'
-#cat "$domains_block" | xargs -I % -P 64 sh -c 'check_cleanblock %'
+cat "$domains_block" | xargs -I % -P 64 sh -c 'check_cleanblock %'
 
 echo " "
 echo "Check Dead Block..."
