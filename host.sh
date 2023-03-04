@@ -75,7 +75,7 @@ echo " "
 echo "Check format..."
 
 while read line; do
-    if [[ $line =~ $domain_name_regex ]]; then
+    if [[ $line = $domain_name_regex ]]; then
         echo "$line" >> formatallow
     fi
 done < allow
@@ -85,7 +85,7 @@ sort -u tmpallow > allow
 rm -f tmpallow formatallow
 
 while read line; do
-    if [[ $line =~ $domain_name_regex ]]; then
+    if [[ $line = $domain_name_regex ]]; then
         echo "$line" >> formatblock
     fi
 done < block
