@@ -92,7 +92,7 @@ while read line; do
   if [[ $domain =~ $domain_name_regex ]]; then
     if nslookup "$domain" > /dev/null; then
         if [[ $checkip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "$domain" >> checkblock
+            echo "$domain" >> cleanblock
         fi
     fi
   fi
