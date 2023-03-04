@@ -69,7 +69,7 @@ sed -i s/[[:space:]]//g tmpblock
 sort -u tmpblock > block
 rm -f tmpblock
 
-domain_name_regex="^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$"
+domain_name_regex="^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\.)+[A-Za-z]{2,6}$"
 
 echo " "
 echo "Check format..."
