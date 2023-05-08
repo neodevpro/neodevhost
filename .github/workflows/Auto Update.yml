@@ -21,6 +21,6 @@ jobs:
            branch: master
            commit_options: '--no-verify --signoff'
            repository: .
-           commit_user_name: kosmgco 
-           commit_user_email: i@ooops.me 
+           commit_user_name: FusionPlmH 
+           commit_user_email: leemenhin@gmail.com 
            push_options: '--force'
