@@ -6,7 +6,7 @@
 
 
 [![Stargazers over time](https://starchart.cc/neodevpro/neodevhost.svg)](https://starchart.cc/neodevpro/neodevhost)
-[![Build Status](https://img.shields.io/github/workflow/status/neodevpro/neodevhost/CI/master)](https://github.com/neodevpro/neodevhost/actions?workflow=CI)<br/>
+[![Build Status](https://img.shields.io/github/actions/workflow/status/neodevpro/neodevhost/Auto%20Update.yml)](https://github.com/neodevpro/neodevhost/actions)<br/>
 [![Last commit](https://img.shields.io/github/last-commit/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/commit/master)<br/>
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)<br/>
 
