@@ -78,12 +78,12 @@ Clash | Clash |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/mas
 
 ## How To Use 如何使用
 ```
-1.Download both files/copy link of files
+1.Download files/copy link of files
 2.Add host and whitelist file/link into adblocker
 3.Update the data source in the app
 ```
 ```
-1.下载两个文件/复制下载链接
+1.下载文件/复制下载链接
 2.添加文件或者下载链接到广告拦截器
 3.更新数据规则
 ```
