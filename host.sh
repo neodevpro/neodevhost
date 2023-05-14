@@ -155,8 +155,8 @@ sed -i 's/$/&\/#/' smartdns.conf
 sed -i 's/^/address \/&/' lite_smartdns.conf 
 sed -i 's/$/&\/#/' lite_smartdns.conf 
 
-sed -e '1i payload:' -e "1,\$s/^/  - '/" -e "1,\$s/$/'/" clash
-sed -e '1i payload:' -e "1,\$s/^/  - '/" -e "1,\$s/$/'/" lite_clash
+sed -e '1i payload:' -e "1,\$s/^/  - '/" -e "1,\$s/$/'/" clash >> clash
+sed -e '1i payload:' -e "1,\$s/^/  - '/" -e "1,\$s/$/'/" lite_clash >> lite_clash
 
 
 echo " "
@@ -241,7 +241,7 @@ mv title.3 lite_adblocker
 mv title.5 lite_dnsmasq.conf
 mv title.7 lite_smartdns.conf
 mv title.9 lite_domain
-mv title.1 lite_clash
+mv title.11 lite_clash
 
 echo " "
 echo "Done!"
