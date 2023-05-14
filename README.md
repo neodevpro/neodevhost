@@ -60,6 +60,7 @@ Adblocker | uBlock，Adguard ... |[link](https://raw.githubusercontent.com/neode
 Dnsmasq | Dns ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/dnsmasq.conf) | [link](https://neodev.team/dnsmasq.conf)
 SmartDNS | SmartDNS |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/smartdns.conf) | [link](https://neodev.team/smartdns.conf)
 Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain)
+Clash | Clash |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash)
 
 ### Lite version (Without Dead Domain inside) 精简版（不包含过期域名）：
 
@@ -72,6 +73,7 @@ Adblocker | uBlock，Adguard ... |[link](https://raw.githubusercontent.com/neode
 Dnsmasq | Dns ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_dnsmasq.conf) | [link](https://neodev.team/lite_dnsmasq.conf)
 SmartDNS | SmartDNS |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_smartdns.conf) | [link](https://neodev.team/lite_smartdns.conf)
 Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_domain) | [link](https://neodev.team/lite_domain)
+Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_clash) | [link](https://neodev.team/lite_clash)
 
 ## How To Use 如何使用
 ```
