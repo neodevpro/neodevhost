@@ -46,6 +46,7 @@ Update 更新时间: 2023-05-14
 -Adaway
 -Adblocker/Adguard
 -SmartDNS
+-Clash
 -etc
 ``` 
 
