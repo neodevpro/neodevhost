@@ -155,6 +155,11 @@ sed -i 's/$/&\/#/' smartdns.conf
 sed -i 's/^/address \/&/' lite_smartdns.conf 
 sed -i 's/$/&\/#/' lite_smartdns.conf 
 
+sed -i 's/^/- '\/&/' clash
+sed -i 's/$/&\/'/' lite_clash
+sed -i '1i payload:' clash
+sed -i '1i payload:' lite_clash
+
 echo " "
 echo "Adding Title and SYNC data..."
 sed -i '14cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l block)' ' README.md  
@@ -214,18 +219,14 @@ cat adblocker >>title.4
 cat dnsmasq.conf >>title.6
 cat smartdns.conf >>title.8
 cat domain >>title.10
-
 cat clash >>title.12
-sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" clash >>clash
 
 cat lite_host >>title.1
 cat lite_adblocker >>title.3
 cat lite_dnsmasq.conf >>title.5
 cat lite_smartdns.conf >>title.7
 cat lite_domain >>title.9
-
 cat lite_clash >>title.11
-sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" lite_clash >>lite_clash
 
 
 rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf deadallow deadblock lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain allow clash lite_clash
