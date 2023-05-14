@@ -155,8 +155,8 @@ sed -i 's/$/&\/#/' smartdns.conf
 sed -i 's/^/address \/&/' lite_smartdns.conf 
 sed -i 's/$/&\/#/' lite_smartdns.conf 
 
-sed -i 's/^/- '\/&/' clash
-sed -i 's/$/&\/'/' lite_clash
+sed -i '\$s/^/  - '/' clash
+sed -i '\$s/$/'/' lite_clash
 sed -i '1i payload:' clash
 sed -i '1i payload:' lite_clash
 
