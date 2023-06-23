@@ -52,8 +52,6 @@ Update 更新时间: 2023-06-23
 
 ## Download 下载
 Number of Domain 域名数目： 316563
-Number of Domain 域名数目： 257170
-
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host)
@@ -64,9 +62,6 @@ Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/m
 Clash | Clash |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash)
 
 Number of Domain 域名数目： 312307
-
-Number of Domain 域名数目： 253027
-
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_host) | [link](https://neodev.team/lite_host)
