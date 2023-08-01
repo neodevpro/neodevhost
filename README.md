@@ -11,11 +11,11 @@
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)<br/>
 
 ```
-Total ad / tracking block list 屏蔽追踪广告总数: 324788
+Total ad / tracking block list 屏蔽追踪广告总数: 324796
 
-Total allowlist list 允许名单总数: 9989
+Total allowlist list 允许名单总数: 9991
 
-Total combine list 结合总数： 324249
+Total combine list 结合总数： 324256
 
 Total deadblock list 失效屏蔽广告域名： 25471
 
@@ -51,7 +51,7 @@ Update 更新时间: 2023-08-01
 ``` 
 
 ## Download 下载
-Number of Domain 域名数目： 324249
+Number of Domain 域名数目： 324256
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host)
@@ -61,7 +61,7 @@ SmartDNS | SmartDNS |[link](https://raw.githubusercontent.com/neodevpro/neodevho
 Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain)
 Clash | Clash |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash)
 
-Number of Domain 域名数目： 319894
+Number of Domain 域名数目： 319901
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_host) | [link](https://neodev.team/lite_host)
