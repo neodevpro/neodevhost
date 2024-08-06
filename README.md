@@ -13,9 +13,9 @@
 ```
 Total ad / tracking block list 屏蔽追踪广告总数: 179552
 
-Total allowlist list 允许名单总数: 10008
+Total allowlist list 允许名单总数: 10011
 
-Total combine list 结合总数： 179151
+Total combine list 结合总数： 179148
 
 Total deadblock list 失效屏蔽广告域名： 25471
 
@@ -51,7 +51,7 @@ Update 更新时间: 2024-08-06
 ``` 
 
 ## Download 下载
-Number of Domain 域名数目： 179151
+Number of Domain 域名数目： 179148
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host)
@@ -61,7 +61,7 @@ SmartDNS | SmartDNS |[link](https://raw.githubusercontent.com/neodevpro/neodevho
 Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain)
 Clash | Clash |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash)
 
-Number of Domain 域名数目： 176365
+Number of Domain 域名数目： 176362
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_host) | [link](https://neodev.team/lite_host)
