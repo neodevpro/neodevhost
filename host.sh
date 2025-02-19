@@ -17,13 +17,14 @@ process_list() {
         wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> "$tmp_file"
     done < "$input_list"
     
-    sed -i -e '/#/d' \
-           -e '/:/d' \
-           -e 's/127.0.0.1 //g' \
-           -e 's/0.0.0.0 //g' \
-           -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' \
-           -e '/^$/d' \       
-           -e 's/[[:space:]]//g'  "$tmp_file"
+    sed -i -E \
+            -e '/#/d' \
+            -e '/:/d' \
+            -e 's/127.0.0.1 //g' \
+            -e 's/0.0.0.0 //g' \
+            -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' \
+            -e '/^$/d' \
+            -e 's/[[:space:]]//g'  "$tmp_file"
     
     sort -u "$tmp_file" > "$output_file"
     rm -f "$tmp_file"
