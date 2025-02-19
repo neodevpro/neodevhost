@@ -3,7 +3,7 @@
 
 # Clean up old files
 echo "Clean..."
-rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf checkblock checkallow smartdns.conf lite_smartdns.conf domain lite_domain clash lite_clash allow
+rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow
 
 
 # Merge allowlist
