@@ -11,7 +11,9 @@ while read -r url; do
     wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpallow
 done < allowlist
 
-sed -i -e '/#/d' -e '/^$/d' -e 's/[[:space:]]//g' tmpallow
+sed -i -e '/#/d' \
+       -e '/^$/d' \
+       -e 's/[[:space:]]//g' tmpallow
 sort -u tmpallow > allow
 rm -f tmpallow
 
@@ -45,6 +47,7 @@ sed -i -e '/#/d' \
        -e '/|/d' \
        -e '/^$/d' \
        -e 's/[[:space:]]//g' tmpblock
+       
 sort -u tmpblock > block
 rm -f tmpblock
 
