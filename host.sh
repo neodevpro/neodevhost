@@ -4,37 +4,51 @@
 echo "Clean..."
 rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
 
-# Merge list
-merge_list() {
-    local input_file=$1
-    local output_file=$2
-    local temp_file=$(mktemp)
+# Merge allowlist
+echo "Merge allow..."
+while read -r url; do
+    [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
+    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpallow
+done < allowlist
 
-    echo "Processing $input_file -> $output_file"
-
-    # Check file exist
-    [ ! -f "$input_file" ] && echo "Warning: $input_file not found!" && touch "$input_file"
-
-    while IFS= read -r url; do
-        [[ -z "$url" || "$url" =~ ^# ]] && continue
-        echo "Downloading: $url"
-        if wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> "$temp_file"; then
-            echo "Downloaded successfully: $url"
-        else
-            echo "Failed to download: $url"
-        fi
-    done < "$input_file"
+sed -i -e '/#/d' -e '/^$/d' -e 's/[[:space:]]//g' tmpallow
+sort -u tmpallow > allow
+rm -f tmpallow
 
 
-    # Cleanup
-    grep -E "^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" "$temp_file" | sort -u > "$output_file"
-    sed -i -e '/#/d' -e 's/[[:space:]]//g' "$output_file"
-    rm -f "$temp_file"
-}
+# Merge blocklist
+echo "Merge block..."
+while read -r url; do
+    [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
+    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpblock
+done < blocklist
 
-# Handle allowlist & blocklist
-merge_list "allowlist" "allow"
-merge_list "blocklist" "block"
+grep -Ev "^(127\.0\.0\.1|::1|255\.255\.255\.255|fe80::1|ff00::0|ff02::[1-3]|0\.0\.0\.0)$" block
+sort -u tmpblock > block
+rm -f tmpblock
+
+
+# Check format
+echo "Check format..."
+sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' allow
+sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
+
+domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
+
+while read line; do
+  if [[ $line =~ $domain_name_regex ]]; then
+    echo "$line" >> cleanallow
+  fi
+done < allow
+
+while read line; do
+  if [[ $line =~ $domain_name_regex ]]; then
+    echo "$line" >> cleanblock
+  fi
+done < block
+
+mv cleanallow allow
+mv cleanblock block
 
 
 # Generate final lite host list
