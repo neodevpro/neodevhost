@@ -18,9 +18,9 @@ process_list() {
     done < "$input_list"
     
     sed -i -e '/#/d' \
-           -e 's/[[:space:]]//g' \
-           -e '/^$/d' \
-           -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d'  "$tmp_file"
+           -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' \
+           -e '/^$/d' \       
+           -e 's/[[:space:]]//g'  "$tmp_file"
     
     sort -u "$tmp_file" > "$output_file"
     rm -f "$tmp_file"
