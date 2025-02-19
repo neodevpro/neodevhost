@@ -2,7 +2,7 @@
 
 
 # Clean up old files
-echo "\nClean..."
+echo "Clean..."
 rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock checkallow smartdns.conf lite_smartdns.conf domain lite_domain clash lite_clash allow
 
 
@@ -89,7 +89,7 @@ echo "Check Dead Block..."
 rm -rf allow block
 mv cleanallow allow
 mv cleanblock block
-cp block checkblock lite_block
+tee checkblock lite_block < block >/dev/null
 wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock
 sort lite_block deadblock | uniq -u > tmplite_block && mv tmplite_block lite_block
 rm -f tmplite_block 
@@ -116,8 +116,9 @@ generate_host_list "lite_block" "lite_host"
 # Generate different format lists
 echo "Adding Compatibility..."
 
-cp host adblocker dnsmasq.conf smartdns.conf domain
-cp lite_host lite_adblocker lite_dnsmasq.conf lite_smartdns.conf lite_domain
+tee adblocker dnsmasq.conf smartdns.conf domain < host >/dev/null
+tee lite_adblocker lite_dnsmasq.conf lite_smartdns.conf lite_domain < lite_host >/dev/null
+
 
 # Edit adblocker & lite_adblocker
 for file in adblocker lite_adblocker; do
@@ -206,7 +207,7 @@ cat lite_smartdns.conf >>title.7
 cat lite_domain >>title.9
 
 
-rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf deadallow deadblock lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain
+
 
 mv title.2 host
 mv title.4 adblocker
@@ -219,6 +220,10 @@ mv title.3 lite_adblocker
 mv title.5 lite_dnsmasq.conf
 mv title.7 lite_smartdns.conf
 mv title.9 lite_domain
+
+
+rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf deadallow deadblock lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain
+
 
 # Generate Clash rules
 echo "Adding Clash support..."
