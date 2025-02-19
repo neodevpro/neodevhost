@@ -51,7 +51,7 @@ Update 更新时间: 2025-02-19
 ``` 
 
 ## Download 下载
-Number of Domain 域名数目： 
+Number of Domain 域名数目： 140393
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host)
@@ -61,7 +61,7 @@ SmartDNS | SmartDNS |[link](https://raw.githubusercontent.com/neodevpro/neodevho
 Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain)
 Clash | Clash |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash)
 
-Number of Domain 域名数目： 
+Number of Domain 域名数目： 161621
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_host) | [link](https://neodev.team/lite_host)
