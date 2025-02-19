@@ -1,57 +1,34 @@
 #!/bin/bash
 
+tmp_allow=$(mktemp)
+tmp_block=$(mktemp)
 
 # Clean up old files
 echo "Clean..."
 rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
 
 # Merge allowlist
-echo "Merge allow..."
+echo "Merging allowlist..."
 while read -r url; do
-    [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
-    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpallow
+    [[ -z "$url" || "$url" =~ ^# ]] && continue
+    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> "$tmp_allow"
 done < allowlist
 
-sed -i -e '/#/d' \
-       -e 's/[[:space:]]//g' tmpallow
-
-sort -u tmpallow > allow
-rm -f tmpallow
+sed -i -e '/#/d' -e 's/[[:space:]]//g' "$tmp_allow"
+sort -u "$tmp_allow" > allow
 
 
 # Merge blocklist
-echo "Merge block..."
+echo "Merging blocklist..."
 while read -r url; do
-    [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
-    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpblock
+    [[ -z "$url" || "$url" =~ ^# ]] && continue
+    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> "$tmp_block"
 done < blocklist
 
-sed -i -e '/#/d' \
-       -e '/@/d' \
-       -e '/*/d' \
-       -e '/127.0.0.1 localhost.localdomain/d' \
-       -e '/fe80::1%lo0 localhost/d' \
-       -e '/127.0.0.1 localhost/d' \
-       -e '/127.0.0.1 local/d' \
-       -e '/::1 ip6-localhost/d' \
-       -e '/localhost/d' \
-       -e '/ip6-local/d' \
-       -e '/ip6-all/d' \
-       -e '/ip6-mcastprefix/d' \
-       -e '/broadcasthost/d' \
-       -e '/ip6-loopback/d' \
-       -e '/0.0.0.0 0.0.0.0/d' \
-       -e 's/0.0.0.0 //' \
-       -e 's/127.0.0.1 //' \
-       -e '/:/d' \
-       -e '/!/d' \
-       -e '/|/d' \
-       -e '/^$/d' \
-       -e 's/[[:space:]]//g' tmpblock
+sed -i -e '/#/d' -e '/@/d' -e '/^$/d' -e 's/[[:space:]]//g' "$tmp_block"
+sed -i '/^\(127\.0\.0\.1 localhost\|127\.0\.0\.1 localhost\.localdomain\|127\.0\.0\.1 local\|255\.255\.255\.255 broadcasthost\|::1 localhost\|::1 ip6-localhost\|::1 ip6-loopback\|fe80::1%lo0 localhost\|ff00::0 ip6-localnet\|ff00::0 ip6-mcastprefix\|ff02::1 ip6-allnodes\|ff02::2 ip6-allrouters\|ff02::3 ip6-allhosts\|0\.0\.0\.0 0\.0\.0\.0\)$/d' "$tmp_block"
 
-sort -u tmpblock > block
-rm -f tmpblock
-
+sort -u "$tmp_block" > block
 
 
 # Check format
@@ -59,7 +36,7 @@ echo "Check format..."
 sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' allow
 sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
 
-domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
+domain_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
 
 grep -E "$domain_regex" allow > cleanallow
 grep -E "$domain_regex" block > cleanblock
@@ -70,11 +47,10 @@ mv cleanblock block
 
 # Generate final lite host list
 echo "Merge Combine..."
-sort -n block allow allow | uniq -u > tmp && mv tmp tmphost
-sort -u tmphost > host
+sort -u block allow > host
 sed -i '/^$/d' host
 sed -i s/[[:space:]]//g host
-rm -f tmphost
+
 
 
 # Create lists
@@ -118,3 +94,6 @@ sed -i "48cNumber of Domain 域名数目： $(wc -l < block)" README.md
 
 echo " "
 echo "Done!"
+
+# Cleanup
+rm -f "$tmp_allow" "$tmp_block"
