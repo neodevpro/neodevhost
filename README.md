@@ -21,7 +21,7 @@ Update 更新时间: 2025-02-19
     Merge every day　每天更新
 Update 更新时间: 2025-02-19
     To block all ad / tracking  有效拦截广告追踪　
-### FRIENDLY　友善使用<br/>
+Update 更新时间: 2025-02-19
     Easy to use and welcome to report issues　简单使用欢迎回报问题
 
 ## Supported Platform 支持平台
@@ -45,7 +45,7 @@ Update 更新时间: 2025-02-19
 ``` 
 
 ## Download 下载
-Number of Domain 域名数目： 140402
+Number of Domain 域名数目： 140389
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host)
