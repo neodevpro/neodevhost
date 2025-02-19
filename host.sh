@@ -94,8 +94,8 @@ rm -f tmphost
 tee adblocker dnsmasq.conf smartdns.conf domain clash block < host >/dev/null
 
 # Update Date and block list number
-sed -i "9cLast update: $(date '+%Y-%m-%d')" title
-sed -i "11cNumber of domains: $(wc -l < block)" title
+sed -i "9c# Last update: $(date '+%Y-%m-%d')" title
+sed -i "11c# Number of domains: $(wc -l < block)" title
 
 # Add Head to all list
 for file in host adblocker dnsmasq.conf smartdns.conf domain clash
