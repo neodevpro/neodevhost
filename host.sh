@@ -17,12 +17,12 @@ merge_list() {
     done < "$input_file"
 
     # Cleanup
-    grep -E "^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$" "$temp_file" | sort -u > "$output_file"
+    grep -E "^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" "$temp_file" | sort -u > "$output_file"
     sed -i -e '/#/d' -e 's/[[:space:]]//g' "$output_file"
     rm -f "$temp_file"
 }
 
-# Handle allowlist 和 blocklist
+# Handle allowlist & blocklist
 merge_list "allowlist" "allow"
 merge_list "blocklist" "block"
 
