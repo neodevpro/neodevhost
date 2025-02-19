@@ -10,11 +10,21 @@ merge_list() {
     local output_file=$2
     local temp_file=$(mktemp)
 
-    echo "Merging $input_file into $output_file..."
-    while read -r url; do
+    echo "Processing $input_file -> $output_file"
+
+    # Check file exist
+    [ ! -f "$input_file" ] && echo "Warning: $input_file not found!" && touch "$input_file"
+
+    while IFS= read -r url; do
         [[ -z "$url" || "$url" =~ ^# ]] && continue
-        wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> "$temp_file"
+        echo "Downloading: $url"
+        if wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> "$temp_file"; then
+            echo "Downloaded successfully: $url"
+        else
+            echo "Failed to download: $url"
+        fi
     done < "$input_file"
+
 
     # Cleanup
     grep -E "^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" "$temp_file" | sort -u > "$output_file"
@@ -23,8 +33,8 @@ merge_list() {
 }
 
 # Handle allowlist & blocklist
-merge_list allowlist allow
-merge_list blocklist block
+merge_list "allowlist" "allow"
+merge_list "blocklist" "block"
 
 
 # Generate final lite host list
