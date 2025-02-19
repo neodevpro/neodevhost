@@ -5,13 +5,6 @@
 echo "Clean..."
 rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow
 
-# Read title file and update placeholders
-TITLE_FILE="title"
-UPDATED_TITLE=$(<"$TITLE_FILE")
-UPDATED_TITLE="${UPDATED_TITLE//PLACEHOLDER_DATE/$(date '+%Y-%m-%d')}"
-
-
-
 # Merge allowlist
 echo "Merge allow..."
 while read -r url; do
@@ -90,43 +83,35 @@ mv cleanblock block
 
 # Generate final lite host list
 echo "Merge Combine..."
-{
-  echo "$UPDATED_TITLE"
-  sort -n block allow allow | uniq -u
-} > host
+sort -n block allow allow | uniq -u > tmp && mv tmp tmphost
+sort -u tmphost > host
+sed -i '/^$/d' host
+sed -i s/[[:space:]]//g host
+rm -f tmphost
 
 
-# Update placeholder count
-DOMAIN_COUNT=$(wc -l < host)
-UPDATED_TITLE="${UPDATED_TITLE//PLACEHOLDER_COUNT/$DOMAIN_COUNT}"
-sed -i "1,9c$UPDATED_TITLE" host
-
-
-# Generate different format lists
-echo "Adding Compatibility..."
-for file in adblocker dnsmasq.conf smartdns.conf domain clash allow; do
-    echo "$UPDATED_TITLE" > "$file"
-    cat host >> "$file"
-    sed -i "1,9c$UPDATED_TITLE" "$file"
+# Create lists
+tee adblocker dnsmasq.conf smartdns.conf domain < host >/dev/null
+for file in host adblocker dnsmasq.conf smartdns.conf domain clash
+do
+  cat title "$file" > temp.file && mv temp.file "$file"
 done
 
 
 # Edit adblocker
-sed -i -e '10,$s/^/||&/' -e '10,$s/$/&^/' adblocker
+sed -i -e '14,$s/^/||&/' -e '14,$s/$/&^/' adblocker
 
 # Edit host
-sed -i '10,$s/^/0.0.0.0  &/' host
+sed -i '14,$s/^/0.0.0.0  &/' host
 
 # Edit dnsmasq.conf
-sed -i -e '10,$s/^/address=\//' -e '10,$s/$/\/0.0.0.0/' dnsmasq.conf
+sed -i -e '14,$s/^/address=\//' -e '14,$s/$/\/0.0.0.0/' dnsmasq.conf
 
 # Edit smartdns.conf
-sed -i -e '10,$s/^/address=\//' -e '10,$s/$/\/#/' smartdns.conf
+sed -i -e '14,$s/^/address=\//' -e '14,$s/$/\/#/' smartdns.conf
 
 # Generate Clash rules
-sed -i '10i payload:' clash
-sed -i "11,\$s/^/  - '/" clash
-sed -i "11,\$s/$/'/" clash
+sed -i -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" clash
 
 
 # Update README with statistics
