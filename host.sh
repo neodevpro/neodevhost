@@ -3,7 +3,7 @@
 
 # Clean up old files
 echo "Clean..."
-rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock checkallow smartdns.conf lite_smartdns.conf domain lite_domain clash lite_clash allow
+rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf checkblock checkallow smartdns.conf lite_smartdns.conf domain lite_domain clash lite_clash allow
 
 
 # Merge allowlist
@@ -21,12 +21,6 @@ sed -i -e '/#/d' \
 
 sort -u tmpallow > allow
 rm -f tmpallow
-
-
-# Check for dead allowlist entries
-echo "Check Dead Allow..."
-wget --no-check-certificate -t 1 -T 10 -q -O deadallow https://raw.githubusercontent.com/neodevpro/dead-allow/master/deadallow
-sort allow deadallow | uniq -u > tmpallow && mv tmpallow allow
 
 
 # Merge blocklist
@@ -83,16 +77,6 @@ while read line; do
   fi
 done < block
 
-
-# Check for dead blocklist entries
-echo "Check Dead Block..."
-rm -rf allow block
-mv cleanallow allow
-mv cleanblock block
-tee checkblock lite_block < block >/dev/null
-wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock
-sort lite_block deadblock | uniq -u > tmplite_block && mv tmplite_block lite_block
-rm -f tmplite_block 
 
 # Generate final lite host list
 echo "Merge Combine..."
@@ -222,7 +206,7 @@ mv title.7 lite_smartdns.conf
 mv title.9 lite_domain
 
 
-rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf deadallow deadblock lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain
+rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain
 
 
 # Generate Clash rules
