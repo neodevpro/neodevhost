@@ -101,7 +101,6 @@ pihole -g
 ## Sources of AD-hosts data 去广告host源
 AD-hostss | Link  
 --------- |:-------------:
-Ad-wars | [link](https://github.com/jdlingyu/ad-wars)
 Anti-ad | [link](https://github.com/privacy-protection-tools/anti-AD)
 StevenBlack | [link](https://github.com/StevenBlack/hosts)
 Cats-Team | [link](https://github.com/Cats-Team/AdRules)
