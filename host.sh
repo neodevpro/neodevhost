@@ -77,6 +77,8 @@ while read line; do
   fi
 done < block
 
+mv cleanallow allow
+mv cleanblock block
 
 # Generate final lite host list
 echo "Merge Combine..."
