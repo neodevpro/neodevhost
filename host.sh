@@ -4,75 +4,48 @@
 echo "Clean..."
 rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
 
-# Merge allowlist
-echo "Merge allow..."
-while read -r url; do
-    [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
-    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpallow
-done < allowlist
+# Merge list
+echo "Merge list..."
+process_list() {
+    local input_list=$1
+    local output_file=$2
+    local tmp_file="tmp_$output_file"
+    
+    echo "Merging $output_file..."
+    while read -r url; do
+        [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
+        wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> "$tmp_file"
+    done < "$input_list"
+    
+    sed -i -e '/#/d' \
+           -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' \
+           -e '/^$/d' \
+           -e 's/[[:space:]]//g' "$tmp_file"
+    
+    sort -u "$tmp_file" > "$output_file"
+    rm -f "$tmp_file"
+}
 
-sed -i -e '/#/d' \
-       -e '/^$/d' \
-       -e 's/[[:space:]]//g' tmpallow
-sort -u tmpallow > allow
-rm -f tmpallow
-
-
-# Merge blocklist
-echo "Merge block..."
-while read -r url; do
-    [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
-    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpblock
-done < blocklist
-
-sed -i -e '/#/d' \
-       -e '/@/d' \
-       -e '/*/d' \
-       -e '/127.0.0.1 localhost.localdomain/d' \
-       -e '/fe80::1%lo0 localhost/d' \
-       -e '/127.0.0.1 localhost/d' \
-       -e '/127.0.0.1 local/d' \
-       -e '/::1 ip6-localhost/d' \
-       -e '/localhost/d' \
-       -e '/ip6-local/d' \
-       -e '/ip6-all/d' \
-       -e '/ip6-mcastprefix/d' \
-       -e '/broadcasthost/d' \
-       -e '/ip6-loopback/d' \
-       -e '/0.0.0.0 0.0.0.0/d' \
-       -e 's/0.0.0.0 //' \
-       -e 's/127.0.0.1 //' \
-       -e '/:/d' \
-       -e '/!/d' \
-       -e '/|/d' \
-       -e '/^$/d' \
-       -e 's/[[:space:]]//g' tmpblock
-       
-sort -u tmpblock > block
-rm -f tmpblock
-
+process_list "allowlist" "allow"
+process_list "blocklist" "block"
 
 # Check format
-echo "Check format..."
-sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' allow
-sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
+echo "Checking format..."
+domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$"
 
-domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
+validate_format() {
+    local input_file=$1
+    local output_file="clean_$input_file"
+    
+    while read -r line; do
+        [[ $line =~ $domain_name_regex ]] && echo "$line" >> "$output_file"
+    done < "$input_file"
+    
+    mv "$output_file" "$input_file"
+}
 
-while read line; do
-  if [[ $line =~ $domain_name_regex ]]; then
-    echo "$line" >> cleanallow
-  fi
-done < allow
-
-while read line; do
-  if [[ $line =~ $domain_name_regex ]]; then
-    echo "$line" >> cleanblock
-  fi
-done < block
-
-mv cleanallow allow
-mv cleanblock block
+validate_format "allow"
+validate_format "block"
 
 
 # Generate final lite host list
