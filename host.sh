@@ -3,14 +3,12 @@
 
 # Clean up old files
 echo "\nClean..."
-rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock checkallow \
-      smartdns.conf lite_smartdns.conf domain lite_domain clash lite_clash allow
+rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock checkallow smartdns.conf lite_smartdns.conf domain lite_domain clash lite_clash allow
 
 
 # Merge allowlist
-echo "\nMerge allow..."
-> tmpallow
-for url in $(cat allowlist); do
+echo "Merge allow..."
+for url in `cat allowlist` ; do
     wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpallow
 done
 
@@ -26,15 +24,14 @@ rm -f tmpallow
 
 
 # Check for dead allowlist entries
-echo "\nCheck Dead Allow..."
+echo "Check Dead Allow..."
 wget --no-check-certificate -t 1 -T 10 -q -O deadallow https://raw.githubusercontent.com/neodevpro/dead-allow/master/deadallow
 sort allow deadallow | uniq -u > tmpallow && mv tmpallow allow
 
 
 # Merge blocklist
-echo "\nMerge block..."
-> tmpblock
-for url in $(cat blocklist); do
+echo "Merge block..."
+for url in `cat blocklist` ; do
     wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpblock
 done
 
@@ -68,7 +65,7 @@ rm -f tmpblock
 
 # Check format
 
-echo "\nCheck format..."
+echo "Check format..."
 sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' allow
 sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
 
@@ -88,7 +85,7 @@ done < block
 
 
 # Check for dead blocklist entries
-echo "\nCheck Dead Block..."
+echo "Check Dead Block..."
 rm -rf allow block
 mv cleanallow allow
 mv cleanblock block
@@ -98,7 +95,7 @@ sort lite_block deadblock | uniq -u > tmplite_block && mv tmplite_block lite_blo
 rm -f tmplite_block 
 
 # Generate final lite host list
-echo "\nMerge Combine..."
+echo "Merge Combine..."
 generate_host_list() {
     local blocklist=$1
     local output=$2
@@ -117,7 +114,7 @@ generate_host_list "lite_block" "lite_host"
 
 
 # Generate different format lists
-echo "\nAdding Compatibility..."
+echo "Adding Compatibility..."
 
 cp host adblocker dnsmasq.conf smartdns.conf domain
 cp lite_host lite_adblocker lite_dnsmasq.conf lite_smartdns.conf lite_domain
@@ -146,7 +143,7 @@ for file in smartdns.conf lite_smartdns.conf; do
 done
 
 # Update README with statistics
-echo "\nAdding Title and SYNC data..."
+echo "Adding Title and SYNC data..."
 
 sed -i "14cTotal ad / tracking block list 屏蔽追踪广告总数: $(wc -l < block)" README.md  
 sed -i "16cTotal allowlist list 允许名单总数: $(wc -l < allow)" README.md 
@@ -224,7 +221,7 @@ mv title.7 lite_smartdns.conf
 mv title.9 lite_domain
 
 # Generate Clash rules
-echo "\nAdding Clash support..."
+echo "Adding Clash support..."
 sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" domain >> clash
 sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" lite_domain >> lite_clash
 
