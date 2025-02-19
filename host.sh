@@ -65,17 +65,8 @@ sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
 
 domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
 
-while read line; do
-  if [[ $line =~ $domain_name_regex ]]; then
-    echo "$line" >> cleanallow
-  fi
-done < allow
-
-while read line; do
-  if [[ $line =~ $domain_name_regex ]]; then
-    echo "$line" >> cleanblock
-  fi
-done < block
+grep -E "$domain_regex" allow > cleanallow
+grep -E "$domain_regex" block > cleanblock
 
 mv cleanallow allow
 mv cleanblock block
@@ -109,7 +100,7 @@ done
 sed -i -e '14,$s/^/||&/' -e '14,$s/$/&^/' adblocker
 
 # Edit host
-sed -i '14,$s/^/0.0.0.0  &/' host
+sed -i -e '14,$s/^/0.0.0.0  &/' host
 
 # Edit dnsmasq.conf
 sed -i -e '14,$s/^/address=\//' -e '14,$s/$/\/0.0.0.0/' dnsmasq.conf
