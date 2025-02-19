@@ -23,7 +23,28 @@ while read -r url; do
     wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpblock
 done < blocklist
 
-grep -Ev "^(127\.0\.0\.1|::1|255\.255\.255\.255|fe80::1|ff00::0|ff02::[1-3]|0\.0\.0\.0)$" block
+sed -i -e '/#/d' \
+       -e '/@/d' \
+       -e '/*/d' \
+       -e '/127.0.0.1 localhost.localdomain/d' \
+       -e '/fe80::1%lo0 localhost/d' \
+       -e '/127.0.0.1 localhost/d' \
+       -e '/127.0.0.1 local/d' \
+       -e '/::1 ip6-localhost/d' \
+       -e '/localhost/d' \
+       -e '/ip6-local/d' \
+       -e '/ip6-all/d' \
+       -e '/ip6-mcastprefix/d' \
+       -e '/broadcasthost/d' \
+       -e '/ip6-loopback/d' \
+       -e '/0.0.0.0 0.0.0.0/d' \
+       -e 's/0.0.0.0 //' \
+       -e 's/127.0.0.1 //' \
+       -e '/:/d' \
+       -e '/!/d' \
+       -e '/|/d' \
+       -e '/^$/d' \
+       -e 's/[[:space:]]//g' tmpblock
 sort -u tmpblock > block
 rm -f tmpblock
 
