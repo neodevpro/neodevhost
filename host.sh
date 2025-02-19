@@ -129,6 +129,11 @@ for file in smartdns.conf lite_smartdns.conf; do
     sed -i 's/$/&\/#/' "$file"
 done
 
+# Generate Clash rules
+echo "Adding Clash support..."
+sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" domain >> clash
+sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" lite_domain >> lite_clash
+
 # Update README with statistics
 echo "Adding Title and SYNC data..."
 
@@ -140,82 +145,6 @@ sed -i "22cTotal deadallow list 失效允许广告域名： $(wc -l < deadallow)
 sed -i "24cUpdate 更新时间: $(date '+%Y-%m-%d')" README.md
 sed -i "54cNumber of Domain 域名数目： $(wc -l < domain)" README.md
 sed -i "64cNumber of Domain 域名数目： $(wc -l < lite_domain)" README.md
- 
-cp title title.2
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.2 
-sed -i '11c# Number of blocked domains:  '$(wc -l host)' ' title.2  
-cp title title.4
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.4 
-sed -i '11c# Number of blocked domains:  '$(wc -l adblocker)' ' title.4
-cp title title.6
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.6
-sed -i '11c# Number of blocked domains:  '$(wc -l dnsmasq.conf)' ' title.6
-cp title title.8
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.8
-sed -i '11c# Number of blocked domains:  '$(wc -l smartdns.conf)' ' title.8    
-cp title title.10
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.10
-sed -i '11c# Number of blocked domains:  '$(wc -l domain)' ' title.10             
-cp title title.12
-     
-
-
-
-cp title title.1
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.1
-sed -i '11c# Number of blocked domains:  '$(wc -l lite_host)' ' title.1   
-cp title title.3
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.3
-sed -i '11c# Number of blocked domains:  '$(wc -l lite_adblocker)' ' title.3   
-cp title title.5
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.5
-sed -i '11c# Number of blocked domains:  '$(wc -l lite_dnsmasq.conf)' ' title.5  
-cp title title.7
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.7
-sed -i '11c# Number of blocked domains:  '$(wc -l lite_smartdns.conf)' ' title.7  
-cp title title.9
-sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.9
-sed -i '11c# Number of blocked domains:  '$(wc -l lite_domain)' ' title.9  
-cp title title.11
-
-
-
-cat host >>title.2
-cat adblocker >>title.4
-cat dnsmasq.conf >>title.6
-cat smartdns.conf >>title.8
-cat domain >>title.10
-
-cat lite_host >>title.1
-cat lite_adblocker >>title.3
-cat lite_dnsmasq.conf >>title.5
-cat lite_smartdns.conf >>title.7
-cat lite_domain >>title.9
-
-
-rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain
-
-
-
-# Generate files
-echo "Generate files..."
-mv title.2 host
-mv title.4 adblocker
-mv title.6 dnsmasq.conf
-mv title.8 smartdns.conf
-mv title.10 domain
-
-mv title.1 lite_host
-mv title.3 lite_adblocker
-mv title.5 lite_dnsmasq.conf
-mv title.7 lite_smartdns.conf
-mv title.9 lite_domain
-
-# Generate Clash rules
-echo "Adding Clash support..."
-sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" domain >> clash
-sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" lite_domain >> lite_clash
-
 
 echo " "
 echo "Done!"
