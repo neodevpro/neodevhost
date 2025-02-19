@@ -102,6 +102,7 @@ pihole -g
 AD-hostss | Link  
 --------- |:-------------:
 Ad-wars | [link](https://github.com/jdlingyu/ad-wars)
+Anti-ad | [link](https://github.com/privacy-protection-tools/anti-AD)
 StevenBlack | [link](https://github.com/StevenBlack/hosts)
 
 ## Sources of Allowlist 允许名单
