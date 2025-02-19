@@ -148,19 +148,12 @@ done
 # Update README with statistics
 echo "\nAdding Title and SYNC data..."
 
-update_readme() {
-    sed -i "$1c$2 $(wc -l $3)" README.md
-}
-
-update_readme 14 "Total ad / tracking block list:" block
-update_readme 16 "Total allowlist entries:" allow
-update_readme 18 "Total combined list entries:" host
-update_readme 20 "Total deadblock entries:" deadblock
-update_readme 22 "Total deadallow entries:" deadallow
-update_readme 24 "Update date:" "$(date '+%Y-%m-%d')"
-update_readme 54 "Number of domains:" domain
-update_readme 64 "Number of domains:" lite_domain
-
+sed -i "14cTotal ad / tracking block list 屏蔽追踪广告总数: $(wc -l < block)" README.md  
+sed -i "16cTotal allowlist list 允许名单总数: $(wc -l < allow)" README.md 
+sed -i "18cTotal combine list 结合总数： $(wc -l < host)" README.md
+sed -i "20cTotal deadblock list 失效屏蔽广告域名： $(wc -l < deadblock)" README.md
+sed -i "22cTotal deadallow list 失效允许广告域名： $(wc -l < deadallow)" README.md
+sed -i "24cUpdate 更新时间: $(date '+%Y-%m-%d')" README.md
  
 cp title title.2
 sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.2 
