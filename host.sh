@@ -23,8 +23,8 @@ merge_list() {
 }
 
 # Handle allowlist & blocklist
-merge_list "allowlist" "allow"
-merge_list "blocklist" "block"
+merge_list allowlist allow
+merge_list blocklist" block
 
 
 # Generate final lite host list
