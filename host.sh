@@ -19,8 +19,8 @@ process_list() {
     
     sed -i -e '/#/d' \
            -e '/:/d' \
-           -E '/^[01][[:space:]]/d' \
-           -e 's/^[^[:space:]]*//' \
+           -e 's/127.0.0.1 //g' \
+           -e 's/0.0.0.0 //g' \
            -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' \
            -e '/^$/d' \       
            -e 's/[[:space:]]//g'  "$tmp_file"
