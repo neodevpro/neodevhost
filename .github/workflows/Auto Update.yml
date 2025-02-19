@@ -8,16 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3.5.2
-
-    - name: cleanup
-      run: bash ./merge-clean.sh
+    - uses: actions/checkout@v4.2.2
       
     - name: Run a one-line script
       run: bash ./host.sh
       
     - name: Git Auto Commit
-      uses: stefanzweifel/git-auto-commit-action@v4.16.0
+      uses: stefanzweifel/git-auto-commit-action@v5.1.0
       with:
            commit_message: Auto Update
            branch: master
