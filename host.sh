@@ -126,9 +126,8 @@ echo "Adding Title and SYNC data..."
 
 sed -i "14cTotal ad / tracking block list 屏蔽追踪广告总数: $(wc -l < block)" README.md  
 sed -i "16cTotal allowlist list 允许名单总数: $(wc -l < allow)" README.md 
-sed -i "18cTotal combine list 结合总数： $(wc -l < host)" README.md
 sed -i "24cUpdate 更新时间: $(date '+%Y-%m-%d')" README.md
-sed -i "50cNumber of Domain 域名数目： $(wc -l < domain)" README.md
+sed -i "48cNumber of Domain 域名数目： $(wc -l < block)" README.md
 
 echo " "
 echo "Done!"
