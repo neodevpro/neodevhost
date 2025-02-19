@@ -29,9 +29,11 @@ merge_list "blocklist" "block"
 
 # Generate final lite host list
 echo "Merge Combine..."
-sort -u block allow > host
+sort -n block allow allow | uniq -u > tmp && mv tmp tmphost
+sort -u tmphost > host
 sed -i '/^$/d' host
 sed -i s/[[:space:]]//g host
+rm -f tmphost
 
 
 # Create lists
