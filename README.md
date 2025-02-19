@@ -21,7 +21,7 @@ Update 更新时间: 2025-02-19
 ```
 ### UPTODATE 保持最新<br/>
     Merge every day　每天更新
-### POWERFUL　 强大有效<br/>
+Update 更新时间: 2025-02-19
     To block all ad / tracking  有效拦截广告追踪　
 ### FRIENDLY　友善使用<br/>
     Easy to use and welcome to report issues　简单使用欢迎回报问题
