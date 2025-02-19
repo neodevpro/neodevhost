@@ -8,9 +8,10 @@ rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow
 
 # Merge allowlist
 echo "Merge allow..."
-for url in `cat allowlist` ; do
+while read -r url; do
+    [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
     wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpallow
-done
+done < allowlist
 
 sed -i -e '/#/d' \
        -e '/^$/d' \
@@ -25,9 +26,10 @@ rm -f tmpallow
 
 # Merge blocklist
 echo "Merge block..."
-for url in `cat blocklist` ; do
+while read -r url; do
+    [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
     wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpblock
-done
+done < blocklist
 
 sed -i -e '/#/d' \
        -e '/@/d' \
