@@ -130,41 +130,5 @@ sed -i "18cTotal combine list 结合总数： $(wc -l < host)" README.md
 sed -i "24cUpdate 更新时间: $(date '+%Y-%m-%d')" README.md
 sed -i "50cNumber of Domain 域名数目： $(wc -l < domain)" README.md
 
-# Define Head
-TITLE_TEMPLATE="#=====================================
-#
-# Title: NEO DEV HOST
-#
-# Powered by NEO DEV Team
-#
-# Project home page: https://github.com/neodevpro/neodevhost
-#
-# Last update: PLACEHOLDER_DATE
-#
-# Number of domains: PLACEHOLDER_COUNT
-#
-"
-
-# Define file
-declare -A files=(
-    ["host"]="host"
-    ["adblocker"]="adblocker"
-    ["dnsmasq.conf"]="dnsmasq.conf"
-    ["smartdns.conf"]="smartdns.conf"
-    ["domain"]="domain"
-)
-
-# Update all list Head
-for key in "${!files[@]}"; do
-    CURRENT_DATE=$(date "+%Y-%m-%d")
-    DOMAIN_COUNT=$(wc -l < "$key" | xargs)
-    echo "${TITLE_TEMPLATE}" | sed "s/PLACEHOLDER_DATE/$CURRENT_DATE/" | sed "s/PLACEHOLDER_COUNT/$DOMAIN_COUNT/" > "${files[$key]}"
-    cat "$key" >> "${files[$key]}"
-    mv "${files[$key]}" "$key"
-done
-
-
-
-
 echo " "
 echo "Done!"
