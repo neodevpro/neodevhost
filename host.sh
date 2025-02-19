@@ -1,18 +1,18 @@
 #!/bin/bash
 
-echo " "
-echo "Clean..."
 
-rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock checkallow smartdns.conf lite_smartdns.conf doamin lite_domain clash lite_clash allow
+# Clean up old files
+echo "\nClean..."
+rm -f host lite_host lite_adblocker adblocker lite_dnsmasq.conf dnsmasq.conf deadallow deadblock checkblock checkallow \
+      smartdns.conf lite_smartdns.conf domain lite_domain clash lite_clash allow
 
-echo " "
-echo "Merge allow..."
-for url in `cat allowlist` ;do
-    wget --no-check-certificate -t 1 -T 10 -q -O tmp $url
-    cat tmp >> tmpallow
-    rm -f tmp
+
+# Merge allowlist
+echo "\nMerge allow..."
+> tmpallow
+for url in $(cat allowlist); do
+    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpallow
 done
-
 
 sed -i -e '/#/d' \
        -e '/^$/d' \
@@ -25,19 +25,17 @@ sort -u tmpallow > allow
 rm -f tmpallow
 
 
-echo " "
-echo "Check Dead Allow..."
-cp allow checkallow
-wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/neodevpro/dead-allow/master/deadallow
-sort -n allow deadallow | uniq -u > tmpallow
-rm -f tmpallow
+# Check for dead allowlist entries
+echo "\nCheck Dead Allow..."
+wget --no-check-certificate -t 1 -T 10 -q -O deadallow https://raw.githubusercontent.com/neodevpro/dead-allow/master/deadallow
+sort allow deadallow | uniq -u > tmpallow && mv tmpallow allow
 
-echo " "
-echo "Merge block..."
-for url in `cat blocklist` ;do
-    wget --no-check-certificate -t 1 -T 10 -q -O tmp $url
-    cat tmp >> tmpblock
-    rm -f tmp
+
+# Merge blocklist
+echo "\nMerge block..."
+> tmpblock
+for url in $(cat blocklist); do
+    wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> tmpblock
 done
 
 sed -i -e '/#/d' \
@@ -66,14 +64,15 @@ sed -i -e '/#/d' \
 sort -u tmpblock > block
 rm -f tmpblock
 
-domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
 
 
-echo " "
-echo "Check format..."
+# Check format
 
+echo "\nCheck format..."
 sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' allow
 sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
+
+domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}(:[0-9]+)?([/?].*)?$"
 
 while read line; do
   if [[ $line =~ $domain_name_regex ]]; then
@@ -87,49 +86,41 @@ while read line; do
   fi
 done < block
 
-echo " "
-echo "Check Dead Block..."
+
+# Check for dead blocklist entries
+echo "\nCheck Dead Block..."
 rm -rf allow block
 mv cleanallow allow
 mv cleanblock block
-rm -rf cleanblock
-cp block checkblock
-cp block lite_block
+cp block checkblock lite_block
 wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock
-sort -n lite_block deadblock deadblock | uniq -u > tmp && mv tmp tmplite_block
-sort -u tmplite_block > lite_block
+sort lite_block deadblock | uniq -u > tmplite_block && mv tmplite_block lite_block
 rm -f tmplite_block 
 
-echo " "
-echo "Merge Combine..."
-sort -n block allow allow | uniq -u > tmp && mv tmp tmphost
-sort -u tmphost > host
-sed -i '/^$/d' host
-sed -i s/[[:space:]]//g host
-rm -f tmphost
+# Generate final lite host list
+echo "\nMerge Combine..."
+generate_host_list() {
+    local blocklist=$1
+    local output=$2
 
-echo " "
-echo "Merge Combine..."
-sort -n lite_block allow allow | uniq -u > tmp && mv tmp tmplite_host
-sort -u tmplite_host > lite_host
-sed -i '/^$/d' lite_host
-sed -i s/[[:space:]]//g lite_host
-rm -f tmplite_host
+    sort -n "$blocklist" allow allow | uniq -u > tmp && mv tmp tmp"$output"
+    sort -u tmp"$output" > "$output"
+    sed -i '/^$/d' "$output"
+    sed -i 's/[[:space:]]//g' "$output"
+    rm -f tmp"$output"
+}
 
-echo " "
-echo "Adding Compatibility..."
-
-cp host adblocker
-cp host dnsmasq.conf
-cp host smartdns.conf
-cp host domain
+# Generate both host lists
+generate_host_list "block" "host"
+generate_host_list "lite_block" "lite_host"
 
 
-cp lite_host lite_adblocker
-cp lite_host lite_dnsmasq.conf
-cp lite_host lite_smartdns.conf
-cp lite_host lite_domain
 
+# Generate different format lists
+echo "\nAdding Compatibility..."
+
+cp host adblocker dnsmasq.conf smartdns.conf domain
+cp lite_host lite_adblocker lite_dnsmasq.conf lite_smartdns.conf lite_domain
 
 # Edit adblocker & lite_adblocker
 for file in adblocker lite_adblocker; do
@@ -154,17 +145,21 @@ for file in smartdns.conf lite_smartdns.conf; do
     sed -i 's/$/&\/#/' "$file"
 done
 
-echo " "
-echo "Adding Title and SYNC data..."
-sed -i '14cTotal ad / tracking block list 屏蔽追踪广告总数: '$(wc -l block)' ' README.md  
-sed -i '16cTotal allowlist list 允许名单总数: '$(wc -l allow)' ' README.md 
-sed -i '18cTotal combine list 结合总数： '$(wc -l host)' ' README.md
-sed -i '20cTotal deadblock list 失效屏蔽广告域名： '$(wc -l deadblock)' ' README.md
-sed -i '22cTotal deadallow list 失效允许广告域名： '$(wc -l deadallow)' ' README.md
-sed -i '24cUpdate 更新时间: '$(date "+%Y-%m-%d")'' README.md
+# Update README with statistics
+echo "\nAdding Title and SYNC data..."
 
-sed -i '54cNumber of Domain 域名数目： '$(wc -l domain)' ' README.md
-sed -i '64cNumber of Domain 域名数目： '$(wc -l lite_domain)' ' README.md
+update_readme() {
+    sed -i "$1c$2 $(wc -l $3)" README.md
+}
+
+update_readme 14 "Total ad / tracking block list:" block
+update_readme 16 "Total allowlist entries:" allow
+update_readme 18 "Total combined list entries:" host
+update_readme 20 "Total deadblock entries:" deadblock
+update_readme 22 "Total deadallow entries:" deadallow
+update_readme 24 "Update date:" "$(date '+%Y-%m-%d')"
+update_readme 54 "Number of domains:" domain
+update_readme 64 "Number of domains:" lite_domain
 
  
 cp title title.2
@@ -233,8 +228,8 @@ mv title.5 lite_dnsmasq.conf
 mv title.7 lite_smartdns.conf
 mv title.9 lite_domain
 
-## Add Clash support
-
+# Generate Clash rules
+echo "\nAdding Clash support..."
 sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" domain >> clash
 sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" lite_domain >> lite_clash
 
