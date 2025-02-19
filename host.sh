@@ -193,8 +193,12 @@ cat lite_smartdns.conf >>title.7
 cat lite_domain >>title.9
 
 
+rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain
 
 
+
+# Generate files
+echo "Generate files..."
 mv title.2 host
 mv title.4 adblocker
 mv title.6 dnsmasq.conf
@@ -206,10 +210,6 @@ mv title.3 lite_adblocker
 mv title.5 lite_dnsmasq.conf
 mv title.7 lite_smartdns.conf
 mv title.9 lite_domain
-
-
-rm -f host adblocker dnsmasq.conf lite_host lite_adblocker lite_dnsmasq.conf lite_block block smartdns.conf lite_smartdns.conf doamin lite_domain
-
 
 # Generate Clash rules
 echo "Adding Clash support..."
