@@ -13,10 +13,6 @@ while read -r url; do
 done < allowlist
 
 sed -i -e '/#/d' \
-       -e '/^$/d' \
-       -e '/^REG /d' \
-       -e '/RZD/d' \
-       -e 's/ALL .//g' \
        -e 's/[[:space:]]//g' tmpallow
 
 sort -u tmpallow > allow
