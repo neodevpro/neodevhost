@@ -154,6 +154,8 @@ sed -i "18cTotal combine list 结合总数： $(wc -l < host)" README.md
 sed -i "20cTotal deadblock list 失效屏蔽广告域名： $(wc -l < deadblock)" README.md
 sed -i "22cTotal deadallow list 失效允许广告域名： $(wc -l < deadallow)" README.md
 sed -i "24cUpdate 更新时间: $(date '+%Y-%m-%d')" README.md
+sed -i "54cNumber of Domain 域名数目： $(wc -l < domain)" README.md
+sed -i "64cNumber of Domain 域名数目： $(wc -l < lite_domain)" README.md
  
 cp title title.2
 sed -i '9c# Last update: '$(date "+%Y-%m-%d")'' title.2 
