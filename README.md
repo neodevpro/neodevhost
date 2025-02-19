@@ -57,16 +57,6 @@ SmartDNS | SmartDNS |[link](https://raw.githubusercontent.com/neodevpro/neodevho
 Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain)
 Clash | Clash |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash)
 
-Number of Domain 域名数目： 0
-Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
---------- |:-------------:|:-------------:|:-------------:
-Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_host) | [link](https://neodev.team/lite_host)
-Adblocker | uBlock，Adguard ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_adblocker) | [link](https://neodev.team/lite_adblocker) 
-Dnsmasq | Dns ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_dnsmasq.conf) | [link](https://neodev.team/lite_dnsmasq.conf)
-SmartDNS | SmartDNS |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_smartdns.conf) | [link](https://neodev.team/lite_smartdns.conf)
-Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_domain) | [link](https://neodev.team/lite_domain)
-Clash | Clash |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_clash) | [link](https://neodev.team/lite_clash)
-
 ## How To Use 如何使用
 ```
 1.Download files/copy link of files
