@@ -5,6 +5,12 @@
 echo "Clean..."
 rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow
 
+# Read title file and update placeholders
+TITLE_FILE="title"
+UPDATED_TITLE=$(<"$TITLE_FILE")
+UPDATED_TITLE="${UPDATED_TITLE//PLACEHOLDER_DATE/$(date '+%Y-%m-%d')}"
+
+
 
 # Merge allowlist
 echo "Merge allow..."
@@ -60,7 +66,6 @@ rm -f tmpblock
 
 
 # Check format
-
 echo "Check format..."
 sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' allow
 sed -E -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' block
@@ -82,45 +87,46 @@ done < block
 mv cleanallow allow
 mv cleanblock block
 
+
 # Generate final lite host list
 echo "Merge Combine..."
-sort -n block allow allow | uniq -u > tmp && mv tmp tmphost
-sort -u tmphost > host
-sed -i '/^$/d' host
-sed -i s/[[:space:]]//g host
-rm -f tmphost
+{
+  echo "$UPDATED_TITLE"
+  sort -n block allow allow | uniq -u
+} > host
+
+
+# Update placeholder count
+DOMAIN_COUNT=$(wc -l < host)
+UPDATED_TITLE="${UPDATED_TITLE//PLACEHOLDER_COUNT/$DOMAIN_COUNT}"
+sed -i "1,9c$UPDATED_TITLE" host
+
 
 # Generate different format lists
 echo "Adding Compatibility..."
+for file in adblocker dnsmasq.conf smartdns.conf domain clash allow; do
+    echo "$UPDATED_TITLE" > "$file"
+    cat host >> "$file"
+    sed -i "1,9c$UPDATED_TITLE" "$file"
+done
 
-tee adblocker dnsmasq.conf smartdns.conf domain < host >/dev/null
 
 # Edit adblocker
-for file in adblocker ; do
-    sed -i 's/^/||&/' "$file"
-    sed -i 's/$/&^/' "$file"
-done
+sed -i -e '10,$s/^/||&/' -e '10,$s/$/&^/' adblocker
 
 # Edit host
-for file in host ; do
-    sed -i 's/^/0.0.0.0  &/' "$file"
-done
+sed -i '10,$s/^/0.0.0.0  &/' host
 
 # Edit dnsmasq.conf
-for file in dnsmasq.conf ; do
-    sed -i 's/^/address=\/&/' "$file"
-    sed -i 's/$/&\/0.0.0.0/' "$file"
-done
+sed -i -e '10,$s/^/address=\//' -e '10,$s/$/\/0.0.0.0/' dnsmasq.conf
 
 # Edit smartdns.conf
-for file in smartdns.conf ; do
-    sed -i 's/^/address=\/&/' "$file"
-    sed -i 's/$/&\/#/' "$file"
-done
+sed -i -e '10,$s/^/address=\//' -e '10,$s/$/\/#/' smartdns.conf
 
 # Generate Clash rules
-echo "Adding Clash support..."
-sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" domain >> clash
+sed -i '10i payload:' clash
+sed -i "11,\$s/^/  - '/" clash
+sed -i "11,\$s/$/'/" clash
 
 
 # Update README with statistics
