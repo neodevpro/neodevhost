@@ -82,49 +82,36 @@ mv cleanblock block
 
 # Generate final lite host list
 echo "Merge Combine..."
-generate_host_list() {
-    local blocklist=$1
-    local output=$2
-
-    sort -n "$blocklist" allow allow | uniq -u > tmp && mv tmp tmp"$output"
-    sort -u tmp"$output" > "$output"
-    sed -i '/^$/d' "$output"
-    sed -i 's/[[:space:]]//g' "$output"
-    rm -f tmp"$output"
-}
-
-# Generate both host lists
-generate_host_list "block" "host"
-generate_host_list "lite_block" "lite_host"
-
-
+sort -n block allow allow | uniq -u > tmp && mv tmp tmphost
+sort -u tmphost > host
+sed -i '/^$/d' host
+sed -i s/[[:space:]]//g host
+rm -f tmphost
 
 # Generate different format lists
 echo "Adding Compatibility..."
 
 tee adblocker dnsmasq.conf smartdns.conf domain < host >/dev/null
-tee lite_adblocker lite_dnsmasq.conf lite_smartdns.conf lite_domain < lite_host >/dev/null
 
-
-# Edit adblocker & lite_adblocker
-for file in adblocker lite_adblocker; do
+# Edit adblocker
+for file in adblocker ; do
     sed -i 's/^/||&/' "$file"
     sed -i 's/$/&^/' "$file"
 done
 
-# Edit host & lite_host
-for file in host lite_host; do
+# Edit host
+for file in host ; do
     sed -i 's/^/0.0.0.0  &/' "$file"
 done
 
-# Edit dnsmasq.conf & lite_dnsmasq.conf
-for file in dnsmasq.conf lite_dnsmasq.conf; do
+# Edit dnsmasq.conf
+for file in dnsmasq.conf ; do
     sed -i 's/^/address=\/&/' "$file"
     sed -i 's/$/&\/0.0.0.0/' "$file"
 done
 
-# Edit smartdns.conf & lite_smartdns.conf
-for file in smartdns.conf lite_smartdns.conf; do
+# Edit smartdns.conf
+for file in smartdns.conf ; do
     sed -i 's/^/address=\/&/' "$file"
     sed -i 's/$/&\/#/' "$file"
 done
@@ -132,7 +119,7 @@ done
 # Generate Clash rules
 echo "Adding Clash support..."
 sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" domain >> clash
-sed -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" lite_domain >> lite_clash
+
 
 # Update README with statistics
 echo "Adding Title and SYNC data..."
@@ -140,11 +127,8 @@ echo "Adding Title and SYNC data..."
 sed -i "14cTotal ad / tracking block list 屏蔽追踪广告总数: $(wc -l < block)" README.md  
 sed -i "16cTotal allowlist list 允许名单总数: $(wc -l < allow)" README.md 
 sed -i "18cTotal combine list 结合总数： $(wc -l < host)" README.md
-sed -i "20cTotal deadblock list 失效屏蔽广告域名： $(wc -l < deadblock)" README.md
-sed -i "22cTotal deadallow list 失效允许广告域名： $(wc -l < deadallow)" README.md
 sed -i "24cUpdate 更新时间: $(date '+%Y-%m-%d')" README.md
-sed -i "54cNumber of Domain 域名数目： $(wc -l < domain)" README.md
-sed -i "64cNumber of Domain 域名数目： $(wc -l < lite_domain)" README.md
+sed -i "50cNumber of Domain 域名数目： $(wc -l < domain)" README.md
 
 echo " "
 echo "Done!"
