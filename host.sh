@@ -3,7 +3,7 @@
 
 # Clean up old files
 echo "Clean..."
-rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow
+rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
 
 # Merge allowlist
 echo "Merge allow..."
@@ -91,7 +91,7 @@ rm -f tmphost
 
 
 # Create lists
-tee adblocker dnsmasq.conf smartdns.conf domain clash < host >/dev/null
+tee adblocker dnsmasq.conf smartdns.conf domain clash block < host >/dev/null
 for file in host adblocker dnsmasq.conf smartdns.conf domain clash
 do
   cat title "$file" > temp.file && mv temp.file "$file"
