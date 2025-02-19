@@ -91,7 +91,7 @@ rm -f tmphost
 
 
 # Create lists
-tee adblocker dnsmasq.conf smartdns.conf domain < host >/dev/null
+tee adblocker dnsmasq.conf smartdns.conf domain clash < host >/dev/null
 for file in host adblocker dnsmasq.conf smartdns.conf domain clash
 do
   cat title "$file" > temp.file && mv temp.file "$file"
