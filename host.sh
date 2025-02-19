@@ -14,12 +14,13 @@ for url in `cat allowlist` ;do
 done
 
 
-sed -i '/#/d' tmpallow
-sed -i '/^$/d' tmpallow
-sed -i '/REG ^/d' tmpallow
-sed -i '/RZD/d' tmpallow
-sed -i 's/ALL ./ /g' tmpallow
-sed -i s/[[:space:]]//g tmpallow
+sed -i -e '/#/d' \
+       -e '/^$/d' \
+       -e '/^REG /d' \
+       -e '/RZD/d' \
+       -e 's/ALL .//g' \
+       -e 's/[[:space:]]//g' tmpallow
+
 sort -u tmpallow > allow
 rm -f tmpallow
 
@@ -28,8 +29,7 @@ echo " "
 echo "Check Dead Allow..."
 cp allow checkallow
 wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/neodevpro/dead-allow/master/deadallow
-sort -n allow deadallow deadallow | uniq -u > tmp && mv tmp tmpallow
-sort -u tmpallow > allow
+sort -n allow deadallow | uniq -u > tmpallow
 rm -f tmpallow
 
 echo " "
@@ -40,32 +40,29 @@ for url in `cat blocklist` ;do
     rm -f tmp
 done
 
-sed -i '/#/d' tmpblock
-sed -i '/@/d' tmpblock
-sed -i '/*/d' tmpblock
-sed -i '/127.0.0.1 localhost.localdomain/d' tmpblock
-sed -i '/fe80::1%lo0 localhost/d' tmpblock
+sed -i -e '/#/d' \
+       -e '/@/d' \
+       -e '/*/d' \
+       -e '/127.0.0.1 localhost.localdomain/d' \
+       -e '/fe80::1%lo0 localhost/d' \
+       -e '/127.0.0.1 localhost/d' \
+       -e '/127.0.0.1 local/d' \
+       -e '/::1 ip6-localhost/d' \
+       -e '/localhost/d' \
+       -e '/ip6-local/d' \
+       -e '/ip6-all/d' \
+       -e '/ip6-mcastprefix/d' \
+       -e '/broadcasthost/d' \
+       -e '/ip6-loopback/d' \
+       -e '/0.0.0.0 0.0.0.0/d' \
+       -e 's/0.0.0.0 //' \
+       -e 's/127.0.0.1 //' \
+       -e '/:/d' \
+       -e '/!/d' \
+       -e '/|/d' \
+       -e '/^$/d' \
+       -e 's/[[:space:]]//g' tmpblock
 
-
-
-sed -i '/127.0.0.1 localhost/d' tmpblock
-sed -i '/127.0.0.1 local/d' tmpblock
-sed -i '/::1 ip6-localhost/d' tmpblock
-sed -i '/localhost/d' tmpblock
-sed -i '/ip6-local/d' tmpblock
-sed -i '/ip6-all/d' tmpblock
-sed -i '/ip6-mcastprefix/d' tmpblock
-sed -i '/broadcasthost/d' tmpblock
-sed -i '/ip6-loopback/d' tmpblock
-sed -i '/0.0.0.0 0.0.0.0/d' tmpblock
-sed -i 's/0.0.0.0 //' tmpblock
-sed -i 's/127.0.0.1 //' tmpblock
-
-sed -i '/:/d' tmpblock
-sed -i '/!/d' tmpblock
-sed -i '/|/d' tmpblock
-sed -i '/^$/d' tmpblock
-sed -i s/[[:space:]]//g tmpblock
 sort -u tmpblock > block
 rm -f tmpblock
 
@@ -134,26 +131,28 @@ cp lite_host lite_smartdns.conf
 cp lite_host lite_domain
 
 
-sed -i 's/^/||&/' adblocker
-sed -i 's/$/&^/' adblocker 
+# Edit adblocker & lite_adblocker
+for file in adblocker lite_adblocker; do
+    sed -i 's/^/||&/' "$file"
+    sed -i 's/$/&^/' "$file"
+done
 
-sed -i 's/^/||&/' lite_adblocker
-sed -i 's/$/&^/' lite_adblocker 
+# Edit host & lite_host
+for file in host lite_host; do
+    sed -i 's/^/0.0.0.0  &/' "$file"
+done
 
-sed -i 's/^/0.0.0.0  &/' host
-sed -i 's/^/0.0.0.0  &/' lite_host
+# Edit dnsmasq.conf & lite_dnsmasq.conf
+for file in dnsmasq.conf lite_dnsmasq.conf; do
+    sed -i 's/^/address=\/&/' "$file"
+    sed -i 's/$/&\/0.0.0.0/' "$file"
+done
 
-sed -i 's/^/address=\/&/' dnsmasq.conf 
-sed -i 's/$/&\/0.0.0.0/' dnsmasq.conf  
-
-sed -i 's/^/address=\/&/' lite_dnsmasq.conf 
-sed -i 's/$/&\/0.0.0.0/' lite_dnsmasq.conf 
-
-sed -i 's/^/address \/&/' smartdns.conf 
-sed -i 's/$/&\/#/' smartdns.conf  
-
-sed -i 's/^/address \/&/' lite_smartdns.conf 
-sed -i 's/$/&\/#/' lite_smartdns.conf 
+# Edit smartdns.conf & lite_smartdns.conf
+for file in smartdns.conf lite_smartdns.conf; do
+    sed -i 's/^/address=\/&/' "$file"
+    sed -i 's/$/&\/#/' "$file"
+done
 
 echo " "
 echo "Adding Title and SYNC data..."
