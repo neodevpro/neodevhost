@@ -8,7 +8,7 @@
 #
 # Last update: 2025-02-20
 #
-# Number of domains: 103088
+# Number of domains: 103087
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -1548,6 +1548,7 @@
 0.0.0.0  52shouyou.com.cn
 0.0.0.0  52xiyou.com
 0.0.0.0  52zdm.com
+0.0.0.0  53.com
 0.0.0.0  5363316.marketing.numi.com
 0.0.0.0  5363316.trackerinfo.southbeachdiet.com
 0.0.0.0  536435ba94.com
@@ -33124,7 +33125,7 @@
 0.0.0.0  event.collector.scopely.io
 0.0.0.0  event.csdn.net
 0.0.0.0  event.dnv.com
-0.0.0.0  event.evtm.53.com
+0.0.0.0  event.evtm.m.mibet.win
 0.0.0.0  event.grassicpas.com
 0.0.0.0  event.hackle.io
 0.0.0.0  event.instiengage.com
@@ -35978,7 +35979,6 @@
 0.0.0.0  fun88.green
 0.0.0.0  fun881211.com
 0.0.0.0  fun88epl.com
-0.0.0.0  fun88event.com
 0.0.0.0  fun88fifa.com
 0.0.0.0  fun88viet.tv
 0.0.0.0  fun99.vip
@@ -52570,7 +52570,6 @@
 0.0.0.0  m.mh89w.cn
 0.0.0.0  m.mhuos.com
 0.0.0.0  m.miaoxinqipei.com
-0.0.0.0  m.mibet.win
 0.0.0.0  m.mibet88.com
 0.0.0.0  m.mig8vn.com
 0.0.0.0  m.mightiger.net
@@ -90172,7 +90171,7 @@
 0.0.0.0  tracking.unrealengine.com
 0.0.0.0  tracking.usj.es
 0.0.0.0  tracking.utas.edu.au
-0.0.0.0  tracking.v.tf.360.cn
+0.0.0.0  tracking.v.tf.com
 0.0.0.0  tracking.ventingdirect.com
 0.0.0.0  tracking.ventingpipe.com
 0.0.0.0  tracking.venture-net.co.jp
