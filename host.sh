@@ -7,29 +7,21 @@ rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
 # Merge list
 process_list() {
     local input_list=$1 output_file=$2 tmp_file="tmp_$output_file"
-    
     echo "Merging $output_file..."
     grep -v '^#' "$input_list" | xargs -P 5 -I {} wget --no-check-certificate -t 1 -T 10 -q -O - "{}" > "$tmp_file"
+    sed -i -E '/^[[:space:]]*#/d; /:/d; s/[0-9\.]+[[:space:]]+//g; /^[^[:space:]]+\.[^[:space:]]+$/!d' "$tmp_file"
+    valid_tlds=$(wget -qO- "https://data.iana.org/TLD/tlds-alpha-by-domain.txt" | tail -n +2 | tr '[:upper:]' '[:lower:]')
+    awk -F. -v tlds="$valid_tlds" 'BEGIN {split(tlds, arr, "\n"); for (i in arr) validTLD[arr[i]] = 1} 
+    {if (validTLD[tolower($NF)]) print}' "$tmp_file" | sort -u > "$output_file"
 
-    cat "$tmp_file" | xargs -P 4 -I {} bash -c 'echo "{}" | sed -E "
-        /^[[:space:]]*#/d;     # Remove commented lines (starting with #)
-        /:/d;                  # Remove lines containing colons (IPv6 addresses)
-        s/[0-9\.]+[[:space:]]+//g;  # Remove IP addresses and trailing spaces
-        /^[^[:space:]]+\.[^[:space:]]+$/!d # Keep only valid domain names
-    "' | sort -u > "$output_file"
-
-    rm -f "$tmp_file"
 }
 
 # Run allowlist and blocklist processing concurrently
-process_list "allowlist" "allow" &
-process_list "blocklist" "block" &
-wait
+process_list "allowlist" "allow" & process_list "blocklist" "block" & wait
 
 # Check format
 echo "Validating domain format..."
 domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
-
 grep -E "$domain_name_regex" "allow" > "clean_allow" && mv "clean_allow" "allow"
 grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block"
 
