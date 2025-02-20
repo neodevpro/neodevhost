@@ -103,7 +103,8 @@ AD-hostss | Link
 --------- |:-------------:
 Anti-ad | [link](https://github.com/privacy-protection-tools/anti-AD)
 StevenBlack | [link](https://github.com/StevenBlack/hosts)
-Cats-Team | [link](https://github.com/Cats-Team/AdRules)
+217heidai | [link](https://github.com/217heidai/adblockfilters)
+GOODBYEADS | [link](https://github.com/8680/GOODBYEADS)
 
 ## Sources of Allowlist 允许名单
 Allowlist | Link  
@@ -111,6 +112,10 @@ Allowlist | Link
 AnudeepND | [link](https://github.com/anudeepND/whitelist)
 Ultimate-Hosts-Blacklist | [link](https://github.com/Ultimate-Hosts-Blacklist/whitelist)
 Energized Protection | [link](https://github.com/EnergizedProtection/unblock)
+217heidai | [link](https://github.com/217heidai/adblockfilters)
+oisd | [link](https://oisd.nl)
+blahdns | [link](https://github.com/zoonderkins/blahdns)
+DNS Blocklists | [link](https://github.com/hagezi/dns-blocklists)
 
 ## Dead Domain List 过期域名名单
 Allowlist | Link  
