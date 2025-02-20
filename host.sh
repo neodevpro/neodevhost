@@ -17,7 +17,9 @@ process_list() {
 }
 
 # Run allowlist and blocklist processing concurrently
-process_list "allowlist" "allow" & process_list "blocklist" "block" & wait
+process_list "allowlist" "allow"
+process_list "blocklist" "block" 
+wait
 
 # Check format
 echo "Validating domain format..."
