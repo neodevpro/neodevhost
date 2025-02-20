@@ -7,19 +7,16 @@ rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
 # Merge list
 echo "Merge list..."
 process_list() {
-    local input_list=$1
-    local output_file=$2
-    local tmp_file="tmp_$output_file"
+    local input_list=$1 output_file=$2 tmp_file="tmp_$output_file"
     
     echo "Merging $output_file..."
-    cat "$input_list" | grep -v '^#' | xargs -I {} -P 5 wget --no-check-certificate -t 1 -T 10 -q -O - "{}" >> "$tmp_file"
+    grep -v '^#' "$input_list" | xargs -I {} -P 5 wget --no-check-certificate -t 1 -T 10 -q -O - "{}" > "$tmp_file"
     
     sed -i -E \
             -e '/#/d' \
             -e '/:/d' \
             -e 's/[0-9\.]+[[:space:]]+//g' \
             -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' \
-            -e '/^$/d' \
             -e 's/[[:space:]]//g'  "$tmp_file"
     
     sort -u "$tmp_file" > "$output_file"
@@ -28,10 +25,6 @@ process_list() {
 
 process_list "allowlist" "allow"
 process_list "blocklist" "block"
-
-# Check format
-echo "Checking format..."
-domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
 
 # Check format
 echo "Validating domain format..."
