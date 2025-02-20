@@ -6,14 +6,14 @@ rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
 
 # Merge list
 process_list() {
-    local input_list=$1 output_file=$2 tmp_file="$output_file"
+    local input_list=$1 output_file=$2 tmp_file="tmp_$output_file"
     echo "Merging $output_file..."
     grep -v '^#' "$input_list" | xargs -P 5 -I {} wget --no-check-certificate -t 1 -T 10 -q -O - "{}" > "$tmp_file"
     sed -i -E '/^[[:space:]]*#/d; /:/d; s/[0-9\.]+[[:space:]]+//g; /^[^[:space:]]+\.[^[:space:]]+$/!d' "$tmp_file"
     valid_tlds=$(wget -qO- "https://data.iana.org/TLD/tlds-alpha-by-domain.txt" | tail -n +2 | tr '[:upper:]' '[:lower:]')
     awk -F. -v tlds="$valid_tlds" 'BEGIN {split(tlds, arr, "\n"); for (i in arr) validTLD[arr[i]] = 1} 
     {if (validTLD[tolower($NF)]) print}' "$tmp_file" | sort -u > "$output_file"
-
+    rm -f tmp_
 }
 
 # Run allowlist and blocklist processing concurrently
