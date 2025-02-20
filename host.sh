@@ -5,26 +5,26 @@ echo "Clean..."
 rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
 
 # Merge list
-echo "Merge list..."
 process_list() {
     local input_list=$1 output_file=$2 tmp_file="tmp_$output_file"
     
     echo "Merging $output_file..."
-    grep -v '^#' "$input_list" | xargs -I {} -P 5 wget --no-check-certificate -t 1 -T 10 -q -O - "{}" > "$tmp_file"
-    
-    sed -i -E \
-            -e '/#/d' \
-            -e '/:/d' \
-            -e 's/[0-9\.]+[[:space:]]+//g' \
-            -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' \
-            -e 's/[[:space:]]//g'  "$tmp_file"
-    
-    sort -u "$tmp_file" > "$output_file"
+    grep -v '^#' "$input_list" | xargs -P 5 -I {} wget --no-check-certificate -t 1 -T 10 -q -O - "{}" > "$tmp_file"
+
+    cat "$tmp_file" | xargs -P 4 -I {} bash -c 'echo "{}" | sed -E "
+        /^[[:space:]]*#/d;     # Remove commented lines (starting with #)
+        /:/d;                  # Remove lines containing colons (IPv6 addresses)
+        s/[0-9\.]+[[:space:]]+//g;  # Remove IP addresses and trailing spaces
+        /^[^[:space:]]+\.[^[:space:]]+$/!d # Keep only valid domain names
+    "' | sort -u > "$output_file"
+
     rm -f "$tmp_file"
 }
 
-process_list "allowlist" "allow"
-process_list "blocklist" "block"
+# Run allowlist and blocklist processing concurrently
+process_list "allowlist" "allow" &
+process_list "blocklist" "block" &
+wait
 
 # Check format
 echo "Validating domain format..."
