@@ -12,16 +12,12 @@ process_list() {
     local tmp_file="tmp_$output_file"
     
     echo "Merging $output_file..."
-    while read -r url; do
-        [[ -z "$url" || "$url" =~ ^# ]] && continue  # Skip empty lines and comments
-        wget --no-check-certificate -t 1 -T 10 -q -O - "$url" >> "$tmp_file"
-    done < "$input_list"
+    cat "$input_list" | grep -v '^#' | xargs -I {} -P 5 wget --no-check-certificate -t 1 -T 10 -q -O - "{}" >> "$tmp_file"
     
     sed -i -E \
             -e '/#/d' \
             -e '/:/d' \
-            -e 's/127.0.0.1 //g' \
-            -e 's/0.0.0.0 //g' \
+            -e 's/[0-9\.]+[[:space:]]+//g' \
             -e '/^[^[:space:]]+\.[^[:space:]]+$/!d' \
             -e '/^$/d' \
             -e 's/[[:space:]]//g'  "$tmp_file"
@@ -35,17 +31,14 @@ process_list "blocklist" "block"
 
 # Check format
 echo "Checking format..."
-domain_name_regex="^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$"
+domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
 
-validate_format() {
-    local input_file=$1
-    local output_file="clean_$input_file"
-    grep -E "^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$" "$input_file" > "$output_file"
-    mv "$output_file" "$input_file"
-}
+# Check format
+echo "Validating domain format..."
+domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
 
-validate_format "allow"
-validate_format "block"
+grep -E "$domain_name_regex" "allow" > "clean_allow" && mv "clean_allow" "allow"
+grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block"
 
 # Generate final lite host list
 echo "Merge Combine..."
