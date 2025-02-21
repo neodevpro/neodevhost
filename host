@@ -6,12 +6,11 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-02-20
+# Last update: 2025-02-21
 #
-# Number of domains: 102968
+# Number of domains: 102985
 #
 #=====================================
-0.0.0.0  0.0nservice.com
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
@@ -512,6 +511,7 @@
 0.0.0.0  188best188.net
 0.0.0.0  188bet.com
 0.0.0.0  188bet.pro
+0.0.0.0  188bet.vote
 0.0.0.0  188betcn2.com
 0.0.0.0  188bowls.com
 0.0.0.0  188dota.com
@@ -1563,7 +1563,6 @@
 0.0.0.0  54019033.xyz
 0.0.0.0  540252a00b.com
 0.0.0.0  54199287.xyz
-0.0.0.0  542.actonservice.com
 0.0.0.0  54gtlb.cn
 0.0.0.0  54kefu.net
 0.0.0.0  55-trk-srv.com
@@ -2003,6 +2002,7 @@
 0.0.0.0  789club.biz
 0.0.0.0  789club.com
 0.0.0.0  789club.org
+0.0.0.0  789club.sx
 0.0.0.0  789clubs.club
 0.0.0.0  789clubs.vin
 0.0.0.0  789d.club
@@ -2080,7 +2080,7 @@
 0.0.0.0  7ng6v3lu3c.execute-api.us-east-1.amazonaws.com
 0.0.0.0  7nt9p4d4.de
 0.0.0.0  7pk.com
-0.0.0.0  7pud.cs.com
+0.0.0.0  7pud.com
 0.0.0.0  7q1z79gxsi.global.ssl.fastly.net
 0.0.0.0  7ssw.cn
 0.0.0.0  7tc.fun
@@ -4429,7 +4429,7 @@
 0.0.0.0  a36216.actonservice.com
 0.0.0.0  a36243.actonservice.com
 0.0.0.0  a36279.actonservice.com
-0.0.0.0  a36331.actoky88.casino
+0.0.0.0  a36331.actonservice.com
 0.0.0.0  a36531.actonservice.com
 0.0.0.0  a36535.actonservice.com
 0.0.0.0  a36539.actonservice.com
@@ -5117,6 +5117,7 @@
 0.0.0.0  a45521.actonservice.com
 0.0.0.0  a45526.actonservice.com
 0.0.0.0  a45539.actonservice.com
+0.0.0.0  a45542.actonservice.com
 0.0.0.0  a45548.actonservice.com
 0.0.0.0  a45553.actonservice.com
 0.0.0.0  a45554.actonservice.com
@@ -7122,7 +7123,6 @@
 0.0.0.0  academyblocked.com
 0.0.0.0  academyenrage.com
 0.0.0.0  acadian-asset.actonservice.com
-0.0.0.0  acaliente.mx
 0.0.0.0  acalraiz.xyz
 0.0.0.0  acam-2.com
 0.0.0.0  acasadf112.cn
@@ -7367,6 +7367,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -16216,6 +16217,7 @@
 0.0.0.0  bet365affiliates.com
 0.0.0.0  bet66.com
 0.0.0.0  bet7days.com
+0.0.0.0  bet88.ai
 0.0.0.0  bet88.systems
 0.0.0.0  bet88010.com
 0.0.0.0  bet88011.com
@@ -17437,6 +17439,7 @@
 0.0.0.0  bongbet2.com
 0.0.0.0  bongda.thethaofb88.com
 0.0.0.0  bongdaeuro188.com
+0.0.0.0  bongdanet.co
 0.0.0.0  bongvip.com
 0.0.0.0  bongvip.onl
 0.0.0.0  bongvip.website
@@ -19004,7 +19007,11 @@
 0.0.0.0  caclick.baidu.com
 0.0.0.0  cactusglobal.io
 0.0.0.0  cactusmedia.com
+0.0.0.0  cacuoc.bet
 0.0.0.0  cacuoc247.com
+0.0.0.0  cacuoc365.blog
+0.0.0.0  cacuoconline.site
+0.0.0.0  cacuocso.com
 0.0.0.0  cad.chosun.com
 0.0.0.0  cad.youku.com
 0.0.0.0  cadcc.icu
@@ -19078,6 +19085,7 @@
 0.0.0.0  caliberco.actonservice.com
 0.0.0.0  calibration.ni.com
 0.0.0.0  calibrelugger.com
+0.0.0.0  caliente.mx
 0.0.0.0  caljetelite.actonservice.com
 0.0.0.0  calksenfire.com
 0.0.0.0  call-tracking.by
@@ -27007,6 +27015,7 @@
 0.0.0.0  debet.com
 0.0.0.0  debet.fun
 0.0.0.0  debet.info
+0.0.0.0  debet.mn
 0.0.0.0  debet.moi
 0.0.0.0  debet.net
 0.0.0.0  debet.top
@@ -35015,6 +35024,7 @@
 0.0.0.0  flznib.weblio.jp
 0.0.0.0  fm.ipinyou.com
 0.0.0.0  fm.p0y.cn
+0.0.0.0  fm88.vip
 0.0.0.0  fma7.aegon.es
 0.0.0.0  fmad.cc
 0.0.0.0  fmapiosb.xyz
@@ -40628,9 +40638,9 @@
 0.0.0.0  hlygsp.modivo.ro
 0.0.0.0  hlyrecomemum.info
 0.0.0.0  hlzad.com
-0.0.0.0  hm.baidu.cactive.tc.skysrt.com
 0.0.0.0  hm.baidu.cn
 0.0.0.0  hm.baidu.com
+0.0.0.0  hm.baidu.com.caiziwuyou.com
 0.0.0.0  hm.baidu.com.jnsiematcnc.com
 0.0.0.0  hm.baidu.com.zzsdtzb.com
 0.0.0.0  hm.cdiah.com
@@ -51467,6 +51477,7 @@
 0.0.0.0  lucky678.com
 0.0.0.0  lucky696.com
 0.0.0.0  lucky816.com
+0.0.0.0  lucky88.casino
 0.0.0.0  lucky88.cc
 0.0.0.0  lucky88.club
 0.0.0.0  lucky88.com
@@ -60118,6 +60129,7 @@
 0.0.0.0  net1.netski.com
 0.0.0.0  net88.ac
 0.0.0.0  net88.day
+0.0.0.0  net88.in
 0.0.0.0  net88.men
 0.0.0.0  net88.run
 0.0.0.0  net88.tv
@@ -60535,6 +60547,7 @@
 0.0.0.0  nhacaisodo.net
 0.0.0.0  nhacaisomot.com
 0.0.0.0  nhacaiuytin.life
+0.0.0.0  nhacaiuytin.top
 0.0.0.0  nhacaiuytinso1vn.com
 0.0.0.0  nhanthuong88.com
 0.0.0.0  nhat.bet
@@ -60999,6 +61012,7 @@
 0.0.0.0  northramseynews.com
 0.0.0.0  northrichmondtoday.com
 0.0.0.0  northsactoday.com
+0.0.0.0  northsanantonionews.com
 0.0.0.0  northsfvtoday.com
 0.0.0.0  northsgvnews.com
 0.0.0.0  northshenandoahnews.com
@@ -62286,7 +62300,6 @@
 0.0.0.0  om.abritel.fr
 0.0.0.0  om.aopa.org
 0.0.0.0  om.burberry.com
-0.0.0.0  om.caiziwuyou.com
 0.0.0.0  om.churchofjesuschrist.org
 0.0.0.0  om.cyberrentals.com
 0.0.0.0  om.dowjoneson.com
@@ -68252,6 +68265,7 @@
 0.0.0.0  qbwkux.home24.at
 0.0.0.0  qc.789.mobi
 0.0.0.0  qc.789b.asia
+0.0.0.0  qc.789club.sx
 0.0.0.0  qc.789d.club
 0.0.0.0  qc.arstechnica.com
 0.0.0.0  qc.choidabanh.com
@@ -70782,6 +70796,7 @@
 0.0.0.0  rikvip.tv
 0.0.0.0  rikvip.us
 0.0.0.0  rikvip.vip
+0.0.0.0  rikvip.wales
 0.0.0.0  rikvip.win
 0.0.0.0  rikvip8.win
 0.0.0.0  rikvipclub.us
@@ -93980,6 +93995,7 @@
 0.0.0.0  vin777.co
 0.0.0.0  vin777.work
 0.0.0.0  vin88.com
+0.0.0.0  vin88.net
 0.0.0.0  vin999.fun
 0.0.0.0  vina88.net
 0.0.0.0  vincentagrafes.top
@@ -94380,6 +94396,7 @@
 0.0.0.0  vnuuh.icu
 0.0.0.0  vnvwbet.com
 0.0.0.0  vnvwin.com
+0.0.0.0  vnxoso-web.com
 0.0.0.0  vnzq.mmpuh.cn
 0.0.0.0  vnzwxk.e-bebek.com
 0.0.0.0  voapozol.com
