@@ -26,7 +26,7 @@
 0.se.pool.ntp.org
 0.sonostime.pool.ntp.org
 0.ubuntu.pool.ntp.org
-0.uk.pool.ntp.org
+0.uk.pool.ne.com
 0.us.pool.ntp.org
 0.wikipedia.com
 0daydown.com
@@ -205,7 +205,7 @@ a.tiles.mapbox.com
 a.union.mi.com
 a0.app.xiaomi.com
 a1.adform.net
-a1.mzstatic.com
+a1.ml
 a1.sndcdn.com
 a1.soundcloud.com
 a1014.g.akamai.net
@@ -313,7 +313,7 @@ accounts.flipboard.com
 accounts.google.com
 accounts.idmapper.api.playstation.com
 accounts.mobisystems.com
-accounts.nvgs.nvidia.com
+accounts.nvgs.nvidia.cp.jwpcdn.com
 accounts.pixiv.net
 accounts.snapchat.com
 accounts.soundcloud.com
@@ -568,6 +568,7 @@ alt4.gmr-smtp-in.l.google.com
 alternativeto.net
 am-api.snapchat.com
 am.coinbase.com
+ama.net
 amap.com
 amauthprd.samsungcloudsolution.com
 amazon.ac
@@ -725,7 +726,6 @@ amazon.domains
 amazon.download
 amazon.durban
 amazon.earth
-amazon.ec
 amazon.education
 amazon.ee
 amazon.email
@@ -1121,6 +1121,7 @@ amazon.yokohama
 amazon.zone
 amazonaws.com
 ambassadors.xbox.com
+amcb.com
 amd.cdn.turner.com
 amd.com
 amdc.m.taobao.com
@@ -1140,7 +1141,7 @@ amp.spot.im
 amp.usatoday.com
 amped.co.uk
 amplitude.com
-amzn.capchat.com
+amzn.com
 amzn.to
 ana.fr
 analytics.agoda.com
@@ -1868,6 +1869,7 @@ bbtree.com
 bc.marfeelcache.com
 bc.vc
 bcbits.com
+bcdn.net
 bce.baidu.com
 bcedns.com
 bcedns.net
@@ -2437,6 +2439,7 @@ cdn.medium.com
 cdn.mozilla.net
 cdn.mplxtms.com
 cdn.mxpnl.com
+cdn.naver.com
 cdn.onesignal.com
 cdn.opinionlab.com
 cdn.optimizely.com
@@ -2522,7 +2525,7 @@ cdn4.xda-developers.com
 cdn5.bigcommerce.com
 cdn5.digitaltrends.com
 cdn6.bigcommerce.com
-cdn6.digitalbcdn.net
+cdn6.digitaltrends.com
 cdn7.digitaltrends.com
 cdn7.es.digitaltrends.com
 cdn77.org
@@ -2591,6 +2594,7 @@ chaoxing.com
 chart.googleapis.com
 chat-gateway-prod.chat.snapchat.com
 chat-gateway000-prod.chat.snapchat.com
+chat-gateway001-prod.chat.snapchat.com
 chat-gateway002-prod.chat.snapchat.com
 chat-gateway003-prod.chat.snapchat.com
 chat-gateway005-prod.chat.snapchat.com
@@ -2674,6 +2678,7 @@ chimpstatic.com
 china-store.samsung.com.edgekey.net
 chinaz.com
 chinese.engadget.com
+chn.account.samsung.com
 chn.account.samsung.com.cdngc.net
 chn.account.samsung.com.gslb.cdnetworks.net
 chn.ospserver.net
@@ -6077,6 +6082,7 @@ lt45.net
 ltc.cryptopia.co.nz
 lu.api.mega.co.nz
 lublin.tvp.pl
+lublin.tvp.ptp.org
 luffy.chia-anime.tv
 luyou.360.cn
 lv.wikipedia.com
@@ -8343,8 +8349,8 @@ scontent-ort2-2.xx.fbcdn.net
 scontent-yyz1-1.xx.fbcdn.net
 scontent.cdninstagram.com
 scontent.fgdl5-1.fna.fbcdn.net
-scontent.xx.f.com
 scontent.xx.fbcdn.net
+scontent.xx.fx.tv
 scorito.com
 screenshots.firefox.com
 scribd.com
@@ -9445,6 +9451,7 @@ tiles.services.mozilla.com
 tiles.xbox.com
 time.android.com
 time.com
+time.comdf.ly
 time.samsungcloudsolution.com
 timeline.line.me
 timesofindia.indiatimes.com
@@ -9754,7 +9761,6 @@ unmineable.com
 unpkg.com
 uns.apsis.one
 unsplash.com
-unt.samsung.com
 unv.integration.viber.com
 uob.sc.omtrdc.net
 uol.com.br
@@ -11889,6 +11895,7 @@ zdstatic.ign.com
 zee.cws.conviva.com
 zeit.co
 zencdn.net
+zencdnakamaitechnologies.com
 zendesk.com
 zero.facebook.com
 zero.wikipedia.com
@@ -11913,9 +11920,11 @@ zippyshare.com
 ziprecruiter.com
 zobj.net
 zoho.com
+zon.ec
 zona.media
 zoominfo.com
 zopim.com
 zoso.ro
 zrk.imgur.com
+zstatic.com
 zz.ee
