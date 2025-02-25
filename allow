@@ -1140,7 +1140,7 @@ amp.spot.im
 amp.usatoday.com
 amped.co.uk
 amplitude.com
-amzn.com
+amzn.capchat.com
 amzn.to
 ana.fr
 analytics.agoda.com
@@ -2437,7 +2437,6 @@ cdn.medium.com
 cdn.mozilla.net
 cdn.mplxtms.com
 cdn.mxpnl.com
-cdn.naver.com
 cdn.onesignal.com
 cdn.opinionlab.com
 cdn.optimizely.com
@@ -2523,7 +2522,7 @@ cdn4.xda-developers.com
 cdn5.bigcommerce.com
 cdn5.digitaltrends.com
 cdn6.bigcommerce.com
-cdn6.digitaltrends.com
+cdn6.digitalbcdn.net
 cdn7.digitaltrends.com
 cdn7.es.digitaltrends.com
 cdn77.org
@@ -2592,7 +2591,6 @@ chaoxing.com
 chart.googleapis.com
 chat-gateway-prod.chat.snapchat.com
 chat-gateway000-prod.chat.snapchat.com
-chat-gateway001-prod.chat.snapchat.com
 chat-gateway002-prod.chat.snapchat.com
 chat-gateway003-prod.chat.snapchat.com
 chat-gateway005-prod.chat.snapchat.com
@@ -2676,7 +2674,6 @@ chimpstatic.com
 china-store.samsung.com.edgekey.net
 chinaz.com
 chinese.engadget.com
-chn.account.samsung.com
 chn.account.samsung.com.cdngc.net
 chn.account.samsung.com.gslb.cdnetworks.net
 chn.ospserver.net
@@ -3570,6 +3567,8 @@ dualstack.brightcove.map.fastly.net
 duck.co
 duckdns.org
 duckduckgo.com
+dui88.com
+duiba.com.cn
 duo.nl
 dvb.pandora.xiaomi.com
 dvd.netflix.com
@@ -8344,6 +8343,7 @@ scontent-ort2-2.xx.fbcdn.net
 scontent-yyz1-1.xx.fbcdn.net
 scontent.cdninstagram.com
 scontent.fgdl5-1.fna.fbcdn.net
+scontent.xx.f.com
 scontent.xx.fbcdn.net
 scorito.com
 screenshots.firefox.com
@@ -9754,6 +9754,7 @@ unmineable.com
 unpkg.com
 uns.apsis.one
 unsplash.com
+unt.samsung.com
 unv.integration.viber.com
 uob.sc.omtrdc.net
 uol.com.br
@@ -9930,6 +9931,7 @@ v20.vortex-win.data.microsoft.com
 v2assets.zopim.io
 v3.antpool.com
 v4.download.windowsupdate.com
+v6lvs.com
 v7.stats.avast.com
 v7event.stats.avast.com
 va.gov
