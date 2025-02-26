@@ -105,6 +105,7 @@ Anti-ad | [link](https://github.com/privacy-protection-tools/anti-AD)
 StevenBlack | [link](https://github.com/StevenBlack/hosts)
 217heidai | [link](https://github.com/217heidai/adblockfilters)
 GOODBYEADS | [link](https://github.com/8680/GOODBYEADS)
+AWAvenue-Ads-Rule | [link](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)
 
 ## Sources of Allowlist 允许名单
 Allowlist | Link  
@@ -116,6 +117,7 @@ Energized Protection | [link](https://github.com/EnergizedProtection/unblock)
 oisd | [link](https://oisd.nl)
 blahdns | [link](https://github.com/zoonderkins/blahdns)
 DNS Blocklists | [link](https://github.com/hagezi/dns-blocklists)
+AWAvenue-Ads-Rule | [link](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)
 
 ## Dead Domain List 过期域名名单
 Allowlist | Link  
