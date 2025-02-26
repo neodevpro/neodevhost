@@ -29,11 +29,12 @@ grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block"
 
 # Generate final lite host list
 echo "Merge Combine..."
-sort -n block allow allow | uniq -u > tmp && mv tmp tmphost
+wget --no-check-certificate -t 1 -T 10 -q https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock
+sort -n block allow allow deadblock deadblock | uniq -u > tmp && mv tmp tmphost
 sort -u tmphost > host
 sed -i '/^$/d' host
 sed -i s/[[:space:]]//g host
-rm -f tmphost
+rm -f tmphost deadblock
 
 # Create lists
 tee adblocker dnsmasq.conf smartdns.conf domain clash block < host >/dev/null
