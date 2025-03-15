@@ -11,7 +11,7 @@
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)<br/>
 
 ```
-Total ad / tracking block list 屏蔽追踪广告总数: 256729
+Total ad / tracking block list 屏蔽追踪广告总数: 255370
 
 Total allowlist list 允许名单总数: 12116
 
@@ -21,7 +21,7 @@ Update 更新时间: 2025-02-19
     Merge every day　每天更新
 Update 更新时间: 2025-02-19
     To block all ad / tracking  有效拦截广告追踪　
-Update 更新时间: 2025-03-14
+Update 更新时间: 2025-03-15
     Easy to use and welcome to report issues　简单使用欢迎回报问题
 
 ## Supported Platform 支持平台
@@ -45,7 +45,7 @@ Update 更新时间: 2025-03-14
 ``` 
 
 ## Download 下载
-Number of Domain 域名数目： 256729
+Number of Domain 域名数目： 255370
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host)
