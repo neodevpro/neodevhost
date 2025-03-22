@@ -1,16 +1,29 @@
-011211.cn
-0127.adsame.com
-013572.cn
-0512s.com
-0591jiajiao.com.cn
-1.allyes.com.cn
-1.chcx.cn
-1.codezh.com
-1.hslyqs.com
-1.mgff.com
-1.xiaozhizhijia.com
-100cpc.com
-1116.oadz.com
+#=====================================
+#
+# Title: NEO DEV HOST
+#
+# Power By NEO DEV Team
+#
+# Project home page: https://github.com/neodevpro/neodevhost
+#
+# Last update: 2025-03-22
+#
+# Number of domains: 1712
+#
+#=====================================
+0.0.0.0  011211.cn
+0.0.0.0  0127.adsame.com
+0.0.0.0  013572.cn
+0.0.0.0  0512s.com
+0.0.0.0  0591jiajiao.com.cn
+0.0.0.0  1.allyes.com.cn
+0.0.0.0  1.chcx.cn
+0.0.0.0  1.codezh.com
+0.0.0.0  1.hslyqs.com
+0.0.0.0  1.mgff.com
+0.0.0.0  1.xiaozhizhijia.com
+0.0.0.0  100cpc.com
+0.0.0.0  1116.oadz.com
 0.0.0.0  111ol.111ol.com
 0.0.0.0  114.allyes.com
 0.0.0.0  114study.adsame.com
@@ -620,7 +633,6 @@
 0.0.0.0  dolphin.ftimg.net
 0.0.0.0  dolphin1.adsame.com
 0.0.0.0  dolphin4.ftimg.net
-0.0.0.0  donesiacupid.co
 0.0.0.0  doubleplay-conf-yql.media.yahoo.com
 0.0.0.0  dougou88.com
 0.0.0.0  down.bugeyu.com
@@ -726,7 +738,6 @@
 0.0.0.0  eo.tsnsrix.cn
 0.0.0.0  epro.sohu.com
 0.0.0.0  er.dlhygj.com
-0.0.0.0  espmp-agfr.net
 0.0.0.0  ethod.gzgmjcx.com
 0.0.0.0  eventlog.hd.baofeng.com
 0.0.0.0  exchange.ipdx.cn.miaozhen.com
@@ -861,6 +872,7 @@
 0.0.0.0  hz.youku.com
 0.0.0.0  hzyuw.com
 0.0.0.0  i.dreamfull.cn
+0.0.0.0  i1.se72023.com
 0.0.0.0  iclick.cm.admaster.com.cn
 0.0.0.0  icon.51.la
 0.0.0.0  icon.users.51.la
@@ -914,6 +926,7 @@
 0.0.0.0  in.qzkxt.com
 0.0.0.0  index.ru
 0.0.0.0  index.woai310.com
+0.0.0.0  infos.whitepages.com.com
 0.0.0.0  ini.litingxin.cn
 0.0.0.0  insnative.com
 0.0.0.0  install2.kugou.com
@@ -1321,7 +1334,6 @@
 0.0.0.0  nym2-tr.adnxs.com
 0.0.0.0  nzmkzl.mytheresa.com
 0.0.0.0  ofd.meng-an.cn
-0.0.0.0  oitte.com
 0.0.0.0  ole7o.cn
 0.0.0.0  olineman.pro
 0.0.0.0  omg.gzmxybg.com
@@ -1329,7 +1341,6 @@
 0.0.0.0  onemobile.yahoo.com
 0.0.0.0  onetad.com
 0.0.0.0  onlinetips.baofeng5.baofeng.net
-0.0.0.0  op.sk
 0.0.0.0  opai.red
 0.0.0.0  openvpn.f2pool.com
 0.0.0.0  other.v.duowan.com
@@ -1680,6 +1691,7 @@
 0.0.0.0  telegram-cn.org
 0.0.0.0  telemetry.appex.bing.net
 0.0.0.0  telemetry.remoteapp.windowsazure.com
+0.0.0.0  telemetry.urs.microsoft.her.com
 0.0.0.0  terren.cntv.cn
 0.0.0.0  test.ott.youku.com
 0.0.0.0  tg33.cn
@@ -1705,6 +1717,8 @@
 0.0.0.0  trelleborg.tecs1.com
 0.0.0.0  trk.futureelectronics.cn
 0.0.0.0  undurs.1md.org
+0.0.0.0  wbidder3110active.tc.skysrt.com
+0.0.0.0  webkelpfulinotarvices.social.microsoft.com
 0.0.0.0  www.agrant.cn
 0.0.0.0  www.day66.com
 0.0.0.0  www.eduancm.com
