@@ -60,11 +60,12 @@ wait
 ( sed -i -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" clash ) &
 wait
 
-# Update README with statistics
-echo "Adding Title and SYNC data..."
-sed -i "14cTotal ad / tracking block list 屏蔽追踪广告总数: $(wc -l < block)" README.md
-sed -i "16cTotal allowlist list 允许名单总数: $(wc -l < allow)" README.md
-sed -i "24cUpdate 更新时间: $(date '+%Y-%m-%d')" README.md
-sed -i "44cNumber of Domain 域名数目： $(wc -l < block)" README.md
-
+# Update README with statistics optimized
+block_count=$(wc -l < block)
+allow_count=$(wc -l < allow)
+update_date=$(date '+%Y-%m-%d')
+sed -i -e "14cTotal ad / tracking block list 屏蔽追踪广告总数: ${block_count}" \
+       -e "16cTotal allowlist list 允许名单总数: ${allow_count}" \
+       -e "24cUpdate 更新时间: ${update_date}" \
+       -e "44cNumber of Domain 域名数目： ${block_count}" README.md
 echo "Done!"
