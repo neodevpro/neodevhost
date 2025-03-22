@@ -31,7 +31,8 @@ grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block"
 
 # Generate final lite host list
 echo "Merge Combine..."
-sort -n block allow allow deadblock deadblock | uniq -u > tmp && mv tmp tmphost
+sort -n block allow allow | uniq -u > tmp && mv tmp tmphost
+#sort -n block allow allow deadblock deadblock | uniq -u > tmp && mv tmp tmphost
 sort -u tmphost > host
 sed -i '/^$/d' host
 sed -i s/[[:space:]]//g host
