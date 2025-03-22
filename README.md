@@ -11,9 +11,9 @@
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)<br/>
 
 ```
-Total ad / tracking block list 屏蔽追踪广告总数: 256642
+Total ad / tracking block list 屏蔽追踪广告总数: 0
 
-Total allowlist list 允许名单总数: 12119
+Total allowlist list 允许名单总数: 271258
 
 Update 更新时间: 2025-02-19
 ```
@@ -21,7 +21,7 @@ Update 更新时间: 2025-02-19
     Merge every day　每天更新
 
 ## Supported Platform 支持平台
-
+Update 更新时间: 2025-03-22
 ```
 -Windows
 -Android
