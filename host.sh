@@ -63,9 +63,11 @@ wait
 # Update README with statistics optimized
 block_count=$(wc -l < block)
 allow_count=$(wc -l < allow)
+dead_count=$(wc -l < deadblock)
 update_date=$(date '+%Y-%m-%d')
 sed -i -e "14cTotal ad / tracking block list 屏蔽追踪广告总数: ${block_count}" \
        -e "16cTotal allowlist list 允许名单总数: ${allow_count}" \
-       -e "24cUpdate 更新时间: ${update_date}" \
-       -e "44cNumber of Domain 域名数目： ${block_count}" README.md
+       -e "18cTotal non-accessable list 无法访问域名总数: ${dead_count}" \
+       -e "26cUpdate 更新时间: ${update_date}" \
+       -e "46cNumber of Domain 域名数目： ${block_count}" README.md
 echo "Done!"
