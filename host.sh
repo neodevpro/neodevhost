@@ -35,7 +35,7 @@ sort -n block allow allow deadblock deadblock | uniq -u > tmp && mv tmp tmphost
 sort -u tmphost > host
 sed -i '/^$/d' host
 sed -i s/[[:space:]]//g host
-rm -f tmphost deadblock
+rm -f tmphost
 
 # Create lists
 tee adblocker dnsmasq.conf smartdns.conf domain clash block < host >/dev/null
