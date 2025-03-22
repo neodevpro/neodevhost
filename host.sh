@@ -47,17 +47,15 @@ sed -i "11c# Number of domains: $(wc -l < block)" title
 # Add Head to all list
 for file in host adblocker dnsmasq.conf smartdns.conf domain clash
 do
-  ( cat title "$file" > temp.file && mv temp.file "$file" ) &
+  cat title "$file" > temp.file && mv temp.file "$file"
 done
-wait
 
 # Adjust Rule format
-( sed -i -e '14,$s/^/||&/' -e '14,$s/$/&^/' adblocker ) &
-( sed -i -e '14,$s/^/0.0.0.0  &/' host ) &
-( sed -i -e '14,$s/^/address=\//' -e '14,$s/$/\/0.0.0.0/' dnsmasq.conf ) &
-( sed -i -e '14,$s/^/address \//' -e '14,$s/$/\/#/' smartdns.conf ) &
-( sed -i -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" clash ) &
-wait
+sed -i -e '14,$s/^/||&/' -e '14,$s/$/&^/' adblocker
+sed -i -e '14,$s/^/0.0.0.0  &/' host
+sed -i -e '14,$s/^/address=\//' -e '14,$s/$/\/0.0.0.0/' dnsmasq.conf
+sed -i -e '14,$s/^/address \//' -e '14,$s/$/\/#/' smartdns.conf
+sed -i -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" clash
 
 # Update README with statistics optimized
 block_count=$(wc -l < block)
