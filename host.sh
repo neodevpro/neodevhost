@@ -26,9 +26,8 @@ process_list "blocklist" "block"
 # Check format
 echo "Validating domain format..."
 domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
-( grep -E "$domain_name_regex" "allow" > "clean_allow" && mv "clean_allow" "allow" ) &
-( grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block" ) &
-wait
+grep -E "$domain_name_regex" "allow" > "clean_allow" && mv "clean_allow" "allow"
+grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block"
 
 # Generate final lite host list
 echo "Merge Combine..."
