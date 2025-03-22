@@ -98,12 +98,8 @@ pihole -g
 AD-hostss | Link  
 --------- |:-------------:
 Anti-ad | [link](https://github.com/privacy-protection-tools/anti-AD)
-StevenBlack | [link](https://github.com/StevenBlack/hosts)
 217heidai | [link](https://github.com/217heidai/adblockfilters)
-GOODBYEADS | [link](https://github.com/8680/GOODBYEADS)
-AWAvenue-Ads-Rule | [link](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)
-1Hosts | [link](https://github.com/badmojr/1Hosts)
-DNS-Blocklists | [link](https://github.com/hagezi/dns-blocklists)
+
 
 ## Sources of Allowlist 允许名单
 Allowlist | Link  
