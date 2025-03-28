@@ -6,7 +6,7 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-03-27
+# Last update: 2025-03-28
 #
 # Number of domains: 86608
 #
@@ -6585,6 +6585,7 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
+  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -60473,7 +60474,6 @@ payload:
   - 'rng-snp-003.com'
   - 'rngpaluydont.com'
   - 'rnhsrsn.com'
-  - 'rnings.com'
   - 'rnlabs.com'
   - 'rnldustal.com'
   - 'rnmd.net'
@@ -64984,7 +64984,7 @@ payload:
   - 'skymobi.agency'
   - 'skyplayer.tiscali.it'
   - 'skysa.com'
-  - 'skyscrapereaactive.tc.skysrt.com'
+  - 'skyscraperearnings.com'
   - 'skyscrapertowel.com'
   - 'skyscrpr.com'
   - 'skytraf.xyz'
