@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-04-03
+# Last update: 2025-04-04
 #
-# Number of domains: 86155
+# Number of domains: 86156
 #
 #=====================================
 payload:
@@ -6603,6 +6603,7 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
+  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -13061,7 +13062,7 @@ payload:
   - 'awmonitor.com'
   - 'awmplus.com'
   - 'awmserve.com'
-  - 'awnexus.comactive.tc.skysrt.com'
+  - 'awnexus.com'
   - 'awnwhocamewi.info'
   - 'awogtl.1stopbedrooms.com'
   - 'awokearcticadmirer.com'
