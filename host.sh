@@ -20,21 +20,16 @@ process_list() {
 }
 
 # Reduce duplicate domains by keeping only base domains
-echo "Reducing duplicate domains..."
-awk -F. '{
-    if (NF > 2) {
-        subdomain_removed = $(NF-1) "." $NF
-        if (!(subdomain_removed in seen)) {
-            seen[subdomain_removed] = 1
-            print subdomain_removed
+reduce_domains() {
+    echo "Reducing duplicate domains..."
+    awk -F. '{
+        base = (NF > 2) ? $(NF-1) "." $NF : $0
+        if (!(base in seen)) {
+            seen[base] = 1
+            print base
         }
-    } else {
-        if (!($0 in seen)) {
-            seen[$0] = 1
-            print $0
-        }
-    }
-}' host > tmp && mv tmp host
+    }' host > tmp && mv tmp host
+}
 
 # Run allowlist and blocklist processing concurrently
 process_list "allowlist" "allow"
@@ -45,6 +40,7 @@ echo "Validating domain format..."
 domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
 grep -E "$domain_name_regex" "allow" > "clean_allow" && mv "clean_allow" "allow"
 grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block"
+reduce_domains
 
 # Generate final lite host list
 echo "Merge Combine..."
@@ -53,6 +49,7 @@ sort -u tmphost > host
 sed -i '/^$/d' host
 sed -i s/[[:space:]]//g host
 rm -f tmphost
+
 
 # Create lists
 tee adblocker dnsmasq.conf smartdns.conf domain clash block < host >/dev/null
