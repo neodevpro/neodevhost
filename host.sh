@@ -19,6 +19,23 @@ process_list() {
     rm -f tmp_
 }
 
+# Reduce duplicate domains by keeping only base domains
+echo "Reducing duplicate domains..."
+awk -F. '{
+    if (NF > 2) {
+        subdomain_removed = $(NF-1) "." $NF
+        if (!(subdomain_removed in seen)) {
+            seen[subdomain_removed] = 1
+            print subdomain_removed
+        }
+    } else {
+        if (!($0 in seen)) {
+            seen[$0] = 1
+            print $0
+        }
+    }
+}' host > tmp && mv tmp host
+
 # Run allowlist and blocklist processing concurrently
 process_list "allowlist" "allow"
 process_list "blocklist" "block"
