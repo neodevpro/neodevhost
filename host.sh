@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # Clean up old files
@@ -9,38 +10,14 @@ TLD_LIST=$(wget -qO- "https://data.iana.org/TLD/tlds-alpha-by-domain.txt" | tail
 
 # Merge list
 process_list() {
-    local input_list=$1 output_file=$2
-    echo "Processing $output_file..."
-    grep -v '^#' "$input_list" | xargs -P 5 -I {} wget --no-check-certificate -t 1 -T 10 -q -O - "{}" | \
-    sed -E '/^[[:space:]]*#/d; /:/d; s/[0-9\.]+[[:space:]]+//g; /^[^[:space:]]+\.[^[:space:]]+$/!d' | \
-    awk -F. -v tlds="$TLD_LIST" '
-        BEGIN {
-            split(tlds, arr, "\n")
-            for (i in arr) validTLD[arr[i]] = 1
-        }
-        {
-            if (validTLD[tolower($NF)]) {
-                base = (NF > 2) ? $(NF-1) "." $NF : $0
-                if (!(base in seen)) {
-                    seen[base] = 1
-                    print base
-                }
-            }
-        }
-    ' | sort -u > "$output_file"
-}
-
-
-# Reduce duplicate domains by keeping only base domains
-reduce_domains() {
-    echo "Reducing duplicate domains..."
-    awk -F. '{
-        base = (NF > 2) ? $(NF-1) "." $NF : $0
-        if (!(base in seen)) {
-            seen[base] = 1
-            print base
-        }
-    }' host > tmp && mv tmp host
+    local input_list=$1 output_file=$2 tmp_file="tmp_$output_file"
+    echo "Merging $output_file..."
+    grep -v '^#' "$input_list" | xargs -P 5 -I {} wget --no-check-certificate -t 1 -T 10 -q -O - "{}" > "$tmp_file"
+    sed -i -E '/^[[:space:]]*#/d; /:/d; s/[0-9\.]+[[:space:]]+//g; /^[^[:space:]]+\.[^[:space:]]+$/!d' "$tmp_file"
+    TLD_LIST=$(wget -qO- "https://data.iana.org/TLD/tlds-alpha-by-domain.txt" | tail -n +2 | tr '[:upper:]' '[:lower:]')
+    awk -F. -v tlds="$TLD_LIST" 'BEGIN {split(tlds, arr, "\n"); for (i in arr) validTLD[arr[i]] = 1} 
+    {if (validTLD[tolower($NF)]) print}' "$tmp_file" | sort -u > "$output_file"
+    rm -f tmp_
 }
 
 # Run allowlist and blocklist processing concurrently
@@ -52,7 +29,6 @@ echo "Validating domain format..."
 domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
 grep -E "$domain_name_regex" "allow" > "clean_allow" && mv "clean_allow" "allow"
 grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block"
-reduce_domains
 
 # Generate final lite host list
 echo "Merge Combine..."
@@ -61,7 +37,6 @@ sort -u tmphost > host
 sed -i '/^$/d' host
 sed -i s/[[:space:]]//g host
 rm -f tmphost
-
 
 # Create lists
 tee adblocker dnsmasq.conf smartdns.conf domain clash block < host >/dev/null
