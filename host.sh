@@ -19,18 +19,6 @@ process_list() {
     rm -f tmp_
 }
 
-# Reduce duplicate domains by keeping only base domains
-reduce_domains() {
-    echo "Reducing duplicate domains..."
-    awk -F. '{
-        base = (NF > 2) ? $(NF-1) "." $NF : $0
-        if (!(base in seen)) {
-            seen[base] = 1
-            print base
-        }
-    }' host > tmp && mv tmp host
-}
-
 # Run allowlist and blocklist processing concurrently
 process_list "allowlist" "allow"
 process_list "blocklist" "block"
@@ -40,7 +28,6 @@ echo "Validating domain format..."
 domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
 grep -E "$domain_name_regex" "allow" > "clean_allow" && mv "clean_allow" "allow"
 grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block"
-reduce_domains
 
 # Generate final lite host list
 echo "Merge Combine..."
