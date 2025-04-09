@@ -11,7 +11,7 @@
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)<br/>
 
 ```
-Total ad / tracking block list 屏蔽追踪广告总数: 86797
+Total ad / tracking block list 屏蔽追踪广告总数: 86805
 
 Total allowlist list 允许名单总数: 12119
 
@@ -43,7 +43,7 @@ Update 更新时间: 2025-04-09
 ``` 
 
 ## Download 下载
-Number of Domain 域名数目： 86797
+Number of Domain 域名数目： 86805
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host)
