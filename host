@@ -6,7 +6,7 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-04-11
+# Last update: 2025-04-12
 #
 # Number of domains: 85971
 #
@@ -6603,6 +6603,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -22722,7 +22723,7 @@
 0.0.0.0  data.ma1.techvaladobe.com
 0.0.0.0  data.madridista-free.realmadrid.com
 0.0.0.0  data.madridista-premium.realmadrid.com
-0.0.0.0  data.magmail.active.tc.skysrt.com
+0.0.0.0  data.magmail.northeast.aaa.com
 0.0.0.0  data.mail.callme.dk
 0.0.0.0  data.mail.metro.de
 0.0.0.0  data.mail.nn.nl
@@ -51284,7 +51285,6 @@
 0.0.0.0  normugtog.com
 0.0.0.0  norrisengraveconvertible.com
 0.0.0.0  norrissoundinghometown.com
-0.0.0.0  northeast.aaa.com
 0.0.0.0  northplains.actonservice.com
 0.0.0.0  northsidemediagroup.actonservice.com
 0.0.0.0  northstartravelmedia.com

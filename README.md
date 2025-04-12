@@ -13,7 +13,7 @@
 ```
 Total ad / tracking block list 屏蔽追踪广告总数: 85971
 
-Total allowlist list 允许名单总数: 12118
+Total allowlist list 允许名单总数: 12119
 
 Total upstream-non-accessable list 上游无法访问域名总数: 8848
 
@@ -23,7 +23,7 @@ Update 更新时间: 2025-02-19
     Merge every day　每天更新
 
 ## Supported Platform 支持平台
-Update 更新时间: 2025-04-11
+Update 更新时间: 2025-04-12
 ```
 -Windows
 -Android
