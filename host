@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-04-14
+# Last update: 2025-04-15
 #
-# Number of domains: 86493
+# Number of domains: 86492
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -70895,7 +70895,6 @@
 0.0.0.0  stats.pubfind.io
 0.0.0.0  stats.pushloop.io
 0.0.0.0  stats.qdq.com
-0.0.0.0  stats.qiumibao.com
 0.0.0.0  stats.qovery.com
 0.0.0.0  stats.quicksilvercre.com
 0.0.0.0  stats.qwant.com

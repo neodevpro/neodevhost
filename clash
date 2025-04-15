@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-04-14
+# Last update: 2025-04-15
 #
-# Number of domains: 86493
+# Number of domains: 86492
 #
 #=====================================
 payload:
@@ -70896,7 +70896,6 @@ payload:
   - 'stats.pubfind.io'
   - 'stats.pushloop.io'
   - 'stats.qdq.com'
-  - 'stats.qiumibao.com'
   - 'stats.qovery.com'
   - 'stats.quicksilvercre.com'
   - 'stats.qwant.com'
