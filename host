@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-04-20
+# Last update: 2025-04-21
 #
-# Number of domains: 86759
+# Number of domains: 86774
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -725,6 +725,7 @@
 0.0.0.0  2beon.co.kr
 0.0.0.0  2bj.cn
 0.0.0.0  2bps53igop02.com
+0.0.0.0  2c4rrl8pe.de
 0.0.0.0  2c5d30b6f1.com
 0.0.0.0  2cba2742a4.com
 0.0.0.0  2cjlj3c15.de
@@ -1075,6 +1076,7 @@
 0.0.0.0  42869755.xyz
 0.0.0.0  429999d.com
 0.0.0.0  42ce2b0955.com
+0.0.0.0  42d9c0e6fb.com
 0.0.0.0  42jdbcb.de
 0.0.0.0  42r.cn
 0.0.0.0  42ye.com
@@ -1479,6 +1481,7 @@
 0.0.0.0  6avz.com
 0.0.0.0  6b6c1b838a.com
 0.0.0.0  6b856ee58e.com
+0.0.0.0  6bgaput9ullc.com
 0.0.0.0  6c.cn
 0.0.0.0  6ca9278a53.com
 0.0.0.0  6cs.icu
@@ -1612,6 +1615,7 @@
 0.0.0.0  7900c936fb.com
 0.0.0.0  79180284.xyz
 0.0.0.0  79391192.xyz
+0.0.0.0  79582961.xyz
 0.0.0.0  79870085.xyz
 0.0.0.0  79893962.xyz
 0.0.0.0  79cm.com
@@ -2350,9 +2354,11 @@
 0.0.0.0  a11888.actonservice.com
 0.0.0.0  a11904.actonservice.com
 0.0.0.0  a11928.actonservice.com
+0.0.0.0  a11929.actonservice.com
 0.0.0.0  a11942.actonservice.com
 0.0.0.0  a11943.actonservice.com
 0.0.0.0  a11d3c1b4d.com
+0.0.0.0  a11k.com
 0.0.0.0  a11xxx1.oss-cn-hongkong.aliyuncs.com
 0.0.0.0  a11ybar.com
 0.0.0.0  a12014.actonservice.com
@@ -2523,6 +2529,7 @@
 0.0.0.0  a14412.actonservice.com
 0.0.0.0  a14414.actonservice.com
 0.0.0.0  a14415.actonservice.com
+0.0.0.0  a14418.actonservice.com
 0.0.0.0  a14429.actonservice.com
 0.0.0.0  a14448.actonservice.com
 0.0.0.0  a14457.actonservice.com
@@ -3052,6 +3059,7 @@
 0.0.0.0  a21556.actonservice.com
 0.0.0.0  a21667.actonservice.com
 0.0.0.0  a21699.actonservice.com
+0.0.0.0  a21787.actonservice.com
 0.0.0.0  a21943.actonservice.com
 0.0.0.0  a21961.actonservice.com
 0.0.0.0  a22037.actonservice.com
@@ -3222,6 +3230,7 @@
 0.0.0.0  a25599.actonservice.com
 0.0.0.0  a25601.actonservice.com
 0.0.0.0  a25604001.actonservice.com
+0.0.0.0  a25605.actonservice.com
 0.0.0.0  a25611.actonservice.com
 0.0.0.0  a25647.actonservice.com
 0.0.0.0  a25657.actonservice.com
@@ -3746,6 +3755,7 @@
 0.0.0.0  a34504.actonservice.com
 0.0.0.0  a34524.actonservice.com
 0.0.0.0  a34529.actonservice.com
+0.0.0.0  a34549.actonservice.com
 0.0.0.0  a34553.actonservice.com
 0.0.0.0  a34648.actonservice.com
 0.0.0.0  a34718.actonservice.com
@@ -17498,6 +17508,7 @@
 0.0.0.0  cdp.cloud.unity3d.com
 0.0.0.0  cdrive.compellent.com
 0.0.0.0  cdrvrs.com
+0.0.0.0  cds.51y5.net
 0.0.0.0  cdsbnrs.com
 0.0.0.0  cdscs990.fun
 0.0.0.0  cdshusen.cn
@@ -22961,6 +22972,7 @@
 0.0.0.0  data.ma1.techvaladobe.com
 0.0.0.0  data.madridista-free.realmadrid.com
 0.0.0.0  data.madridista-premium.realmadrid.com
+0.0.0.0  data.magmail.northeast.aaa.com
 0.0.0.0  data.mail.callme.dk
 0.0.0.0  data.mail.metro.de
 0.0.0.0  data.mail.nn.nl
@@ -36840,6 +36852,7 @@
 0.0.0.0  img.12584.cn
 0.0.0.0  img.175532.com
 0.0.0.0  img.3sjt.com
+0.0.0.0  img.88rpg.net
 0.0.0.0  img.911787.com
 0.0.0.0  img.ad.zhangyue.com
 0.0.0.0  img.adbox.sina.com.cn
@@ -65410,6 +65423,7 @@
 0.0.0.0  smetrics.abercrombie.com
 0.0.0.0  smetrics.abercrombiekids.com
 0.0.0.0  smetrics.abilify.com
+0.0.0.0  smetrics.abilifyasimtufii.com
 0.0.0.0  smetrics.abilifyasimtufiihcp.com
 0.0.0.0  smetrics.abilifymaintena.com
 0.0.0.0  smetrics.abilifymaintenahcp.com
@@ -79642,6 +79656,7 @@
 0.0.0.0  undom.net
 0.0.0.0  undoneabated.shop
 0.0.0.0  undressregionaladdiction.com
+0.0.0.0  undurs.1md.org
 0.0.0.0  unelekidan.com
 0.0.0.0  unemploymentinstinctiverite.com
 0.0.0.0  unequalbrake.com
