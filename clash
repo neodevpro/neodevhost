@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-04-29
+# Last update: 2025-04-30
 #
-# Number of domains: 88304
+# Number of domains: 88303
 #
 #=====================================
 payload:
@@ -6646,7 +6646,6 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
-  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -28676,7 +28675,7 @@ payload:
   - 'errorreports.couponcabin.com'
   - 'errors.darkreader.app'
   - 'errors.snackly.co'
-  - 'ers.baidu.com'
+  - 'ers.baidu.coactive.tc.skysrt.com'
   - 'ersgaxbmd.xyz'
   - 'ershniff.com'
   - 'ersislaqands.com'
