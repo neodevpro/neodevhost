@@ -14,7 +14,6 @@ process_list() {
     echo "Merging $output_file..."
     grep -v '^#' "$input_list" | xargs -P 5 -I {} wget --no-check-certificate -t 1 -T 10 -q -O - "{}" > "$tmp_file"
     sed -i -E '/^[[:space:]]*#/d; /:/d; s/[0-9\.]+[[:space:]]+//g; /^[^[:space:]]+\.[^[:space:]]+$/!d' "$tmp_file"
-    TLD_LIST=$(wget -qO- "https://data.iana.org/TLD/tlds-alpha-by-domain.txt" | tail -n +2 | tr '[:upper:]' '[:lower:]')
     awk -F. -v tlds="$TLD_LIST" 'BEGIN {split(tlds, arr, "\n"); for (i in arr) validTLD[arr[i]] = 1} 
     {if (validTLD[tolower($NF)]) print}' "$tmp_file" | sort -u > "$output_file"
     rm -f tmp_
