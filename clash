@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-05-02
+# Last update: 2025-05-03
 #
-# Number of domains: 88064
+# Number of domains: 88066
 #
 #=====================================
 payload:
@@ -6635,6 +6635,7 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
+  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -36445,6 +36446,7 @@ payload:
   - 'i.zzb6.cn'
   - 'i0.letvimg.com'
   - 'i0001.clarodrive.com'
+  - 'i1.services.social.microsoft.com'
   - 'i218435.net'
   - 'i22lo.com'
   - 'i2ad.jp'
