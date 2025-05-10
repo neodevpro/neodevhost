@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-05-09
+# Last update: 2025-05-10
 #
-# Number of domains: 86829
+# Number of domains: 86828
 #
 #=====================================
 payload:
@@ -4579,7 +4579,7 @@ payload:
   - 'a8.au-hikarinet.com'
   - 'a8.avalon-works.com'
   - 'a8.b-cafe.net'
-  - 'a8.bambi-craft.com'
+  - 'a8.baactive.tc.skysrt.com'
   - 'a8.bandel.jp'
   - 'a8.banninkun.com'
   - 'a8.beerowle.com'
@@ -23147,7 +23147,6 @@ payload:
   - 'data.umfrage.whatsappsim.de'
   - 'data.vdi-wissensforum.de'
   - 'data.vinsolutions.com'
-  - 'data.vod.itc.cn'
   - 'data.volksfreund.de'
   - 'data.voyager.dev.cjmadobe.com'
   - 'data.web.doitbest.com'
@@ -46982,6 +46981,7 @@ payload:
   - 'mbdlog.iqiyi.com'
   - 'mbelia.underarmour.co.uk'
   - 'mbeoxt.perfumesclub.pt'
+  - 'mbi-craft.com'
   - 'mbid.marfeelrev.com'
   - 'mbidadm.com'
   - 'mbidinp.com'
@@ -55698,7 +55698,7 @@ payload:
   - 'pic1.59wd.com'
   - 'pic2.bloggerads.net'
   - 'pic50.pingguolv.com'
-  - 'picaactive.tc.skysrt.com'
+  - 'pica-juicy.picacomic.com'
   - 'picarasgalax.com'
   - 'picarosexempt.shop'
   - 'picarro.actonservice.com'
@@ -64825,7 +64825,6 @@ payload:
   - 'simg.yemeksepeti.com'
   - 'similargrocery.pro'
   - 'similarpresence.com'
-  - 'similarweb.com'
   - 'simility.com'
   - 'simmeringsuitableunwoven.com'
   - 'simonsignal.com'

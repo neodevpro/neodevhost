@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-05-09
+# Last update: 2025-05-10
 #
-# Number of domains: 86829
+# Number of domains: 86828
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -4578,7 +4578,7 @@
 0.0.0.0  a8.au-hikarinet.com
 0.0.0.0  a8.avalon-works.com
 0.0.0.0  a8.b-cafe.net
-0.0.0.0  a8.bambi-craft.com
+0.0.0.0  a8.baactive.tc.skysrt.com
 0.0.0.0  a8.bandel.jp
 0.0.0.0  a8.banninkun.com
 0.0.0.0  a8.beerowle.com
@@ -23146,7 +23146,6 @@
 0.0.0.0  data.umfrage.whatsappsim.de
 0.0.0.0  data.vdi-wissensforum.de
 0.0.0.0  data.vinsolutions.com
-0.0.0.0  data.vod.itc.cn
 0.0.0.0  data.volksfreund.de
 0.0.0.0  data.voyager.dev.cjmadobe.com
 0.0.0.0  data.web.doitbest.com
@@ -46981,6 +46980,7 @@
 0.0.0.0  mbdlog.iqiyi.com
 0.0.0.0  mbelia.underarmour.co.uk
 0.0.0.0  mbeoxt.perfumesclub.pt
+0.0.0.0  mbi-craft.com
 0.0.0.0  mbid.marfeelrev.com
 0.0.0.0  mbidadm.com
 0.0.0.0  mbidinp.com
@@ -55697,7 +55697,7 @@
 0.0.0.0  pic1.59wd.com
 0.0.0.0  pic2.bloggerads.net
 0.0.0.0  pic50.pingguolv.com
-0.0.0.0  picaactive.tc.skysrt.com
+0.0.0.0  pica-juicy.picacomic.com
 0.0.0.0  picarasgalax.com
 0.0.0.0  picarosexempt.shop
 0.0.0.0  picarro.actonservice.com
@@ -64824,7 +64824,6 @@
 0.0.0.0  simg.yemeksepeti.com
 0.0.0.0  similargrocery.pro
 0.0.0.0  similarpresence.com
-0.0.0.0  similarweb.com
 0.0.0.0  simility.com
 0.0.0.0  simmeringsuitableunwoven.com
 0.0.0.0  simonsignal.com
