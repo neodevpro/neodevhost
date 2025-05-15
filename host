@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-05-14
+# Last update: 2025-05-15
 #
-# Number of domains: 87090
+# Number of domains: 87091
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -6614,6 +6614,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -66931,7 +66932,7 @@
 0.0.0.0  smetrics.liveitup.com
 0.0.0.0  smetrics.lizearle.com
 0.0.0.0  smetrics.lloydslist.com
-0.0.0.0  smetrics.lloydslistintelligence.cactive.tc.skysrt.com
+0.0.0.0  smetrics.lloydslistintelligence.com
 0.0.0.0  smetrics.lmtonline.com
 0.0.0.0  smetrics.loblaws.ca
 0.0.0.0  smetrics.loewshotels.com
