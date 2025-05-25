@@ -6,7 +6,7 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-05-24
+# Last update: 2025-05-25
 #
 # Number of domains: 86515
 #
@@ -6633,6 +6633,7 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
+  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -23961,7 +23962,6 @@ payload:
   - 'demojobsapp.epoise.com'
   - 'demolishforbidhonorable.com'
   - 'demonstrationsurgical.com'
-  - 'demoqpay.2c2p.com'
   - 'demosesoverate.top'
   - 'demowebcode.online'
   - 'demtuftoodsacmy.net'
@@ -59580,7 +59580,7 @@ payload:
   - 'redirect.indacar.io'
   - 'redirect.kataklop.com'
   - 'redirect.simba.taobao.com'
-  - 'redirectactive.tc.skysrt.com'
+  - 'redirectdemoqpay.2c2p.com'
   - 'redirectify.app'
   - 'redistats.com'
   - 'redistedi.com'
