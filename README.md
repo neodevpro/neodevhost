@@ -23,7 +23,7 @@ Update 更新时间: 2025-02-19
     Merge every day　每天更新
 
 ## Supported Platform 支持平台
-Update 更新时间: 2025-05-26
+Update 更新时间: 2025-05-27
 ```
 -Windows
 -Android
