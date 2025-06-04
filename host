@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-06-03
+# Last update: 2025-06-04
 #
-# Number of domains: 87179
+# Number of domains: 87181
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -2076,6 +2076,7 @@
 0.0.0.0  a-mo.net
 0.0.0.0  a-mx.com
 0.0.0.0  a-pagerank.net
+0.0.0.0  a-qmad.qm989.com
 0.0.0.0  a-reporting.nytimes.com
 0.0.0.0  a-sta-cn.upltv.com
 0.0.0.0  a-static.com
@@ -4607,6 +4608,7 @@
 0.0.0.0  a5jogo.biz
 0.0.0.0  a5jogo.club
 0.0.0.0  a5t.icu
+0.0.0.0  a6-remad.qm989.com
 0.0.0.0  a6.hn985.com
 0.0.0.0  a64x.com
 0.0.0.0  a67c5c438d.com
@@ -6555,7 +6557,7 @@
 0.0.0.0  acetylsbrocht.shop
 0.0.0.0  acewdf118.cn
 0.0.0.0  acexedge.com
-0.0.0.0  acgbase.com
+0.0.0.0  acgbase.coactive.tc.skysrt.com
 0.0.0.0  acgbenzi.com
 0.0.0.0  acgshenshicha.cn
 0.0.0.0  achcdn.com
@@ -6686,7 +6688,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -73141,6 +73142,7 @@
 0.0.0.0  t-flow.flyme.cn
 0.0.0.0  t-l.play.aiseet.atianqi.com
 0.0.0.0  t-pan.triodos.com
+0.0.0.0  t-remad.qm989.com
 0.0.0.0  t-s.actemra.com
 0.0.0.0  t-s.activase.com
 0.0.0.0  t-s.allergicasthma.com
