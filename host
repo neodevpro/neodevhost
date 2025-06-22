@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-06-21
+# Last update: 2025-06-22
 #
-# Number of domains: 89352
+# Number of domains: 89353
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -4415,7 +4415,7 @@
 0.0.0.0  a44838.actonservice.com
 0.0.0.0  a44839.actonservice.com
 0.0.0.0  a44840.actonservice.com
-0.0.0.0  a44845.actonservice.comactive.tc.skysrt.com
+0.0.0.0  a44845.actonservice.com
 0.0.0.0  a44848.actonservice.com
 0.0.0.0  a44853.actonservice.com
 0.0.0.0  a44857.actonservice.com
@@ -6750,6 +6750,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
