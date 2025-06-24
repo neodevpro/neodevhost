@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-06-23
+# Last update: 2025-06-24
 #
-# Number of domains: 89886
+# Number of domains: 89885
 #
 #=====================================
 payload:
@@ -27176,7 +27176,6 @@ payload:
   - 'e.cn.miaozhen.com'
   - 'e.codlw.com'
   - 'e.coenr.com'
-  - 'e.com'
   - 'e.danrs.com'
   - 'e.darpro-solutions.com'
   - 'e.deimm.com'
@@ -67945,7 +67944,7 @@ payload:
   - 'smetrics.act4yourheart.com'
   - 'smetrics.actemra.com'
   - 'smetrics.actemrahcp.com'
-  - 'smetrics.activasactive.tc.skysrt.com'
+  - 'smetrics.activase.com'
   - 'smetrics.active.com'
   - 'smetrics.activecommunities.com'
   - 'smetrics.activeendurance.com'
