@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-06-29
+# Last update: 2025-06-30
 #
-# Number of domains: 90473
+# Number of domains: 90472
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -10478,7 +10478,6 @@
 0.0.0.0  analytics.maxroll.gg
 0.0.0.0  analytics.mc500.info
 0.0.0.0  analytics.media-proweb.de
-0.0.0.0  analytics.meituan.net
 0.0.0.0  analytics.mercadolibre.com
 0.0.0.0  analytics.metro-cc.ru
 0.0.0.0  analytics.metro.be
