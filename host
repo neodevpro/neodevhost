@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-07-06
+# Last update: 2025-07-07
 #
-# Number of domains: 88958
+# Number of domains: 88957
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -31527,7 +31527,6 @@
 0.0.0.0  frztrk.beaute-test.com
 0.0.0.0  frztrk.netmums.com
 0.0.0.0  fs-client-logger.herokuapp.com
-0.0.0.0  fs-im-kefu.7moor-fs1.com
 0.0.0.0  fs-loader.com
 0.0.0.0  fs-uc-nearme-com-cn.oss-cn-hangzhou.aliyuncs.com
 0.0.0.0  fsalfrwdr.com
