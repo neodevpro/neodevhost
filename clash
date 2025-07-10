@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-07-09
+# Last update: 2025-07-10
 #
-# Number of domains: 89708
+# Number of domains: 89709
 #
 #=====================================
 payload:
@@ -57731,6 +57731,7 @@ payload:
   - 'pic1.59wd.com'
   - 'pic2.bloggerads.net'
   - 'pic50.pingguolv.com'
+  - 'pica-ad-api.diwodiwo.xyz'
   - 'pica-juicy.picacomic.com'
   - 'picarasgalax.com'
   - 'picarosfurry.top'
