@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-08-05
+# Last update: 2025-08-06
 #
-# Number of domains: 92634
+# Number of domains: 92633
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -6786,6 +6786,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -37834,7 +37835,7 @@
 0.0.0.0  i.zzb6.cn
 0.0.0.0  i0.letvimg.com
 0.0.0.0  i0001.clarodrive.com
-0.0.0.0  i1.seco.com
+0.0.0.0  i1.services.social.microsoft.com
 0.0.0.0  i218435.net
 0.0.0.0  i22lo.com
 0.0.0.0  i2ad.jp
@@ -55593,7 +55594,6 @@
 0.0.0.0  o.evoicereceptionist.com
 0.0.0.0  o.fandango.com
 0.0.0.0  o.hmwy.io
-0.0.0.0  o.lettre.cci.fr
 0.0.0.0  o.macworld.co.uk
 0.0.0.0  o.medallia.com
 0.0.0.0  o.myomnicard.in
@@ -65274,7 +65274,6 @@
 0.0.0.0  rvgtaai.top
 0.0.0.0  rvhwyrqnxi.com
 0.0.0.0  rvhzjg.desivero.com
-0.0.0.0  rvices.social.microsoft.com
 0.0.0.0  rvisofoseveralye.com
 0.0.0.0  rvisofoseveralyear.com
 0.0.0.0  rvitam.xenos.nl
@@ -65432,7 +65431,7 @@
 0.0.0.0  s.cadent.bloomberglaw.com
 0.0.0.0  s.caledonenterprise.com
 0.0.0.0  s.cambridgetimes.ca
-0.0.0.0  s.cameratiactive.tc.skysrt.com
+0.0.0.0  s.cameratico.com
 0.0.0.0  s.cdxyb.cn
 0.0.0.0  s.chatie.ai
 0.0.0.0  s.ciouwap.com
@@ -70035,6 +70034,7 @@
 0.0.0.0  smetrics.casio-intl.com
 0.0.0.0  smetrics.casio-watches.com
 0.0.0.0  smetrics.casio.co.jp
+0.0.0.0  smetrics.casio.com
 0.0.0.0  smetrics.casio.com.tw
 0.0.0.0  smetrics.casio.info
 0.0.0.0  smetrics.casio.jp
@@ -78391,7 +78391,6 @@
 0.0.0.0  telemetry.tradingview.com
 0.0.0.0  telemetry.transcend.io
 0.0.0.0  telemetry.urs.microsoft.com
-0.0.0.0  telemetry.urs.microsoft.smetrics.casio.com
 0.0.0.0  telemetry.vtex.com
 0.0.0.0  telemetry.webasto.com
 0.0.0.0  telepang.com
