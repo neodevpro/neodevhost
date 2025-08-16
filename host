@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-08-15
+# Last update: 2025-08-16
 #
-# Number of domains: 95056
+# Number of domains: 95057
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -6817,7 +6817,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -38737,7 +38736,7 @@
 0.0.0.0  i.zzb6.cn
 0.0.0.0  i0.letvimg.com
 0.0.0.0  i0001.clarodrive.com
-0.0.0.0  i1.services.social.microsoft.com
+0.0.0.0  i1.se.click
 0.0.0.0  i1901zxd.xyz
 0.0.0.0  i218435.net
 0.0.0.0  i22lo.com
@@ -38883,6 +38882,7 @@
 0.0.0.0  icinvdo.top
 0.0.0.0  icjhjoe.studio
 0.0.0.0  icjl.cn
+0.0.0.0  ick.moselo.com
 0.0.0.0  ickersanthine.com
 0.0.0.0  iclickcdn.com
 0.0.0.0  iclimio.top
@@ -53657,7 +53657,7 @@
 0.0.0.0  miycoc.xyz
 0.0.0.0  miyudaquan.top
 0.0.0.0  mizytadpwfswa.world
-0.0.0.0  mizzlesquarto.click
+0.0.0.0  mizzlesquartoactive.tc.skysrt.com
 0.0.0.0  mj-snowplow-static-js.s3.amazonaws.com
 0.0.0.0  mj.weimob.net
 0.0.0.0  mj70.cn
@@ -54179,11 +54179,11 @@
 0.0.0.0  monsetting.toutiao.com
 0.0.0.0  monsido.com
 0.0.0.0  monsoonlassi.com
+0.0.0.0  monsrvices.social.microsoft.com
 0.0.0.0  monstat.com
 0.0.0.0  monster.branch.rocks
 0.0.0.0  monstermemes.com
 0.0.0.0  monsterofnews.com
-0.0.0.0  monsy.com
 0.0.0.0  montafp.top
 0.0.0.0  montangop.top
 0.0.0.0  montelena.auction.co.kr
@@ -80386,6 +80386,7 @@
 0.0.0.0  telemetry.tradingview.com
 0.0.0.0  telemetry.transcend.io
 0.0.0.0  telemetry.urs.microsoft.com
+0.0.0.0  telemetry.urs.microsoft.y.com
 0.0.0.0  telemetry.vtex.com
 0.0.0.0  telemetry.webasto.com
 0.0.0.0  telepang.com

@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-08-15
+# Last update: 2025-08-16
 #
-# Number of domains: 95056
+# Number of domains: 95057
 #
 #=====================================
 payload:
@@ -6818,7 +6818,6 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
-  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -38738,7 +38737,7 @@ payload:
   - 'i.zzb6.cn'
   - 'i0.letvimg.com'
   - 'i0001.clarodrive.com'
-  - 'i1.services.social.microsoft.com'
+  - 'i1.se.click'
   - 'i1901zxd.xyz'
   - 'i218435.net'
   - 'i22lo.com'
@@ -38884,6 +38883,7 @@ payload:
   - 'icinvdo.top'
   - 'icjhjoe.studio'
   - 'icjl.cn'
+  - 'ick.moselo.com'
   - 'ickersanthine.com'
   - 'iclickcdn.com'
   - 'iclimio.top'
@@ -53658,7 +53658,7 @@ payload:
   - 'miycoc.xyz'
   - 'miyudaquan.top'
   - 'mizytadpwfswa.world'
-  - 'mizzlesquarto.click'
+  - 'mizzlesquartoactive.tc.skysrt.com'
   - 'mj-snowplow-static-js.s3.amazonaws.com'
   - 'mj.weimob.net'
   - 'mj70.cn'
@@ -54180,11 +54180,11 @@ payload:
   - 'monsetting.toutiao.com'
   - 'monsido.com'
   - 'monsoonlassi.com'
+  - 'monsrvices.social.microsoft.com'
   - 'monstat.com'
   - 'monster.branch.rocks'
   - 'monstermemes.com'
   - 'monsterofnews.com'
-  - 'monsy.com'
   - 'montafp.top'
   - 'montangop.top'
   - 'montelena.auction.co.kr'
@@ -80387,6 +80387,7 @@ payload:
   - 'telemetry.tradingview.com'
   - 'telemetry.transcend.io'
   - 'telemetry.urs.microsoft.com'
+  - 'telemetry.urs.microsoft.y.com'
   - 'telemetry.vtex.com'
   - 'telemetry.webasto.com'
   - 'telepang.com'
