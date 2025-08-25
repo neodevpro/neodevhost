@@ -6,7 +6,7 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-08-24
+# Last update: 2025-08-25
 #
 # Number of domains: 90693
 #
@@ -6805,7 +6805,6 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
-  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -14317,7 +14316,7 @@ payload:
   - 'bawixi.xyz'
   - 'baxebejoaglumoa.net'
   - 'baxf.m.shuhuangge.org'
-  - 'baxggcgtnsder.xyz'
+  - 'baxggcgtnsactive.tc.skysrt.com'
   - 'baycode.cn'
   - 'bayimob.com'
   - 'baynote.net'
@@ -24547,6 +24546,7 @@ payload:
   - 'depzdhamot.com'
   - 'deqiypfdqbl.xyz'
   - 'deqwas.net'
+  - 'der.xyz'
   - 'derailshaws.digital'
   - 'derevya2sh8ka09.com'
   - 'derfsyhdcskpm.website'
