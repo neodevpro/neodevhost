@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-08-26
+# Last update: 2025-08-27
 #
-# Number of domains: 86795
+# Number of domains: 86792
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -11610,7 +11610,6 @@
 0.0.0.0  appc.baidu.com
 0.0.0.0  appcast.io
 0.0.0.0  appcdn.wapx.com
-0.0.0.0  appcfg.v.qq.com
 0.0.0.0  appchannel.html5.qq.com
 0.0.0.0  appcloud.appyreward.com
 0.0.0.0  appconsent.io
@@ -54951,7 +54950,6 @@
 0.0.0.0  pg.aty.sohu.com
 0.0.0.0  pgammedia.com
 0.0.0.0  pgazaz.icu
-0.0.0.0  pgdt.gtimg.cn
 0.0.0.0  pgdt.ugdtimg.com
 0.0.0.0  pgfuteecjuqsfcu.com
 0.0.0.0  pggheklolm.xyz
@@ -85882,7 +85880,6 @@
 0.0.0.0  yummylink.funcapital.com
 0.0.0.0  yun.lvehaisen.com
 0.0.0.0  yun.tuia.cn
-0.0.0.0  yun.tuisnake.com
 0.0.0.0  yun.yuyiya.com
 0.0.0.0  yundingjiayuan.com
 0.0.0.0  yunjiasu.com

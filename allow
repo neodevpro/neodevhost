@@ -1618,6 +1618,7 @@ app4cdn.moovitapp.com
 appauth.naver.com
 appboot.netflix.com
 appbrain.com
+appcfg.v.qq.com
 appcloud.ironbeast.io
 appconf.heytapdownload.com
 appdown.naver.com
@@ -2419,6 +2420,7 @@ cdn-ci50.actonsoftware.com
 cdn-content.ampproject.org
 cdn-eu.metacdn.com
 cdn-eu.piano.io
+cdn-go.cn
 cdn-images-1.medium.com
 cdn-images-2.medium.com
 cdn-images.mailchimp.com
@@ -7671,6 +7673,7 @@ pf-hpx-us1.mpay.samsung.com
 pfsense.org
 pg.cdn.integration.viber.com
 pg.cdn.viber.com
+pgdt.gtimg.cn
 pgi.billdesk.com
 pgl.yoyo.org
 pgyer.com
@@ -8075,6 +8078,7 @@ qos.gcloud.qq.com
 qos.hk.gcloudcs.com
 qph.ec.quoracdn.net
 qpic.cn
+qq-web.cdn-go.cn
 qq.com
 qqpublic.qpic.cn
 qr.ae
@@ -9147,6 +9151,7 @@ static-asm.secure.skypeassets.com
 static-eu.cleverpush.com
 static-fonts.adobe.com
 static-pepper.dealabs.com
+static-res.qq.com
 static-resource.np.community.playstation.net
 static-xl9-ssl.xunlei.com
 static.127777.com
@@ -9561,6 +9566,7 @@ talkx.l.google.com
 tampa.cbslocal.com
 tampermonkey.net
 tandfonline.com
+tangram-config.gdt.qq.com
 tantanapp.com
 tanx.com
 taobao.com
