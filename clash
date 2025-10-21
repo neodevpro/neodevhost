@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-10-20
+# Last update: 2025-10-21
 #
-# Number of domains: 98001
+# Number of domains: 98000
 #
 #=====================================
 payload:
@@ -6961,7 +6961,6 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
-  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -76319,7 +76318,7 @@ payload:
   - 'smetrics.southwest.com'
   - 'smetrics.southwestfarmpress.com'
   - 'smetrics.southwesthotels.com'
-  - 'smetrics.southwestwifi.com'
+  - 'smetrics.southwestwifi.coactive.tc.skysrt.com'
   - 'smetrics.soyaparabebe.com.co'
   - 'smetrics.spaf-academy.pl'
   - 'smetrics.spanx.com'
