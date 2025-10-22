@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-10-21
+# Last update: 2025-10-22
 #
-# Number of domains: 98000
+# Number of domains: 98001
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -6960,6 +6960,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -76317,7 +76318,7 @@
 0.0.0.0  smetrics.southwest.com
 0.0.0.0  smetrics.southwestfarmpress.com
 0.0.0.0  smetrics.southwesthotels.com
-0.0.0.0  smetrics.southwestwifi.coactive.tc.skysrt.com
+0.0.0.0  smetrics.southwestwifi.com
 0.0.0.0  smetrics.soyaparabebe.com.co
 0.0.0.0  smetrics.spaf-academy.pl
 0.0.0.0  smetrics.spanx.com

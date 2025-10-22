@@ -75,6 +75,7 @@
 1drv.ms
 1e100.net
 1fgqfml.oloadcdn.net
+1fichier.com
 1gr.cz
 1hosts.cf
 1und1.de
@@ -1164,7 +1165,7 @@ aml-gateway.cloud.vimeo.com
 amos.alicdn.com
 amp-api-edge.apps.apple.com
 amp-api-edge.apps.apple.com.edgekey.net
-amp-reddit-com.c1fichier.com
+amp-reddit-com.cdn.ampproject.org
 amp.businessinsider.com
 amp.dailycaller.com
 amp.flipboard.com
@@ -1256,7 +1257,7 @@ api-m.paypal.com
 api-manga.crunchyroll.com
 api-mifit-us.huami.com
 api-mifit.huami.com
-api-mobi.soundces.net
+api-mobi.soundcloud.com
 api-mobile-beta.soundcloud.com
 api-mobile-creators.soundcloud.com
 api-mobile.soundcloud.com
@@ -1328,7 +1329,7 @@ api.coinbase.com
 api.coinmarketcap.com
 api.comm.miui.com
 api.commerce.coinbase.com
-api.cricbu.net
+api.cricbuzz.com
 api.crowdin.com
 api.crunchyroll.com
 api.d.xiaomi.com
@@ -2460,7 +2461,7 @@ cdn.contentful.com
 cdn.cookielaw.org
 cdn.cpnscdn.com
 cdn.dailycaller.com
-cdn.datatabldn.ampproject.org
+cdn.datatables.net
 cdn.dealersocket.com
 cdn.destinilocators.com
 cdn.digitaltrends.com
@@ -3669,7 +3670,7 @@ dt51.net
 dts.podtrac.com
 du.163.com
 du1gtm004.adobe.com
-dualstack.brightcove.map.fastlyloud.com
+dualstack.brightcove.map.fastly.net
 duck.co
 duckdns.org
 duckduckgo.com
@@ -12218,5 +12219,4 @@ zopim.com
 zoso.ro
 zrk.imgur.com
 ztgame.com
-zz.com
 zz.ee
