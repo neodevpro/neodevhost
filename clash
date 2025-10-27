@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-10-26
+# Last update: 2025-10-27
 #
-# Number of domains: 97948
+# Number of domains: 97940
 #
 #=====================================
 payload:
@@ -7825,7 +7825,6 @@ payload:
   - 'adinc.kr'
   - 'adinch.com'
   - 'adinfo.aol.com'
-  - 'adinfo.ra1.xlmc.sec.miui.com'
   - 'adinfuse.com'
   - 'adingo.jp'
   - 'adinplay.com'
@@ -11636,7 +11635,6 @@ payload:
   - 'api.touch-moblie.com'
   - 'api.touchxd.com'
   - 'api.tr.blismedia.com'
-  - 'api.ts.feedback.71.am'
   - 'api.ts.feedback.qy.net'
   - 'api.tuisong.baidu.com'
   - 'api.tvinfo.skysrt.com'
@@ -23229,7 +23227,6 @@ payload:
   - 'd.xinshipu.com'
   - 'd.yoyi.tv'
   - 'd.ziyuanm.com'
-  - 'd0.sina.com.cn'
   - 'd0.xcar.com.cn'
   - 'd00.sina.com.cn'
   - 'd018b822d2.com'
@@ -24244,7 +24241,6 @@ payload:
   - 'd6rak4b14t5gp.cloudfront.net'
   - 'd6sav80kktzcx.cloudfront.net'
   - 'd6wzv57amlrv3.cloudfront.net'
-  - 'd7.sina.com.cn'
   - 'd7016uqa4s0lw.cloudfront.net'
   - 'd71194ad75.com'
   - 'd712.theinformation.com'
@@ -24259,7 +24255,6 @@ payload:
   - 'd7po8h5dek3wm.cloudfront.net'
   - 'd7tst6bnt99p2.cloudfront.net'
   - 'd7ytrv7yxa.com'
-  - 'd8.sina.com.cn'
   - 'd8.zedo.com'
   - 'd810.mysanantonio.com'
   - 'd81mfvml8p5ml.cloudfront.net'
@@ -24275,7 +24270,6 @@ payload:
   - 'd8hdm94ldw8yr.cloudfront.net'
   - 'd8sllv1cwflbw.cloudfront.net'
   - 'd8xy39jrbjbcq.cloudfront.net'
-  - 'd9.sina.com.cn'
   - 'd91i6bsb0ef59.cloudfront.net'
   - 'd949b51857.com'
   - 'd95bda138b.com'
@@ -56096,7 +56090,6 @@ payload:
   - 'msg.youku.com'
   - 'msg2.video.ptqy.gitv.tv'
   - 'msg2.video.qiyi.com'
-  - 'msga.71.am'
   - 'msga.cupid.iqiyi.com'
   - 'msga.ptqy.gitv.tv'
   - 'msgapp.com'
@@ -65955,7 +65948,6 @@ payload:
   - 'qoqg.cn'
   - 'qoqv.com'
   - 'qortex.ai'
-  - 'qosp.msg.71.am'
   - 'qotbhqrralipkp.com'
   - 'qotuprmsjnjbn.site'
   - 'qoubliy.top'

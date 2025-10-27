@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-10-26
+# Last update: 2025-10-27
 #
-# Number of domains: 97948
+# Number of domains: 97940
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -7824,7 +7824,6 @@
 0.0.0.0  adinc.kr
 0.0.0.0  adinch.com
 0.0.0.0  adinfo.aol.com
-0.0.0.0  adinfo.ra1.xlmc.sec.miui.com
 0.0.0.0  adinfuse.com
 0.0.0.0  adingo.jp
 0.0.0.0  adinplay.com
@@ -11635,7 +11634,6 @@
 0.0.0.0  api.touch-moblie.com
 0.0.0.0  api.touchxd.com
 0.0.0.0  api.tr.blismedia.com
-0.0.0.0  api.ts.feedback.71.am
 0.0.0.0  api.ts.feedback.qy.net
 0.0.0.0  api.tuisong.baidu.com
 0.0.0.0  api.tvinfo.skysrt.com
@@ -23228,7 +23226,6 @@
 0.0.0.0  d.xinshipu.com
 0.0.0.0  d.yoyi.tv
 0.0.0.0  d.ziyuanm.com
-0.0.0.0  d0.sina.com.cn
 0.0.0.0  d0.xcar.com.cn
 0.0.0.0  d00.sina.com.cn
 0.0.0.0  d018b822d2.com
@@ -24243,7 +24240,6 @@
 0.0.0.0  d6rak4b14t5gp.cloudfront.net
 0.0.0.0  d6sav80kktzcx.cloudfront.net
 0.0.0.0  d6wzv57amlrv3.cloudfront.net
-0.0.0.0  d7.sina.com.cn
 0.0.0.0  d7016uqa4s0lw.cloudfront.net
 0.0.0.0  d71194ad75.com
 0.0.0.0  d712.theinformation.com
@@ -24258,7 +24254,6 @@
 0.0.0.0  d7po8h5dek3wm.cloudfront.net
 0.0.0.0  d7tst6bnt99p2.cloudfront.net
 0.0.0.0  d7ytrv7yxa.com
-0.0.0.0  d8.sina.com.cn
 0.0.0.0  d8.zedo.com
 0.0.0.0  d810.mysanantonio.com
 0.0.0.0  d81mfvml8p5ml.cloudfront.net
@@ -24274,7 +24269,6 @@
 0.0.0.0  d8hdm94ldw8yr.cloudfront.net
 0.0.0.0  d8sllv1cwflbw.cloudfront.net
 0.0.0.0  d8xy39jrbjbcq.cloudfront.net
-0.0.0.0  d9.sina.com.cn
 0.0.0.0  d91i6bsb0ef59.cloudfront.net
 0.0.0.0  d949b51857.com
 0.0.0.0  d95bda138b.com
@@ -56095,7 +56089,6 @@
 0.0.0.0  msg.youku.com
 0.0.0.0  msg2.video.ptqy.gitv.tv
 0.0.0.0  msg2.video.qiyi.com
-0.0.0.0  msga.71.am
 0.0.0.0  msga.cupid.iqiyi.com
 0.0.0.0  msga.ptqy.gitv.tv
 0.0.0.0  msgapp.com
@@ -65954,7 +65947,6 @@
 0.0.0.0  qoqg.cn
 0.0.0.0  qoqv.com
 0.0.0.0  qortex.ai
-0.0.0.0  qosp.msg.71.am
 0.0.0.0  qotbhqrralipkp.com
 0.0.0.0  qotuprmsjnjbn.site
 0.0.0.0  qoubliy.top
