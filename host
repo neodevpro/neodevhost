@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-10-27
+# Last update: 2025-10-28
 #
-# Number of domains: 97940
+# Number of domains: 97935
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -6996,7 +6996,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -22982,7 +22981,7 @@
 0.0.0.0  cwilmif.top
 0.0.0.0  cwkgzodpuitif.online
 0.0.0.0  cwmgdpescuqtc.space
-0.0.0.0  cwmlm.com
+0.0.0.0  cwmlmactive.tc.skysrt.com
 0.0.0.0  cwnyungddeshj.website
 0.0.0.0  cwputyffksq.com
 0.0.0.0  cwqctcmhswrth.online
@@ -48878,7 +48877,6 @@
 0.0.0.0  log.coolguang.com
 0.0.0.0  log.cpex.cz
 0.0.0.0  log.cs.pp.cn
-0.0.0.0  log.da.hunantv.com
 0.0.0.0  log.dpa.com
 0.0.0.0  log.dzen.ru
 0.0.0.0  log.ecgh.dk
@@ -63083,7 +63081,6 @@
 0.0.0.0  player.avplayer.com
 0.0.0.0  player.ex.co
 0.0.0.0  player.gliacloud.com
-0.0.0.0  player.log.hunantv.com
 0.0.0.0  player.quankan.tv
 0.0.0.0  player.sendtonews.com
 0.0.0.0  playeranydwouldm.org
@@ -89964,8 +89961,6 @@
 0.0.0.0  v2.cnzz.com
 0.0.0.0  v2.da.mgtv.com
 0.0.0.0  v2.gdt.qq.com
-0.0.0.0  v2.hd.log.hunantv.com
-0.0.0.0  v2.hdd.log.hunantv.com
 0.0.0.0  v2.jiathis.com
 0.0.0.0  v2.log.hunantv.com
 0.0.0.0  v2.log.mgtv.com
