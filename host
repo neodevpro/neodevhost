@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-11-12
+# Last update: 2025-11-13
 #
-# Number of domains: 98921
+# Number of domains: 98924
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -6944,7 +6944,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -11178,6 +11177,7 @@
 0.0.0.0  anysad.pro
 0.0.0.0  anysdk.com
 0.0.0.0  anysize.pro
+0.0.0.0  anythinktech.com
 0.0.0.0  anytimebananarecoil.com
 0.0.0.0  anytimespurt.com
 0.0.0.0  anytrack.io
@@ -11498,6 +11498,7 @@
 0.0.0.0  apisensor.actonservice.com
 0.0.0.0  apisoft.df0535.com
 0.0.0.0  apistaging.airpush.com
+0.0.0.0  apiv4.anythinktech.com
 0.0.0.0  apiwmda.58.com.cn
 0.0.0.0  apiyd.my91app.com
 0.0.0.0  apjskmyygn.com
@@ -42117,6 +42118,7 @@
 0.0.0.0  ipyjxs.chowsangsang.com
 0.0.0.0  ipyolmutfxlsv.website
 0.0.0.0  ipzmarketing.com
+0.0.0.0  iq.24rhein.de
 0.0.0.0  iq.intellicyt.com
 0.0.0.0  iq.sixaxisllc.com
 0.0.0.0  iqbjqv.airarabia.com
@@ -67038,6 +67040,7 @@
 0.0.0.0  rdroot.com
 0.0.0.0  rdrtrk.com
 0.0.0.0  rdsclick.com
+0.0.0.0  rdsig.yahoo.co.jp
 0.0.0.0  rdstat.tanx.com
 0.0.0.0  rdstation.com.br
 0.0.0.0  rdtk.io
@@ -89862,6 +89865,7 @@
 0.0.0.0  ut.upmc.com
 0.0.0.0  ut19suycy9vt.nowyformat.nofluffjobs.com
 0.0.0.0  ut2.shuqistat.com
+0.0.0.0  utactive.tc.skysrt.com
 0.0.0.0  utajxinmmiuhp.site
 0.0.0.0  utamavfpmimh.com
 0.0.0.0  utarget.co.uk
@@ -89887,7 +89891,6 @@
 0.0.0.0  utiq.24auto.de
 0.0.0.0  utiq.24books.de
 0.0.0.0  utiq.24hamburg.de
-0.0.0.0  utiq.24rhein.de
 0.0.0.0  utiq.24royal.de
 0.0.0.0  utiq.24vita.de
 0.0.0.0  utiq.3djuegos.com
