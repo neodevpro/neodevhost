@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-11-24
+# Last update: 2025-11-25
 #
-# Number of domains: 95796
+# Number of domains: 95797
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -1160,6 +1160,7 @@
 0.0.0.0  40nuggets.com
 0.0.0.0  4135.com
 0.0.0.0  4135375d6a.com
+0.0.0.0  4157.actonservice.com
 0.0.0.0  4171764.fls.doubleclick.net
 0.0.0.0  4171ea7508.com
 0.0.0.0  41b5062d22.com
@@ -3113,7 +3114,7 @@
 0.0.0.0  a17161.actonservice.com
 0.0.0.0  a17166.actonservice.com
 0.0.0.0  a17174.actonservice.com
-0.0.0.0  a17181.actonserrvices.social.microsoft.com
+0.0.0.0  a17181.actonservice.com
 0.0.0.0  a17182.actonservice.com
 0.0.0.0  a17183.actonservice.com
 0.0.0.0  a17184.actonservice.com
@@ -4503,7 +4504,6 @@
 0.0.0.0  a44148.actonservice.com
 0.0.0.0  a44155.actonservice.com
 0.0.0.0  a44156.actonservice.com
-0.0.0.0  a44157.actonservice.com
 0.0.0.0  a44171.actonservice.com
 0.0.0.0  a44172.actonservice.com
 0.0.0.0  a44177.actonservice.com
@@ -4839,6 +4839,7 @@
 0.0.0.0  a46306.actonservice.com
 0.0.0.0  a46d7a5579.com
 0.0.0.0  a47b.com
+0.0.0.0  a4active.tc.skysrt.com
 0.0.0.0  a4b-tracking.com
 0.0.0.0  a4e798c110.com
 0.0.0.0  a4f074a2f8.com
@@ -6804,6 +6805,7 @@
 0.0.0.0  acdn01.vidox.net
 0.0.0.0  ace-adserver.com
 0.0.0.0  acebunny.com
+0.0.0.0  acecounter.com
 0.0.0.0  acecrocodilelick.com
 0.0.0.0  acemetrics.aaa.com
 0.0.0.0  acemetrix.actonservice.com
@@ -6936,7 +6938,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -38827,7 +38828,7 @@
 0.0.0.0  i.zzb6.cn
 0.0.0.0  i0.letvimg.com
 0.0.0.0  i0y0i9vz0.com
-0.0.0.0  i1.seacecounter.com
+0.0.0.0  i1.services.social.microsoft.com
 0.0.0.0  i1901zxd.xyz
 0.0.0.0  i218435.net
 0.0.0.0  i22lo.com

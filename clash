@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-11-24
+# Last update: 2025-11-25
 #
-# Number of domains: 95796
+# Number of domains: 95797
 #
 #=====================================
 payload:
@@ -1161,6 +1161,7 @@ payload:
   - '40nuggets.com'
   - '4135.com'
   - '4135375d6a.com'
+  - '4157.actonservice.com'
   - '4171764.fls.doubleclick.net'
   - '4171ea7508.com'
   - '41b5062d22.com'
@@ -3114,7 +3115,7 @@ payload:
   - 'a17161.actonservice.com'
   - 'a17166.actonservice.com'
   - 'a17174.actonservice.com'
-  - 'a17181.actonserrvices.social.microsoft.com'
+  - 'a17181.actonservice.com'
   - 'a17182.actonservice.com'
   - 'a17183.actonservice.com'
   - 'a17184.actonservice.com'
@@ -4504,7 +4505,6 @@ payload:
   - 'a44148.actonservice.com'
   - 'a44155.actonservice.com'
   - 'a44156.actonservice.com'
-  - 'a44157.actonservice.com'
   - 'a44171.actonservice.com'
   - 'a44172.actonservice.com'
   - 'a44177.actonservice.com'
@@ -4840,6 +4840,7 @@ payload:
   - 'a46306.actonservice.com'
   - 'a46d7a5579.com'
   - 'a47b.com'
+  - 'a4active.tc.skysrt.com'
   - 'a4b-tracking.com'
   - 'a4e798c110.com'
   - 'a4f074a2f8.com'
@@ -6805,6 +6806,7 @@ payload:
   - 'acdn01.vidox.net'
   - 'ace-adserver.com'
   - 'acebunny.com'
+  - 'acecounter.com'
   - 'acecrocodilelick.com'
   - 'acemetrics.aaa.com'
   - 'acemetrix.actonservice.com'
@@ -6937,7 +6939,6 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
-  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -38828,7 +38829,7 @@ payload:
   - 'i.zzb6.cn'
   - 'i0.letvimg.com'
   - 'i0y0i9vz0.com'
-  - 'i1.seacecounter.com'
+  - 'i1.services.social.microsoft.com'
   - 'i1901zxd.xyz'
   - 'i218435.net'
   - 'i22lo.com'
