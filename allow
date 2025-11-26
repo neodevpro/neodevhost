@@ -1257,7 +1257,6 @@ api-m.paypal.com
 api-manga.crunchyroll.com
 api-mifit-us.huami.com
 api-mifit.huami.com
-api-mobi.soundcloud.com
 api-mobile-beta.soundcloud.com
 api-mobile-creators.soundcloud.com
 api-mobile.soundcloud.com
@@ -1421,7 +1420,7 @@ api.open.uc.cn
 api.opensubtitles.org
 api.opentok.com
 api.ow.ly
-api.paypal.com
+api.paypal70.com
 api.perfalytics.com
 api.picsart.com
 api.pinterest.com
@@ -1499,7 +1498,6 @@ api.vimeo.com
 api.vip.miui.com
 api.vk.com
 api.vudu.com
-api.vuukle.com
 api.weather.com
 api.webengage.com
 api.wechat.com
@@ -1542,6 +1540,7 @@ apm.wetest.qq.com
 apmebf.com
 apms5.com
 apnupdate.sonymobile.com
+apo.com
 apo.st
 apollo.dl.playstation.net
 aporasal.net
@@ -2822,6 +2821,7 @@ click.member.americanexpress.com
 click.members.nra.org
 click.mlsend.com
 click.myctm.canadiantire.ca
+click.mz.simba.taoba.com
 click.mz.simba.taobao.com
 click.o.delta.com
 click.pstmrk.it
@@ -5238,6 +5238,7 @@ i.scdn.co
 i.snap.com
 i.snssdk.com
 i.viafoura.co
+i.vuukle.com
 i.x.sndcdn.com
 i.xiaomi.com
 i.ytimg.com
@@ -6150,7 +6151,6 @@ liveupdate.mac.sandai.net
 livew.l.qq.com
 lix.in
 llll.im
-llnwd.net
 lm.facebook.com
 lm.licenses.adobe.com
 lm04.cafe.naver.com
@@ -6796,7 +6796,7 @@ mkto-ab660121.com
 mkto-ab690180.com
 mkto-abj0022.com
 mkto-abm0229.com
-mkto-d0170.com
+mkto-d01loud.com
 mkto-g0180.com
 mkto-l0088.com
 mkto-lon030291.com
@@ -7147,6 +7147,7 @@ newsletterind.huawei.com
 newsletters.nationalgeographic.com
 newsletters.vox.com
 newslink.reuters.com
+newslink.reuters.comsony.tv
 newsmax.com
 newsroom.fb.com
 newsroom.pinterest.com
@@ -9217,7 +9218,6 @@ static.networkedblogs.com
 static.opentok.com
 static.ow.ly
 static.parastorage.com
-static.pd.biv.sony.tv
 static.res.qq.com
 static.returnpath.net
 static.sh.st
