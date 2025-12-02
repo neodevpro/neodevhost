@@ -75,7 +75,6 @@
 1drv.ms
 1e100.net
 1fgqfml.oloadcdn.net
-1fichier.com
 1gr.cz
 1hosts.cf
 1und1.de
@@ -1906,9 +1905,9 @@ bapi.flipboard.com
 barebones.com
 barnesandnoble.com
 batch.com
-batt360.cn
 battle.net
 battleforthenet.com
+battlelog.battlefield.com
 bazaarvoice.com
 bb.biv.sony.tv
 bbb.org
@@ -3215,7 +3214,6 @@ css.hepsiburada.net
 cssdeck.com
 cst.cstwpush.com
 ct-m-fbx.fbsbx.com
-ct.impactradius.com
 ct.sendgrid.net
 ct.techrepublic.com
 ctagm.tchibo.de
@@ -5982,7 +5980,6 @@ learndownload.adobe.com
 legal.medium.com
 legal.qualcomm.com
 lego.com
-lelog.battlefield.com
 lemde.fr
 lemonade.com
 lemonde.fr
@@ -6151,7 +6148,7 @@ liveupdate.mac.sandai.net
 livew.l.qq.com
 lix.in
 llll.im
-llnwd.net
+llnwd.net0.client-channel.google.com
 lm.facebook.com
 lm.licenses.adobe.com
 lm04.cafe.naver.com
@@ -6700,6 +6697,7 @@ mewkid.net
 mgr.consensu.org
 mi.com
 mi.me
+mi.ne
 mi.samsung.com
 mi.xiaomi.com
 miami.cbslocal.com
@@ -7226,9 +7224,9 @@ notabug.org
 noteapi.micloud.xiaomi.net
 notepad-plus-plus.org
 noteworthy.medium.com
+notice.1fichier.com
 notice.game.xiaomi.com
 notice.line.me
-notice.samsungcloudsolution.com
 notice.xbox.com
 notice2.line.me
 noticecdn.samsungcloudsolution.com
@@ -8267,6 +8265,7 @@ resellerclub.com
 reserve.com
 resolver.gslb.mi-idc.com
 resolver.msg.global.xiaomi.net
+resolver.msg.xiaoctradius.com
 resolver.msg.xiaomi.ne
 resolver.msg.xiaomi.net
 resource.np.ac.playstation.net
@@ -8500,6 +8499,7 @@ samsung.pagelyhosting.com
 samsung.se
 samsung.stories.bazaarvoice.com
 samsung.ugc.bazaarvoice.com
+samsungcloudsolution.com
 samsungcloudsolution.net
 samsungelectronics.com
 samsungeucdm-mid-prod1-res.adobe-campaign.com
