@@ -103,14 +103,24 @@ filter_domains() {
     }'
 }
 
-# Apply all checks: IDN, regex, domain filter, reserved/blocked, PSL
+# Apply all checks: IDN, lowercase, remove trailing dot, regex, domain filter, reserved/blocked, PSL
+normalize_domains() {
+  awk '{
+    d=tolower($0);
+    sub(/\.$/, "", d);
+    print d;
+  }'
+}
+
 idn_convert < "allow" | \
+normalize_domains | \
 grep -E "$domain_name_regex" | \
 filter_domains | \
 filter_reserved_blocked | \
 validate_psl > "clean_allow"
 
 idn_convert < "block" | \
+normalize_domains | \
 grep -E "$domain_name_regex" | \
 filter_domains | \
 filter_reserved_blocked | \
