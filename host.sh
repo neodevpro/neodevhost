@@ -73,30 +73,20 @@ filter_domains() {
     $0 !~ /[^a-zA-Z0-9.-]/ &&
     $0 !~ /\.\./ &&
     $0 !~ /^\.|\.$/ &&
-    $0 !~ /\.local$|\.localhost$|\.invalid$|\.test$/ &&
     $0 !~ /\.[0-9]+$/ {
       split($0, labels, ".");
       valid=1;
       for(i in labels) {
-        # Empty label
         if(labels[i]=="") {valid=0; break}
-        # Label length
         if(length(labels[i])>63) {valid=0; break}
-      # Reserved domain check
-      cmd = "bash -c 'source ./host.sh; is_reserved_domain " $0 "'"
-      reserved = system(cmd)
-      # Public Suffix List check
-      tld = labels[length(labels)]
-      psl_valid = (system("grep -q '^" tld "' psl.txt") == 0)
-      if(valid && !reserved && psl_valid) print $0;
         if(labels[i] ~ /^-/ || labels[i] ~ /-$/) {valid=0; break}
-        # Consecutive hyphens in 3rd/4th position (reserved for IDN)
-        # Non-ASCII after punycode conversion
-
-      # Numeric-only TLD
+        if(length(labels[i])>=4 && substr(labels[i],3,2)=="--" && i!=length(labels)) {valid=0; break}
+        if(labels[i] ~ /[^a-zA-Z0-9-]/) {valid=0; break}
+      }
       if(labels[length(labels)] ~ /^[0-9]+$/) {valid=0}
       if(valid) print $0;
     }'
+}
 }
 
 domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
@@ -133,28 +123,27 @@ tee adblocker dnsmasq.conf smartdns.conf domain clash block < host >/dev/null
 
 # Update Date and block list number
 sed -i "9c# Last update: $(date '+%Y-%m-%d')" title
-    }
 
-    # Reserved and PSL checks outside awk
-    filter_reserved_and_psl() {
-      while read domain; do
-        reserved=1
-        for reserved_domain in $RESERVED_DOMAINS; do
-          if [[ "$domain" == *"$reserved_domain" ]]; then
-            reserved=0
-            break
-          fi
-        done
-        tld="${domain##*.}"
-        psl_valid=0
-        if grep -q "^$tld$" "$PSL_FILE"; then
-          psl_valid=1
-        fi
-        if [[ $reserved -eq 1 && $psl_valid -eq 1 ]]; then
-          echo "$domain"
-        fi
-      done
-    }
+# Reserved and PSL checks outside awk
+filter_reserved_and_psl() {
+  while read domain; do
+    reserved=1
+    for reserved_domain in $RESERVED_DOMAINS; do
+      if [[ "$domain" == *"$reserved_domain" ]]; then
+        reserved=0
+        break
+      fi
+    done
+    tld="${domain##*.}"
+    psl_valid=0
+    if grep -q "^$tld$" "$PSL_FILE"; then
+      psl_valid=1
+    fi
+    if [[ $reserved -eq 1 && $psl_valid -eq 1 ]]; then
+      echo "$domain"
+    fi
+  done
+}
 sed -i "11c# Number of domains: $(wc -l < block)" title
 
 # Add Head to all list
