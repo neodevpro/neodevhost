@@ -103,9 +103,18 @@ filter_domains() {
     }'
 }
 
-# Apply all checks: regex, IDN, PSL, reserved/blocked
-grep -E "$domain_name_regex" "allow" | idn_convert | filter_domains | validate_psl | filter_reserved_blocked > "clean_allow"
-grep -E "$domain_name_regex" "block" | idn_convert | filter_domains | validate_psl | filter_reserved_blocked > "clean_block"
+# Apply all checks: IDN, regex, domain filter, reserved/blocked, PSL
+idn_convert < "allow" | \
+grep -E "$domain_name_regex" | \
+filter_domains | \
+filter_reserved_blocked | \
+validate_psl > "clean_allow"
+
+idn_convert < "block" | \
+grep -E "$domain_name_regex" | \
+filter_domains | \
+filter_reserved_blocked | \
+validate_psl > "clean_block"
 
 # Remove redundant subdomains if parent domain exists
 remove_redundant_subdomains() {
