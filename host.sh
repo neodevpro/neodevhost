@@ -2,7 +2,7 @@
 
 # Clean up old files
 echo "Clean..."
-rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
+rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block public_suffix_list.dat
 
 
 # Pre-Fetch TLD list and Public Suffix List
