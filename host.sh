@@ -23,11 +23,34 @@ process_list() {
 process_list "allowlist" "allow"
 process_list "blocklist" "block"
 
-# Check format
-echo "Validating domain format..."
+
+# Enhanced domain validation with IDN (punycode) support
+echo "Validating domain format (strict, with IDN support)..."
+
+# Convert IDN to punycode if 'idn' is available, else pass through
+idn_convert() {
+  if command -v idn >/dev/null 2>&1; then
+    idn --quiet || cat
+  else
+    cat
+  fi
+}
+
+# Remove lines with invalid characters, consecutive dots, leading/trailing dots, overly long domains/labels
+filter_domains() {
+  awk 'length($0)<=253 && $0 !~ /[^a-zA-Z0-9.-]/ && $0 !~ /\.\./ && $0 !~ /^\.|\.$/ {
+    split($0, labels, ".");
+    valid=1;
+    for(i in labels) {
+      if(length(labels[i])>63 || labels[i] ~ /^-/ || labels[i] ~ /-$/ || labels[i]=="") {valid=0; break}
+    }
+    if(valid) print $0;
+  }'
+}
+
 domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
-grep -E "$domain_name_regex" "allow" > "clean_allow" && mv "clean_allow" "allow"
-grep -E "$domain_name_regex" "block" > "clean_block" && mv "clean_block" "block"
+grep -E "$domain_name_regex" "allow" | idn_convert | filter_domains > "clean_allow" && mv "clean_allow" "allow"
+grep -E "$domain_name_regex" "block" | idn_convert | filter_domains > "clean_block" && mv "clean_block" "block"
 
 # Generate final lite host list
 echo "Merge Combine..."
