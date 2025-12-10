@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Clean up old files
@@ -48,15 +47,15 @@ idn_convert() {
 domain_name_regex="^((xn--)?[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\.)+([a-zA-Z]{2,}|xn--[a-zA-Z0-9]+)$"
 
 
-# Validate against PSL (match domain's public suffix)
+# Validate against PSL (match domain's public suffix, read PSL from file)
 validate_psl() {
-  awk -v psl_list="$PSL_LIST" '
-    function in_psl(suffix) {
-      n = split(psl_list, psl, "\n");
-      for (i = 1; i <= n; i++) {
-        if (suffix == psl[i]) return 1;
+  awk -v psl_file="public_suffix_list.dat" '
+    BEGIN {
+      while ((getline line < psl_file) > 0) {
+        if (line ~ /^\/\// || line ~ /^$/) continue;
+        psl[tolower(line)] = 1;
       }
-      return 0;
+      close(psl_file);
     }
     {
       split($0, labels, ".");
@@ -65,7 +64,7 @@ validate_psl() {
         for (j = i; j <= length(labels); j++) {
           suffix = suffix ((suffix=="")?"":".") labels[j];
         }
-        if (in_psl(tolower(suffix))) { print $0; break; }
+        if (psl[tolower(suffix)]) { print $0; break; }
       }
     }'
 }
@@ -80,7 +79,7 @@ filter_domains() {
   awk '
     length($0)<=253 &&
     $0 !~ /[^a-zA-Z0-9.-]/ &&
-    $0 !~ /\./\./ &&
+    $0 !~ /\.\./ &&
     $0 !~ /^\.|\.$/ &&
     $0 !~ /\.local$|\.localhost$|\.invalid$|\.test$/ &&
     $0 !~ /\.[0-9]+$/ {
@@ -149,7 +148,7 @@ done
 sed -i -e '14,$s/^/||&/' -e '14,$s/$/&^/' adblocker
 sed -i -e '14,$s/^/0.0.0.0  &/' host
 sed -i -e '14,$s/^/address=\//' -e '14,$s/$/\/0.0.0.0/' dnsmasq.conf
-sed -i -e '14,$s/^/address \//' -e '14,$s/$/\/#/' smartdns.conf
+sed -i -e '14,$s/^/address \/' -e '14,$s/$/\/#/' smartdns.conf
 sed -i -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" clash
 
 # Update README with statistics optimized
