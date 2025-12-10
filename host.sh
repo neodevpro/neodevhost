@@ -49,8 +49,24 @@ filter_domains() {
 }
 
 domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
-grep -E "$domain_name_regex" "allow" | idn_convert | filter_domains > "clean_allow" && mv "clean_allow" "allow"
-grep -E "$domain_name_regex" "block" | idn_convert | filter_domains > "clean_block" && mv "clean_block" "block"
+grep -E "$domain_name_regex" "allow" | idn_convert | filter_domains > "clean_allow"
+grep -E "$domain_name_regex" "block" | idn_convert | filter_domains > "clean_block"
+
+# Remove redundant subdomains if parent domain exists
+remove_redundant_subdomains() {
+  awk -F. '{
+    n=split($0, a, ".");
+    for(i=1;i<=n;i++) {
+      subd="";
+      for(j=i;j<=n;j++) subd=(subd==""?a[j]:subd"."a[j]);
+      if(subd!=$0) seen[subd]=1;
+    }
+    if(!seen[$0]) print $0;
+  }' | sort -u
+}
+
+cat clean_allow | remove_redundant_subdomains > allow && rm -f clean_allow
+cat clean_block | remove_redundant_subdomains > block && rm -f clean_block
 
 # Generate final lite host list
 echo "Merge Combine..."
