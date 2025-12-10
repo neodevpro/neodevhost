@@ -38,14 +38,31 @@ idn_convert() {
 
 # Remove lines with invalid characters, consecutive dots, leading/trailing dots, overly long domains/labels
 filter_domains() {
-  awk 'length($0)<=253 && $0 !~ /[^a-zA-Z0-9.-]/ && $0 !~ /\.\./ && $0 !~ /^\.|\.$/ {
-    split($0, labels, ".");
-    valid=1;
-    for(i in labels) {
-      if(length(labels[i])>63 || labels[i] ~ /^-/ || labels[i] ~ /-$/ || labels[i]=="") {valid=0; break}
-    }
-    if(valid) print $0;
-  }'
+  awk '
+    length($0)<=253 &&
+    $0 !~ /[^a-zA-Z0-9.-]/ &&
+    $0 !~ /\.\./ &&
+    $0 !~ /^\.|\.$/ &&
+    $0 !~ /\.local$|\.localhost$|\.invalid$|\.test$/ &&
+    $0 !~ /\.[0-9]+$/ {
+      split($0, labels, ".");
+      valid=1;
+      for(i in labels) {
+        # Empty label
+        if(labels[i]=="") {valid=0; break}
+        # Label length
+        if(length(labels[i])>63) {valid=0; break}
+        # Leading/trailing hyphen
+        if(labels[i] ~ /^-/ || labels[i] ~ /-$/) {valid=0; break}
+        # Consecutive hyphens in 3rd/4th position (reserved for IDN)
+        if(length(labels[i])>=4 && substr(labels[i],3,2)=="--" && i!=length(labels)) {valid=0; break}
+        # Non-ASCII after punycode conversion
+        if(labels[i] ~ /[^a-zA-Z0-9-]/) {valid=0; break}
+      }
+      # Numeric-only TLD
+      if(labels[length(labels)] ~ /^[0-9]+$/) {valid=0}
+      if(valid) print $0;
+    }'
 }
 
 domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
