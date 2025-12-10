@@ -47,20 +47,26 @@ idn_convert() {
 # Comprehensive domain regex (RFC 1035/1123/5890, punycode, Unicode)
 domain_name_regex="^((xn--)?[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\.)+([a-zA-Z]{2,}|xn--[a-zA-Z0-9]+)$"
 
-# Validate against PSL
+
+# Validate against PSL (match domain's public suffix)
 validate_psl() {
   awk -v psl_list="$PSL_LIST" '
-    function in_psl(domain) {
+    function in_psl(suffix) {
       n = split(psl_list, psl, "\n");
       for (i = 1; i <= n; i++) {
-        if (domain ~ "\." psl[i] "$" || domain == psl[i]) return 1;
+        if (suffix == psl[i]) return 1;
       }
       return 0;
     }
     {
       split($0, labels, ".");
-      tld = labels[length(labels)];
-      if (in_psl(tolower($0))) print $0;
+      for (i = 2; i <= length(labels); i++) {
+        suffix = "";
+        for (j = i; j <= length(labels); j++) {
+          suffix = suffix ((suffix=="")?"":".") labels[j];
+        }
+        if (in_psl(tolower(suffix))) { print $0; break; }
+      }
     }'
 }
 
