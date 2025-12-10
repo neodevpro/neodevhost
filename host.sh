@@ -5,8 +5,12 @@
 echo "Clean..."
 rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block
 
-# Pre-Fetch TLD list
+
+# Pre-Fetch TLD list and Public Suffix List
 TLD_LIST=$(wget -qO- "https://data.iana.org/TLD/tlds-alpha-by-domain.txt" | tail -n +2 | tr '[:upper:]' '[:lower:]')
+PSL_URL="https://publicsuffix.org/list/public_suffix_list.dat"
+wget -qO public_suffix_list.dat "$PSL_URL"
+PSL_LIST=$(grep -vE '^//|^$' public_suffix_list.dat | tr -d '\r')
 
 # Merge list
 process_list() {
@@ -24,8 +28,12 @@ process_list "allowlist" "allow"
 process_list "blocklist" "block"
 
 
-# Enhanced domain validation with IDN (punycode) support
-echo "Validating domain format (strict, with IDN support)..."
+
+# Reserved/blocked domains (RFC 2606)
+RESERVED_DOMAINS="example.com example.net example.org test localhost invalid local"
+
+# Enhanced domain validation with IDN (punycode) and PSL support
+echo "Validating domain format (RFC, IDN, PSL, reserved)..."
 
 # Convert IDN to punycode if 'idn' is available, else pass through
 idn_convert() {
@@ -36,12 +44,37 @@ idn_convert() {
   fi
 }
 
+# Comprehensive domain regex (RFC 1035/1123/5890, punycode, Unicode)
+domain_name_regex="^((xn--)?[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\.)+([a-zA-Z]{2,}|xn--[a-zA-Z0-9]+)$"
+
+# Validate against PSL
+validate_psl() {
+  awk -v psl_list="$PSL_LIST" '
+    function in_psl(domain) {
+      n = split(psl_list, psl, "\n");
+      for (i = 1; i <= n; i++) {
+        if (domain ~ "\." psl[i] "$" || domain == psl[i]) return 1;
+      }
+      return 0;
+    }
+    {
+      split($0, labels, ".");
+      tld = labels[length(labels)];
+      if (in_psl(tolower($0))) print $0;
+    }'
+}
+
+# Filter reserved/blocked domains
+filter_reserved_blocked() {
+  grep -vE "$(echo $RESERVED_DOMAINS | sed 's/ /|/g')"
+}
+
 # Remove lines with invalid characters, consecutive dots, leading/trailing dots, overly long domains/labels
 filter_domains() {
   awk '
     length($0)<=253 &&
     $0 !~ /[^a-zA-Z0-9.-]/ &&
-    $0 !~ /\.\./ &&
+    $0 !~ /\./\./ &&
     $0 !~ /^\.|\.$/ &&
     $0 !~ /\.local$|\.localhost$|\.invalid$|\.test$/ &&
     $0 !~ /\.[0-9]+$/ {
@@ -65,9 +98,9 @@ filter_domains() {
     }'
 }
 
-domain_name_regex="^([a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"
-grep -E "$domain_name_regex" "allow" | idn_convert | filter_domains > "clean_allow"
-grep -E "$domain_name_regex" "block" | idn_convert | filter_domains > "clean_block"
+# Apply all checks: regex, IDN, PSL, reserved/blocked
+grep -E "$domain_name_regex" "allow" | idn_convert | filter_domains | validate_psl | filter_reserved_blocked > "clean_allow"
+grep -E "$domain_name_regex" "block" | idn_convert | filter_domains | validate_psl | filter_reserved_blocked > "clean_block"
 
 # Remove redundant subdomains if parent domain exists
 remove_redundant_subdomains() {
