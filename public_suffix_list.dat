@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-12-15_23-04-59_UTC
-// COMMIT: 388317f415fdcce0a73433370d7b0ba5f8f3cb36
+// VERSION: 2025-12-17_19-01-55_UTC
+// COMMIT: a82f39e9f9265dc959ee1e58ad55bbeab13bd0d5
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -1300,6 +1300,12 @@ edu.gy
 gov.gy
 net.gy
 org.gy
+
+// Hercules : https://hercules.app
+// Submitted by Brendan Falk <security@hercules.app>
+onhercules.app
+hercules-app.com
+hercules-dev.com
 
 // hk : https://www.hkirc.hk
 // Submitted by registry <hk.tech@hkirc.hk>
@@ -12916,8 +12922,11 @@ discordsez.com
 // Submitted by Calvin Browne <calvin@dns.business>
 jozi.biz
 
-// DNSHE : https://de5.net
+// DNSHE : https://www.dnshe.com
 // Submitted by DNSHE Team <support@dnshe.com>
+ccwu.cc
+cc.cd
+us.ci
 de5.net
 
 // DNShome : https://www.dnshome.de/
@@ -13303,10 +13312,6 @@ elementor.cool
 emergent.cloud
 preview.emergentagent.com
 emergent.host
-
-// En root‽ : https://en-root.org
-// Submitted by Emmanuel Raviart <emmanuel@raviart.com>
-en-root.fr
 
 // Enalean SAS : https://www.enalean.com
 // Submitted by Enalean Security Team <security@enalean.com>
@@ -15017,11 +15022,6 @@ us.platform.sh
 *.platformsh.site
 *.tst.site
 
-// Platter : https://platter.dev
-// Submitted by Patrick Flor <patrick@platter.dev>
-platter-app.dev
-platterp.us
-
 // Pley AB : https://www.pley.com/
 // Submitted by Henning Pohl <infra@pley.com>
 pley.games
@@ -15068,6 +15068,10 @@ dev.project-study.com
 // Protonet GmbH : http://protonet.io
 // Submitted by Martin Meier <admin@protonet.io>
 protonet.io
+
+// PSL Sandbox : https://github.com/groundcat/PSL-Sandbox
+// Submitted by groundcat <psl-sandbox@alumni.upenn.edu>
+platter-app.dev
 
 // PT Ekossistim Indo Digital : https://e.id
 // Submitted by Eid Team <support@corp.e.id>
@@ -15657,10 +15661,6 @@ ipfs.w3s.link
 // Storebase : https://www.storebase.io
 // Submitted by Tony Schirmer <tony@storebase.io>
 storebase.store
-
-// Storipress : https://storipress.com
-// Submitted by Benno Liu <benno@storipress.com>
-storipress.app
 
 // Storj Labs Inc. : https://storj.io/
 // Submitted by Philip Hutchins <hostmaster@storj.io>
