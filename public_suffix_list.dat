@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-12-17_19-01-55_UTC
-// COMMIT: a82f39e9f9265dc959ee1e58ad55bbeab13bd0d5
+// VERSION: 2025-12-18_20-41-12_UTC
+// COMMIT: 461e4b0fb95f439932707ef36496f5369292b7d8
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -12353,6 +12353,24 @@ panel.dev
 // Submitted by Alexander Selivanov <alex@apphud.com>
 siiites.com
 
+// Apple : https://www.apple.com
+// Submitted by Apple DNS <dnscontact@apple.com>
+int.apple
+*.cloud.int.apple
+*.r.cloud.int.apple
+*.ap-north-1.r.cloud.int.apple
+*.ap-south-1.r.cloud.int.apple
+*.ap-south-2.r.cloud.int.apple
+*.eu-central-1.r.cloud.int.apple
+*.eu-north-1.r.cloud.int.apple
+*.us-central-1.r.cloud.int.apple
+*.us-central-2.r.cloud.int.apple
+*.us-east-1.r.cloud.int.apple
+*.us-east-2.r.cloud.int.apple
+*.us-west-1.r.cloud.int.apple
+*.us-west-2.r.cloud.int.apple
+*.us-west-3.r.cloud.int.apple
+
 // Appspace : https://www.appspace.com
 // Submitted by Appspace Security Team <security@appspace.com>
 appspacehosted.com
@@ -12365,6 +12383,7 @@ appudo.net
 // Appwrite : https://appwrite.io
 // Submitted by Steven Nguyen <security@appwrite.io>
 appwrite.global
+appwrite.network
 *.appwrite.run
 
 // Aptible : https://www.aptible.com/
@@ -13573,10 +13592,9 @@ on-fleek.app
 flutterflow.app
 
 // fly.io : https://fly.io
-// Submitted by Kurt Mackey <kurt@fly.io>
+// Submitted by Kurt Mackey <ops@fly.io>
+sprites.app
 fly.dev
-shw.io
-edgeapp.net
 
 // Forgerock : https://www.forgerock.com
 // Submitted by Roderick Parr <roderick.parr@forgerock.com>
@@ -14034,6 +14052,10 @@ wpmucdn.com
 tempurl.host
 wpmudev.host
 
+// Indevs : https://indevs.in
+// Submitted by Sudheer Bhuvana <security@admin.indevs.in>
+indevs.in
+
 // Individual Network Berlin e.V. : https://www.in-berlin.de/
 // Submitted by Christian Seitz <chris@in-berlin.de>
 dyn-berlin.de
@@ -14466,6 +14488,11 @@ luyani.net
 // Magento Commerce
 // Submitted by Damien Tournoud <dtournoud@magento.cloud>
 *.magentosite.cloud
+
+// Magic Patterns : https://www.magicpatterns.com
+// Submitted by Teddy Ni <security@magicpatterns.com>
+magicpatterns.app
+magicpatternsapp.com
 
 // Mail.Ru Group : https://hb.cldmail.ru
 // Submitted by Ilya Zaretskiy <zaretskiy@corp.mail.ru>
