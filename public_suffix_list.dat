@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-12-18_20-41-12_UTC
-// COMMIT: 461e4b0fb95f439932707ef36496f5369292b7d8
+// VERSION: 2025-12-19_18-38-49_UTC
+// COMMIT: 3be833212471408940c0d59e5e59914b3f35f338
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -12341,6 +12341,10 @@ eero-stage.online
 
 // concludes Amazon
 
+// Antagonist B.V. : https://www.antagonist.nl/
+// Submitted by Sander Hoentjen <systeembeheer@antagonist.nl>
+antagonist.cloud
+
 // Apigee : https://apigee.com/
 // Submitted by Apigee Security Team <security@apigee.com>
 apigee.io
@@ -13595,11 +13599,6 @@ flutterflow.app
 // Submitted by Kurt Mackey <ops@fly.io>
 sprites.app
 fly.dev
-
-// Forgerock : https://www.forgerock.com
-// Submitted by Roderick Parr <roderick.parr@forgerock.com>
-forgeblocks.com
-id.forgerock.io
 
 // FoundryLabs, Inc : https://e2b.dev/
 // Submitted by Jiri Sveceny <security@e2b.dev>
@@ -15030,6 +15029,11 @@ mypep.link
 // Perspecta : https://perspecta.com/
 // Submitted by Kenneth Van Alstyne <kvanalstyne@perspecta.com>
 perspecta.cloud
+
+// Ping Identity : https://www.pingidentity.com
+// Submitted by Ping Identity <security@pingidentity.com>
+forgeblocks.com
+id.forgerock.io
 
 // Plain : https://www.plain.com/
 // Submitted by Jesús Hernández <security@plain.com>
