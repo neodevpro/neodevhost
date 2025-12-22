@@ -167,7 +167,7 @@ done
 sed -i -e '14,$s/^/||&/' -e '14,$s/$/&^/' adblocker
 sed -i -e '14,$s/^/0.0.0.0  &/' host
 sed -i -e '14,$s/^/address=\//' -e '14,$s/$/\/0.0.0.0/' dnsmasq.conf
-sed -i -e '14,$s/^/address \/' -e '14,$s/$/\/#/' smartdns.conf
+sed -i -e '14,$s/^/address \//' -e '14,$s/$/\/#/' smartdns.conf
 sed -i -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" clash
 
 # Update README with statistics optimized
