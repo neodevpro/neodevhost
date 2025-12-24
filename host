@@ -6,11 +6,12 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2025-12-23
+# Last update: 2025-12-24
 #
-# Number of domains: 109255
+# Number of domains: 109253
 #
 #=====================================
+0.0.0.0  0.0houtai.2345.cn
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
@@ -870,7 +871,6 @@
 0.0.0.0  2311.oadz.com
 0.0.0.0  233wo.com
 0.0.0.0  2345.cc
-0.0.0.0  2345.cn
 0.0.0.0  2345.com
 0.0.0.0  2345api.dftoutiao.com
 0.0.0.0  2345apicode.dftoutiao.com
@@ -15988,7 +15988,6 @@
 0.0.0.0  bdjj.bzr99.com
 0.0.0.0  bdjs.120askimages.com
 0.0.0.0  bdjs.6237237.com
-0.0.0.0  bdjs.6822.com
 0.0.0.0  bdjs.999d.com
 0.0.0.0  bdjs.daziba.cn
 0.0.0.0  bdjs.guangyuanol.cn
@@ -16001,6 +16000,7 @@
 0.0.0.0  bdjs1.ixiumei.com
 0.0.0.0  bdjsfl.chinabig.com.cn
 0.0.0.0  bdjsym.guangyuanol.cn
+0.0.0.0  bdjwp.debet79.info
 0.0.0.0  bdkrltbdwxmxe.space
 0.0.0.0  bdkuth.smartbuyglasses.co.uk
 0.0.0.0  bdl.xefyr.com
@@ -27784,7 +27784,6 @@
 0.0.0.0  debet.moi
 0.0.0.0  debet.net
 0.0.0.0  debet.us
-0.0.0.0  debet79.info
 0.0.0.0  debet88.win
 0.0.0.0  debitcrebit669.com
 0.0.0.0  debjpy.globoshoes.com
@@ -43179,7 +43178,6 @@
 0.0.0.0  houston-content.cresa.com
 0.0.0.0  houston.advgo.net
 0.0.0.0  houstonrepublic.com
-0.0.0.0  houtai.2345.cn
 0.0.0.0  houtai.2345.com
 0.0.0.0  houyi.kkmh.com
 0.0.0.0  houyi.logger.baofeng.com
@@ -76841,6 +76839,7 @@
 0.0.0.0  s.456jjh.cn
 0.0.0.0  s.5jjx.net
 0.0.0.0  s.652748.com
+0.0.0.0  s.6822.com
 0.0.0.0  s.6travel.com
 0.0.0.0  s.8xbet.xyz
 0.0.0.0  s.abcache.com
@@ -102866,7 +102865,6 @@
 0.0.0.0  wp-monero-miner.de
 0.0.0.0  wp-worthy.de
 0.0.0.0  wp.choigiaitri.net
-0.0.0.0  wp.debet79.info
 0.0.0.0  wp.hdbet.com
 0.0.0.0  wp.mibet.net
 0.0.0.0  wp.nbet.fan
