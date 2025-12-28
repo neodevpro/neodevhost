@@ -17,7 +17,7 @@ Total allowlist list 允许名单总数: 11360
 
 Total upstream-non-accessable list 上游无法访问域名总数: 5353
 
-Update 更新时间: 2025-12-27
+Update 更新时间: 2025-12-28
 ```
 ### UPTODATE 保持最新<br/>
     Merge every day　每天更新
