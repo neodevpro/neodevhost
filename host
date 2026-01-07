@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-01-06
+# Last update: 2026-01-07
 #
-# Number of domains: 108147
+# Number of domains: 108158
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -7897,6 +7897,7 @@
 0.0.0.0  ad.playhit.biz
 0.0.0.0  ad.plus
 0.0.0.0  ad.propellerads.com
+0.0.0.0  ad.qingting.fm
 0.0.0.0  ad.qn.img-space.com
 0.0.0.0  ad.qq.com
 0.0.0.0  ad.qun.qq.com
@@ -9477,6 +9478,7 @@
 0.0.0.0  adtd.parfumdreams.es
 0.0.0.0  adtd.parfumdreams.fi
 0.0.0.0  adtd.parfumdreams.fr
+0.0.0.0  adtd.parfumdreams.ie
 0.0.0.0  adtd.parfumdreams.it
 0.0.0.0  adtd.parfumdreams.nl
 0.0.0.0  adtd.parfumdreams.pl
@@ -10765,7 +10767,6 @@
 0.0.0.0  ali-stats.jpush.cn
 0.0.0.0  ali8.alinea.fr
 0.0.0.0  alia-iso.com
-0.0.0.0  aliapp.org
 0.0.0.0  alias.cloud-marketing.dimensiondata.com
 0.0.0.0  aliasanvil.com
 0.0.0.0  aliasfoot.com
@@ -16165,6 +16166,7 @@
 0.0.0.0  belstat.be
 0.0.0.0  belstat.com
 0.0.0.0  belstat.de
+0.0.0.0  belstat.fr
 0.0.0.0  belstat.nl
 0.0.0.0  beltcological.com
 0.0.0.0  beltenefloit.com
@@ -27426,6 +27428,7 @@
 0.0.0.0  dd133.com
 0.0.0.0  dd1xbevqx.com
 0.0.0.0  dd2.freep.cn
+0.0.0.0  dd268fdaa5.com
 0.0.0.0  dd6ym5in4ovm3.cloudfront.net
 0.0.0.0  dd6zx4ibq538k.cloudfront.net
 0.0.0.0  dd713.bj.bcebos.com
@@ -30480,6 +30483,7 @@
 0.0.0.0  dxqbfo.capfun.nl
 0.0.0.0  dxqbrjwlmyyph.online
 0.0.0.0  dxqqoctjgddts.space
+0.0.0.0  dxqvjzovgicms.website
 0.0.0.0  dxrkvm.cheryls.com
 0.0.0.0  dxrlkh.icanvas.com
 0.0.0.0  dxsbkcsximcja.space
@@ -35541,6 +35545,7 @@
 0.0.0.0  fgip.rosehosting.com
 0.0.0.0  fgjaelzvzxtdq.rocks
 0.0.0.0  fgjfwz.legami.com
+0.0.0.0  fgk-jheepn.site
 0.0.0.0  fgk.baitaoidc.com
 0.0.0.0  fgkrjcrtqb.net
 0.0.0.0  fgkxluxqgpzzm.xyz
@@ -44886,6 +44891,7 @@
 0.0.0.0  img.ads.csdn.net
 0.0.0.0  img.ads.mobilefuse.net
 0.0.0.0  img.alimama.cn
+0.0.0.0  img.amp.ad.sina.com.cn
 0.0.0.0  img.aonunited.com
 0.0.0.0  img.apnanalytics.com
 0.0.0.0  img.applovin.com
@@ -56228,6 +56234,7 @@
 0.0.0.0  maritalparliamentary.com
 0.0.0.0  maritaltrousersidle.com
 0.0.0.0  mark.l.qq.com
+0.0.0.0  markadver.com
 0.0.0.0  markedcrayon.com
 0.0.0.0  markedmeasure.com
 0.0.0.0  markedoneofth.com
@@ -61983,6 +61990,7 @@
 0.0.0.0  mveayeitwnuzh.online
 0.0.0.0  mveuvszaicdin.online
 0.0.0.0  mvfmsotjykacv.online
+0.0.0.0  mvftmypmzprjt.space
 0.0.0.0  mvglxjpardncb.site
 0.0.0.0  mvgstphbqrgap.website
 0.0.0.0  mvicjbndhumkq.online
@@ -76035,6 +76043,7 @@
 0.0.0.0  s.fraservotes.com
 0.0.0.0  s.freelanceratecalculator.com
 0.0.0.0  s.georgias.cn
+0.0.0.0  s.glimesh.tv
 0.0.0.0  s.go.sohu.com
 0.0.0.0  s.goat.com
 0.0.0.0  s.gofile.io
@@ -77576,6 +77585,7 @@
 0.0.0.0  scmarketing.colliers.com
 0.0.0.0  scmdcnwdryjsic.net
 0.0.0.0  scmetrics.exacttarget.com
+0.0.0.0  scmetrics.shell.com
 0.0.0.0  scmetrics.vodafone.it
 0.0.0.0  scmfvwnyxha.com
 0.0.0.0  scmidlandnews.com
@@ -79539,6 +79549,7 @@
 0.0.0.0  shoofabhalu.com
 0.0.0.0  shoofatartish.life
 0.0.0.0  shoofle.tv
+0.0.0.0  shoogloonetwork.com
 0.0.0.0  shooltuca.net
 0.0.0.0  shoordaird.com
 0.0.0.0  shooterconjure.com
