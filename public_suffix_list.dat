@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-01-07_09-25-09_UTC
-// COMMIT: 6aad681b718fff8d10285e8e12460ef0aa49ddd2
+// VERSION: 2026-01-08_11-50-55_UTC
+// COMMIT: 2218b3633b8bb5121e127a3f23d8dac809018f77
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -12547,6 +12547,10 @@ radio.fm
 cdn.bubble.io
 bubbleapps.io
 
+// bwCloud-OS : https://bwcloud-os.de/
+// Submitted by Klara Mall <dns@bwcloud-os.de>
+*.bwcloud-os-instance.de
+
 // Bytemark Hosting : https://www.bytemark.co.uk
 // Submitted by Paul Cammish <paul.cammish@bytemark.co.uk>
 uk0.bigv.io
@@ -12882,6 +12886,11 @@ dedyn.io
 // Submitted by Aavash Shrestha <aavash@deta.sh>
 deta.app
 deta.dev
+
+// Deuxfleurs : https://deuxfleurs.fr
+// Submitted by Aeddis Desauw <ca@deuxfleurs.fr>
+deuxfleurs.eu
+deuxfleurs.page
 
 // Developed Methods LLC : https://methods.dev
 // Submitted by Patrick Lorio <security@playit.gg>
