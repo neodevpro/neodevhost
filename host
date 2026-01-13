@@ -6,17 +6,14 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-01-12
+# Last update: 2026-01-13
 #
-# Number of domains: 108889
+# Number of domains: 108893
 #
 #=====================================
-0.0.0.0  0.0.0.0tracking.novem.pl
-0.0.0.0  0.0os.com
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
-0.0.0.0  0.starwave.com
 0.0.0.0  0.up.qingdaonews.com
 0.0.0.0  000dn.com
 0.0.0.0  0013.cc
@@ -6089,7 +6086,7 @@
 0.0.0.0  a8clk.wedding.294p.com
 0.0.0.0  a8clk.weleda.jp
 0.0.0.0  a8clk.wi-ho.net
-0.0.0.0  a8clk.works.salarimernews.com
+0.0.0.0  a8clk.works.sagooo.com
 0.0.0.0  a8clk.world-family.co.jp
 0.0.0.0  a8clk.wpx.ne.jp
 0.0.0.0  a8clk.www.access-jp.jp
@@ -6809,7 +6806,6 @@
 0.0.0.0  aabjyjjphdwmb.site
 0.0.0.0  aacjdq.pontoslivelo.com.br
 0.0.0.0  aacsqpdhmnlak.site
-0.0.0.0  aactive.tc.skysrt.com
 0.0.0.0  aad-marketing.ascendeventmedia.com
 0.0.0.0  aad.actonservice.com
 0.0.0.0  aada35c15f.com
@@ -7344,6 +7340,7 @@
 0.0.0.0  acclnaxnklgqv.com
 0.0.0.0  acclog001.shop-pro.jp
 0.0.0.0  acclog002.shop-pro.jp
+0.0.0.0  accmgr.com
 0.0.0.0  accoladeadulterysubqueries.com
 0.0.0.0  accommodateyours.com
 0.0.0.0  accompanimentbetraypreference.com
@@ -7541,6 +7538,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -9144,7 +9142,7 @@
 0.0.0.0  adsamer.adsame.com
 0.0.0.0  adsapi.manhuaren.com
 0.0.0.0  adsarcade.com
-0.0.0.0  adsatt.abcnews.stsun.com
+0.0.0.0  adsatt.abcnews.starwave.com
 0.0.0.0  adsatt.disney.starwave.com
 0.0.0.0  adsatt.espn.go.com
 0.0.0.0  adsatt.espn.starwave.com
@@ -9361,9 +9359,9 @@
 0.0.0.0  adstrategy.biz.weibo.com
 0.0.0.0  adstream.123.sogoucdn.com
 0.0.0.0  adstreampro.com
+0.0.0.0  adstudio-assets.scdn.co
 0.0.0.0  adstudio.cloud
 0.0.0.0  adstudio.spotify.com
-0.0.0.0  adstudioabeltoday.com
 0.0.0.0  adstuna.com
 0.0.0.0  adsturn.com
 0.0.0.0  adsummos.net
@@ -10332,6 +10330,7 @@
 0.0.0.0  ahsyxlyqjzkcz.website
 0.0.0.0  ahtcwbfctgvnk.site
 0.0.0.0  ahtigames.com
+0.0.0.0  ahtribune.com
 0.0.0.0  ahukfcpfknenp.website
 0.0.0.0  ahupio.icu
 0.0.0.0  ahuvjy.design-market.fr
@@ -13635,7 +13634,6 @@
 0.0.0.0  aqouezvllvgox.site
 0.0.0.0  aqpmljbvacbpi.space
 0.0.0.0  aqpwckoqbjikrg.xyz
-0.0.0.0  aqqanoywhgse.site
 0.0.0.0  aqqaqhcoxgjaw.site
 0.0.0.0  aqr.actonservice.com
 0.0.0.0  aqruikauvsarq.site
@@ -20065,7 +20063,6 @@
 0.0.0.0  ccm19.mindpark.at
 0.0.0.0  ccm19boros.de
 0.0.0.0  ccmd.coveredca.com
-0.0.0.0  ccmgr.com
 0.0.0.0  ccmiocw.com
 0.0.0.0  ccn08sth.de
 0.0.0.0  ccnmfdyktqofb.com
@@ -22493,6 +22490,7 @@
 0.0.0.0  collab9.actonservice.com
 0.0.0.0  collaborate.blackboard.com
 0.0.0.0  collapse.news
+0.0.0.0  collapsifornia.com
 0.0.0.0  collarity.com
 0.0.0.0  collect-ap2.attraqt.io
 0.0.0.0  collect-eu.attraqt.io
@@ -22898,7 +22896,6 @@
 0.0.0.0  conduze.com
 0.0.0.0  conenectedithcons.org
 0.0.0.0  conestreshow.com
-0.0.0.0  conewsexaminer.net
 0.0.0.0  conf.funshion.com
 0.0.0.0  conf.hpplay.cn
 0.0.0.0  conf.vidown.cn
@@ -23165,6 +23162,7 @@
 0.0.0.0  consent.standardadmin.org
 0.0.0.0  consent.stuff.tv
 0.0.0.0  consent.t-mobile.cz
+0.0.0.0  consent.thecountrysmallholder.com
 0.0.0.0  consent.thegreatoutdoorsmag.com
 0.0.0.0  consent.themeteocompany.com
 0.0.0.0  consent.triad.sk
@@ -25098,7 +25096,7 @@
 0.0.0.0  cyberwar.news
 0.0.0.0  cybkit.com
 0.0.0.0  cybmas.com
-0.0.0.0  cyborg.negjs.com
+0.0.0.0  cyborg.news
 0.0.0.0  cybyhdinwmntx.site
 0.0.0.0  cyclinghere.com
 0.0.0.0  cyclopsdial.com
@@ -28831,7 +28829,7 @@
 0.0.0.0  disappearsurgery.com
 0.0.0.0  disapprovalavouchfriendly.com
 0.0.0.0  disarmgruntnatural.com
-0.0.0.0  disaster.news.onetad.com
+0.0.0.0  disaster.news
 0.0.0.0  disasterpreserved.com
 0.0.0.0  disastrous-protection.com
 0.0.0.0  disastrous-special.pro
@@ -31519,7 +31517,7 @@
 0.0.0.0  eastrk-dn.com
 0.0.0.0  eastrk-lg.com
 0.0.0.0  eastsandiegonews.com
-0.0.0.0  eastsbvtimescing.com
+0.0.0.0  eastsbvtimes.com
 0.0.0.0  eastsfvtoday.com
 0.0.0.0  eastsierranews.com
 0.0.0.0  eastslcnews.com
@@ -39259,6 +39257,7 @@
 0.0.0.0  globallearningsystems.actonservice.com
 0.0.0.0  globalmed.actonservice.com
 0.0.0.0  globaloffers.link
+0.0.0.0  globalresearch.ca
 0.0.0.0  globalsiteanalytics.com
 0.0.0.0  globalsolutions.risk.lexisnexis.com
 0.0.0.0  globaltechbilling.com
@@ -43234,7 +43233,6 @@
 0.0.0.0  htqfxh.vuch.cz
 0.0.0.0  htrace.wetvinfo.com
 0.0.0.0  htrem.site
-0.0.0.0  htribune.com
 0.0.0.0  httpdns-sdk.n.netease.com
 0.0.0.0  httpdns.bcelive.com
 0.0.0.0  httpdns.browser.miui.com
@@ -48704,8 +48702,8 @@
 0.0.0.0  jomistress.com
 0.0.0.0  jomphoelubekg.site
 0.0.0.0  jomsourgigh.net
-0.0.0.0  jonaelrayshow.com
 0.0.0.0  jonahtavyjacko.click
+0.0.0.0  jonesborotimes.com
 0.0.0.0  jonescountynews.com
 0.0.0.0  jonesreport.com
 0.0.0.0  joniilvkwqxaq.online
@@ -51466,6 +51464,7 @@
 0.0.0.0  largeconsulting.org
 0.0.0.0  largelydisplace.com
 0.0.0.0  laridaetrionfo.top
+0.0.0.0  larimernews.com
 0.0.0.0  larkinflate.com
 0.0.0.0  larlymckense.com
 0.0.0.0  larnox.info
@@ -56145,6 +56144,7 @@
 0.0.0.0  maaoutqewt.com
 0.0.0.0  maap.12b99.com
 0.0.0.0  mabaya.com
+0.0.0.0  mabeltoday.com
 0.0.0.0  mabhyethodxorcs.xyz
 0.0.0.0  mabipa.com
 0.0.0.0  maboftaurgok.net
@@ -60444,7 +60444,7 @@
 0.0.0.0  metrix.publix.com
 0.0.0.0  metrix.youravon.com
 0.0.0.0  metrobusinessnetwork.com
-0.0.0.0  metroea-assets.scdn.co
+0.0.0.0  metroeastsun.com
 0.0.0.0  metrowesttimes.com
 0.0.0.0  metspoker.com
 0.0.0.0  mettend-hamous.xyz
@@ -60542,7 +60542,6 @@
 0.0.0.0  mglhbqvqmjqcq.space
 0.0.0.0  mgmaringpoli.org
 0.0.0.0  mgntat.mno.link
-0.0.0.0  mgooo.com
 0.0.0.0  mgpsxcge.com
 0.0.0.0  mgptijzevfuxj.space
 0.0.0.0  mgptul.finson.com
@@ -61922,6 +61921,7 @@
 0.0.0.0  mrewards.w88club.com
 0.0.0.0  mrflhiuulmarq.website
 0.0.0.0  mrftawmnabgoy.site
+0.0.0.0  mrgreen.com
 0.0.0.0  mrgrekeroad.com
 0.0.0.0  mri.iradimed.com
 0.0.0.0  mrj6nrqwz.com
@@ -63620,6 +63620,7 @@
 0.0.0.0  newsbuzzdaily.com
 0.0.0.0  newscadence.com
 0.0.0.0  newscatalanaoccidente.com
+0.0.0.0  newsexaminer.net
 0.0.0.0  newsflash.elliemae.com
 0.0.0.0  newsformuse.com
 0.0.0.0  newsforyourmood.com
@@ -63978,6 +63979,7 @@
 0.0.0.0  nippledecorated.com
 0.0.0.0  nipponmall.online
 0.0.0.0  nippy-fly.pro
+0.0.0.0  niqqanoywhgse.site
 0.0.0.0  nirdjz.revolveclothing.com.au
 0.0.0.0  nirmhxlrrjvpp.xyz
 0.0.0.0  nirybekekiemu.website
@@ -66185,7 +66187,6 @@
 0.0.0.0  omguk.com
 0.0.0.0  omiki.com
 0.0.0.0  omine.org
-0.0.0.0  omingnews.com
 0.0.0.0  ominouscedarwalker.com
 0.0.0.0  ominousplant.com
 0.0.0.0  omission119.fun
@@ -66265,6 +66266,7 @@
 0.0.0.0  omnistats.teleflora.com
 0.0.0.0  omnit.blinkfitness.com
 0.0.0.0  omnit.pureyoga.com
+0.0.0.0  omnitagjs.com
 0.0.0.0  omniture-dc-sec.cadence.com
 0.0.0.0  omniture-secure.valpak.com
 0.0.0.0  omniture-ssl.direct.asda.com
@@ -70656,7 +70658,7 @@
 0.0.0.0  pq-mzfusgpzt.xyz
 0.0.0.0  pq.stat.ku6.com
 0.0.0.0  pq9alk18ik.com
-0.0.0.0  pqav.cn.com
+0.0.0.0  pqav.cn
 0.0.0.0  pqbj.jianjiaovip.vip
 0.0.0.0  pqbjuufejlasa.website
 0.0.0.0  pqbxjqaemamgq.online
@@ -76447,7 +76449,7 @@
 0.0.0.0  ryjknw.sonnenbrillen.com
 0.0.0.0  ryke4peep.com
 0.0.0.0  rymhet.posudamart.ru
-0.0.0.0  ryminesborotimes.com
+0.0.0.0  ryminos.com
 0.0.0.0  rymuchadmiredit.org
 0.0.0.0  ryndhyaenas.com
 0.0.0.0  ryqolhuncilzy.online
@@ -77140,7 +77142,7 @@
 0.0.0.0  saa.pluto.tv
 0.0.0.0  saa.popculture.com
 0.0.0.0  saa.poptv.com
-0.0.0.0  saa.rachesearch.ca
+0.0.0.0  saa.rachaelrayshow.com
 0.0.0.0  saa.smilegeneration.com
 0.0.0.0  saa.smithsonianchannel.com
 0.0.0.0  saa.sparebank1.no
@@ -79615,7 +79617,7 @@
 0.0.0.0  sewashingtonnews.com
 0.0.0.0  sewboldlyavow.com
 0.0.0.0  sewingfreaky.com
-0.0.0.0  sewynsent.thecountrysmallholder.com
+0.0.0.0  sewyomingnews.com
 0.0.0.0  sex-and-flirt.com
 0.0.0.0  sex-chat.me
 0.0.0.0  sex.viralof.online
@@ -94192,6 +94194,7 @@
 0.0.0.0  tracking.noen.at
 0.0.0.0  tracking.nokai.jp
 0.0.0.0  tracking.notizie.it
+0.0.0.0  tracking.novem.pl
 0.0.0.0  tracking.nsladies.de
 0.0.0.0  tracking.ntl.no
 0.0.0.0  tracking.nymphomaneladies.de
@@ -102894,6 +102897,7 @@
 0.0.0.0  ww251.smartadserver.com
 0.0.0.0  ww264.smartadserver.com
 0.0.0.0  ww302.smartadserver.com
+0.0.0.0  ww34.onetad.com
 0.0.0.0  ww346.onetad.com
 0.0.0.0  ww360.onetad.com
 0.0.0.0  ww362.smartadserver.com
