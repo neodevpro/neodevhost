@@ -313,7 +313,6 @@ accounts.flipboard.com
 accounts.google.com
 accounts.idmapper.api.playstation.com
 accounts.mobisystems.com
-accounts.nvgs.nvidia.com
 accounts.pixiv.net
 accounts.snapchat.com
 accounts.soundcloud.com
@@ -2651,6 +2650,7 @@ chat-gateway393-prod.chat.snapchat.com
 chat-gateway397-prod.chat.snapchat.com
 chat.bilibili.com
 chat.minergate.com
+chat.z.ai
 chatapi.viber.com
 chatdepot.twitch.tv
 chatenabled.mail.google.com
