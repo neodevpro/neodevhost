@@ -6,12 +6,11 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-01-14
+# Last update: 2026-01-15
 #
 # Number of domains: 109544
 #
 #=====================================
-0.0.0.0  0.com
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
@@ -1903,6 +1902,7 @@
 0.0.0.0  6711.com
 0.0.0.0  671c.pandasuite.io
 0.0.0.0  6764a4b67d.com
+0.0.0.0  676759a2a4.com
 0.0.0.0  67777.tv
 0.0.0.0  6788787.com
 0.0.0.0  6789.net
@@ -3612,7 +3612,7 @@
 0.0.0.0  a16726.actonservice.com
 0.0.0.0  a16728.actonservice.com
 0.0.0.0  a16734.actonservice.com
-0.0.0.0  a16741.actonsennews.com
+0.0.0.0  a16741.actonservice.com
 0.0.0.0  a16748.actonservice.com
 0.0.0.0  a16765.actonservice.com
 0.0.0.0  a16766.actonservice.com
@@ -5014,6 +5014,7 @@
 0.0.0.0  a43893.actonservice.com
 0.0.0.0  a43896.actonservice.com
 0.0.0.0  a43899.actonservice.com
+0.0.0.0  a43901.actonservice.com
 0.0.0.0  a43906.actonservice.com
 0.0.0.0  a43909.actonservice.com
 0.0.0.0  a43910.actonservice.com
@@ -10625,7 +10626,7 @@
 0.0.0.0  akehuhhzwtpzo.website
 0.0.0.0  akensqoifwcmt.com
 0.0.0.0  akfovwbrmflup.space
-0.0.0.0  akfstuday66.com
+0.0.0.0  akfstuwi.com
 0.0.0.0  akfteothobqbk.space
 0.0.0.0  akftqycehqivk.website
 0.0.0.0  akgayggphyceu.website
@@ -11147,7 +11148,6 @@
 0.0.0.0  amoutjsvp-u.club
 0.0.0.0  amp-error-reporting.appspot.com
 0.0.0.0  amp.analytics-debugger.com
-0.0.0.0  amp.news
 0.0.0.0  ampcr.io
 0.0.0.0  ample-speaker.pro
 0.0.0.0  amplifypixel.outbrain.com
@@ -12077,7 +12077,7 @@
 0.0.0.0  ans.yesnetwork.com
 0.0.0.0  ansionscor.com
 0.0.0.0  ansnxnkxsagnp.website
-0.0.0.0  ansuksarfair.com
+0.0.0.0  ansuksar.com
 0.0.0.0  answerbook.com
 0.0.0.0  answers.teradata.ch
 0.0.0.0  answers.teradata.co.uk
@@ -15016,7 +15016,7 @@
 0.0.0.0  axshhgmltiycy.site
 0.0.0.0  axskcjxhwjmth.online
 0.0.0.0  axskltzhgkzrm.online
-0.0.0.0  axvjfzbwewww.betpanther.com
+0.0.0.0  axvjfzbwezssw.site
 0.0.0.0  axwpbsweuwclq.space
 0.0.0.0  axxqqibnjdunk.space
 0.0.0.0  axxynteocvosxyv.xyz
@@ -16531,6 +16531,7 @@
 0.0.0.0  betowelumph.com
 0.0.0.0  betowi.com
 0.0.0.0  betpack.com
+0.0.0.0  betpanther.com
 0.0.0.0  betpartners.it
 0.0.0.0  betpawa.co.tz
 0.0.0.0  betpawa.co.zm
@@ -16621,7 +16622,6 @@
 0.0.0.0  betway787.com
 0.0.0.0  betweendigital.com
 0.0.0.0  betweenprimarily.com
-0.0.0.0  betwi.com
 0.0.0.0  betwinner.ng
 0.0.0.0  betwinner1.com
 0.0.0.0  betworks.com
@@ -31745,7 +31745,6 @@
 0.0.0.0  eb.o-b-labo.com
 0.0.0.0  eb5882aef0.com
 0.0.0.0  ebannertraffic.com
-0.0.0.0  ebascol.arin-innovation.com
 0.0.0.0  ebatndolrzsxc.space
 0.0.0.0  ebayadservices.com
 0.0.0.0  ebayclassifiedsgroup.com
@@ -71780,7 +71779,7 @@
 0.0.0.0  prudential.distribution.team.prudential.co.uk
 0.0.0.0  prudentquality.pro
 0.0.0.0  prudsys-rde.de
-0.0.0.0  prum.jetbull.com
+0.0.0.0  pruebascol.arin-innovation.com
 0.0.0.0  prunas.openapp.link
 0.0.0.0  prvc.io
 0.0.0.0  prvizg.shurgard.be
@@ -80045,6 +80044,7 @@
 0.0.0.0  setantabet.com
 0.0.0.0  setaram.actonservice.com
 0.0.0.0  seteamsobtantion.com
+0.0.0.0  setennnews.com
 0.0.0.0  setexasrecord.com
 0.0.0.0  setexastimes.com
 0.0.0.0  setoffshayrake.shop
@@ -95867,12 +95867,12 @@
 0.0.0.0  trugaze.io
 0.0.0.0  trulysuitedcharges.com
 0.0.0.0  trumballnews.com
+0.0.0.0  trump.news
 0.0.0.0  trumpgorry.com
 0.0.0.0  trumppig.work
 0.0.0.0  trunblock.com
 0.0.0.0  trundrak.com
 0.0.0.0  truoptik.com
-0.0.0.0  trurvice.com
 0.0.0.0  trusa.xyz
 0.0.0.0  trust.flexpay.io
 0.0.0.0  trust.mitutoyo.com
@@ -102467,7 +102467,7 @@
 0.0.0.0  win-bidding.com
 0.0.0.0  win-stock.com.cn
 0.0.0.0  win-winfuture.cn
-0.0.0.0  win.843901.actonservice.com
+0.0.0.0  win.8day66.com
 0.0.0.0  win.down.55kantu.com
 0.0.0.0  win.gdt.qq.com
 0.0.0.0  win.staticstuff.net
@@ -103969,6 +103969,7 @@
 0.0.0.0  www.betoto.com
 0.0.0.0  www.betowi.com
 0.0.0.0  www.betpack.com
+0.0.0.0  www.betpanther.com
 0.0.0.0  www.betpawa.co.tz
 0.0.0.0  www.betpawa.co.zm
 0.0.0.0  www.betpawa.co.zw
@@ -109272,7 +109273,6 @@
 0.0.0.0  zsmsbmowwrqvp.online
 0.0.0.0  zsmsuwmifkrqv.online
 0.0.0.0  zsozgqchlueqp.world
-0.0.0.0  zssw.site
 0.0.0.0  zsszrgvbeisuv.space
 0.0.0.0  zst.jzntxs.com
 0.0.0.0  zstcyektvaoug.online
