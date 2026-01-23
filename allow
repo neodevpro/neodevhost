@@ -106,7 +106,7 @@
 2.ru.pool.ntp.org
 2.shrd.fncstatic.com
 2.sonostime.pool.ntp.org
-2.ua.pool.ntp.org
+2.u0.client-channel.google.com
 2.ubuntu.pool.ntp.org
 2.us.pool.ntp.org
 21stcenturywire.com
@@ -313,7 +313,7 @@ accounts.flipboard.com
 accounts.google.com
 accounts.idmapper.api.playstation.com
 accounts.mobisystems.com
-accounts.nvgs.nvidia.com
+accounts.nvgs.nvidia.cogleapis.com
 accounts.pixiv.net
 accounts.snapchat.com
 accounts.soundcloud.com
@@ -351,7 +351,7 @@ activate.cdn.viber.com
 activate.wip3.adobe.com
 activation-v2.kaspersky.com
 activation.acronis.com
-activation.adobedtm.com
+activation.adobx.tv
 activation.cloud.techsmith.com
 activation.cyberlink.com
 activation.dolphin-browser.com
@@ -436,6 +436,7 @@ adobe-dns-04.adobe.com
 adobe-dns-2.adobe.com
 adobe-dns-3.adobe.com
 adobe-dns.adobe.com
+adobedtm.com
 adobeid-na1.services.adobe.com
 adobeid.services.adobe.com
 adobetarget.data.adobedc.net
@@ -2443,7 +2444,6 @@ cdn.optinmonster.com
 cdn.paddle.com
 cdn.pardot.com
 cdn.pcbeta.attachment.inimc.com
-cdn.pcbeta.css.inimc.co360.cn
 cdn.pcbeta.css.inimc.com
 cdn.pcbeta.static.inimc.com
 cdn.pdst.fm
@@ -3658,6 +3658,7 @@ editor.flipboard.com
 edm03.huawei.com
 edoc.huawei.com
 eds.xboxlive.com
+edtm.com
 education.ti.com
 eek.us
 eepurl.com
@@ -4406,7 +4407,6 @@ gizmodo.com
 gizmodo.com.au
 gj.mmstat.com
 gjxz2.ucweb.com
-gk.com
 gk.sina.cn
 gl.gravatar.com
 gl.statcounter.com
@@ -4477,6 +4477,7 @@ go.trouter.skype.com
 go.twitch.tv
 go.wechat.com
 go2jump.org
+goa.pool.ntp.org
 goatcounter.com
 gob.pe
 godaddy.com
@@ -6328,7 +6329,6 @@ metrics.mzstatic.com
 metrics.plex.tv
 metrics.torproject.org
 mewkid.net
-mg1.126.net
 mgr.consensu.org
 mi.me
 mi.samsung.com
@@ -7638,6 +7638,7 @@ raygun.io
 rcs.cmpassport.com
 rd.playstation.com
 rd.samsungadhub.com
+rdelivery.qq.com
 rds-assets.nvidia.com
 rdsig.yahoo.co.jp
 rdwest.playstation.com
@@ -7890,7 +7891,7 @@ s12.exacttarget.com
 s13.exacttarget.com
 s1777052651.t.eloqua.com
 s2.coinmarketcap.com
-s2.kskwaicsp.apple.com
+s2.kskwai.com
 s2.symcb.com
 s2.vuukle.com
 s2.wp.com
