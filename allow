@@ -75,7 +75,6 @@
 1drv.ms
 1e100.net
 1fgqfml.oloadcdn.net
-1fichier.com
 1gr.cz
 1hosts.cf
 1und1.de
@@ -106,7 +105,7 @@
 2.ru.pool.ntp.org
 2.shrd.fncstatic.com
 2.sonostime.pool.ntp.org
-2.u0.client-channel.google.com
+2.ua.pool.ntp.org
 2.ubuntu.pool.ntp.org
 2.us.pool.ntp.org
 21stcenturywire.com
@@ -313,7 +312,7 @@ accounts.flipboard.com
 accounts.google.com
 accounts.idmapper.api.playstation.com
 accounts.mobisystems.com
-accounts.nvgs.nvidia.cogleapis.com
+accounts.nvgs.nvidia.com
 accounts.pixiv.net
 accounts.snapchat.com
 accounts.soundcloud.com
@@ -351,7 +350,7 @@ activate.cdn.viber.com
 activate.wip3.adobe.com
 activation-v2.kaspersky.com
 activation.acronis.com
-activation.adobx.tv
+activation.adobedtm.com
 activation.cloud.techsmith.com
 activation.cyberlink.com
 activation.dolphin-browser.com
@@ -436,7 +435,6 @@ adobe-dns-04.adobe.com
 adobe-dns-2.adobe.com
 adobe-dns-3.adobe.com
 adobe-dns.adobe.com
-adobedtm.com
 adobeid-na1.services.adobe.com
 adobeid.services.adobe.com
 adobetarget.data.adobedc.net
@@ -2921,6 +2919,7 @@ common.funimation.com
 common.like.naver.com
 commons.wikipedia.com
 commonsensemedia.org
+communit1fichier.com
 communities.api.playstation.com
 community-cdn-digitalocean-com.global.ssl.fastly.net
 community.coinbase.com
@@ -2936,7 +2935,6 @@ community.spot.im
 community.ukg.com
 community.us.playstation.com
 community.xbox.com
-communityteam.software.eu.playstation.com
 comnunidaddemadrid.solution.weborama.fr
 company.mi.com
 companyaccount.kaspersky.com
@@ -3658,7 +3656,6 @@ editor.flipboard.com
 edm03.huawei.com
 edoc.huawei.com
 eds.xboxlive.com
-edtm.com
 education.ti.com
 eek.us
 eepurl.com
@@ -4477,7 +4474,6 @@ go.trouter.skype.com
 go.twitch.tv
 go.wechat.com
 go2jump.org
-goa.pool.ntp.org
 goatcounter.com
 gob.pe
 godaddy.com
@@ -5824,7 +5820,7 @@ liveupdate.mac.sandai.net
 livew.l.qq.com
 lix.in
 llll.im
-llnwd.net
+llnwd.net360.cn
 lm.facebook.com
 lm.licenses.adobe.com
 lm04.cafe.naver.com
@@ -11317,6 +11313,7 @@ youtube-ui.l.google.com
 youtubei.googleapis.com
 yt.vu
 yt3.ggpht.com
+yteam.software.eu.playstation.com
 ytimg-edge-static.l.google.com
 ytimg.l.google.com
 yts.ag
