@@ -6,7 +6,7 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-01-29
+# Last update: 2026-01-30
 #
 # Number of domains: 112897
 #
@@ -7654,6 +7654,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -78786,7 +78787,7 @@
 0.0.0.0  rs.haohaowan8.com
 0.0.0.0  rs.mail.ru
 0.0.0.0  rs.sinajs.cn
-0.0.0.0  rs.smcactive.tc.skysrt.com
+0.0.0.0  rs.smc.tf
 0.0.0.0  rs0.co.uk
 0.0.0.0  rsaard.en-tea.com
 0.0.0.0  rsalcch.com
@@ -85283,7 +85284,6 @@
 0.0.0.0  smetrics.ketsusen.jp
 0.0.0.0  smetrics.keysight.co.kr
 0.0.0.0  smetrics.keysight.com
-0.0.0.0  smetrics.king.intl.miui.com
 0.0.0.0  smetrics.kioxia-holdings.com
 0.0.0.0  smetrics.kioxia-iwate.co.jp
 0.0.0.0  smetrics.kioxia.com
@@ -86343,6 +86343,7 @@
 0.0.0.0  smetrics.sony.dk
 0.0.0.0  smetrics.sony.ee
 0.0.0.0  smetrics.sony.es
+0.0.0.0  smetrics.sony.eu
 0.0.0.0  smetrics.sony.fi
 0.0.0.0  smetrics.sony.fr
 0.0.0.0  smetrics.sony.gr
@@ -96672,7 +96673,6 @@
 0.0.0.0  tra2.api.baifendian.com
 0.0.0.0  trac.i3.dmm.com
 0.0.0.0  trac.roomster.com
-0.0.0.0  trac.tf
 0.0.0.0  traccoon.intellectsoft.net
 0.0.0.0  tracdelight.com
 0.0.0.0  tracdelight.io
