@@ -6,14 +6,17 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-01-30
+# Last update: 2026-01-31
 #
-# Number of domains: 112897
+# Number of domains: 112896
 #
 #=====================================
+0.0.0.0  0.0.94140.xyz
+0.0.0.0  0.0.aa.com
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
+0.0.0.0  0.romo.aprima.com
 0.0.0.0  0.up.qingdaonews.com
 0.0.0.0  000dn.com
 0.0.0.0  0013.cc
@@ -178,6 +181,7 @@
 0.0.0.0  0e9knynfb.com
 0.0.0.0  0emm.com
 0.0.0.0  0emn.com
+0.0.0.0  0etetv.cn
 0.0.0.0  0f857e584a.com
 0.0.0.0  0f8eec5673.com
 0.0.0.0  0fa6d5f434.com
@@ -1368,6 +1372,7 @@
 0.0.0.0  3mads.com
 0.0.0.0  3mark.actonservice.com
 0.0.0.0  3ml8v.cn
+0.0.0.0  3mslovensko.sk
 0.0.0.0  3munion.net
 0.0.0.0  3myad.com
 0.0.0.0  3nbf4.com
@@ -1907,7 +1912,6 @@
 0.0.0.0  6519114.mktg.tajawal.com
 0.0.0.0  6554.net
 0.0.0.0  6570131a3f.com
-0.0.0.0  65894140.xyz
 0.0.0.0  65a16dd098.com
 0.0.0.0  65ae01603e.com
 0.0.0.0  66-trk-srv.com
@@ -2693,7 +2697,7 @@
 0.0.0.0  92orb.com
 0.0.0.0  92sales.com
 0.0.0.0  92x.tumblr.com
-0.0.0.0  92yp.com
+0.0.0.0  92yp.cgoldcountrytoday.com
 0.0.0.0  930.dragonparking.com
 0.0.0.0  930cn.top
 0.0.0.0  9365e2dd1f.com
@@ -4969,7 +4973,7 @@
 0.0.0.0  a43582.actonservice.com
 0.0.0.0  a43587.actonservice.com
 0.0.0.0  a43590.actonservice.com
-0.0.0.0  a43591.actonservice.com
+0.0.0.0  a43591.acttimes.com
 0.0.0.0  a43593.actonservice.com
 0.0.0.0  a43594.actonservice.com
 0.0.0.0  a43595.actonservice.com
@@ -6921,7 +6925,6 @@
 0.0.0.0  aahpvdkakpska.online
 0.0.0.0  aai07280mu.com
 0.0.0.0  aai07281mu.com
-0.0.0.0  aai07290mu.com
 0.0.0.0  aai07291mu.com
 0.0.0.0  aaid.umeng.com
 0.0.0.0  aainfo.anz.co.nz
@@ -7017,8 +7020,8 @@
 0.0.0.0  abadit5rckb.com
 0.0.0.0  abadit5rckd.com
 0.0.0.0  abalone46.com
+0.0.0.0  abaolokybamanews.com
 0.0.0.0  abaolokyjmjrj.top
-0.0.0.0  abaolokyjmlvj.top
 0.0.0.0  abaolokyjmryv.top
 0.0.0.0  abashfireworks.com
 0.0.0.0  abastur.ubmmexico.com
@@ -7654,7 +7657,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -9098,7 +9100,7 @@
 0.0.0.0  ads-video-al.xhscdn.com
 0.0.0.0  ads-video-qc.xhscdn.com
 0.0.0.0  ads-yallo-production.imgix.net
-0.0.0.0  ads.8live.com
+0.0.0.0  ads.8ltalmedia.actonservice.com
 0.0.0.0  ads.95516.com
 0.0.0.0  ads.ad4game.com
 0.0.0.0  ads.adadapted.com
@@ -11439,7 +11441,7 @@
 0.0.0.0  analytic.rollout.io
 0.0.0.0  analytic.simplyhealth.co.uk
 0.0.0.0  analytic.texas.aaa.com
-0.0.0.0  analytic.tidewater.aaa.com
+0.0.0.0  analytic.tidewater.anecountyreporter.com
 0.0.0.0  analytic.underarmour.com
 0.0.0.0  analytic.xingcloud.com
 0.0.0.0  analytic20.detik.com
@@ -13897,6 +13899,7 @@
 0.0.0.0  ar.4wank.com
 0.0.0.0  ar.allrun.fr
 0.0.0.0  ar.atwola.com
+0.0.0.0  ar.ca-eko-globetrotter.fr
 0.0.0.0  ar.fapnow.xxx
 0.0.0.0  ar.fuxunb.com
 0.0.0.0  ar.i-run.fr
@@ -17009,7 +17012,6 @@
 0.0.0.0  bfvdajktgeuug.space
 0.0.0.0  bfvlgp.appstory.co.kr
 0.0.0.0  bfwfkunabxply.space
-0.0.0.0  bfwnbnerccsor.space
 0.0.0.0  bfxytxdpnk.com
 0.0.0.0  bfysqahuxzzwf.website
 0.0.0.0  bfzikn.l-wine.ru
@@ -18237,7 +18239,7 @@
 0.0.0.0  boringberry.com
 0.0.0.0  boringherbalprewashed.com
 0.0.0.0  boringpirate.com
-0.0.0.0  bornkaejpngkp.website
+0.0.0.0  bornkaejpnwww.betstar.com.au
 0.0.0.0  bornmandemicria.co.in
 0.0.0.0  bororango.com
 0.0.0.0  borosproty.com
@@ -31650,8 +31652,8 @@
 0.0.0.0  e.ads.cn.miaozhen.com
 0.0.0.0  e.adsdsu.cn
 0.0.0.0  e.aduiz.com
-0.0.0.0  e.aetetv.cn
 0.0.0.0  e.ailix.cn
+0.0.0.0  e.aive.com
 0.0.0.0  e.aiyyu.com
 0.0.0.0  e.ajiez.com
 0.0.0.0  e.anmeilai.net
@@ -34200,10 +34202,10 @@
 0.0.0.0  engage.3mprivacyfilter.co.kr
 0.0.0.0  engage.3msafety.co.kr
 0.0.0.0  engage.3mschweiz.ch
-0.0.0.0  engage.3mslovensko.sk
 0.0.0.0  engage.3msuisse.ch
 0.0.0.0  engage.3msuomi.fi
 0.0.0.0  engage.3msverige.se
+0.0.0.0  engage.active.tc.skysrt.com
 0.0.0.0  engage.alphastarcm.com
 0.0.0.0  engage.atriosystems.com
 0.0.0.0  engage.avalara.com
@@ -41283,7 +41285,6 @@
 0.0.0.0  gold.szonline.net
 0.0.0.0  gold2762.com
 0.0.0.0  goldbetsports.com
-0.0.0.0  goldcountrytoday.com
 0.0.0.0  golden-bad.pro
 0.0.0.0  golden-department.pro
 0.0.0.0  golden-gateway.com
@@ -45247,7 +45248,6 @@
 0.0.0.0  i9bet.net
 0.0.0.0  i9bet.poker
 0.0.0.0  i9bet.tw
-0.0.0.0  i9bet.vip
 0.0.0.0  i9bet07.com
 0.0.0.0  i9bet1.com
 0.0.0.0  i9bet10.com
@@ -51420,7 +51420,6 @@
 0.0.0.0  kampyle.com
 0.0.0.0  kanclick.com
 0.0.0.0  kandoqbnlbqzo.site
-0.0.0.0  kanecountyreporter.com
 0.0.0.0  kang08.com
 0.0.0.0  kangaroointentions.com
 0.0.0.0  kanglingjiu.com
@@ -51502,7 +51501,7 @@
 0.0.0.0  kbcmdi.florsheim.com.au
 0.0.0.0  kbet.com
 0.0.0.0  kbhykduvjlpnl.site
-0.0.0.0  kbighx.absolventa.de
+0.0.0.0  kbighx.absolven7.com
 0.0.0.0  kbkbcpavcqffo.online
 0.0.0.0  kbkgamfrjsbhdqc.net
 0.0.0.0  kblcxsoxssgds.online
@@ -61203,7 +61202,6 @@
 0.0.0.0  metrics.avalara.com
 0.0.0.0  metrics.avastin-hcp.com
 0.0.0.0  metrics.aviasales.ru
-0.0.0.0  metrics.aviationweek.com
 0.0.0.0  metrics.avnet.com
 0.0.0.0  metrics.axs.com
 0.0.0.0  metrics.babycenter.de
@@ -62440,6 +62438,7 @@
 0.0.0.0  metrika.kontur.ru
 0.0.0.0  metrika.yandex.ru
 0.0.0.0  metrisesikhs.com
+0.0.0.0  metriwww-sodo.com
 0.0.0.0  metrix.511tactical.com
 0.0.0.0  metrix.avon.uk.com
 0.0.0.0  metrix.emagister.com
@@ -62633,7 +62632,7 @@
 0.0.0.0  miam4.cn
 0.0.0.0  miamicasino.com
 0.0.0.0  miamicourant.com
-0.0.0.0  miamidice.com
+0.0.0.0  miamidice.ccs.aviationweek.com
 0.0.0.0  miamidicecasino.com
 0.0.0.0  miao.baidu.com
 0.0.0.0  miaobeichina.com
@@ -65337,7 +65336,7 @@
 0.0.0.0  ne88.bet
 0.0.0.0  neaaom.ytn.co.kr
 0.0.0.0  neads.delivery
-0.0.0.0  nealabamanews.com
+0.0.0.0  nealaaai07290mu.com
 0.0.0.0  neapsavatar.com
 0.0.0.0  neareststokergrating.com
 0.0.0.0  nearestworkagitation.com
@@ -65783,6 +65782,7 @@
 0.0.0.0  newsmaxfeednetwork.com
 0.0.0.0  newsnet.in.ua
 0.0.0.0  newsnow.co.za
+0.0.0.0  newsnow1jmlvj.top
 0.0.0.0  newspage.xilu.com
 0.0.0.0  newspaperpolite.com
 0.0.0.0  newspapervaluessignature.com
@@ -67268,7 +67268,7 @@
 0.0.0.0  nwtvcupvihkhi.site
 0.0.0.0  nwtwincities.com
 0.0.0.0  nwuuposeytwe.xyz
-0.0.0.0  nwvalleytimes.com
+0.0.0.0  nwvalleyta.de
 0.0.0.0  nwvboqorfftjs.online
 0.0.0.0  nwvlrmomsfu.com
 0.0.0.0  nwvulrmtxesqh.space
@@ -71117,7 +71117,6 @@
 0.0.0.0  peakcounter.dk
 0.0.0.0  peakilygluten.com
 0.0.0.0  pealefe.com
-0.0.0.0  pear.ca-eko-globetrotter.fr
 0.0.0.0  pear.dleke.com
 0.0.0.0  peards.zevvle.com
 0.0.0.0  pearlysweepoverface.com
@@ -71194,6 +71193,7 @@
 0.0.0.0  pemskb.unitedcinemas.jp
 0.0.0.0  pemsrv.com
 0.0.0.0  pemtairitoads.net
+0.0.0.0  pemultipasko.pl
 0.0.0.0  penaikaucmu.net
 0.0.0.0  pencild4.com
 0.0.0.0  penglei.info
@@ -72588,7 +72588,7 @@
 0.0.0.0  pmazpg.legalzoom.com
 0.0.0.0  pmbox.biz
 0.0.0.0  pmc1201.com
-0.0.0.0  pmc88.com
+0.0.0.0  pmc88.c.allure.com
 0.0.0.0  pmdbhrxgnfbwx.online
 0.0.0.0  pmddjxmngdmyj.site
 0.0.0.0  pmegdobhuwqwz.online
@@ -73734,7 +73734,6 @@
 0.0.0.0  promo-bc.com
 0.0.0.0  promo-reklama.ru
 0.0.0.0  promo.alfaromeo.it
-0.0.0.0  promo.aprima.com
 0.0.0.0  promo.awempire.com
 0.0.0.0  promo.batesville.com
 0.0.0.0  promo.blackdatehookup.com
@@ -89187,11 +89186,11 @@
 0.0.0.0  sstats.wmagazine.com
 0.0.0.0  sstats.www.o2.cz
 0.0.0.0  sstats.yourchi.org
-0.0.0.0  sstats2.allure.com
 0.0.0.0  sstats2.architecturaldigest.com
 0.0.0.0  sstats2.golfdigest.com
 0.0.0.0  sstats2.gq.com
 0.0.0.0  sstats2.newyorker.com
+0.0.0.0  sstatsi9bet.vip
 0.0.0.0  ssteeraa.net
 0.0.0.0  sstm.sport2000.fr
 0.0.0.0  ssum.casalemedia.com
@@ -100958,6 +100957,7 @@
 0.0.0.0  usunompuzoz.net
 0.0.0.0  usurv.com
 0.0.0.0  usuyfyxftqtsn.online
+0.0.0.0  usviraonservice.com
 0.0.0.0  usw18-268-pdb.net.mydays.de
 0.0.0.0  uswgjyclbvtjj.space
 0.0.0.0  uswsyzbbbhqsi.site
@@ -102633,6 +102633,7 @@
 0.0.0.0  vikingclan.kano.link
 0.0.0.0  vikingslots.com
 0.0.0.0  viks.com
+0.0.0.0  vil.info
 0.0.0.0  vilenexus.com
 0.0.0.0  vilerebuffcontact.com
 0.0.0.0  villabet.com
@@ -102843,7 +102844,6 @@
 0.0.0.0  vital-formal.pro
 0.0.0.0  vitalbet.com
 0.0.0.0  vitalimages.actonservice.com
-0.0.0.0  vitalmedia.actonservice.com
 0.0.0.0  vitals.cgddrd.me
 0.0.0.0  vitals.flyingpress.com
 0.0.0.0  vitamind.news
@@ -105884,6 +105884,7 @@
 0.0.0.0  wn6x136h.xyz
 0.0.0.0  wn6y.cn
 0.0.0.0  wnacammull.com
+0.0.0.0  wnbnerccsor.space
 0.0.0.0  wncs.7ez4.cn
 0.0.0.0  wncvwcgedgtjs.site
 0.0.0.0  wnd2.destinia.cat
@@ -106674,7 +106675,6 @@
 0.0.0.0  www-sadobe.anabuki-community.com
 0.0.0.0  www-sadobe.anabuki.co.jp
 0.0.0.0  www-smt.daiichisankyo-hc.co.jp
-0.0.0.0  www-sodo.com
 0.0.0.0  www.0086555.com
 0.0.0.0  www.009.casino
 0.0.0.0  www.016665.com
@@ -107102,7 +107102,6 @@
 0.0.0.0  www.betsocial.net
 0.0.0.0  www.betspawn.com
 0.0.0.0  www.betsson.com
-0.0.0.0  www.betstar.com.au
 0.0.0.0  www.betstars.com
 0.0.0.0  www.betstars.uk
 0.0.0.0  www.betswar.com
@@ -107532,6 +107531,7 @@
 0.0.0.0  www.giocdn.com
 0.0.0.0  www.giocoreale.com
 0.0.0.0  www.gj500.com
+0.0.0.0  www.gkp.website
 0.0.0.0  www.gl.ink
 0.0.0.0  www.glimmercasino.com
 0.0.0.0  www.globalresearch.ca
@@ -107994,7 +107994,6 @@
 0.0.0.0  www.mu88ads.com
 0.0.0.0  www.mu90.com
 0.0.0.0  www.multilotto.com
-0.0.0.0  www.multipasko.pl
 0.0.0.0  www.mvb88.com
 0.0.0.0  www.mybet.com
 0.0.0.0  www.mycleanmymac.com
