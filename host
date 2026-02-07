@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-02-06
+# Last update: 2026-02-07
 #
-# Number of domains: 111441
+# Number of domains: 111437
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -191,6 +191,7 @@
 0.0.0.0  0sbm.consobaby.co.uk
 0.0.0.0  0sg1gx04is.com
 0.0.0.0  0sntp7dnrr.com
+0.0.0.0  0somni.synchronybank.com
 0.0.0.0  0stats.com
 0.0.0.0  0sywjs4r1x.com
 0.0.0.0  0tc1bdbgsm.com
@@ -204,6 +205,7 @@
 0.0.0.0  0x5.me
 0.0.0.0  0x7iufg8hy.com
 0.0.0.0  0xzxwnkqdu.com
+0.0.0.0  0y.es
 0.0.0.0  0z3zbnbkv.com
 0.0.0.0  0zj2a0bg.xyz
 0.0.0.0  1-cl0ud.com
@@ -310,7 +312,6 @@
 0.0.0.0  10stepswp.advancedtech.com
 0.0.0.0  10xlaunch.ai
 0.0.0.0  11.96131.com.cn
-0.0.0.0  11.com
 0.0.0.0  11.yiqig.cn
 0.0.0.0  11006451.xyz
 0.0.0.0  111101111.ru
@@ -1296,7 +1297,7 @@
 0.0.0.0  397c0.admaster.com.cn
 0.0.0.0  3988408442896783715.theacademyforconsciousleadership.com
 0.0.0.0  3990.tv
-0.0.0.0  3999f86b91.cports.com
+0.0.0.0  3999f86b91.com
 0.0.0.0  39e6p9p7.de
 0.0.0.0  39mob.com
 0.0.0.0  3aa2de320e.com
@@ -1921,6 +1922,7 @@
 0.0.0.0  66infra-strat.com
 0.0.0.0  66jo.societegenerale.fr
 0.0.0.0  66wen.com
+0.0.0.0  6711.com
 0.0.0.0  671c.pandasuite.io
 0.0.0.0  6764a4b67d.com
 0.0.0.0  676759a2a4.com
@@ -1929,7 +1931,6 @@
 0.0.0.0  6789.net
 0.0.0.0  678b4c02d9.com
 0.0.0.0  679king.com
-0.0.0.0  67ch.com
 0.0.0.0  67fad39954.com
 0.0.0.0  67qlvj0jcj.com
 0.0.0.0  67u36vmzm.com
@@ -3621,7 +3622,7 @@
 0.0.0.0  a16530.actonservice.com
 0.0.0.0  a16531.actonservice.com
 0.0.0.0  a16532.actonservice.com
-0.0.0.0  a16533.actonservice.com
+0.0.0.0  a16533.actactive.tc.skysrt.com
 0.0.0.0  a16537.actonservice.com
 0.0.0.0  a16542.actonservice.com
 0.0.0.0  a16543.actonservice.com
@@ -16580,7 +16581,7 @@
 0.0.0.0  betcanadian.com
 0.0.0.0  betcapri.com
 0.0.0.0  betcascade.com
-0.0.0.0  betcatalinaschen.nl
+0.0.0.0  betcatalinasports.com
 0.0.0.0  betcave.com
 0.0.0.0  betcc.com
 0.0.0.0  betcityru.com
@@ -16657,7 +16658,6 @@
 0.0.0.0  betpack.com
 0.0.0.0  betpanther.com
 0.0.0.0  betpartners.it
-0.0.0.0  betpawa.co.tz
 0.0.0.0  betpawa.co.zm
 0.0.0.0  betpawa.co.zw
 0.0.0.0  betpawa.com
@@ -22872,7 +22872,6 @@
 0.0.0.0  coloringisland.com
 0.0.0.0  colorless-round.com
 0.0.0.0  colorlessrush.com
-0.0.0.0  coloroptimizer.com
 0.0.0.0  colors.chamoji.com
 0.0.0.0  colossal-extension.com
 0.0.0.0  colossal-pathway.life
@@ -31209,7 +31208,7 @@
 0.0.0.0  e.4x58a.cn
 0.0.0.0  e.50j33.cn
 0.0.0.0  e.51t4d.cn
-0.0.0.0  e.51xmglsbet.com
+0.0.0.0  e.51xmgys.com
 0.0.0.0  e.53trya.cn
 0.0.0.0  e.53y8t.cn
 0.0.0.0  e.598md.cn
@@ -32342,7 +32341,7 @@
 0.0.0.0  edge.foodnetwork.ca
 0.0.0.0  edge.globaltv.com
 0.0.0.0  edge.grandbridge.com
-0.0.0.0  edge.hgtv.ca
+0.0.0.0  edge.hgytimes.com
 0.0.0.0  edge.historiatv.ca
 0.0.0.0  edge.history.ca
 0.0.0.0  edge.mcgriff.com
@@ -39923,6 +39922,7 @@
 0.0.0.0  globaladsales.com
 0.0.0.0  globaladv.net
 0.0.0.0  globalbanking.wolterskluwer.com
+0.0.0.0  globalcoloroptimizer.com
 0.0.0.0  globalcommunications.sc.com
 0.0.0.0  globale-analytics-sdk.global-e.com
 0.0.0.0  globaleloqua.americanexpress.com
@@ -39930,7 +39930,6 @@
 0.0.0.0  globallearningsystems.actonservice.com
 0.0.0.0  globalmed.actonservice.com
 0.0.0.0  globaloffers.link
-0.0.0.0  globalresearch.ca
 0.0.0.0  globalsiteanalytics.com
 0.0.0.0  globalsolutions.risk.lexisnexis.com
 0.0.0.0  globaltechbilling.com
@@ -44648,7 +44647,6 @@
 0.0.0.0  i9bet.net
 0.0.0.0  i9bet.poker
 0.0.0.0  i9bet.tw
-0.0.0.0  i9bet.vip
 0.0.0.0  i9bet07.com
 0.0.0.0  i9bet1.com
 0.0.0.0  i9bet10.com
@@ -45228,7 +45226,6 @@
 0.0.0.0  ihaawwkyyicvs.space
 0.0.0.0  ihavethetruth.com
 0.0.0.0  ihc.cellmarque.com
-0.0.0.0  ihcamp.ybtour.co.kr
 0.0.0.0  ihcrqa.sonnenklar.tv
 0.0.0.0  ihdqhjrqhovcp.today
 0.0.0.0  ihdticondkewj.space
@@ -55621,6 +55618,7 @@
 0.0.0.0  lsaguwxzarlpe.online
 0.0.0.0  lsawards.com
 0.0.0.0  lsbbtclkiwrdx.online
+0.0.0.0  lsbet.com
 0.0.0.0  lsbzzkonxksrw.site
 0.0.0.0  lscudygcxiqnn.online
 0.0.0.0  lsdcqjesvxgbw.space
@@ -55666,7 +55664,7 @@
 0.0.0.0  ltcklbqrgfntl.website
 0.0.0.0  ltcmak.alodokter.com
 0.0.0.0  ltcnetwork.mhainc.com
-0.0.0.0  ltcpfjgmkplye.online
+0.0.0.0  ltcpfjgmkplye.onlinei9bet.vip
 0.0.0.0  ltcvggyknrnqi.online
 0.0.0.0  ltdcgclhyhim.xyz
 0.0.0.0  ltdczq.myhome.nifty.com
@@ -56459,7 +56457,6 @@
 0.0.0.0  m.dbeii.com
 0.0.0.0  m.dbeij.com
 0.0.0.0  m.dbiei.com
-0.0.0.0  m.dbiej.com
 0.0.0.0  m.dceni.com
 0.0.0.0  m.ddanf.com
 0.0.0.0  m.ddttssz.cn
@@ -56917,6 +56914,7 @@
 0.0.0.0  m.reachmax.cn
 0.0.0.0  m.realself.com
 0.0.0.0  m.red88.com
+0.0.0.0  m.research.ca
 0.0.0.0  m.rgjrq.cn
 0.0.0.0  m.rhcapass.com
 0.0.0.0  m.ricpt.com
@@ -61824,7 +61822,7 @@
 0.0.0.0  miam4.cn
 0.0.0.0  miamicasino.com
 0.0.0.0  miamicourant.com
-0.0.0.0  miamidice.com
+0.0.0.0  miamidice.meihbjr.space
 0.0.0.0  miamidicecasino.com
 0.0.0.0  miao.baidu.com
 0.0.0.0  miaobeichina.com
@@ -66391,7 +66389,7 @@
 0.0.0.0  nwtennnews.com
 0.0.0.0  nwtvcupvihkhi.site
 0.0.0.0  nwtwincities.com
-0.0.0.0  nwvalleytimes.com
+0.0.0.0  nwvalledbiej.com
 0.0.0.0  nwvboqorfftjs.online
 0.0.0.0  nwvulrmtxesqh.space
 0.0.0.0  nwvupz.cljoias.com.br
@@ -67975,6 +67973,7 @@
 0.0.0.0  onsandindeedth.com
 0.0.0.0  onscroll.com
 0.0.0.0  onsenfinder.life
+0.0.0.0  onservice.com
 0.0.0.0  onshowit.com
 0.0.0.0  onshucklea.com
 0.0.0.0  onsideunden.org
@@ -71619,7 +71618,6 @@
 0.0.0.0  pmazpg.legalzoom.com
 0.0.0.0  pmbox.biz
 0.0.0.0  pmc1201.com
-0.0.0.0  pmc88.com
 0.0.0.0  pmdbhrxgnfbwx.online
 0.0.0.0  pmddjxmngdmyj.site
 0.0.0.0  pmegdobhuwqwz.online
@@ -75606,7 +75604,6 @@
 0.0.0.0  rcynoe.cn
 0.0.0.0  rczwcs.brack.ch
 0.0.0.0  rd.alice.it
-0.0.0.0  rd.ane.yahoo.co.jp
 0.0.0.0  rd.autohome.com.cn
 0.0.0.0  rd.da.netease.com
 0.0.0.0  rd.e.sogou.com
@@ -85091,7 +85088,6 @@
 0.0.0.0  smetrics.skodafinancialservices.nl
 0.0.0.0  smetrics.sky.com
 0.0.0.0  smetrics.sky.de
-0.0.0.0  smetrics.sky.es
 0.0.0.0  smetrics.sky.it
 0.0.0.0  smetrics.skyhighsecurity.com
 0.0.0.0  smetrics.slalom.com
@@ -86387,7 +86383,6 @@
 0.0.0.0  somni.superonline.net
 0.0.0.0  somni.syf.com
 0.0.0.0  somni.synchrony.com
-0.0.0.0  somni.synchronybank.com
 0.0.0.0  somni.synchronybusiness.com
 0.0.0.0  somni.synchronycareers.com
 0.0.0.0  somni.tatacard.com
@@ -90450,9 +90445,9 @@
 0.0.0.0  sw88.24kitchen.bg
 0.0.0.0  sw88.24kitchen.com.hr
 0.0.0.0  sw88.24kitchen.com.tr
+0.0.0.0  sw88.24kitchen.nl
 0.0.0.0  sw88.24kitchen.pt
 0.0.0.0  sw88.24kitchen.si
-0.0.0.0  sw88.24kitweb.dangky789.one
 0.0.0.0  sw88.abc.com
 0.0.0.0  sw88.cinemapp.com
 0.0.0.0  sw88.disney.be
@@ -94155,6 +94150,7 @@
 0.0.0.0  toughfather.pro
 0.0.0.0  toughvalue.pro
 0.0.0.0  touoijshjbkef.online
+0.0.0.0  tour.co.kr
 0.0.0.0  tourghepmienbac.net
 0.0.0.0  tourism.visitorlando.com
 0.0.0.0  touristbaconwrath.com
@@ -98810,7 +98806,6 @@
 0.0.0.0  umyyjgqyajxzu.online
 0.0.0.0  umzkjponcxpvn.online
 0.0.0.0  umzwmufdxrcrf.site
-0.0.0.0  un-acs.youku.com
 0.0.0.0  un.52rkl.cn
 0.0.0.0  un.winasdaq.com
 0.0.0.0  un.xz6.com
@@ -99678,6 +99673,7 @@
 0.0.0.0  usuriespias.com
 0.0.0.0  usurv.com
 0.0.0.0  usuyfyxftqtsn.online
+0.0.0.0  usvirtv.ca
 0.0.0.0  usw18-268-pdb.net.mydays.de
 0.0.0.0  uswgjyclbvtjj.space
 0.0.0.0  uswsyzbbbhqsi.site
@@ -101605,7 +101601,7 @@
 0.0.0.0  vkctxy.yves-rocher.fi
 0.0.0.0  vkdqiijvnljek.online
 0.0.0.0  vkdrvsfxomtxw.space
-0.0.0.0  vkdzmnmeihbjr.space
+0.0.0.0  vkdzmnbetpawa.co.tz
 0.0.0.0  vkebnbiwkndbp.site
 0.0.0.0  vkehcvahibhix.space
 0.0.0.0  vkgtrack.com
@@ -103172,6 +103168,7 @@
 0.0.0.0  web.connect.garnethealth.org
 0.0.0.0  web.consolid8.com.au
 0.0.0.0  web.da.mgtv.com
+0.0.0.0  web.dangky789.one
 0.0.0.0  web.data.pplive.com
 0.0.0.0  web.delighted.com
 0.0.0.0  web.destinationretirement.co.uk
@@ -105664,7 +105661,6 @@
 0.0.0.0  www.betmania.ag
 0.0.0.0  www.betmclean.com
 0.0.0.0  www.betmira.com
-0.0.0.0  www.betmonarys.com
 0.0.0.0  www.betmotion.com
 0.0.0.0  www.betmyline.com
 0.0.0.0  www.betmylines.com
@@ -108093,7 +108089,7 @@
 0.0.0.0  xjx11291ts.com
 0.0.0.0  xjztuj.kbwine.com
 0.0.0.0  xkddvf.gigantti.fi
-0.0.0.0  xkdi.jiaxinkang.cn
+0.0.0.0  xkdial.info
 0.0.0.0  xkfbgozlndstp.online
 0.0.0.0  xkgtxj.edomator.pl
 0.0.0.0  xkhjonrijnvvy.online
