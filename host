@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-02-11
+# Last update: 2026-02-12
 #
-# Number of domains: 112438
+# Number of domains: 112442
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -78,7 +78,6 @@
 0.0.0.0  03d756a534.com
 0.0.0.0  03in08p3r1.com
 0.0.0.0  03t441b8w.com
-0.0.0.0  04.actonservice.com
 0.0.0.0  04.lzzncm.com
 0.0.0.0  0407137f3d.com
 0.0.0.0  0458a53a71.com
@@ -3624,6 +3623,7 @@
 0.0.0.0  a16513.actonservice.com
 0.0.0.0  a16517.actonservice.com
 0.0.0.0  a16523.actonservice.com
+0.0.0.0  a16524.actonservice.com
 0.0.0.0  a16526.actonservice.com
 0.0.0.0  a16527.actonservice.com
 0.0.0.0  a16528.actonservice.com
@@ -4322,7 +4322,7 @@
 0.0.0.0  a27172.actonservice.com
 0.0.0.0  a27175.actonservice.com
 0.0.0.0  a27183.actonservice.com
-0.0.0.0  a27196.actonservice.cbetpawa.co.tz
+0.0.0.0  a27196.actonservice.com
 0.0.0.0  a27199.actonservice.com
 0.0.0.0  a27205.actonservice.com
 0.0.0.0  a27234.actonservice.com
@@ -5023,6 +5023,7 @@
 0.0.0.0  a43784.actonservice.com
 0.0.0.0  a43785.actonservice.com
 0.0.0.0  a43786.actonservice.com
+0.0.0.0  a43787.actonservice.com
 0.0.0.0  a43789.actonservice.com
 0.0.0.0  a43790.actonservice.com
 0.0.0.0  a43791.actonservice.com
@@ -14992,8 +14993,6 @@
 0.0.0.0  awuapj.landwatch.com
 0.0.0.0  awumnf.com
 0.0.0.0  awvshvmvekxsr.website
-0.0.0.0  awww-sodo.com
-0.0.0.0  awww.betstar.com.au
 0.0.0.0  awwzxzqrkanto.website
 0.0.0.0  awxczwwsrlkxm.online
 0.0.0.0  awxdlwbxqjnoi.online
@@ -16730,6 +16729,7 @@
 0.0.0.0  betpack.com
 0.0.0.0  betpanther.com
 0.0.0.0  betpartners.it
+0.0.0.0  betpawa.co.tz
 0.0.0.0  betpawa.co.zm
 0.0.0.0  betpawa.co.zw
 0.0.0.0  betpawa.com
@@ -16771,6 +16771,7 @@
 0.0.0.0  betspawn.com
 0.0.0.0  betsson.com
 0.0.0.0  betsson37.com
+0.0.0.0  betstar.com.au
 0.0.0.0  betstars.com
 0.0.0.0  betswar.com
 0.0.0.0  bettap.com
@@ -82096,6 +82097,7 @@
 0.0.0.0  sewboldlyavow.com
 0.0.0.0  sewerfieryendurance.com
 0.0.0.0  sewingfreaky.com
+0.0.0.0  sewyomingnews.com
 0.0.0.0  sex-and-flirt.com
 0.0.0.0  sex-chat.me
 0.0.0.0  sex.viralof.online
@@ -88417,7 +88419,7 @@
 0.0.0.0  ssl-omtrdc.zexy.net
 0.0.0.0  ssl-services.com
 0.0.0.0  ssl-youtube.2cnt.net
-0.0.0.0  ssl.51lhcx.comyomingnews.com
+0.0.0.0  ssl.51lhcx.com
 0.0.0.0  ssl.aafp.org
 0.0.0.0  ssl.aafpfoundation.org
 0.0.0.0  ssl.aszy.club
@@ -106225,6 +106227,7 @@
 0.0.0.0  www-sadobe.anabuki-community.com
 0.0.0.0  www-sadobe.anabuki.co.jp
 0.0.0.0  www-smt.daiichisankyo-hc.co.jp
+0.0.0.0  www-sodo.com
 0.0.0.0  www.0086555.com
 0.0.0.0  www.009.casino
 0.0.0.0  www.016665.com
@@ -106652,6 +106655,7 @@
 0.0.0.0  www.betsocial.net
 0.0.0.0  www.betspawn.com
 0.0.0.0  www.betsson.com
+0.0.0.0  www.betstar.com.au
 0.0.0.0  www.betstars.com
 0.0.0.0  www.betstars.uk
 0.0.0.0  www.betswar.com

@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-02-11
+# Last update: 2026-02-12
 #
-# Number of domains: 112438
+# Number of domains: 112442
 #
 #=====================================
 payload:
@@ -79,7 +79,6 @@ payload:
   - '03d756a534.com'
   - '03in08p3r1.com'
   - '03t441b8w.com'
-  - '04.actonservice.com'
   - '04.lzzncm.com'
   - '0407137f3d.com'
   - '0458a53a71.com'
@@ -3625,6 +3624,7 @@ payload:
   - 'a16513.actonservice.com'
   - 'a16517.actonservice.com'
   - 'a16523.actonservice.com'
+  - 'a16524.actonservice.com'
   - 'a16526.actonservice.com'
   - 'a16527.actonservice.com'
   - 'a16528.actonservice.com'
@@ -4323,7 +4323,7 @@ payload:
   - 'a27172.actonservice.com'
   - 'a27175.actonservice.com'
   - 'a27183.actonservice.com'
-  - 'a27196.actonservice.cbetpawa.co.tz'
+  - 'a27196.actonservice.com'
   - 'a27199.actonservice.com'
   - 'a27205.actonservice.com'
   - 'a27234.actonservice.com'
@@ -5024,6 +5024,7 @@ payload:
   - 'a43784.actonservice.com'
   - 'a43785.actonservice.com'
   - 'a43786.actonservice.com'
+  - 'a43787.actonservice.com'
   - 'a43789.actonservice.com'
   - 'a43790.actonservice.com'
   - 'a43791.actonservice.com'
@@ -14993,8 +14994,6 @@ payload:
   - 'awuapj.landwatch.com'
   - 'awumnf.com'
   - 'awvshvmvekxsr.website'
-  - 'awww-sodo.com'
-  - 'awww.betstar.com.au'
   - 'awwzxzqrkanto.website'
   - 'awxczwwsrlkxm.online'
   - 'awxdlwbxqjnoi.online'
@@ -16731,6 +16730,7 @@ payload:
   - 'betpack.com'
   - 'betpanther.com'
   - 'betpartners.it'
+  - 'betpawa.co.tz'
   - 'betpawa.co.zm'
   - 'betpawa.co.zw'
   - 'betpawa.com'
@@ -16772,6 +16772,7 @@ payload:
   - 'betspawn.com'
   - 'betsson.com'
   - 'betsson37.com'
+  - 'betstar.com.au'
   - 'betstars.com'
   - 'betswar.com'
   - 'bettap.com'
@@ -82097,6 +82098,7 @@ payload:
   - 'sewboldlyavow.com'
   - 'sewerfieryendurance.com'
   - 'sewingfreaky.com'
+  - 'sewyomingnews.com'
   - 'sex-and-flirt.com'
   - 'sex-chat.me'
   - 'sex.viralof.online'
@@ -88418,7 +88420,7 @@ payload:
   - 'ssl-omtrdc.zexy.net'
   - 'ssl-services.com'
   - 'ssl-youtube.2cnt.net'
-  - 'ssl.51lhcx.comyomingnews.com'
+  - 'ssl.51lhcx.com'
   - 'ssl.aafp.org'
   - 'ssl.aafpfoundation.org'
   - 'ssl.aszy.club'
@@ -106226,6 +106228,7 @@ payload:
   - 'www-sadobe.anabuki-community.com'
   - 'www-sadobe.anabuki.co.jp'
   - 'www-smt.daiichisankyo-hc.co.jp'
+  - 'www-sodo.com'
   - 'www.0086555.com'
   - 'www.009.casino'
   - 'www.016665.com'
@@ -106653,6 +106656,7 @@ payload:
   - 'www.betsocial.net'
   - 'www.betspawn.com'
   - 'www.betsson.com'
+  - 'www.betstar.com.au'
   - 'www.betstars.com'
   - 'www.betstars.uk'
   - 'www.betswar.com'
