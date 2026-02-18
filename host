@@ -6,13 +6,11 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-02-17
+# Last update: 2026-02-18
 #
-# Number of domains: 113853
+# Number of domains: 113855
 #
 #=====================================
-0.0.0.0  0.0.g1.cigna.com
-0.0.0.0  0.0.hyltt487.cloudfront.net
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
@@ -5015,6 +5013,7 @@
 0.0.0.0  a43740.actonservice.com
 0.0.0.0  a43746.actonservice.com
 0.0.0.0  a43748.actonservice.com
+0.0.0.0  a43749.actonservice.com
 0.0.0.0  a43750.actonservice.com
 0.0.0.0  a43751.actonservice.com
 0.0.0.0  a43757.actonservice.com
@@ -16706,6 +16705,7 @@
 0.0.0.0  bet20.bet
 0.0.0.0  bet2290.com
 0.0.0.0  bet2875.com
+0.0.0.0  bet3000.com
 0.0.0.0  bet3000partners.com
 0.0.0.0  bet33.com
 0.0.0.0  bet365affiliates.com
@@ -26581,7 +26581,7 @@
 0.0.0.0  d2qf34ln5axea0.cloudfront.net
 0.0.0.0  d2qfd8ejsuejas.cloudfront.net
 0.0.0.0  d2qhuw8qcxnldj.cloudfront.net
-0.0.0.0  d2qn0djb6oujlt.cloudbet3000.com
+0.0.0.0  d2qn0djb6oujlt.cloudfront.net
 0.0.0.0  d2qnx6y010m4rt.cloudfront.net
 0.0.0.0  d2qqc8ssywi4j6.cloudfront.net
 0.0.0.0  d2qz7ofajpstv5.cloudfront.net
@@ -30681,7 +30681,7 @@
 0.0.0.0  dp3.play.aiseet.atianqi.com
 0.0.0.0  dp3.qq.com
 0.0.0.0  dp313.com
-0.0.0.0  dp45nentrum.com
+0.0.0.0  dp45nhyltt487.cloudfront.net
 0.0.0.0  dp533.com
 0.0.0.0  dp568.com
 0.0.0.0  dp568bet.com
@@ -43263,7 +43263,6 @@
 0.0.0.0  health.aonunited.com
 0.0.0.0  health.atlanticgeneral.org
 0.0.0.0  health.brgeneral.org
-0.0.0.0  health.com
 0.0.0.0  health.fishersci.com
 0.0.0.0  health.hillcrest.com
 0.0.0.0  health.info.baptisthealth.com
@@ -56352,7 +56351,7 @@
 0.0.0.0  lotto-brandenburg.de
 0.0.0.0  lotto-bremen.de
 0.0.0.0  lotto-bw.de
-0.0.0.0  lotto-cfront.net
+0.0.0.0  lotto-centrum.com
 0.0.0.0  lotto-hessen.de
 0.0.0.0  lotto-hh.de
 0.0.0.0  lotto-niedersachsen.de
@@ -61529,7 +61528,7 @@
 0.0.0.0  metrics.ancestry.com
 0.0.0.0  metrics.ancestry.com.au
 0.0.0.0  metrics.ancestry.de
-0.0.0.0  metrics.angelinaballerina.s.com
+0.0.0.0  metrics.angelinaballerina.com
 0.0.0.0  metrics.angi.com
 0.0.0.0  metrics.angieslist.com
 0.0.0.0  metrics.anhi.org
@@ -83488,7 +83487,7 @@
 0.0.0.0  sheeta.nrj-play.fr
 0.0.0.0  sheetvibe.com
 0.0.0.0  shegaisoultou.net
-0.0.0.0  shelbycountytimeactonservice.com
+0.0.0.0  shelbycountytimes.com
 0.0.0.0  shelbypublishing.actonservice.com
 0.0.0.0  shelbyreporter.com
 0.0.0.0  shelbyreview.com
@@ -97764,7 +97763,6 @@
 0.0.0.0  tracki.click
 0.0.0.0  trackicollect.ibase.fr
 0.0.0.0  trackid.globoid.globo.com
-0.0.0.0  trackin88kub.com
 0.0.0.0  tracking-adnet.vivo.com.cn
 0.0.0.0  tracking-api-4lasu2nlcq-ew.a.run.app
 0.0.0.0  tracking-api.bookzone.ro
@@ -98409,6 +98407,7 @@
 0.0.0.0  tracking.zakelijk.cz.nl
 0.0.0.0  tracking.zierlicheladies.de
 0.0.0.0  tracking1.brandmentions.com
+0.0.0.0  tracking1.cigna.com
 0.0.0.0  tracking1.cigna.com.hk
 0.0.0.0  tracking1.cignaglobal.com
 0.0.0.0  tracking1.cignaglobalhealth.com
@@ -104729,6 +104728,7 @@
 0.0.0.0  w88city.com
 0.0.0.0  w88gp.com
 0.0.0.0  w88kh.com
+0.0.0.0  w88kub.com
 0.0.0.0  w88mp.com
 0.0.0.0  w88so.com
 0.0.0.0  w88st.com
@@ -105776,7 +105776,7 @@
 0.0.0.0  welcome-past.pro
 0.0.0.0  welcome-phone.pro
 0.0.0.0  welcome.ciscopowerofpartnership.com
-0.0.0.0  welcome.coniferwww.lumibet.com
+0.0.0.0  welcome.coniferhealth.com
 0.0.0.0  welcome.e.chiefs.com
 0.0.0.0  welcome.floridagators.com
 0.0.0.0  welcome.item24.be
@@ -107234,7 +107234,7 @@
 0.0.0.0  wssgmstats.vibbo.com
 0.0.0.0  wsshehasnomoney.com
 0.0.0.0  wssnddllssomv.space
-0.0.0.0  wsstatswww.betgoto.com
+0.0.0.0  wsstats.coches.net
 0.0.0.0  wstats.ageverif.com
 0.0.0.0  wstats.e-wok.tv
 0.0.0.0  wstats.gameblog.fr
@@ -107890,6 +107890,7 @@
 0.0.0.0  www.betflash.co.za
 0.0.0.0  www.betfred.com
 0.0.0.0  www.betfreesports.com
+0.0.0.0  www.betgoto.com
 0.0.0.0  www.betgrande.com
 0.0.0.0  www.betgun.com
 0.0.0.0  www.bethard.com
@@ -108731,6 +108732,7 @@
 0.0.0.0  www.luckymeslots.com
 0.0.0.0  www.luckyniki.com
 0.0.0.0  www.luckywinslots.com
+0.0.0.0  www.lumibet.com
 0.0.0.0  www.luping.net.cn
 0.0.0.0  www.lushforlife.com
 0.0.0.0  www.lutrija.hr
