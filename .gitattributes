@@ -1,0 +1,14 @@
+[attr]adb linguist-detectable linguist-language=AdBlock
+
+adblocker adb
+allowlist adb
+blocklist adb
+checkallow adb
+checkblock adb
+customallowlist adb
+customblocklist adb
+domain adb
+host adb
+lite_adblocker adb
+lite_domain adb
+lite_host adb
