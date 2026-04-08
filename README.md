@@ -11,13 +11,13 @@
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)<br/>
 
 ```
-Total ad / tracking block list 屏蔽追踪广告总数: 118297
+Total ad / tracking block list 屏蔽追踪广告总数: 116154
 
 Total allowlist list 允许名单总数: 11378
 
 Total upstream-non-accessable list 上游无法访问域名总数: 5353
 
-Update 更新时间: 2026-04-07
+Update 更新时间: 2026-04-08
 ```
 ### UPTODATE 保持最新<br/>
     Merge every day　每天更新
@@ -43,7 +43,7 @@ Update 更新时间: 2026-04-07
 ``` 
 
 ## Download 下载
-Number of Domain 域名数目： 118297
+Number of Domain 域名数目： 116154
 Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
 --------- |:-------------:|:-------------:|:-------------:
 Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host)
