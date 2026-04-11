@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-04-08_15-01-18_UTC
-// COMMIT: 990747f4550efcc31520cb020c4e6b316ff00546
+// VERSION: 2026-04-10_20-27-44_UTC
+// COMMIT: 8f9e04f2be9098ada07aa3cf13592dfe78870985
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -6824,7 +6824,7 @@ org.zw
 
 // newGTLDs
 
-// List of new gTLDs imported from https://www.icann.org/resources/registries/gtlds/v2/gtlds.json on 2026-02-18T15:51:43Z
+// List of new gTLDs imported from https://www.icann.org/resources/registries/gtlds/v2/gtlds.json on 2026-04-10T15:53:10Z
 // This list is auto-generated, don't edit it manually.
 // aaa : American Automobile Association, Inc.
 // https://www.iana.org/domains/root/db/aaa.html
@@ -7566,7 +7566,7 @@ church
 // https://www.iana.org/domains/root/db/cipriani.html
 cipriani
 
-// circle : Amazon Registry Services, Inc.
+// circle : Jolly Host, LLC
 // https://www.iana.org/domains/root/db/circle.html
 circle
 
@@ -8418,7 +8418,7 @@ google
 // https://www.iana.org/domains/root/db/gop.html
 gop
 
-// got : Amazon Registry Services, Inc.
+// got : Jolly Host, LLC
 // https://www.iana.org/domains/root/db/got.html
 got
 
@@ -8790,7 +8790,7 @@ jnj
 // https://www.iana.org/domains/root/db/joburg.html
 joburg
 
-// jot : Amazon Registry Services, Inc.
+// jot : Jolly Host, LLC
 // https://www.iana.org/domains/root/db/jot.html
 jot
 
@@ -12893,6 +12893,10 @@ deno-staging.dev
 deno.net
 sandbox.deno.net
 
+// DeployAgent : https://deployagent.com
+// Submitted by Danny <security@deployagent.com>
+deployagent.com
+
 // deSEC : https://desec.io/
 // Submitted by Peter Thomassen <peter@desec.io>
 dedyn.io
@@ -14321,6 +14325,18 @@ jouwweb.site
 // Submitted by Stefan Keim <admin@js.org>
 js.org
 
+// K2 Cloud : https://k2.cloud/
+// Submitted by K2 Cloud <compliance@k2.cloud>
+elastic.k2.cloud
+lb.ru-msk.k2.cloud
+s3.ru-msk.k2.cloud
+website.ru-msk.k2.cloud
+lb.ru-spb.k2.cloud
+s3.ru-spb.k2.cloud
+website.ru-spb.k2.cloud
+s3.k2.cloud
+website.k2.cloud
+
 // KaasHosting : http://www.kaashosting.nl/
 // Submitted by Wouter Bakker <hostmaster@kaashosting.nl>
 kaas.gg
@@ -14902,6 +14918,35 @@ noop.app
 *.code.run
 *.database.run
 *.migration.run
+
+// Northwest Nexus dba NuOz : https://nuoz.net/
+// An RFC 1480 locality domain delegate host
+// Submitted by Peter Briggs on behalf of NuOz <domainsadmin@nuoz.com>
+aberdeen.wa.us
+bainbridge-isl.wa.us
+bellevue.wa.us
+bremerton.wa.us
+centralia.wa.us
+chehalis.wa.us
+forks.wa.us
+gig-harbor.wa.us
+hoquiam.wa.us
+keyport.wa.us
+kingston.wa.us
+olympia.wa.us
+port-angeles.wa.us
+port-ludlow.wa.us
+port-orchard.wa.us
+port-townsend.wa.us
+poulsbo.wa.us
+redmond.wa.us
+renton.wa.us
+sea.wa.us
+seattle.wa.us
+sequim.wa.us
+shelton.wa.us
+silverdale.wa.us
+yarrow-point.wa.us
 
 // Noticeable : https://noticeable.io
 // Submitted by Laurent Pellegrino <security@noticeable.io>
@@ -16105,6 +16150,11 @@ vistablog.ir
 // Viva Republica, Inc. : https://toss.im/
 // Submitted by Deus Team <deus@toss.im>
 deus-canvas.com
+
+// vivenu GmbH : https://vivenu.com/
+// Submitted by Marvin Frick <ops@vivenu.com>
+vivenushop.com
+vivenushop.dev
 
 // Voorloper.com : https://voorloper.com
 // Submitted by Nathan van Bakel <info@voorloper.com>

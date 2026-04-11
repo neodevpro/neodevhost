@@ -2371,6 +2371,7 @@ cdn-us-ec.yottaa.net
 cdn-video.gtflixtv.com
 cdn-www.xda-developers.com
 cdn-yams.schibsted.com
+cdn.360.cn
 cdn.activistpost.com
 cdn.adf.ly
 cdn.adrise.tv
@@ -2428,7 +2429,6 @@ cdn.jsdelivr.net
 cdn.jsdelivr.net.cdn.cloudflare.net
 cdn.jwplayer.com
 cdn.keycdn.com
-cdn.livechatinc.com
 cdn.livefyre.com
 cdn.livestream.com
 cdn.loginhood.io
@@ -5814,6 +5814,7 @@ livechat-beta.boldchat.com
 livechat-eu.boldchat.com
 livechat.boldchat.com
 livechat.support.samsung.com
+livechatinc.com
 livecycle-tst.qualcomm.com
 livedocs.adobe.com
 livedoor.jp
@@ -7960,7 +7961,6 @@ san.www.mormon.org.edgekey.net
 sanantonionamechange.com
 sandbox.coinbase.com
 sandbox.xmpush.xiaomi.com
-sanfranc360.cn
 saping.igamecj.com
 sara.internet.apps.samsung.com
 sas.ooyala.com
@@ -8599,6 +8599,7 @@ static.networkedblogs.com
 static.opentok.com
 static.ow.ly
 static.parastorage.com
+static.pd.biv.sony.tv
 static.res.qq.com
 static.returnpath.net
 static.sh.st
@@ -11361,6 +11362,7 @@ zh-cn.about.flipboard.com
 zh-hk.about.flipboard.com
 zh-tw.gravatar.com
 zh-tw.twitch.tv
+zh.ifixit.com
 zh.wikipedia.com
 zhaopin.com
 zhibo.mi.com
