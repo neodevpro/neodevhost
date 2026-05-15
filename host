@@ -6,11 +6,12 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-05-14
+# Last update: 2026-05-15
 #
-# Number of domains: 117185
+# Number of domains: 117193
 #
 #=====================================
+0.0.0.0  0.0.adatum.actonservice.com
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
@@ -5010,7 +5011,6 @@
 0.0.0.0  a43424.actonservice.com
 0.0.0.0  a43444.actonservice.com
 0.0.0.0  a43445.actonservice.com
-0.0.0.0  a43447.actonservice.com
 0.0.0.0  a43454.actonservice.com
 0.0.0.0  a43456.actonservice.com
 0.0.0.0  a43461.actonservice.com
@@ -5180,7 +5180,6 @@
 0.0.0.0  a43901.actonservice.com
 0.0.0.0  a43906.actonservice.com
 0.0.0.0  a43909.actonservice.com
-0.0.0.0  a43910.actonservice.com
 0.0.0.0  a43913.actonservice.com
 0.0.0.0  a43918.actonservice.com
 0.0.0.0  a43919.actonservice.com
@@ -7751,6 +7750,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -10613,6 +10613,7 @@
 0.0.0.0  ahsxot.meaningfulbeauty.com
 0.0.0.0  ahsyxlyqjzkcz.website
 0.0.0.0  ahtcwbfctgvnk.site
+0.0.0.0  ahtigames.com
 0.0.0.0  ahtjhe1bka.com
 0.0.0.0  ahtohdywahxhb.online
 0.0.0.0  ahtribune.com
@@ -14414,6 +14415,7 @@
 0.0.0.0  asp.taishokunext.com
 0.0.0.0  aspa8.ozmall.co.jp
 0.0.0.0  aspalaxhiccups.shop
+0.0.0.0  aspartame.news
 0.0.0.0  aspect-upush.umeng.com
 0.0.0.0  aspectreinforce.com
 0.0.0.0  asperencium.com
@@ -14536,7 +14538,7 @@
 0.0.0.0  astrokompas.com
 0.0.0.0  astrologybacklightsinless.com
 0.0.0.0  astrologyflyabletruth.com
-0.0.0.0  astromed.actonservice.com
+0.0.0.0  astromed.actonsepamelageller.com
 0.0.0.0  astronautlividlyreformer.com
 0.0.0.0  asttcp.vatera.hu
 0.0.0.0  astxt.top
@@ -15058,10 +15060,10 @@
 0.0.0.0  awaitingcoordinatelassitude.com
 0.0.0.0  awaitinggirl.net
 0.0.0.0  awake-stats.jpush.cn
-0.0.0.0  awakebird.com
 0.0.0.0  awakecedesurplus.com
 0.0.0.0  awakeexterior.com
 0.0.0.0  awakening.news
+0.0.0.0  awakvn88.mobi
 0.0.0.0  awap.equifax.com
 0.0.0.0  awaps.yandex.net
 0.0.0.0  awaps.yandex.ru
@@ -15796,6 +15798,7 @@
 0.0.0.0  bahswl.com
 0.0.0.0  bahyei.himaraya.co.jp
 0.0.0.0  bai3.gushiwen.org
+0.0.0.0  baiabcislands.ag
 0.0.0.0  baichuan-sdk.alicdn.com
 0.0.0.0  baichuan-sdk.taobao.com
 0.0.0.0  baichuan.baidu.com
@@ -15839,7 +15842,6 @@
 0.0.0.0  baitugu.com
 0.0.0.0  baiwanchuangyi.com
 0.0.0.0  baiwv.com
-0.0.0.0  baizhu.cc
 0.0.0.0  baj.fanwenzhan.com
 0.0.0.0  bajashpa.in
 0.0.0.0  bajyiflenzdxl.space
@@ -20301,6 +20303,7 @@
 0.0.0.0  capacity88.top
 0.0.0.0  capacitygrid.com
 0.0.0.0  capcap621.cn
+0.0.0.0  capecodledger.com
 0.0.0.0  capefast.com
 0.0.0.0  capemonews.com
 0.0.0.0  capeplayer.com
@@ -21513,6 +21516,7 @@
 0.0.0.0  channel18news.com
 0.0.0.0  channel22news.com
 0.0.0.0  channel23news.com
+0.0.0.0  channel24news.com
 0.0.0.0  channel28news.com
 0.0.0.0  channel33news.com
 0.0.0.0  channel34news.com
@@ -28658,7 +28662,7 @@
 0.0.0.0  deep.souk.com.br
 0.0.0.0  deepattention.com
 0.0.0.0  deepchannel.com
-0.0.0.0  deepcrawl.actonservice.com
+0.0.0.0  deepcrawl.actonservice.ceclowns.com
 0.0.0.0  deeperregardingcontend.com
 0.0.0.0  deepinsidetherabbithole.com
 0.0.0.0  deepintent.com
@@ -29854,6 +29858,7 @@
 0.0.0.0  discover.tenplay.com.au
 0.0.0.0  discover2.secureforms.mcafee.com
 0.0.0.0  discoveredcowardlymadden.com
+0.0.0.0  discoveries.news
 0.0.0.0  discoveringantibioticfellow.com
 0.0.0.0  discovermustystarter.com
 0.0.0.0  discovernative.com
@@ -38468,6 +38473,7 @@
 0.0.0.0  freedomalburn.com
 0.0.0.0  freedomdaily.com
 0.0.0.0  freedomgrail.com
+0.0.0.0  freedommedianetwork.com
 0.0.0.0  freedomoutpost.com
 0.0.0.0  freedrive.cn
 0.0.0.0  freefromads.com
@@ -41515,6 +41521,7 @@
 0.0.0.0  gog9.qzdfc.com
 0.0.0.0  gogeawrbp.com
 0.0.0.0  gogkuvawtq.xyz
+0.0.0.0  gogobolaku.com
 0.0.0.0  gogofunding.actonservice.com
 0.0.0.0  gogoga.xyz
 0.0.0.0  gogovapps.actonservice.com
@@ -45724,6 +45731,7 @@
 0.0.0.0  iccihomoulkrg.online
 0.0.0.0  iccvjzhpfolzj.space
 0.0.0.0  icdirect.com
+0.0.0.0  ice.com
 0.0.0.0  icebns.com
 0.0.0.0  icebxgkpn.com
 0.0.0.0  icecaptifter.com
@@ -48272,6 +48280,7 @@
 0.0.0.0  ingratitudealienatedues.com
 0.0.0.0  ingratitudeworeinstead.com
 0.0.0.0  ingredients.firmenich.com
+0.0.0.0  ingredients.news
 0.0.0.0  ingress.linktr.ee
 0.0.0.0  ingress.trendii.com
 0.0.0.0  ingsandmakingsil.com
@@ -67074,6 +67083,7 @@
 0.0.0.0  notablebicycle.pro
 0.0.0.0  notablepace.pro
 0.0.0.0  notablespiritual.pro
+0.0.0.0  notallowedto.com
 0.0.0.0  notaloneathome.com
 0.0.0.0  notbak.com
 0.0.0.0  notcardboard.com
@@ -67679,7 +67689,7 @@
 0.0.0.0  nwtdvlersdowe.space
 0.0.0.0  nwtennnews.com
 0.0.0.0  nwtg5ywz2j.com
-0.0.0.0  nwtwincities.com
+0.0.0.0  nwtwincities.coa43447.actonservice.com
 0.0.0.0  nwvalleytimes.com
 0.0.0.0  nwvulrmtxesqh.space
 0.0.0.0  nwvupz.cljoias.com.br
@@ -70889,7 +70899,6 @@
 0.0.0.0  palsybecamedislike.com
 0.0.0.0  palsybrush.com
 0.0.0.0  paluinho.cloud
-0.0.0.0  pamelageller.com
 0.0.0.0  pamelarandom.com
 0.0.0.0  pamperwoody.com
 0.0.0.0  pamphiltre.com
@@ -81364,11 +81373,11 @@
 0.0.0.0  science.news
 0.0.0.0  science.schoolspecialtynews.com
 0.0.0.0  scienceaaas.org
-0.0.0.0  scienceclowns.com
 0.0.0.0  sciencedart.com
 0.0.0.0  sciencedeception.com
 0.0.0.0  sciencerevenue.com
 0.0.0.0  sciencetyranny.com
+0.0.0.0  scienrvice.com
 0.0.0.0  scientific-doubt.com
 0.0.0.0  scientific-husband.com
 0.0.0.0  scientific-white.com
@@ -82961,7 +82970,6 @@
 0.0.0.0  set-push.net
 0.0.0.0  setantabet.com
 0.0.0.0  setaram.actonservice.com
-0.0.0.0  setennnews.com
 0.0.0.0  setexasrecord.com
 0.0.0.0  setexastimes.com
 0.0.0.0  setksohxkggca.online
@@ -95051,7 +95059,6 @@
 0.0.0.0  terminatefaltergrunt.com
 0.0.0.0  termsvictim.com
 0.0.0.0  terraclicks.com
-0.0.0.0  terradatum.actonservice.com
 0.0.0.0  terrapush.com
 0.0.0.0  terrasdsdstd.com
 0.0.0.0  terratraf.com
@@ -105493,7 +105500,6 @@
 0.0.0.0  vn88.club
 0.0.0.0  vn88.fun
 0.0.0.0  vn88.io
-0.0.0.0  vn88.mobi
 0.0.0.0  vn88.quest
 0.0.0.0  vn887.com
 0.0.0.0  vn88hn.live
@@ -109919,7 +109925,6 @@
 0.0.0.0  www.aabbttuu.com
 0.0.0.0  www.aafanke.cc
 0.0.0.0  www.abbyychina.com
-0.0.0.0  www.abcislands.ag
 0.0.0.0  www.abeacon.cn
 0.0.0.0  www.abovetopsecret.com
 0.0.0.0  www.acint.net
@@ -110050,6 +110055,7 @@
 0.0.0.0  www.bet2290.com
 0.0.0.0  www.bet2875.com
 0.0.0.0  www.bet2win.ag
+0.0.0.0  www.bet3000.com
 0.0.0.0  www.bet33.com
 0.0.0.0  www.bet36500050.com
 0.0.0.0  www.bet7days.com
@@ -110432,6 +110438,7 @@
 0.0.0.0  www.easyrecoverychina.com
 0.0.0.0  www.easytowager.com
 0.0.0.0  www.ebetusa.com
+0.0.0.0  www.ebird.com
 0.0.0.0  www.eccobet.com
 0.0.0.0  www.eclbet02.com
 0.0.0.0  www.eddong.com
@@ -116161,6 +116168,7 @@
 0.0.0.0  zhteknutoy.com
 0.0.0.0  zhtiqbietjwhb.fun
 0.0.0.0  zhtjdl.com
+0.0.0.0  zhu.cc
 0.0.0.0  zhuahu.com
 0.0.0.0  zhuanfakong.com
 0.0.0.0  zhuanshenghuo1.kuaizhan.com
