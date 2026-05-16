@@ -6,12 +6,11 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-05-15
+# Last update: 2026-05-16
 #
-# Number of domains: 117193
+# Number of domains: 117210
 #
 #=====================================
-0.0.0.0  0.0.adatum.actonservice.com
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
@@ -1368,6 +1367,7 @@
 0.0.0.0  3bet.tech
 0.0.0.0  3bet.vc
 0.0.0.0  3bet.win
+0.0.0.0  3bet.you
 0.0.0.0  3bzsoex618.com
 0.0.0.0  3ca9dc59cc.com
 0.0.0.0  3cbxqifhd.com
@@ -5011,6 +5011,7 @@
 0.0.0.0  a43424.actonservice.com
 0.0.0.0  a43444.actonservice.com
 0.0.0.0  a43445.actonservice.com
+0.0.0.0  a43447.actonservice.com
 0.0.0.0  a43454.actonservice.com
 0.0.0.0  a43456.actonservice.com
 0.0.0.0  a43461.actonservice.com
@@ -5180,6 +5181,7 @@
 0.0.0.0  a43901.actonservice.com
 0.0.0.0  a43906.actonservice.com
 0.0.0.0  a43909.actonservice.com
+0.0.0.0  a43910.actonservice.com
 0.0.0.0  a43913.actonservice.com
 0.0.0.0  a43918.actonservice.com
 0.0.0.0  a43919.actonservice.com
@@ -7458,7 +7460,6 @@
 0.0.0.0  ac-ebis.usen.biz
 0.0.0.0  ac.86huoche.com
 0.0.0.0  ac.art456.com
-0.0.0.0  ac.atpanel.com
 0.0.0.0  ac.geechs-job.com
 0.0.0.0  ac.livelty.com
 0.0.0.0  ac.mmstat.com
@@ -7750,7 +7751,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -8263,7 +8263,7 @@
 0.0.0.0  adbits.online
 0.0.0.0  adbkwai.com
 0.0.0.0  adblade.com
-0.0.0.0  adblck.com
+0.0.0.0  adblckrch.ca
 0.0.0.0  adblock-360.com
 0.0.0.0  adblock-guru.com
 0.0.0.0  adblock-zen.com
@@ -14538,7 +14538,7 @@
 0.0.0.0  astrokompas.com
 0.0.0.0  astrologybacklightsinless.com
 0.0.0.0  astrologyflyabletruth.com
-0.0.0.0  astromed.actonsepamelageller.com
+0.0.0.0  astromed.actonservice.com
 0.0.0.0  astronautlividlyreformer.com
 0.0.0.0  asttcp.vatera.hu
 0.0.0.0  astxt.top
@@ -14677,6 +14677,7 @@
 0.0.0.0  atoohghljijgj.website
 0.0.0.0  atoxicweb.shop
 0.0.0.0  atp.io
+0.0.0.0  atpanel.com
 0.0.0.0  atplay.cn
 0.0.0.0  atpm.cn
 0.0.0.0  atqjthrqgcjkf.website
@@ -15060,10 +15061,10 @@
 0.0.0.0  awaitingcoordinatelassitude.com
 0.0.0.0  awaitinggirl.net
 0.0.0.0  awake-stats.jpush.cn
+0.0.0.0  awakebird.com
 0.0.0.0  awakecedesurplus.com
 0.0.0.0  awakeexterior.com
 0.0.0.0  awakening.news
-0.0.0.0  awakvn88.mobi
 0.0.0.0  awap.equifax.com
 0.0.0.0  awaps.yandex.net
 0.0.0.0  awaps.yandex.ru
@@ -15798,7 +15799,6 @@
 0.0.0.0  bahswl.com
 0.0.0.0  bahyei.himaraya.co.jp
 0.0.0.0  bai3.gushiwen.org
-0.0.0.0  baiabcislands.ag
 0.0.0.0  baichuan-sdk.alicdn.com
 0.0.0.0  baichuan-sdk.taobao.com
 0.0.0.0  baichuan.baidu.com
@@ -15842,6 +15842,7 @@
 0.0.0.0  baitugu.com
 0.0.0.0  baiwanchuangyi.com
 0.0.0.0  baiwv.com
+0.0.0.0  baizhu.cc
 0.0.0.0  baj.fanwenzhan.com
 0.0.0.0  bajashpa.in
 0.0.0.0  bajyiflenzdxl.space
@@ -15868,6 +15869,7 @@
 0.0.0.0  ball88.app
 0.0.0.0  ball88.com
 0.0.0.0  ball88.fun
+0.0.0.0  ball88.mobi
 0.0.0.0  ball88.to
 0.0.0.0  ballantine.actonservice.com
 0.0.0.0  ballebaazi.com
@@ -16492,7 +16494,6 @@
 0.0.0.0  beatforumsubstitute.com
 0.0.0.0  beatricecandanceyd.com
 0.0.0.0  beauapparatus.com
-0.0.0.0  beaumont.actonservice.com
 0.0.0.0  beautiful-roentgen.176-65-139-130.plesk.page
 0.0.0.0  beautiful45.com
 0.0.0.0  beauty1.xyz
@@ -17279,7 +17280,7 @@
 0.0.0.0  bigamsleepy.shop
 0.0.0.0  bigbasketshop.com
 0.0.0.0  bigbetworld.com
-0.0.0.0  bigbolz.com
+0.0.0.0  bigbol8.win
 0.0.0.0  bigbootymania.com
 0.0.0.0  bigboxads.com
 0.0.0.0  bigbrain.me
@@ -18453,7 +18454,7 @@
 0.0.0.0  bp8mct71pn.com
 0.0.0.0  bpauszxiaozwb.site
 0.0.0.0  bpbnelpowldjl.space
-0.0.0.0  bpcieckgpwjqp.site
+0.0.0.0  bpciecatlantispromos.com
 0.0.0.0  bpdovppg.com
 0.0.0.0  bpdqwixnyxoxy.site
 0.0.0.0  bpdudejimdmdf.online
@@ -28561,6 +28562,7 @@
 0.0.0.0  debet.moi
 0.0.0.0  debet.net
 0.0.0.0  debet.us
+0.0.0.0  debet.vg
 0.0.0.0  debet79.info
 0.0.0.0  debet88.win
 0.0.0.0  debitcrebit669.com
@@ -28662,7 +28664,7 @@
 0.0.0.0  deep.souk.com.br
 0.0.0.0  deepattention.com
 0.0.0.0  deepchannel.com
-0.0.0.0  deepcrawl.actonservice.ceclowns.com
+0.0.0.0  deepcrawl.actonservice.com
 0.0.0.0  deeperregardingcontend.com
 0.0.0.0  deepinsidetherabbithole.com
 0.0.0.0  deepintent.com
@@ -37382,6 +37384,7 @@
 0.0.0.0  five-88.com
 0.0.0.0  five-88.link
 0.0.0.0  five88.biz
+0.0.0.0  five88.in
 0.0.0.0  five88.net
 0.0.0.0  five88.sale
 0.0.0.0  five88.show
@@ -39782,6 +39785,7 @@
 0.0.0.0  gemwin.to
 0.0.0.0  gemwin.tv
 0.0.0.0  gemwin.vc
+0.0.0.0  gemwin.vin
 0.0.0.0  gemwin.vip
 0.0.0.0  gen-ref.com
 0.0.0.0  gen.alicdn.com
@@ -40719,7 +40723,7 @@
 0.0.0.0  globallearningsystems.actonservice.com
 0.0.0.0  globalmed.actonservice.com
 0.0.0.0  globaloffers.link
-0.0.0.0  globalresearch.ca
+0.0.0.0  globalresea.actonservice.com
 0.0.0.0  globalsiteanalytics.com
 0.0.0.0  globalsolutions.risk.lexisnexis.com
 0.0.0.0  globaltraffico.com
@@ -42897,6 +42901,7 @@
 0.0.0.0  hanlanad.com
 0.0.0.0  hanlinzhijia.net
 0.0.0.0  hanmiyong.com
+0.0.0.0  hannel4.com
 0.0.0.0  hanplayer.com
 0.0.0.0  hanqdaysfeucn.site
 0.0.0.0  hanselsgipping.com
@@ -43767,7 +43772,7 @@
 0.0.0.0  hidwnatidokyl.online
 0.0.0.0  hidyiieqhuahn.website
 0.0.0.0  hidzrf.icu
-0.0.0.0  hiephoilangnghevietnam.com
+0.0.0.0  hiephoilangnghevietel.com
 0.0.0.0  hif.to
 0.0.0.0  hifrqtlxje.com
 0.0.0.0  highconvertingformats.com
@@ -43922,6 +43927,7 @@
 0.0.0.0  hitclub.in
 0.0.0.0  hitclub.lc
 0.0.0.0  hitclub.lt
+0.0.0.0  hitclub.lv
 0.0.0.0  hitclub.pro
 0.0.0.0  hitclub.salon
 0.0.0.0  hitclub.si
@@ -45731,7 +45737,6 @@
 0.0.0.0  iccihomoulkrg.online
 0.0.0.0  iccvjzhpfolzj.space
 0.0.0.0  icdirect.com
-0.0.0.0  ice.com
 0.0.0.0  icebns.com
 0.0.0.0  icebxgkpn.com
 0.0.0.0  icecaptifter.com
@@ -53635,7 +53640,6 @@
 0.0.0.0  larvaelimans.com
 0.0.0.0  larvapeasstretched.com
 0.0.0.0  lasagneandands.com
-0.0.0.0  lasatlantispromos.com
 0.0.0.0  lasciviouschristmasinfection.com
 0.0.0.0  laserconcepts.actonservice.com
 0.0.0.0  laserstat.com
@@ -53654,6 +53658,7 @@
 0.0.0.0  lastlyseaweedgoose.com
 0.0.0.0  lasttaco.com
 0.0.0.0  lasvegasrecord.com
+0.0.0.0  lasz.com
 0.0.0.0  latam.thomsonreuters.com
 0.0.0.0  latchfateverybody.com
 0.0.0.0  late-anxiety.com
@@ -54632,7 +54637,7 @@
 0.0.0.0  link.atlys.com
 0.0.0.0  link.augmentedreality.jlg.com
 0.0.0.0  link.auraframes.com
-0.0.0.0  link.automated.almosafer.com
+0.0.0.0  link.automated.aactive.tc.skysrt.com
 0.0.0.0  link.avenue.us
 0.0.0.0  link.axshealthapp.com
 0.0.0.0  link.babyquip.com
@@ -58330,6 +58335,7 @@
 0.0.0.0  m1.ball88.app
 0.0.0.0  m1.ball88.com
 0.0.0.0  m1.ball88.fun
+0.0.0.0  m1.ball88.mobi
 0.0.0.0  m1.ball88.to
 0.0.0.0  m1.daumcdn.net
 0.0.0.0  m1.fm88.com
@@ -63996,7 +64002,7 @@
 0.0.0.0  monitor-uu.play.aiseet.atianqi.com
 0.0.0.0  monitor.adxsenmeng.com
 0.0.0.0  monitor.agenedia.com
-0.0.0.0  monitor.channel4.com
+0.0.0.0  monitor.cs.es
 0.0.0.0  monitor.fraudblocker.com
 0.0.0.0  monitor.music.qq.com
 0.0.0.0  monitor.qq.com
@@ -66372,6 +66378,7 @@
 0.0.0.0  nhat.game
 0.0.0.0  nhat.it
 0.0.0.0  nhat.one
+0.0.0.0  nhat.sx
 0.0.0.0  nhat.vip
 0.0.0.0  nhat1.club
 0.0.0.0  nhat9.vip
@@ -67689,8 +67696,7 @@
 0.0.0.0  nwtdvlersdowe.space
 0.0.0.0  nwtennnews.com
 0.0.0.0  nwtg5ywz2j.com
-0.0.0.0  nwtwincities.coa43447.actonservice.com
-0.0.0.0  nwvalleytimes.com
+0.0.0.0  nwtwincities.com
 0.0.0.0  nwvulrmtxesqh.space
 0.0.0.0  nwvupz.cljoias.com.br
 0.0.0.0  nwwais.com
@@ -69146,6 +69152,7 @@
 0.0.0.0  one88.us
 0.0.0.0  one88.vin
 0.0.0.0  one88.vip
+0.0.0.0  one8eatricew.com
 0.0.0.0  oneapm.com
 0.0.0.0  oneclck.net
 0.0.0.0  onecloud.avaya.com
@@ -70899,6 +70906,7 @@
 0.0.0.0  palsybecamedislike.com
 0.0.0.0  palsybrush.com
 0.0.0.0  paluinho.cloud
+0.0.0.0  pamelageller.com
 0.0.0.0  pamelarandom.com
 0.0.0.0  pamperwoody.com
 0.0.0.0  pamphiltre.com
@@ -79777,6 +79785,7 @@
 0.0.0.0  s.columbiathreadneedle.ch
 0.0.0.0  s.columbiathreadneedle.co.uk
 0.0.0.0  s.columbiathreadneedle.hk
+0.0.0.0  s.com
 0.0.0.0  s.corporate.cemex.com
 0.0.0.0  s.coveredsys.cn
 0.0.0.0  s.cpro.baidu.com
@@ -81373,11 +81382,11 @@
 0.0.0.0  science.news
 0.0.0.0  science.schoolspecialtynews.com
 0.0.0.0  scienceaaas.org
+0.0.0.0  scienceclowns.com
 0.0.0.0  sciencedart.com
 0.0.0.0  sciencedeception.com
 0.0.0.0  sciencerevenue.com
 0.0.0.0  sciencetyranny.com
-0.0.0.0  scienrvice.com
 0.0.0.0  scientific-doubt.com
 0.0.0.0  scientific-husband.com
 0.0.0.0  scientific-white.com
@@ -82970,6 +82979,7 @@
 0.0.0.0  set-push.net
 0.0.0.0  setantabet.com
 0.0.0.0  setaram.actonservice.com
+0.0.0.0  setennnews.com
 0.0.0.0  setexasrecord.com
 0.0.0.0  setexastimes.com
 0.0.0.0  setksohxkggca.online
@@ -84177,10 +84187,12 @@
 0.0.0.0  sk.ball88.app
 0.0.0.0  sk.ball88.com
 0.0.0.0  sk.ball88.fun
+0.0.0.0  sk.ball88.mobi
 0.0.0.0  sk.ball88.to
 0.0.0.0  sk.debet.cx
 0.0.0.0  sk.debet.gs
 0.0.0.0  sk.debet.lc
+0.0.0.0  sk.debet.vg
 0.0.0.0  sk.fapnow.xxx
 0.0.0.0  sk.fm88.com
 0.0.0.0  sk.sin88.ms
@@ -90725,7 +90737,6 @@
 0.0.0.0  stats.bbc.co.uk
 0.0.0.0  stats.bcdtravel.com
 0.0.0.0  stats.bdc.ca
-0.0.0.0  stats.beatricew.com
 0.0.0.0  stats.belic.si
 0.0.0.0  stats.benui.ca
 0.0.0.0  stats.bernardobordadagua.com
@@ -90751,6 +90762,7 @@
 0.0.0.0  stats.blogoscoop.net
 0.0.0.0  stats.bluebillywig.com
 0.0.0.0  stats.bmxdevils.be
+0.0.0.0  stats.bnam.com
 0.0.0.0  stats.book-rec.com
 0.0.0.0  stats.bookingbuddy.co.uk
 0.0.0.0  stats.bookingbuddy.com
@@ -92567,6 +92579,7 @@
 0.0.0.0  sv88.club
 0.0.0.0  sv88.com
 0.0.0.0  sv88.in
+0.0.0.0  sv88.lv
 0.0.0.0  sv88.vin
 0.0.0.0  sv88.vip
 0.0.0.0  sv88.win
@@ -95059,6 +95072,7 @@
 0.0.0.0  terminatefaltergrunt.com
 0.0.0.0  termsvictim.com
 0.0.0.0  terraclicks.com
+0.0.0.0  terradatum.actonservice.com
 0.0.0.0  terrapush.com
 0.0.0.0  terrasdsdstd.com
 0.0.0.0  terratraf.com
@@ -103003,6 +103017,7 @@
 0.0.0.0  usunompuzoz.net
 0.0.0.0  usurv.com
 0.0.0.0  usuyfyxftqtsn.online
+0.0.0.0  usviral.inlmosafer.com
 0.0.0.0  usvrkrkqfnzbh.online
 0.0.0.0  usw18-268-pdb.net.mydays.de
 0.0.0.0  uswgjyclbvtjj.space
@@ -103783,6 +103798,7 @@
 0.0.0.0  v.fa88.tv
 0.0.0.0  v.gdt.qq.com
 0.0.0.0  v.hitclub.in
+0.0.0.0  v.hitclub.lv
 0.0.0.0  v.hitclub.si
 0.0.0.0  v.hitclub.tv
 0.0.0.0  v.iche88.cn
@@ -105500,6 +105516,7 @@
 0.0.0.0  vn88.club
 0.0.0.0  vn88.fun
 0.0.0.0  vn88.io
+0.0.0.0  vn88.mobi
 0.0.0.0  vn88.quest
 0.0.0.0  vn887.com
 0.0.0.0  vn88hn.live
@@ -107979,7 +107996,7 @@
 0.0.0.0  whatdoesitmean.com
 0.0.0.0  whatfinger.com
 0.0.0.0  whatif.fr.adobe.com
-0.0.0.0  whatif.it.adobe.com
+0.0.0.0  whatif.it.adobe.cjokerviral.com
 0.0.0.0  whatif.nl.adobe.com
 0.0.0.0  whatisuptodaynow.com
 0.0.0.0  whatstheword.co
@@ -109925,6 +109942,7 @@
 0.0.0.0  www.aabbttuu.com
 0.0.0.0  www.aafanke.cc
 0.0.0.0  www.abbyychina.com
+0.0.0.0  www.abcislands.ag
 0.0.0.0  www.abeacon.cn
 0.0.0.0  www.abovetopsecret.com
 0.0.0.0  www.acint.net
@@ -110438,7 +110456,6 @@
 0.0.0.0  www.easyrecoverychina.com
 0.0.0.0  www.easytowager.com
 0.0.0.0  www.ebetusa.com
-0.0.0.0  www.ebird.com
 0.0.0.0  www.eccobet.com
 0.0.0.0  www.eclbet02.com
 0.0.0.0  www.eddong.com
@@ -110892,7 +110909,7 @@
 0.0.0.0  www.lopocasport.com
 0.0.0.0  www.loquaxbingo.co.uk
 0.0.0.0  www.loteria.com.ec
-0.0.0.0  www.loteriasyapuestas.es
+0.0.0.0  www.loteriasyapuestakgpwjqp.site
 0.0.0.0  www.loterie-nationale.be
 0.0.0.0  www.loterie.lu
 0.0.0.0  www.loterie.ma
@@ -116168,7 +116185,6 @@
 0.0.0.0  zhteknutoy.com
 0.0.0.0  zhtiqbietjwhb.fun
 0.0.0.0  zhtjdl.com
-0.0.0.0  zhu.cc
 0.0.0.0  zhuahu.com
 0.0.0.0  zhuanfakong.com
 0.0.0.0  zhuanshenghuo1.kuaizhan.com
@@ -116623,6 +116639,7 @@
 0.0.0.0  zovymjxylvknp.website
 0.0.0.0  zowin.bh
 0.0.0.0  zowin.im
+0.0.0.0  zowin.is
 0.0.0.0  zowin.red
 0.0.0.0  zowin.sh
 0.0.0.0  zowin.sx
