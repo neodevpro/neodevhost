@@ -6,14 +6,13 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-05-21
+# Last update: 2026-05-22
 #
 # Number of domains: 116141
 #
 #=====================================
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
-0.0.0.0  0.om
 0.0.0.0  0.r.msn.com
 0.0.0.0  0.up.qingdaonews.com
 0.0.0.0  000491b06a.com
@@ -157,7 +156,6 @@
 0.0.0.0  0ca5b8dbfd.com
 0.0.0.0  0cdn.xyz
 0.0.0.0  0cf.io
-0.0.0.0  0cs.super99.com
 0.0.0.0  0d0705c152.com
 0.0.0.0  0d1oo8jp69.com
 0.0.0.0  0d22ca5caa.com
@@ -3063,6 +3061,7 @@
 0.0.0.0  a.addskills.se
 0.0.0.0  a.adk2x.com
 0.0.0.0  a.adroll.com
+0.0.0.0  a.ads.cn.miaozhen.com
 0.0.0.0  a.ads1.msn.com
 0.0.0.0  a.ads2.msads.net
 0.0.0.0  a.ads2.msn.com
@@ -8461,6 +8460,7 @@
 0.0.0.0  adebis-bkan.vbest.jp
 0.0.0.0  adebis-cname.jobmall.jp
 0.0.0.0  adebis-dojyo.dojyo.jp
+0.0.0.0  adebis-morijuku.morijuku.com
 0.0.0.0  adebis-rikon.vbest.jp
 0.0.0.0  adebis-saimu.vbest.jp
 0.0.0.0  adebis.464981.com
@@ -8964,7 +8964,6 @@
 0.0.0.0  adobe-ep.medicare.gov
 0.0.0.0  adobe-nonsecure.cjone.com
 0.0.0.0  adobe-secure.cjone.com
-0.0.0.0  adobe.aeonbank.co.jp
 0.0.0.0  adobe.autoscout24.at
 0.0.0.0  adobe.autoscout24.be
 0.0.0.0  adobe.autoscout24.bg
@@ -16506,7 +16505,6 @@
 0.0.0.0  beacon.peakhour.io
 0.0.0.0  beacon.radiko.jp
 0.0.0.0  beacon.riskified.com
-0.0.0.0  beacon.s.llnwi.net
 0.0.0.0  beacon.samsclub.com
 0.0.0.0  beacon.searchspring.io
 0.0.0.0  beacon.securestudies.com
@@ -17793,7 +17791,6 @@
 0.0.0.0  bleak-yard.com
 0.0.0.0  bleaterpolys.com
 0.0.0.0  bleatstringinch.com
-0.0.0.0  bleausoftware.com
 0.0.0.0  bleedlight.com
 0.0.0.0  bleepgizmorecital.com
 0.0.0.0  blehcourt.com
@@ -18485,7 +18482,6 @@
 0.0.0.0  boustahe.com
 0.0.0.0  boutique.ricoh.fr
 0.0.0.0  bovada.lv
-0.0.0.0  bovinetimingunsaddle.com
 0.0.0.0  bovmkbuiaddbb.website
 0.0.0.0  bovxwguos.com
 0.0.0.0  bovzimhugcomc.online
@@ -19151,7 +19147,6 @@
 0.0.0.0  btdfqejriamjr.website
 0.0.0.0  btdykfecwvyso.online
 0.0.0.0  bte29912.xyz
-0.0.0.0  btecvxxnfqaio.site
 0.0.0.0  btegxrphkoxxw.site
 0.0.0.0  btejyileyjnma.space
 0.0.0.0  bteucoiyp.com
@@ -29545,7 +29540,6 @@
 0.0.0.0  diaoguoshi.mobi
 0.0.0.0  diarrhoeaeaglesunday.com
 0.0.0.0  diasyrmunionic.com
-0.0.0.0  diaunwrkajyuhu.com
 0.0.0.0  diayrgnrwjhwt.site
 0.0.0.0  diazidehematid.com
 0.0.0.0  diazoicmohair.com
@@ -38173,7 +38167,7 @@
 0.0.0.0  forbesresistread.com
 0.0.0.0  forbidcrenels.com
 0.0.0.0  forbidden.actonservice.com
-0.0.0.0  forbiddenkrs.sina.cn
+0.0.0.0  forbiddenknowledgetv.net
 0.0.0.0  forbin.actonservice.com
 0.0.0.0  force24.co.uk
 0.0.0.0  forcefulbeginning.com
@@ -39826,7 +39820,6 @@
 0.0.0.0  gbedxtcoyviwt.space
 0.0.0.0  gbetiprklv.com
 0.0.0.0  gbgomscmeyenl.site
-0.0.0.0  gbhyhxkdwqzjf.site
 0.0.0.0  gbiltuj8w.com
 0.0.0.0  gbitcoin.cn
 0.0.0.0  gbjjtlhen.com
@@ -41663,6 +41656,7 @@
 0.0.0.0  go6shde9nj2itle.com
 0.0.0.0  go8.lv
 0.0.0.0  go8.plus
+0.0.0.0  go8.pub
 0.0.0.0  go8.pw
 0.0.0.0  go88-vn.com
 0.0.0.0  go88.ca
@@ -41810,7 +41804,6 @@
 0.0.0.0  goldfishdrove.com
 0.0.0.0  goldfishgrowth.com
 0.0.0.0  goldfishouncereburial.com
-0.0.0.0  goldfishsmellhermione.com
 0.0.0.0  goldmedalbingo.com
 0.0.0.0  golds.lp.mydas.mobi
 0.0.0.0  goldstats.com
@@ -45655,6 +45648,7 @@
 0.0.0.0  i.hit.club
 0.0.0.0  i.honk.me
 0.0.0.0  i.hzblic.com
+0.0.0.0  i.icu
 0.0.0.0  i.imedia.cz
 0.0.0.0  i.ipinyou.com
 0.0.0.0  i.jiathis.com
@@ -46433,7 +46427,6 @@
 0.0.0.0  ijaabm.nbcsports.com
 0.0.0.0  ijaabm.rotoworld.com
 0.0.0.0  ijaabm.telemundo.com
-0.0.0.0  ijaabm.telemundodeportes.com
 0.0.0.0  ijaabm.usanetwork.com
 0.0.0.0  ijafud.heathcotes.co.nz
 0.0.0.0  ijaicjeojzjpr.site
@@ -46472,6 +46465,7 @@
 0.0.0.0  ikdxfh.jollyroom.se
 0.0.0.0  ikibu.com
 0.0.0.0  ikikigxywqcrf.site
+0.0.0.0  ikkkuqytkttyu.website
 0.0.0.0  iklparx8i.com
 0.0.0.0  ikneio.aquantindia.com
 0.0.0.0  ikppduisfudho.online
@@ -48345,7 +48339,6 @@
 0.0.0.0  info.static.startappservice.com
 0.0.0.0  info.stdom.com
 0.0.0.0  info.stockstar.com
-0.0.0.0  info.stratus.hr
 0.0.0.0  info.suite1000.com
 0.0.0.0  info.summitministries.org
 0.0.0.0  info.suncloudhealth.com
@@ -50042,6 +50035,7 @@
 0.0.0.0  jakebizarreexclusively.com
 0.0.0.0  jakeconventconcerned.com
 0.0.0.0  jakedefy.com
+0.0.0.0  jalzarrujo.in
 0.0.0.0  jambautoist.shop
 0.0.0.0  jambosmodesty.com
 0.0.0.0  jamescomey.news
@@ -54065,7 +54059,6 @@
 0.0.0.0  lb.usemaxserver.de
 0.0.0.0  lb1.www.ms.akadns.net
 0.0.0.0  lbaegdiunhilf.site
-0.0.0.0  lbbjokeqbzqqj.top
 0.0.0.0  lbbjokeqbzwqk.top
 0.0.0.0  lbbkrsxzhoumc.space
 0.0.0.0  lbbopwtbctjbb.website
@@ -55190,7 +55183,7 @@
 0.0.0.0  link.loxclubapp.com
 0.0.0.0  link.loyalty.almosafer.com
 0.0.0.0  link.lpm.surkus.com
-0.0.0.0  link.lpt.surkus.cnorthutahnews.com
+0.0.0.0  link.lpt.surkus.com
 0.0.0.0  link.made.com
 0.0.0.0  link.mail.blidz.com
 0.0.0.0  link.mail.burgerking.ca
@@ -55225,6 +55218,7 @@
 0.0.0.0  link.mudrex.com
 0.0.0.0  link.mulliegolf.com
 0.0.0.0  link.mune.co
+0.0.0.0  link.muso.ai
 0.0.0.0  link.muuzzer.com
 0.0.0.0  link.mybridge.com
 0.0.0.0  link.myjewishpage.com
@@ -60448,7 +60442,6 @@
 0.0.0.0  marketing.tourismwinnipeg.com
 0.0.0.0  marketing.towerfcu.org
 0.0.0.0  marketing.toyotaofeasley.com
-0.0.0.0  marketing.tpresstv.com
 0.0.0.0  marketing.trackmarketing.net
 0.0.0.0  marketing.transcore.com
 0.0.0.0  marketing.transitair.com
@@ -61836,7 +61829,6 @@
 0.0.0.0  metrics.agtechnavigator.com
 0.0.0.0  metrics.aia.com
 0.0.0.0  metrics.aircanada.com
-0.0.0.0  metrics.airtran.com
 0.0.0.0  metrics.airtv.net
 0.0.0.0  metrics.alabama.aaa.com
 0.0.0.0  metrics.alecensa.com
@@ -63726,6 +63718,7 @@
 0.0.0.0  mixedreading.com
 0.0.0.0  mixer.cupid.ptqy.gitv.tv
 0.0.0.0  mixer.sina.cn
+0.0.0.0  mixers.sina.cn
 0.0.0.0  mixhillvedism.com
 0.0.0.0  mixi.media
 0.0.0.0  mixi.mn
@@ -63760,6 +63753,7 @@
 0.0.0.0  mjiillaizjckm.website
 0.0.0.0  mjjcwatsciuns.online
 0.0.0.0  mjji.cn
+0.0.0.0  mjjksaoubcyto.online
 0.0.0.0  mjjraosappkst.space
 0.0.0.0  mjjvkx.monoprice.com
 0.0.0.0  mjkbgvtdgbscs.site
@@ -64044,7 +64038,6 @@
 0.0.0.0  mnjbyhdbfeopm.site
 0.0.0.0  mnkcujkuxqose.website
 0.0.0.0  mnklnyyxnverm.online
-0.0.0.0  mnkusi.icu
 0.0.0.0  mnlgcsbncodnw.online
 0.0.0.0  mnmdlcplekvvm.space
 0.0.0.0  mnmsvtqnvtbbf.online
@@ -66347,6 +66340,7 @@
 0.0.0.0  new.taobc.com
 0.0.0.0  new.yokaunion.com
 0.0.0.0  new88.fo
+0.0.0.0  new88.love
 0.0.0.0  new88.tips
 0.0.0.0  new88.today
 0.0.0.0  new8884.com
@@ -67365,6 +67359,7 @@
 0.0.0.0  northguilfordnews.com
 0.0.0.0  northgwinnettnews.com
 0.0.0.0  northhamptonnews.com
+0.0.0.0  northhennepinnews.com
 0.0.0.0  northhoustonnews.com
 0.0.0.0  northidahotimes.com
 0.0.0.0  northindynews.com
@@ -67415,6 +67410,7 @@
 0.0.0.0  northtrianglenews.com
 0.0.0.0  northtulsatoday.com
 0.0.0.0  northtxnews.com
+0.0.0.0  northutahnews.com
 0.0.0.0  northvegastimes.com
 0.0.0.0  northwakenews.com
 0.0.0.0  northwestreluctantvault.com
@@ -67761,7 +67757,6 @@
 0.0.0.0  nsmartad.com
 0.0.0.0  nsmeasure.jstor.org
 0.0.0.0  nsmetrics.adelaidenow.com.au
-0.0.0.0  nsmetrics.couriermail.com.au
 0.0.0.0  nsmetrics.dailytelegraph.com.au
 0.0.0.0  nsmetrics.geelongadvertiser.com.au
 0.0.0.0  nsmetrics.goldcoastbulletin.com.au
@@ -68520,6 +68515,7 @@
 0.0.0.0  ocmtag.com
 0.0.0.0  ocmxbu.hanatour.com
 0.0.0.0  ocnxmgcdfncy.com
+0.0.0.0  ocoeetoday.com
 0.0.0.0  oconner.biz
 0.0.0.0  oconner.link
 0.0.0.0  ocpakqgcapu.in
@@ -71976,6 +71972,7 @@
 0.0.0.0  pensacolatimes.com
 0.0.0.0  pensildammer.com
 0.0.0.0  pensionermattersarrogant.com
+0.0.0.0  pensionflutter.com
 0.0.0.0  pensions.news
 0.0.0.0  pensivedean.com
 0.0.0.0  pensterpotions.com
@@ -72280,6 +72277,7 @@
 0.0.0.0  philadelphia-content.cresa.com
 0.0.0.0  philadelphiastudentsgame.com
 0.0.0.0  phillyleader.com
+0.0.0.0  philosophicalsuppliesjab.com
 0.0.0.0  philosophicaltomorrow.com
 0.0.0.0  philosophicalwarndrugged.com
 0.0.0.0  philosophydill.com
@@ -73779,7 +73777,6 @@
 0.0.0.0  postcodeloterij.nl
 0.0.0.0  poster.weather.com.cn
 0.0.0.0  posterliking.com
-0.0.0.0  postgraduate.smu.edu.sg
 0.0.0.0  postgraduate2.smu.edu.sg
 0.0.0.0  postinvent.com
 0.0.0.0  postoffrsmatch.com
@@ -74150,6 +74147,7 @@
 0.0.0.0  pressingefficiencyincompetence.com
 0.0.0.0  pressize.com
 0.0.0.0  pressly.com
+0.0.0.0  presstv.com
 0.0.0.0  pressyour.com
 0.0.0.0  prestigeestimatemobile.com
 0.0.0.0  prestigemoisturerefutation.com
@@ -83773,7 +83771,7 @@
 0.0.0.0  sheeta.nrj-play.fr
 0.0.0.0  sheetvibe.com
 0.0.0.0  sheitelhamatum.shop
-0.0.0.0  shelbycountytimes.comechlogix.com
+0.0.0.0  shelbycountytimes.com
 0.0.0.0  shelbypublishing.actonservice.com
 0.0.0.0  shelbyreporter.com
 0.0.0.0  shelbyreview.com
@@ -87365,6 +87363,7 @@
 0.0.0.0  smetrics.sunpower.com
 0.0.0.0  smetrics.sunshinehealth.com
 0.0.0.0  smetrics.super8.com
+0.0.0.0  smetrics.super99.com
 0.0.0.0  smetrics.superfleet.net
 0.0.0.0  smetrics.superiorhealthplan.com
 0.0.0.0  smetrics.supermarketnews.com
@@ -87779,7 +87778,6 @@
 0.0.0.0  smetricsadobe.hollandandbarrett.nl
 0.0.0.0  smetricsqa.sierra.com
 0.0.0.0  smetricstur.www.svenskaspel.se
-0.0.0.0  smetrinorthhennepinnews.com
 0.0.0.0  smetrix.avon.uk.com
 0.0.0.0  smetrix.youravon.com
 0.0.0.0  smf.southernmetalfab.com
@@ -91698,7 +91696,7 @@
 0.0.0.0  sticky-literature.pro
 0.0.0.0  sticky-resolution.com
 0.0.0.0  stiff-hate.com
-0.0.0.0  stiff-lakenowledgetv.net
+0.0.0.0  stiff-lake.pro
 0.0.0.0  stiffenshave.com
 0.0.0.0  stiffgame.com
 0.0.0.0  stiffpatient.com
@@ -97900,7 +97898,6 @@
 0.0.0.0  track.buyma.com
 0.0.0.0  track.bwclk.com
 0.0.0.0  track.byzon.swelen.net
-0.0.0.0  track.cafu.com
 0.0.0.0  track.cam4tracking.com
 0.0.0.0  track.cecobuildings.com
 0.0.0.0  track.cedsdigital.it
@@ -98471,7 +98468,6 @@
 0.0.0.0  tracking.health.tmcaz.com
 0.0.0.0  tracking.healthitanalytics.com
 0.0.0.0  tracking.healthitsecurity.com
-0.0.0.0  tracking.healthpayerintelligence.com
 0.0.0.0  tracking.hibu.com
 0.0.0.0  tracking.hiscox.com
 0.0.0.0  tracking.hivecloud.net
@@ -99409,6 +99405,7 @@
 0.0.0.0  trk.business.westernunion.co.uk
 0.0.0.0  trk.business.westernunion.com
 0.0.0.0  trk.business.westernunion.com.au
+0.0.0.0  trk.business.westernunion.de
 0.0.0.0  trk.business.westernunion.fr
 0.0.0.0  trk.business.westernunion.it
 0.0.0.0  trk.business.westernunion.pl
@@ -99874,7 +99871,7 @@
 0.0.0.0  try.joonapp.io
 0.0.0.0  try.postmuseapp.com
 0.0.0.0  try.tableau.com
-0.0.0.0  try.taocoeetoday.com
+0.0.0.0  try.tableausoftware.com
 0.0.0.0  trysera.com
 0.0.0.0  trytada.com
 0.0.0.0  tryzens-analytics.com
@@ -100248,6 +100245,7 @@
 0.0.0.0  tvxbvhsoredjv.space
 0.0.0.0  tvxvhx.icu
 0.0.0.0  tvxzuiiddkbqy.online
+0.0.0.0  tvyyvkro.com
 0.0.0.0  tvzapt.icu
 0.0.0.0  tvzyqtgcqhvtr.space
 0.0.0.0  tw-go.experian.com
@@ -105817,6 +105815,7 @@
 0.0.0.0  waukeetimes.com
 0.0.0.0  waukeshatimes.com
 0.0.0.0  waulzelnvh.com
+0.0.0.0  waust.at
 0.0.0.0  wauteglisooreno.net
 0.0.0.0  wauthauhou.net
 0.0.0.0  wauymtjmufunv.site
@@ -106026,6 +106025,7 @@
 0.0.0.0  wdhymnxhxpgsn.space
 0.0.0.0  wdihnuvxg.com
 0.0.0.0  wdimxntjbr.com
+0.0.0.0  wdjpyrldiqgwe.online
 0.0.0.0  wdjtyigmvcgtx.space
 0.0.0.0  wdjwwqmxvu.com
 0.0.0.0  wdkinlqqakgkk.online
