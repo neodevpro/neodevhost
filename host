@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-06-18
+# Last update: 2026-06-19
 #
-# Number of domains: 113348
+# Number of domains: 113361
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -1452,6 +1452,8 @@
 0.0.0.0  3bc2a6115d.com
 0.0.0.0  3bet.biz
 0.0.0.0  3bet.la
+0.0.0.0  3bet.ph
+0.0.0.0  3bet.ski
 0.0.0.0  3bet.so
 0.0.0.0  3bet.tech
 0.0.0.0  3bet.vc
@@ -16028,8 +16030,10 @@
 0.0.0.0  balkog.withmoment.co.kr
 0.0.0.0  ball88.app
 0.0.0.0  ball88.com
+0.0.0.0  ball88.day
 0.0.0.0  ball88.fun
 0.0.0.0  ball88.mobi
+0.0.0.0  ball88.red
 0.0.0.0  ball88.to
 0.0.0.0  ball88.zone
 0.0.0.0  ballantine.actonservice.com
@@ -26121,6 +26125,7 @@
 0.0.0.0  d1.debet.gd
 0.0.0.0  d1.debet.gs
 0.0.0.0  d1.debet.lc
+0.0.0.0  d1.debet.sc
 0.0.0.0  d1.debet.so
 0.0.0.0  d1.debet.st
 0.0.0.0  d1.debet.top
@@ -28494,6 +28499,7 @@
 0.0.0.0  debet.com
 0.0.0.0  debet.fan
 0.0.0.0  debet.fun
+0.0.0.0  debet.lv
 0.0.0.0  debet.moi
 0.0.0.0  debet.net
 0.0.0.0  debet.us
@@ -28745,7 +28751,6 @@
 0.0.0.0  delivery.marketing.boutiqaat.com
 0.0.0.0  delivery.momentummedia.com.au
 0.0.0.0  delivery.playallvideos.com
-0.0.0.0  delivery.porn.com
 0.0.0.0  delivery.wasu.cn
 0.0.0.0  delivery51.com
 0.0.0.0  deliveryinterference.com
@@ -37324,6 +37329,7 @@
 0.0.0.0  five88.in
 0.0.0.0  five88.lc
 0.0.0.0  five88.net
+0.0.0.0  five88.ng
 0.0.0.0  five88.nl
 0.0.0.0  five88.sale
 0.0.0.0  five88.show
@@ -39689,7 +39695,9 @@
 0.0.0.0  gemwin.fm
 0.0.0.0  gemwin.ink
 0.0.0.0  gemwin.is
+0.0.0.0  gemwin.lc
 0.0.0.0  gemwin.my
+0.0.0.0  gemwin.nz
 0.0.0.0  gemwin.page
 0.0.0.0  gemwin.to
 0.0.0.0  gemwin.tv
@@ -43765,6 +43773,7 @@
 0.0.0.0  hitclub.lt
 0.0.0.0  hitclub.lv
 0.0.0.0  hitclub.ml
+0.0.0.0  hitclub.mu
 0.0.0.0  hitclub.pl
 0.0.0.0  hitclub.pro
 0.0.0.0  hitclub.salon
@@ -46072,7 +46081,6 @@
 0.0.0.0  ilndjlsjkyjmc.website
 0.0.0.0  ilneshfbzmxvf.space
 0.0.0.0  ilnfdq.cybozu.co.jp
-0.0.0.0  ilnoogrbnajuo.space
 0.0.0.0  ilnwwbphdtmbk.website
 0.0.0.0  ilobejsypl.com
 0.0.0.0  ilogbox.com
@@ -46935,7 +46943,6 @@
 0.0.0.0  imp.zdnet.com.cn
 0.0.0.0  imp.zol.com.cn
 0.0.0.0  imp2aff.com
-0.0.0.0  impact-ad.jp
 0.0.0.0  impact-betegy.com
 0.0.0.0  impact-dm.actonservice.com
 0.0.0.0  impact.carmeuse.com
@@ -47630,7 +47637,6 @@
 0.0.0.0  info.landstar.com
 0.0.0.0  info.lansa.com
 0.0.0.0  info.lansingbp.com
-0.0.0.0  info.laseradvanced.com
 0.0.0.0  info.latinamerica.coca-cola.com
 0.0.0.0  info.ledcrew.com
 0.0.0.0  info.legal-solutions.thomsonreuters.co.uk
@@ -48451,6 +48457,7 @@
 0.0.0.0  interadv.net
 0.0.0.0  interakt.ru
 0.0.0.0  interaktiv-net.de
+0.0.0.0  interapostas.com
 0.0.0.0  interbasepicturespostman.com
 0.0.0.0  interbasewhirlwindwalrus.com
 0.0.0.0  interbet.co.za
@@ -49135,7 +49142,6 @@
 0.0.0.0  itslive.com
 0.0.0.0  itsmatchtime.com
 0.0.0.0  itsmillionlead.com
-0.0.0.0  itspsmup.com
 0.0.0.0  itssprout.com
 0.0.0.0  itsstats.wp1.site
 0.0.0.0  itstuffnews.com
@@ -57962,6 +57968,7 @@
 0.0.0.0  m1.ball88.com
 0.0.0.0  m1.ball88.fun
 0.0.0.0  m1.ball88.mobi
+0.0.0.0  m1.ball88.red
 0.0.0.0  m1.ball88.to
 0.0.0.0  m1.ball88.zone
 0.0.0.0  m1.daumcdn.net
@@ -65921,10 +65928,12 @@
 0.0.0.0  nhacaisomot.com
 0.0.0.0  nhacaiuytin.life
 0.0.0.0  nhat.bet
+0.0.0.0  nhat.bh
 0.0.0.0  nhat.cx
 0.0.0.0  nhat.game
 0.0.0.0  nhat.is
 0.0.0.0  nhat.it
+0.0.0.0  nhat.my
 0.0.0.0  nhat.one
 0.0.0.0  nhat.sh
 0.0.0.0  nhat.sx
@@ -79475,6 +79484,7 @@
 0.0.0.0  s3.phluant.com
 0.0.0.0  s3.rongnews.com
 0.0.0.0  s3.sin88.lu
+0.0.0.0  s3.sin88.ml
 0.0.0.0  s3.sin88.ms
 0.0.0.0  s3.sin88.si
 0.0.0.0  s3.sin88.sx
@@ -80180,7 +80190,6 @@
 0.0.0.0  sanalytics.hallmark.com
 0.0.0.0  sanalytics.hottopic.com
 0.0.0.0  sanalytics.houghtonstatebank.com
-0.0.0.0  sanalytics.ingredion.com
 0.0.0.0  sanalytics.johnson.ca
 0.0.0.0  sanalytics.kbdesignlondon.com
 0.0.0.0  sanalytics.ksta.de
@@ -83195,7 +83204,6 @@
 0.0.0.0  site.firstnet.com
 0.0.0.0  site.infosysbpm.com
 0.0.0.0  site.johnlewis-insurance.com
-0.0.0.0  site.newzstand.com
 0.0.0.0  site.tdk.com
 0.0.0.0  site.waitrose.com
 0.0.0.0  site2.emarketer.com
@@ -83323,6 +83331,7 @@
 0.0.0.0  sk-topgal.m-shop.me
 0.0.0.0  sk.ball88.app
 0.0.0.0  sk.ball88.com
+0.0.0.0  sk.ball88.day
 0.0.0.0  sk.ball88.fun
 0.0.0.0  sk.ball88.mobi
 0.0.0.0  sk.ball88.to
@@ -83331,11 +83340,13 @@
 0.0.0.0  sk.debet.gd
 0.0.0.0  sk.debet.gs
 0.0.0.0  sk.debet.lc
+0.0.0.0  sk.debet.lv
 0.0.0.0  sk.debet.st
 0.0.0.0  sk.debet.vg
 0.0.0.0  sk.fapnow.xxx
 0.0.0.0  sk.fm88.com
 0.0.0.0  sk.sin88.lu
+0.0.0.0  sk.sin88.ml
 0.0.0.0  sk.sin88.ms
 0.0.0.0  sk.sin88.si
 0.0.0.0  sk.sin88.tw
@@ -87256,7 +87267,6 @@
 0.0.0.0  somicom.com
 0.0.0.0  somn.hiltongrandvacations.com
 0.0.0.0  somn.sonypictures.com
-0.0.0.0  somn.wholesalehalloweencostumes.com
 0.0.0.0  somn.wholesalepartysupplies.com
 0.0.0.0  somni.accenture.com
 0.0.0.0  somni.alaskaair.com
@@ -87472,7 +87482,6 @@
 0.0.0.0  sonar6-xsp1-3.xx.fbcdn.net.iberostar.com
 0.0.0.0  sonar6-xxb1-1.xx.fbcdn.net.iberostar.com
 0.0.0.0  sonar6-yyz1-1.xx.fbcdn.net.iberostar.com
-0.0.0.0  sonar6.fcul1-1.fna.fbcdn.net.iberostar.com
 0.0.0.0  sonar6.fgdl1-3.fna.fbcdn.net.iberostar.com
 0.0.0.0  sonar6.fgdl1-4.fna.fbcdn.net.iberostar.com
 0.0.0.0  sonar6.fgym1-1.fna.fbcdn.net.iberostar.com
@@ -91437,6 +91446,7 @@
 0.0.0.0  sv66s.com
 0.0.0.0  sv66vip6.com
 0.0.0.0  sv88.ae
+0.0.0.0  sv88.cl
 0.0.0.0  sv88.club
 0.0.0.0  sv88.com
 0.0.0.0  sv88.in
@@ -98039,7 +98049,6 @@
 0.0.0.0  trickyseduction.com
 0.0.0.0  triconah.actonservice.com
 0.0.0.0  triconews.com
-0.0.0.0  triczjnzuktsh.website
 0.0.0.0  trifling-profession.pro
 0.0.0.0  triflinghandicapped.com
 0.0.0.0  trigami.com
@@ -101701,6 +101710,7 @@
 0.0.0.0  v.hitclub.in
 0.0.0.0  v.hitclub.lv
 0.0.0.0  v.hitclub.ml
+0.0.0.0  v.hitclub.mu
 0.0.0.0  v.hitclub.si
 0.0.0.0  v.hitclub.tv
 0.0.0.0  v.iche88.cn
@@ -106961,6 +106971,7 @@
 0.0.0.0  www.360shopping.com.cn
 0.0.0.0  www.3650011.com
 0.0.0.0  www.3650022.com
+0.0.0.0  www.368bet.com
 0.0.0.0  www.377bet.com
 0.0.0.0  www.37cs.com
 0.0.0.0  www.38330.bet
@@ -111355,6 +111366,7 @@
 0.0.0.0  yo.inbots.online
 0.0.0.0  yo88.cool
 0.0.0.0  yo88.pw
+0.0.0.0  yo88.vg
 0.0.0.0  yo88vn.com
 0.0.0.0  yoads.net
 0.0.0.0  yoast-schema-graph.com
@@ -112901,6 +112913,7 @@
 0.0.0.0  zowin.bh
 0.0.0.0  zowin.im
 0.0.0.0  zowin.is
+0.0.0.0  zowin.mom
 0.0.0.0  zowin.ng
 0.0.0.0  zowin.red
 0.0.0.0  zowin.sh
