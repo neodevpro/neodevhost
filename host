@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-06-21
+# Last update: 2026-06-22
 #
-# Number of domains: 113966
+# Number of domains: 113981
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -1463,6 +1463,7 @@
 0.0.0.0  3bet.biz
 0.0.0.0  3bet.la
 0.0.0.0  3bet.ph
+0.0.0.0  3bet.sh
 0.0.0.0  3bet.ski
 0.0.0.0  3bet.so
 0.0.0.0  3bet.tech
@@ -7978,7 +7979,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -16084,6 +16084,7 @@
 0.0.0.0  ball88.com
 0.0.0.0  ball88.day
 0.0.0.0  ball88.fun
+0.0.0.0  ball88.games
 0.0.0.0  ball88.mobi
 0.0.0.0  ball88.red
 0.0.0.0  ball88.to
@@ -26227,6 +26228,8 @@
 0.0.0.0  d1.debet.gd
 0.0.0.0  d1.debet.gs
 0.0.0.0  d1.debet.lc
+0.0.0.0  d1.debet.mp
+0.0.0.0  d1.debet.mw
 0.0.0.0  d1.debet.sc
 0.0.0.0  d1.debet.so
 0.0.0.0  d1.debet.st
@@ -32756,7 +32759,7 @@
 0.0.0.0  eastrk-dn.com
 0.0.0.0  eastrk-lg.com
 0.0.0.0  eastsandiegonews.com
-0.0.0.0  eastsbvtimes.com
+0.0.0.0  eastsbvtimes.coactive.tc.skysrt.com
 0.0.0.0  eastsfvtoday.com
 0.0.0.0  eastsierranews.com
 0.0.0.0  eastslcnews.com
@@ -37497,6 +37500,7 @@
 0.0.0.0  five88.net
 0.0.0.0  five88.ng
 0.0.0.0  five88.nl
+0.0.0.0  five88.ro
 0.0.0.0  five88.sale
 0.0.0.0  five88.show
 0.0.0.0  five88.sx
@@ -38072,7 +38076,7 @@
 0.0.0.0  forbesresistread.com
 0.0.0.0  forbidcrenels.com
 0.0.0.0  forbidden.actonservice.com
-0.0.0.0  forbiddenknowledgetv.net
+0.0.0.0  forbiddenghts.samsung.com
 0.0.0.0  forbin.actonservice.com
 0.0.0.0  force24.co.uk
 0.0.0.0  forcefulbeginning.com
@@ -38574,7 +38578,6 @@
 0.0.0.0  freedom.news
 0.0.0.0  freedomadnetwork.com
 0.0.0.0  freedomalburn.com
-0.0.0.0  freedomdaily.com
 0.0.0.0  freedomgrail.com
 0.0.0.0  freedommedianetwork.com
 0.0.0.0  freedomoutpost.com
@@ -39882,6 +39885,7 @@
 0.0.0.0  gemwin.ink
 0.0.0.0  gemwin.is
 0.0.0.0  gemwin.lc
+0.0.0.0  gemwin.lv
 0.0.0.0  gemwin.my
 0.0.0.0  gemwin.nz
 0.0.0.0  gemwin.page
@@ -40337,7 +40341,6 @@
 0.0.0.0  gg.vidown.cn
 0.0.0.0  gg.xywy.com
 0.0.0.0  gg1.jc001.cn
-0.0.0.0  gg146.bet
 0.0.0.0  gg2888.com
 0.0.0.0  gg86.pinggu.org
 0.0.0.0  gg88.bj.bcebos.com
@@ -43983,6 +43986,7 @@
 0.0.0.0  hitclub.lc
 0.0.0.0  hitclub.lt
 0.0.0.0  hitclub.lv
+0.0.0.0  hitclub.mk
 0.0.0.0  hitclub.ml
 0.0.0.0  hitclub.mu
 0.0.0.0  hitclub.pl
@@ -43990,6 +43994,7 @@
 0.0.0.0  hitclub.salon
 0.0.0.0  hitclub.si
 0.0.0.0  hitclub.so
+0.0.0.0  hitclub.su
 0.0.0.0  hitclub.top
 0.0.0.0  hitclub.tv
 0.0.0.0  hitclub.vin
@@ -48290,7 +48295,6 @@
 0.0.0.0  infotul.readingpartners.org
 0.0.0.0  infovaletwhistling.com
 0.0.0.0  infovigilance.com
-0.0.0.0  infowars.com
 0.0.0.0  infox.sg
 0.0.0.0  infringementacquiredproposal.com
 0.0.0.0  infucierg.com
@@ -58272,6 +58276,7 @@
 0.0.0.0  m1.ball88.app
 0.0.0.0  m1.ball88.com
 0.0.0.0  m1.ball88.fun
+0.0.0.0  m1.ball88.games
 0.0.0.0  m1.ball88.mobi
 0.0.0.0  m1.ball88.red
 0.0.0.0  m1.ball88.to
@@ -66273,6 +66278,7 @@
 0.0.0.0  nhat.it
 0.0.0.0  nhat.my
 0.0.0.0  nhat.one
+0.0.0.0  nhat.pw
 0.0.0.0  nhat.sh
 0.0.0.0  nhat.sx
 0.0.0.0  nhat.vip
@@ -66974,7 +66980,6 @@
 0.0.0.0  northwichitanews.com
 0.0.0.0  northwire.actonservice.com
 0.0.0.0  northwoodsreporter.com
-0.0.0.0  norwalktimes.com
 0.0.0.0  nosap.win
 0.0.0.0  nosemorgue.com
 0.0.0.0  nosenotch.com
@@ -68750,6 +68755,7 @@
 0.0.0.0  omcshw.pharmasi.it
 0.0.0.0  omcusrmpkvi.com
 0.0.0.0  omcyfmoxyn.com
+0.0.0.0  omdaily.com
 0.0.0.0  omdlraptkxgw.com
 0.0.0.0  omegaadblock.net
 0.0.0.0  omegadblocker.com
@@ -73903,7 +73909,6 @@
 0.0.0.0  professionaltrafficmonitor.com
 0.0.0.0  proffiliatesinc.actonservice.com
 0.0.0.0  profile.marketone.com
-0.0.0.0  profile.w88.vin
 0.0.0.0  profileinsistnineteenth.com
 0.0.0.0  profiling.afry.com
 0.0.0.0  profiling.avandor.com
@@ -79927,6 +79932,7 @@
 0.0.0.0  s3.pfp.sina.net
 0.0.0.0  s3.phluant.com
 0.0.0.0  s3.rongnews.com
+0.0.0.0  s3.sin88.fo
 0.0.0.0  s3.sin88.lu
 0.0.0.0  s3.sin88.ml
 0.0.0.0  s3.sin88.ms
@@ -80243,6 +80249,7 @@
 0.0.0.0  sacaeruse.com
 0.0.0.0  saccess.hikaritv.net
 0.0.0.0  sacdnssedge.com
+0.0.0.0  sace.aaa.com
 0.0.0.0  sachsenlotto.de
 0.0.0.0  sackedphil.com
 0.0.0.0  sacketbusmen.shop
@@ -83796,10 +83803,12 @@
 0.0.0.0  sk.debet.gs
 0.0.0.0  sk.debet.lc
 0.0.0.0  sk.debet.lv
+0.0.0.0  sk.debet.mw
 0.0.0.0  sk.debet.st
 0.0.0.0  sk.debet.vg
 0.0.0.0  sk.fapnow.xxx
 0.0.0.0  sk.fm88.com
+0.0.0.0  sk.sin88.fo
 0.0.0.0  sk.sin88.lu
 0.0.0.0  sk.sin88.ml
 0.0.0.0  sk.sin88.ms
@@ -91923,6 +91932,8 @@
 0.0.0.0  sv88.com
 0.0.0.0  sv88.in
 0.0.0.0  sv88.lv
+0.0.0.0  sv88.ml
+0.0.0.0  sv88.si
 0.0.0.0  sv88.vin
 0.0.0.0  sv88.vip
 0.0.0.0  sv88.win
@@ -102232,6 +102243,7 @@
 0.0.0.0  v.hitclub.ml
 0.0.0.0  v.hitclub.mu
 0.0.0.0  v.hitclub.si
+0.0.0.0  v.hitclub.su
 0.0.0.0  v.hitclub.tv
 0.0.0.0  v.iche88.cn
 0.0.0.0  v.irs01.com
@@ -105338,6 +105350,7 @@
 0.0.0.0  web.yo88.so
 0.0.0.0  web.yo88.st
 0.0.0.0  web.yo88.tv
+0.0.0.0  web.yo88.vu
 0.0.0.0  web.yourerc.com
 0.0.0.0  web.zowin.tv
 0.0.0.0  web0.eu
@@ -109325,7 +109338,6 @@
 0.0.0.0  www.w88club.com
 0.0.0.0  www.w88gp.com
 0.0.0.0  www.w88hn.com
-0.0.0.0  www.w88kh.com
 0.0.0.0  www.w88ok.com
 0.0.0.0  www.w88so.com
 0.0.0.0  www.w88st.com
@@ -111946,6 +111958,7 @@
 0.0.0.0  ynztzh.com
 0.0.0.0  ynzziedpiyeyy.space
 0.0.0.0  yo.inbots.online
+0.0.0.0  yo88.ae
 0.0.0.0  yo88.cool
 0.0.0.0  yo88.pw
 0.0.0.0  yo88.vg
@@ -113513,12 +113526,14 @@
 0.0.0.0  zowin.bh
 0.0.0.0  zowin.im
 0.0.0.0  zowin.is
+0.0.0.0  zowin.kim
 0.0.0.0  zowin.mom
 0.0.0.0  zowin.ng
 0.0.0.0  zowin.red
 0.0.0.0  zowin.sh
 0.0.0.0  zowin.sx
 0.0.0.0  zowin.tw
+0.0.0.0  zowin.uno
 0.0.0.0  zowin.ws
 0.0.0.0  zoypcavdzijue.site
 0.0.0.0  zozvjoawtvxpi.online
