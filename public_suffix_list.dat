@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-06-22_11-46-12_UTC
-// COMMIT: 27a7b5d881b91def306422e6cc243f05c49f3a58
+// VERSION: 2026-06-23_17-43-51_UTC
+// COMMIT: 62ff605c4424de74e2df62219ae761b27e6f6318
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -15257,6 +15257,12 @@ nyc.mn
 // pubtls.org : https://www.pubtls.org
 // Submitted by Kor Nielsen <kor@pubtls.org>
 pubtls.org
+
+// Puter : https://puter.com
+// Submitted by Puter Security Team <security@puter.com>
+puter.app
+puter.site
+puter.work
 
 // PythonAnywhere LLP : https://www.pythonanywhere.com
 // Submitted by Giles Thomas <giles@pythonanywhere.com>
