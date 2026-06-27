@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-06-26
+# Last update: 2026-06-27
 #
-# Number of domains: 114577
+# Number of domains: 114609
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -8015,7 +8015,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -12889,6 +12888,7 @@
 0.0.0.0  api-analytics-prd.pelcro.com
 0.0.0.0  api-analytics.huami.com
 0.0.0.0  api-c.dutils.com
+0.0.0.0  api-client.okvipworldcup.com
 0.0.0.0  api-d.dutils.com
 0.0.0.0  api-devs.dutils.com
 0.0.0.0  api-df.dutils.com
@@ -16151,6 +16151,7 @@
 0.0.0.0  ball88.day
 0.0.0.0  ball88.fun
 0.0.0.0  ball88.games
+0.0.0.0  ball88.llc
 0.0.0.0  ball88.mobi
 0.0.0.0  ball88.red
 0.0.0.0  ball88.to
@@ -18447,8 +18448,10 @@
 0.0.0.0  boltepse.com
 0.0.0.0  bom52.club
 0.0.0.0  bom88.com
+0.0.0.0  bom88.cool
 0.0.0.0  bom88.ing
 0.0.0.0  bom88.net
+0.0.0.0  bom88.pics
 0.0.0.0  bombaybets.eu
 0.0.0.0  bombayonline.in
 0.0.0.0  bombrw.netshoes.com.br
@@ -25509,6 +25512,7 @@
 0.0.0.0  csjokezuqdbdy.online
 0.0.0.0  csjplatform.com
 0.0.0.0  cskcnipgkq.club
+0.0.0.0  cskhkjc.com
 0.0.0.0  cskvctbhfzfxn.online
 0.0.0.0  cslmpnddwujdf.space
 0.0.0.0  csm.magnetintell.com
@@ -26329,6 +26333,7 @@
 0.0.0.0  d1.debet.gd
 0.0.0.0  d1.debet.gs
 0.0.0.0  d1.debet.lc
+0.0.0.0  d1.debet.med
 0.0.0.0  d1.debet.mp
 0.0.0.0  d1.debet.mw
 0.0.0.0  d1.debet.sc
@@ -28724,6 +28729,7 @@
 0.0.0.0  debet.vg
 0.0.0.0  debet79.info
 0.0.0.0  debet88.win
+0.0.0.0  debetchinhhang.top
 0.0.0.0  debitcrebit669.com
 0.0.0.0  debjpy.globoshoes.com
 0.0.0.0  debonairdust.com
@@ -37677,6 +37683,7 @@
 0.0.0.0  five88.id
 0.0.0.0  five88.in
 0.0.0.0  five88.lc
+0.0.0.0  five88.my
 0.0.0.0  five88.net
 0.0.0.0  five88.ng
 0.0.0.0  five88.nl
@@ -37690,6 +37697,7 @@
 0.0.0.0  five88.win
 0.0.0.0  five88.wine
 0.0.0.0  five88.world
+0.0.0.0  five88chinhhang.com
 0.0.0.0  fivesidedsquare.com
 0.0.0.0  fiwekmyzlnvjx.site
 0.0.0.0  fiwf54qahl.com
@@ -40072,8 +40080,10 @@
 0.0.0.0  gelvvcdvxbaan.space
 0.0.0.0  gem.win
 0.0.0.0  gem1.win
+0.0.0.0  gem88.biz
 0.0.0.0  gem88.com
 0.0.0.0  gem88.guru
+0.0.0.0  gem88.vet
 0.0.0.0  gemanwnnxezww.website
 0.0.0.0  gemcandock.com
 0.0.0.0  geminisailingzillion.com
@@ -40082,7 +40092,9 @@
 0.0.0.0  gemmaunhazed.shop
 0.0.0.0  gemorganic.com
 0.0.0.0  gemstatewire.com
+0.0.0.0  gemwin.cab
 0.0.0.0  gemwin.fm
+0.0.0.0  gemwin.fyi
 0.0.0.0  gemwin.ink
 0.0.0.0  gemwin.is
 0.0.0.0  gemwin.lc
@@ -40090,11 +40102,13 @@
 0.0.0.0  gemwin.my
 0.0.0.0  gemwin.nz
 0.0.0.0  gemwin.page
+0.0.0.0  gemwin.tax
 0.0.0.0  gemwin.to
 0.0.0.0  gemwin.tv
 0.0.0.0  gemwin.vc
 0.0.0.0  gemwin.vin
 0.0.0.0  gemwin.vip
+0.0.0.0  gemwinchinhhang.com
 0.0.0.0  gen-ref.com
 0.0.0.0  gen.alicdn.com
 0.0.0.0  gen88.com
@@ -41029,7 +41043,6 @@
 0.0.0.0  globallearningsystems.actonservice.com
 0.0.0.0  globalmed.actonservice.com
 0.0.0.0  globaloffers.link
-0.0.0.0  globalresearch.ca
 0.0.0.0  globalsiteanalytics.com
 0.0.0.0  globalsolutions.risk.lexisnexis.com
 0.0.0.0  globaltraffico.com
@@ -41760,7 +41773,6 @@
 0.0.0.0  go88f.com
 0.0.0.0  go88l.top
 0.0.0.0  go88p.com
-0.0.0.0  go88r.pro
 0.0.0.0  go88tv.win
 0.0.0.0  go88vn.live
 0.0.0.0  go88vn.vip
@@ -42816,6 +42828,7 @@
 0.0.0.0  gw.d.ywopt.com
 0.0.0.0  gw.gen88.com
 0.0.0.0  gw.mubet.vip
+0.0.0.0  gw.tot88.store
 0.0.0.0  gw100-10.com
 0.0.0.0  gw5.push.mcp.weibo.cn
 0.0.0.0  gw7jpuouik.com
@@ -43865,6 +43878,7 @@
 0.0.0.0  heyhuwldmzxok.online
 0.0.0.0  heylink.com
 0.0.0.0  heymatic.com
+0.0.0.0  heypoker.com
 0.0.0.0  heypreceding.com
 0.0.0.0  heyptsfbxntii.site
 0.0.0.0  heyserves.com
@@ -44205,6 +44219,7 @@
 0.0.0.0  hitclub.cafe
 0.0.0.0  hitclub.com
 0.0.0.0  hitclub.in
+0.0.0.0  hitclub.ist
 0.0.0.0  hitclub.lc
 0.0.0.0  hitclub.lt
 0.0.0.0  hitclub.lv
@@ -44221,6 +44236,7 @@
 0.0.0.0  hitclub.tv
 0.0.0.0  hitclub.vin
 0.0.0.0  hitclub.win
+0.0.0.0  hitclubchinhhang.com
 0.0.0.0  hitcount.dk
 0.0.0.0  hitcountersonline.com
 0.0.0.0  hitcounterstats.com
@@ -52664,6 +52680,7 @@
 0.0.0.0  kjbbcehwqop.com
 0.0.0.0  kjbulizcoofpf.site
 0.0.0.0  kjcenter.com
+0.0.0.0  kjcvn.com
 0.0.0.0  kjdfho.eidaihouse.com
 0.0.0.0  kjdhwverhmbem.space
 0.0.0.0  kje9v2ic57.com
@@ -56573,7 +56590,6 @@
 0.0.0.0  lope4refl.com
 0.0.0.0  loperbrattle.com
 0.0.0.0  lopley.com
-0.0.0.0  lopocasport.com
 0.0.0.0  lopostone.com
 0.0.0.0  lopsideddebate.com
 0.0.0.0  loptrrfnfnsnb.space
@@ -58602,6 +58618,7 @@
 0.0.0.0  m1.ball88.com
 0.0.0.0  m1.ball88.fun
 0.0.0.0  m1.ball88.games
+0.0.0.0  m1.ball88.llc
 0.0.0.0  m1.ball88.mobi
 0.0.0.0  m1.ball88.red
 0.0.0.0  m1.ball88.to
@@ -66269,7 +66286,6 @@
 0.0.0.0  new.plus-eromanga.com
 0.0.0.0  new.taobc.com
 0.0.0.0  new.yokaunion.com
-0.0.0.0  new88.fo
 0.0.0.0  new88.love
 0.0.0.0  new88.tips
 0.0.0.0  new88.today
@@ -66629,10 +66645,12 @@
 0.0.0.0  nhacaiuytin.life
 0.0.0.0  nhat.bet
 0.0.0.0  nhat.bh
+0.0.0.0  nhat.bz
 0.0.0.0  nhat.cx
 0.0.0.0  nhat.game
 0.0.0.0  nhat.is
 0.0.0.0  nhat.it
+0.0.0.0  nhat.kim
 0.0.0.0  nhat.my
 0.0.0.0  nhat.one
 0.0.0.0  nhat.pw
@@ -67958,7 +67976,6 @@
 0.0.0.0  nwtennnews.com
 0.0.0.0  nwtg5ywz2j.com
 0.0.0.0  nwtwincities.com
-0.0.0.0  nwvalleytimes.com
 0.0.0.0  nwvkpbrceeutp.site
 0.0.0.0  nwvptbbdwhxb.com
 0.0.0.0  nwvulrmtxesqh.space
@@ -68983,6 +69000,7 @@
 0.0.0.0  okvip.pro
 0.0.0.0  okvip.today
 0.0.0.0  okvip.win
+0.0.0.0  okvipcskh.com
 0.0.0.0  okwfx.cn
 0.0.0.0  okwiyihjxhvto.space
 0.0.0.0  okzacpzuma.in
@@ -80421,6 +80439,7 @@
 0.0.0.0  s3.phluant.com
 0.0.0.0  s3.rongnews.com
 0.0.0.0  s3.sin88.fo
+0.0.0.0  s3.sin88.gdn
 0.0.0.0  s3.sin88.lu
 0.0.0.0  s3.sin88.ml
 0.0.0.0  s3.sin88.ms
@@ -83217,6 +83236,7 @@
 0.0.0.0  setantabet.com
 0.0.0.0  setaram.actonservice.com
 0.0.0.0  setennnews.com
+0.0.0.0  setexasrecord.com
 0.0.0.0  setexastimes.com
 0.0.0.0  setksohxkggca.online
 0.0.0.0  setoinc.com
@@ -84084,6 +84104,7 @@
 0.0.0.0  sin88.us
 0.0.0.0  sin88.vip
 0.0.0.0  sin88.win
+0.0.0.0  sin88chinhhang.com
 0.0.0.0  sin88s.com
 0.0.0.0  sina.mediav.com
 0.0.0.0  sina.wrating.com
@@ -84289,6 +84310,7 @@
 0.0.0.0  sk.ball88.com
 0.0.0.0  sk.ball88.day
 0.0.0.0  sk.ball88.fun
+0.0.0.0  sk.ball88.llc
 0.0.0.0  sk.ball88.mobi
 0.0.0.0  sk.ball88.to
 0.0.0.0  sk.ball88.zone
@@ -84297,12 +84319,14 @@
 0.0.0.0  sk.debet.gs
 0.0.0.0  sk.debet.lc
 0.0.0.0  sk.debet.lv
+0.0.0.0  sk.debet.med
 0.0.0.0  sk.debet.mw
 0.0.0.0  sk.debet.st
 0.0.0.0  sk.debet.vg
 0.0.0.0  sk.fapnow.xxx
 0.0.0.0  sk.fm88.com
 0.0.0.0  sk.sin88.fo
+0.0.0.0  sk.sin88.gdn
 0.0.0.0  sk.sin88.lu
 0.0.0.0  sk.sin88.ml
 0.0.0.0  sk.sin88.ms
@@ -88581,6 +88605,7 @@
 0.0.0.0  southbendtimes.com
 0.0.0.0  southbergennews.com
 0.0.0.0  southbirminghamtimes.com
+0.0.0.0  southbrazorianews.com
 0.0.0.0  southbrief.com
 0.0.0.0  southbrowardnews.com
 0.0.0.0  southcentralreporter.com
@@ -92439,6 +92464,7 @@
 0.0.0.0  sv88.vip
 0.0.0.0  sv88.win
 0.0.0.0  sv88a.com
+0.0.0.0  sv88chinhhang.com
 0.0.0.0  sv88r.com
 0.0.0.0  sv88vn.com
 0.0.0.0  sv88vn.net
@@ -102772,6 +102798,7 @@
 0.0.0.0  v.fa88.tv
 0.0.0.0  v.gdt.qq.com
 0.0.0.0  v.hitclub.in
+0.0.0.0  v.hitclub.ist
 0.0.0.0  v.hitclub.lv
 0.0.0.0  v.hitclub.ml
 0.0.0.0  v.hitclub.mu
@@ -103429,7 +103456,6 @@
 0.0.0.0  vf.startpage.com
 0.0.0.0  vf234.com
 0.0.0.0  vf456.com
-0.0.0.0  vf678.com
 0.0.0.0  vfaisecgl.com
 0.0.0.0  vfamnpvtqmhpw.site
 0.0.0.0  vfaorhgal.in
@@ -103794,7 +103820,6 @@
 0.0.0.0  vileeconomical.com
 0.0.0.0  vilenexus.com
 0.0.0.0  vilerebuffcontact.com
-0.0.0.0  villabet.com
 0.0.0.0  villagerhurricane.com
 0.0.0.0  villagersymphonypilgrim.com
 0.0.0.0  villainindiscreetnewsletter.com
@@ -105903,6 +105928,7 @@
 0.0.0.0  web.winzer.com
 0.0.0.0  web.x.ilpost.it
 0.0.0.0  web.yo88.is
+0.0.0.0  web.yo88.ist
 0.0.0.0  web.yo88.ml
 0.0.0.0  web.yo88.so
 0.0.0.0  web.yo88.st
@@ -107406,6 +107432,7 @@
 0.0.0.0  worldnaturenet.xyz
 0.0.0.0  worldnetpr.actonservice.com
 0.0.0.0  worldnewsdailyreport.com
+0.0.0.0  worldofsport.co.za
 0.0.0.0  worldpoliticus.com
 0.0.0.0  worldpush.co
 0.0.0.0  worldrealize.com
@@ -108282,6 +108309,7 @@
 0.0.0.0  www.am0624.com
 0.0.0.0  www.amcleanbookmakers.com
 0.0.0.0  www.americanfootballbetting.com
+0.0.0.0  www.americanpatriotdaily.com
 0.0.0.0  www.americasbookie.com
 0.0.0.0  www.americasfreedomfighters.com
 0.0.0.0  www.americatalks.com
@@ -111135,6 +111163,7 @@
 0.0.0.0  xo88.fun
 0.0.0.0  xo88.pro
 0.0.0.0  xo88.us
+0.0.0.0  xo88.win
 0.0.0.0  xo88bet.com
 0.0.0.0  xoalt.com
 0.0.0.0  xobtnfeygzuuei.com
@@ -112546,6 +112575,7 @@
 0.0.0.0  yo88.cool
 0.0.0.0  yo88.pw
 0.0.0.0  yo88.vg
+0.0.0.0  yo88chinhhang.com
 0.0.0.0  yo88vn.com
 0.0.0.0  yoads.net
 0.0.0.0  yoast-schema-graph.com
@@ -114120,11 +114150,13 @@
 0.0.0.0  zowin.kim
 0.0.0.0  zowin.mom
 0.0.0.0  zowin.ng
+0.0.0.0  zowin.ph
 0.0.0.0  zowin.red
 0.0.0.0  zowin.sh
 0.0.0.0  zowin.sx
 0.0.0.0  zowin.tw
 0.0.0.0  zowin.uno
+0.0.0.0  zowin.vu
 0.0.0.0  zowin.ws
 0.0.0.0  zoypcavdzijue.site
 0.0.0.0  zozvjoawtvxpi.online
