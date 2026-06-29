@@ -308,6 +308,7 @@ accounts.flipboard.com
 accounts.google.com
 accounts.idmapper.api.playstation.com
 accounts.mobisystems.com
+accounts.nvgs.nvidia.com
 accounts.pixiv.net
 accounts.snapchat.com
 accounts.soundcloud.com
@@ -583,7 +584,6 @@ alt4.gmr-smtp-in.l.google.com
 alternativeto.net
 am-api.snapchat.com
 am.coinbase.com
-amas.com
 amauthprd.samsungcloudsolution.com
 amazon.ac
 amazon.academy
@@ -636,6 +636,7 @@ amazon.bio
 amazon.black
 amazon.blackfriday
 amazon.blog
+amazon.blue
 amazon.boats
 amazon.bot
 amazon.boutique
@@ -734,6 +735,7 @@ amazon.domains
 amazon.download
 amazon.durban
 amazon.earth
+amazon.ec
 amazon.education
 amazon.ee
 amazon.email
@@ -835,6 +837,7 @@ amazon.ink
 amazon.institute
 amazon.insure
 amazon.international
+amazon.investments
 amazon.io
 amazon.ir
 amazon.irish
@@ -946,6 +949,7 @@ amazon.pet
 amazon.ph
 amazon.photo
 amazon.photography
+amazon.photos
 amazon.physio
 amazon.pics
 amazon.pictures
@@ -3110,7 +3114,6 @@ cydia.saurik.com.cdngc.net
 cygwin.com
 cz.playstation.com
 cz.wikipedia.com
-d-fe.cdn.bcebos.com
 d-h.st
 d.agkn.com
 d.dropbox.com
@@ -5225,7 +5228,6 @@ institutional.coinbase.com
 intel.com
 inter.youdao.com
 interaction.viafoura.co
-intercom-clickn.blue
 intercom-clicks.com
 intercomassets.com
 interface.xl9.xunlei.com
@@ -6119,7 +6121,6 @@ mavrev.com
 maxcdn.bootstrapcdn.com
 maxthon.com
 mayoclinic.org
-mazon.photos
 mazu.sec.miui.com
 mbest.aliexpress.com
 mc-siderail.spot.im
@@ -6134,9 +6135,9 @@ me-en.kaspersky.com
 me.ign.com
 me.kaspersky.com
 me.spot.im
+med-fe.cdn.bcebos.com
 medals.bizrate.com
 medcs.huawei.com
-medf.ly
 media-1.breitbart.com
 media-cdn.twitch.tv
 media-direct.cdn.viber.com
@@ -6680,6 +6681,7 @@ noteapi.micloud.xiaomi.net
 noteworthy.medium.com
 notice.game.xiaomi.com
 notice.line.me
+notice.samsungcloudsolution.com
 notice.xbox.com
 notice2.line.me
 noticecdn.samsungcloudsolution.com
@@ -7833,7 +7835,6 @@ save.thoaimedia.com
 saveu.zijieapi.com
 saveu3-normal-lq.zijieapi.com
 saveu5-normal-lq.zijieapi.com
-savn.investments
 sax.sina.com.cn
 saythanks.io
 sbfunapi.cc
