@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-07-06
+# Last update: 2026-07-07
 #
-# Number of domains: 109201
+# Number of domains: 109200
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -7908,7 +7908,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -14018,6 +14017,7 @@
 0.0.0.0  arcadechain.com
 0.0.0.0  arcadeweb.com
 0.0.0.0  arcatogamest.com
+0.0.0.0  arch.ca
 0.0.0.0  arch.onjoyri.de
 0.0.0.0  archaicfondlefork.com
 0.0.0.0  archaicmsflip.com
@@ -39382,7 +39382,6 @@
 0.0.0.0  globallearningsystems.actonservice.com
 0.0.0.0  globalmed.actonservice.com
 0.0.0.0  globaloffers.link
-0.0.0.0  globalresearch.ca
 0.0.0.0  globalsiteanalytics.com
 0.0.0.0  globalsolutions.risk.lexisnexis.com
 0.0.0.0  globaltraffico.com
