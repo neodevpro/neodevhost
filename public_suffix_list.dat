@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-07-09_11-59-23_UTC
-// COMMIT: b9a86cf0cd115f1e60b5815533f3fcfd2f9e8f4b
+// VERSION: 2026-07-13_18-57-45_UTC
+// COMMIT: 1305f826c862616ccdf465b20933ff1c4ba4a8fe
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -14231,6 +14231,12 @@ iopsys.se
 // Submitted by Matthew Hardeman <mhardeman@ipifony.com>
 ipifony.net
 
+// IPv64.net : https://ipv64.net/
+// Submitted by Dennis Schröder <info@ipv64.net>
+home64.de
+ipv64.de
+ipv64.net
+
 // ir.md : https://nic.ir.md
 // Submitted by Ali Soizi <info@nic.ir.md>
 ir.md
@@ -15636,9 +15642,10 @@ dedibox.fr
 schokokeks.net
 
 // Scottish Government : https://www.gov.scot
-// Submitted by Martin Ellis <martin.ellis@gov.scot>
+// Submitted by Martin Ellis <digital-publishing@gov.scot>
 gov.scot
 service.gov.scot
+mygov.scot
 
 // Scry Security : http://www.scrysec.com
 // Submitted by Shante Adam <shante@skyhat.io>
