@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-07-18
+# Last update: 2026-07-19
 #
-# Number of domains: 110900
+# Number of domains: 110939
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -1473,6 +1473,8 @@
 0.0.0.0  3b38.pandasuite.io
 0.0.0.0  3ba1e5d478.com
 0.0.0.0  3bet.biz
+0.0.0.0  3bet.center
+0.0.0.0  3bet.city
 0.0.0.0  3bet.host
 0.0.0.0  3bet.la
 0.0.0.0  3bet.llc
@@ -2478,6 +2480,8 @@
 0.0.0.0  789club.ba
 0.0.0.0  789club.biz
 0.0.0.0  789club.com
+0.0.0.0  789club.gp
+0.0.0.0  789club.ke
 0.0.0.0  789club.org
 0.0.0.0  789club.sx
 0.0.0.0  789club.vg
@@ -13517,6 +13521,7 @@
 0.0.0.0  app.msuspartans.com
 0.0.0.0  app.mt11.io
 0.0.0.0  app.musely.com
+0.0.0.0  app.mybestphotobook.com
 0.0.0.0  app.mybliss.ai
 0.0.0.0  app.mycirclecare.com
 0.0.0.0  app.mylogoinc.com
@@ -15879,7 +15884,9 @@
 0.0.0.0  balkliving.com
 0.0.0.0  balkog.withmoment.co.kr
 0.0.0.0  ball88.app
+0.0.0.0  ball88.casa
 0.0.0.0  ball88.com
+0.0.0.0  ball88.cool
 0.0.0.0  ball88.day
 0.0.0.0  ball88.fun
 0.0.0.0  ball88.fyi
@@ -18095,11 +18102,13 @@
 0.0.0.0  bolt8snap.com
 0.0.0.0  boltepse.com
 0.0.0.0  bom52.club
+0.0.0.0  bom88.baby
 0.0.0.0  bom88.click
 0.0.0.0  bom88.com
 0.0.0.0  bom88.cool
 0.0.0.0  bom88.diy
 0.0.0.0  bom88.ing
+0.0.0.0  bom88.la
 0.0.0.0  bom88.net
 0.0.0.0  bom88.pics
 0.0.0.0  bom88.plus
@@ -21118,6 +21127,7 @@
 0.0.0.0  cfqzcuasbvwva.website
 0.0.0.0  cfredh.cn
 0.0.0.0  cfrnyp.kars4kids.org
+0.0.0.0  cfs10.blog.daum.net
 0.0.0.0  cfs13.tistory.com
 0.0.0.0  cfs7.blog.daum.net
 0.0.0.0  cfs9.blog.daum.net
@@ -24430,6 +24440,7 @@
 0.0.0.0  cqcaoltqtarmz.space
 0.0.0.0  cqcounter.com
 0.0.0.0  cqcpazetvhaso.website
+0.0.0.0  cqcsvgiryffsf.online
 0.0.0.0  cqdpswriockbo.website
 0.0.0.0  cqemus.gartenhaus-gmbh.de
 0.0.0.0  cqishr.mobile.de
@@ -29274,6 +29285,7 @@
 0.0.0.0  discobar.space
 0.0.0.0  discomfortcreamforester.com
 0.0.0.0  disconnectran.com
+0.0.0.0  discontentcocoamatters.com
 0.0.0.0  discopond.com
 0.0.0.0  discount63.top
 0.0.0.0  discountminds.com
@@ -29633,6 +29645,7 @@
 0.0.0.0  dl.mbsea.com
 0.0.0.0  dl.nalbes.com
 0.0.0.0  dl.natgo.cn
+0.0.0.0  dl.nx5.com
 0.0.0.0  dl.oneworldonesai.com
 0.0.0.0  dl.ops.baidu.com
 0.0.0.0  dl.orders.accredo.com
@@ -30930,10 +30943,12 @@
 0.0.0.0  du88.care
 0.0.0.0  du88.club
 0.0.0.0  du88.com
+0.0.0.0  du88.guru
 0.0.0.0  du88.in
 0.0.0.0  du88.info
 0.0.0.0  du88.life
 0.0.0.0  du88.pro
+0.0.0.0  du88.sh
 0.0.0.0  du99h8anpnevg.cloudfront.net
 0.0.0.0  dualstack-logs.amap.com
 0.0.0.0  dualstack.adsame-1421766300.ap-southeast-1.elb.amazonaws.com
@@ -31320,6 +31335,7 @@
 0.0.0.0  dztatn.soulberry.jp
 0.0.0.0  dzthdolznengm.space
 0.0.0.0  dztvugxbghvdo.space
+0.0.0.0  dzu5p9pd5q24b.cloudfront.net
 0.0.0.0  dzubavstal.com
 0.0.0.0  dzupgajxolrkb.website
 0.0.0.0  dzupi9b81okew.cloudfront.net
@@ -36663,6 +36679,7 @@
 0.0.0.0  fireworktv.com
 0.0.0.0  firm-twist.com
 0.0.0.0  firmwareout830.net
+0.0.0.0  firmwarrior.com
 0.0.0.0  firqacv.com
 0.0.0.0  first-hufu.oss-cn-shanghai.aliyuncs.com
 0.0.0.0  first-id.fr
@@ -37669,6 +37686,7 @@
 0.0.0.0  franchise.locktonaffinity.net
 0.0.0.0  franchise.tutoringacademy.ca
 0.0.0.0  franchiserecruitment.laserclinics.ca
+0.0.0.0  franchising.indooractivebrands.com
 0.0.0.0  franchising.kas.co.nz
 0.0.0.0  franchising.mcdonalds.ca
 0.0.0.0  franchising.pizzapizza.ca
@@ -38741,6 +38759,7 @@
 0.0.0.0  gardenovens.com
 0.0.0.0  gardenstatetimes.com
 0.0.0.0  gareheimuvyyi.space
+0.0.0.0  garfishcoeff.shop
 0.0.0.0  gargantuan-wedding.com
 0.0.0.0  gargantuanindication.pro
 0.0.0.0  gargleearnest.com
@@ -42255,12 +42274,14 @@
 0.0.0.0  hbet.ac
 0.0.0.0  hbet.club
 0.0.0.0  hbet.fm
+0.0.0.0  hbet.la
 0.0.0.0  hbet.li
 0.0.0.0  hbet.lv
 0.0.0.0  hbet.net
 0.0.0.0  hbet.nl
 0.0.0.0  hbet.ph
 0.0.0.0  hbet.pw
+0.0.0.0  hbet.so
 0.0.0.0  hbet.win
 0.0.0.0  hbezqddptvioc.website
 0.0.0.0  hbfdhkdeaatch.space
@@ -44485,6 +44506,7 @@
 0.0.0.0  i9.hethongxacthuc.com
 0.0.0.0  i9.pro
 0.0.0.0  i9.top
+0.0.0.0  i90ptshd.top
 0.0.0.0  i96wgz4nmy.com
 0.0.0.0  i97wqa881u.com
 0.0.0.0  i993.com
@@ -49802,6 +49824,7 @@
 0.0.0.0  js.kkraw.com
 0.0.0.0  js.lieqitianxia.cn
 0.0.0.0  js.lmggdka.cn
+0.0.0.0  js.lovexia.top
 0.0.0.0  js.lwnne.cn
 0.0.0.0  js.manga1000.top
 0.0.0.0  js.manga1001.win
@@ -50428,6 +50451,7 @@
 0.0.0.0  k88.art
 0.0.0.0  k88.club
 0.0.0.0  k88.mobi
+0.0.0.0  k88.moe
 0.0.0.0  k88.pro
 0.0.0.0  k88.win
 0.0.0.0  k89bet.com
@@ -55411,6 +55435,7 @@
 0.0.0.0  lu88.ai
 0.0.0.0  lu88.ch
 0.0.0.0  lu88.com
+0.0.0.0  lu88.de
 0.0.0.0  lu88.ec
 0.0.0.0  lu88.gdn
 0.0.0.0  lu88.kim
@@ -57318,6 +57343,7 @@
 0.0.0.0  man88.bz
 0.0.0.0  man88.co
 0.0.0.0  man88.la
+0.0.0.0  man88.li
 0.0.0.0  man88.net
 0.0.0.0  man88.ng
 0.0.0.0  man88.pl
@@ -64058,6 +64084,7 @@
 0.0.0.0  ncx2.voyage-prive.it
 0.0.0.0  ncxps.com
 0.0.0.0  ncxrewvozzcuk.online
+0.0.0.0  ncxxek.donedeal.ie
 0.0.0.0  ncz3u7cj2.com
 0.0.0.0  nczils.pristineauction.com
 0.0.0.0  nd.nasdaqtech.nasdaq.com
@@ -70567,6 +70594,7 @@
 0.0.0.0  pladform.ru
 0.0.0.0  plague.info
 0.0.0.0  plain-plane.com
+0.0.0.0  plainfeelings.com
 0.0.0.0  plainpatient.pro
 0.0.0.0  plainplayground.com
 0.0.0.0  plainsuburbtoilet.com
@@ -76953,6 +76981,7 @@
 0.0.0.0  rsapanhtopcqf.website
 0.0.0.0  rsas.szzek.com
 0.0.0.0  rsbnhruphyuxn.site
+0.0.0.0  rsc.lepoint.fr
 0.0.0.0  rscc3.cc
 0.0.0.0  rscyoaposqeay.space
 0.0.0.0  rsfzjtdmbmxdfq.com
@@ -81636,6 +81665,7 @@
 0.0.0.0  sk-sanasport.m-shop.me
 0.0.0.0  sk-topgal.m-shop.me
 0.0.0.0  sk.ball88.app
+0.0.0.0  sk.ball88.casa
 0.0.0.0  sk.ball88.com
 0.0.0.0  sk.ball88.day
 0.0.0.0  sk.ball88.fun
@@ -81675,6 +81705,7 @@
 0.0.0.0  sk.xibet.ec
 0.0.0.0  sk.xibet.fun
 0.0.0.0  sk.xibet.ing
+0.0.0.0  sk.xibet.nz
 0.0.0.0  sk.xibet.vu
 0.0.0.0  sk.zbet.ws
 0.0.0.0  sk0.monnierfreres.eu
@@ -97162,8 +97193,10 @@
 0.0.0.0  tx88.navy
 0.0.0.0  tx88.now
 0.0.0.0  tx88.onl
+0.0.0.0  tx88.photo
 0.0.0.0  tx88.top
 0.0.0.0  tx88.vet
+0.0.0.0  tx88.zone
 0.0.0.0  tx99y.net
 0.0.0.0  txaxkc.dsc-nightstore.com
 0.0.0.0  txbgcd1is.com
@@ -100474,6 +100507,7 @@
 0.0.0.0  videocdnmetrika.com
 0.0.0.0  videocdnshop.com
 0.0.0.0  videoevents.outbrain.com
+0.0.0.0  videoo.tv
 0.0.0.0  videoplayer2.xyz
 0.0.0.0  videoplayerhub.com
 0.0.0.0  videoplaza.tv
@@ -100797,6 +100831,7 @@
 0.0.0.0  vividcanopy.com
 0.0.0.0  vividcash.com
 0.0.0.0  vividcortex.actonservice.com
+0.0.0.0  vividfrost.com
 0.0.0.0  vividmeadow.com
 0.0.0.0  vividplume.com
 0.0.0.0  vividwithmainstay.net
@@ -101420,6 +101455,7 @@
 0.0.0.0  vu88.la
 0.0.0.0  vu88.live
 0.0.0.0  vu88.lv
+0.0.0.0  vu88.moe
 0.0.0.0  vu88.mx
 0.0.0.0  vu88.net
 0.0.0.0  vu88.sh
@@ -102332,6 +102368,7 @@
 0.0.0.0  wde0a1qrm.com
 0.0.0.0  wdemwdmwehswi.online
 0.0.0.0  wdgqhgmczfdrb.website
+0.0.0.0  wdhymnxhxpgsn.space
 0.0.0.0  wdifpednlkxvz.site
 0.0.0.0  wdjpyrldiqgwe.online
 0.0.0.0  wdjtyigmvcgtx.space
@@ -104245,6 +104282,7 @@
 0.0.0.0  wrvxrwbqvnzdr.space
 0.0.0.0  wrxdsplmtfwzp.space
 0.0.0.0  wrxixuknpvjxm.website
+0.0.0.0  wrysrtitoqbgn.online
 0.0.0.0  ws-br-cdn.kwai.net.iberostar.com
 0.0.0.0  ws-pro-pull.kwai.net.iberostar.com
 0.0.0.0  ws.audioeye.com
@@ -110437,6 +110475,7 @@
 0.0.0.0  zouyfpkgawryi.online
 0.0.0.0  zovidree.com
 0.0.0.0  zowin.bh
+0.0.0.0  zowin.ci
 0.0.0.0  zowin.esq
 0.0.0.0  zowin.fan
 0.0.0.0  zowin.im
