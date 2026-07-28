@@ -106,9 +106,9 @@
 2.ru.pool.ntp.org
 2.shrd.fncstatic.com
 2.sonostime.pool.ntp.org
+2.ua.pool.ntp.org
 2.ubuntu.pool.ntp.org
 2.us.pool.ntp.org
-2.uw.gaia.com
 21stcenturywire.com
 2a.me
 2ch.net
@@ -194,7 +194,6 @@ a.huodong.mi.com
 a.kickass.to
 a.market.xiaomi.com
 a.ooyala.com
-a.pool.ntp.org
 a.shifen.com
 a.slashdotmedia.com
 a.stat.xiaomi.com
@@ -2010,7 +2009,7 @@ blog.daum.net
 blog.de.playstation.com
 blog.diigo.com
 blog.eu.playstation.com
-blog.experts-exchange360.cn
+blog.experts-exchange.com
 blog.feedspot.com
 blog.flipboard.com
 blog.funimation.com
@@ -3810,7 +3809,6 @@ exceptions.coinbase.com
 exchange.kaspersky.com
 expbl2ro.xbox.com
 expertcity.com
-experts-exchange.com
 explore.next.exchange
 explore.pinterest.com
 express.co.uk
@@ -10132,6 +10130,7 @@ www.funnyordie.com
 www.fxhome.com
 www.g.cn
 www.g2a.com
+www.gaia.com
 www.gallica.bnf.fr
 www.gamekult.com
 www.gameloft.com
