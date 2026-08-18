@@ -6,7 +6,7 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-08-17
+# Last update: 2026-08-18
 #
 # Number of domains: 112170
 #
@@ -8076,6 +8076,7 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
+  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -40412,7 +40413,7 @@ payload:
   - 'globalmed.actonservice.com'
   - 'globaloffers.link'
   - 'globalorders.net'
-  - 'globalreactive.tc.skysrt.com'
+  - 'globalresearch.ca'
   - 'globalsiteanalytics.com'
   - 'globalsolutions.risk.lexisnexis.com'
   - 'globaltraffico.com'
@@ -80330,7 +80331,6 @@ payload:
   - 'search-carousel-widget.snc-prod.aws.cinch.co.uk'
   - 'search-converter.com'
   - 'search.anonymous.ads.brave.com'
-  - 'search.ca'
   - 'search.ixigua.com'
   - 'search3-search.ixigua.com'
   - 'search4sports.com'

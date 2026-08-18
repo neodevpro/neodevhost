@@ -6,7 +6,7 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-08-17
+# Last update: 2026-08-18
 #
 # Number of domains: 112170
 #
@@ -8075,6 +8075,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -40411,7 +40412,7 @@
 0.0.0.0  globalmed.actonservice.com
 0.0.0.0  globaloffers.link
 0.0.0.0  globalorders.net
-0.0.0.0  globalreactive.tc.skysrt.com
+0.0.0.0  globalresearch.ca
 0.0.0.0  globalsiteanalytics.com
 0.0.0.0  globalsolutions.risk.lexisnexis.com
 0.0.0.0  globaltraffico.com
@@ -80329,7 +80330,6 @@
 0.0.0.0  search-carousel-widget.snc-prod.aws.cinch.co.uk
 0.0.0.0  search-converter.com
 0.0.0.0  search.anonymous.ads.brave.com
-0.0.0.0  search.ca
 0.0.0.0  search.ixigua.com
 0.0.0.0  search3-search.ixigua.com
 0.0.0.0  search4sports.com
