@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-08-18
+# Last update: 2026-08-19
 #
-# Number of domains: 112170
+# Number of domains: 112176
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -394,6 +394,8 @@
 0.0.0.0  11vmzjiup.com
 0.0.0.0  11wickets.com
 0.0.0.0  11win.beer
+0.0.0.0  11win.casa
+0.0.0.0  11win.free
 0.0.0.0  11win.link
 0.0.0.0  11win.llc
 0.0.0.0  11win.mobi
@@ -2528,6 +2530,8 @@
 0.0.0.0  789club.gp
 0.0.0.0  789club.ke
 0.0.0.0  789club.kn
+0.0.0.0  789club.mba
+0.0.0.0  789club.men
 0.0.0.0  789club.mu
 0.0.0.0  789club.mw
 0.0.0.0  789club.nu
@@ -3206,10 +3210,12 @@
 0.0.0.0  9bet.band
 0.0.0.0  9bet.blue
 0.0.0.0  9bet.care
+0.0.0.0  9bet.fund
 0.0.0.0  9bet.green
 0.0.0.0  9bet.mobi
 0.0.0.0  9bet.net
 0.0.0.0  9bet.photo
+0.0.0.0  9bet.pink
 0.0.0.0  9bet.rest
 0.0.0.0  9bet.win
 0.0.0.0  9bet.world
@@ -12891,6 +12897,7 @@
 0.0.0.0  api.9bet.army
 0.0.0.0  api.9bet.band
 0.0.0.0  api.9bet.care
+0.0.0.0  api.9bet.fund
 0.0.0.0  api.9bet.green
 0.0.0.0  api.9bet.mobi
 0.0.0.0  api.9bet.photo
@@ -19436,7 +19443,6 @@
 0.0.0.0  businessupdater.com
 0.0.0.0  busrol.st-eustachenissan.com
 0.0.0.0  bustabit.com
-0.0.0.0  bustadice.com
 0.0.0.0  bustlefungus.com
 0.0.0.0  bustleplaguereed.com
 0.0.0.0  bustles1.com
@@ -31355,6 +31361,7 @@
 0.0.0.0  du88.club
 0.0.0.0  du88.com
 0.0.0.0  du88.fashion
+0.0.0.0  du88.football
 0.0.0.0  du88.guru
 0.0.0.0  du88.health
 0.0.0.0  du88.in
@@ -35195,7 +35202,6 @@
 0.0.0.0  eussiyvfjpqqc.site
 0.0.0.0  eussownwpyxdw.online
 0.0.0.0  eutgbfzcrepne.online
-0.0.0.0  euthanasia.news
 0.0.0.0  euuh.cn
 0.0.0.0  euuhntxjcfqcg.space
 0.0.0.0  euvbnsrtomonp.online
@@ -36415,7 +36421,6 @@
 0.0.0.0  fbu8.montecarloseasonalsale.com
 0.0.0.0  fbu8.ticket-online.montecarlolive.com
 0.0.0.0  fbulmykkqnp.com
-0.0.0.0  fbw.11bet.us
 0.0.0.0  fbwlsiqcdsszm.com
 0.0.0.0  fbwvvxtjwjehy.site
 0.0.0.0  fbycnk.chiaki.vn
@@ -37676,7 +37681,6 @@
 0.0.0.0  food.pentonmarketingsvcs.com
 0.0.0.0  food9wave.com
 0.0.0.0  foodbrochure.advancedtech.com
-0.0.0.0  foodcollapse.com
 0.0.0.0  foodczar.com
 0.0.0.0  foodevolution.news
 0.0.0.0  foodfreedom.news
@@ -41113,12 +41117,14 @@
 0.0.0.0  go8.pub
 0.0.0.0  go8.pw
 0.0.0.0  go88-vn.com
+0.0.0.0  go88.adqc.net
 0.0.0.0  go88.bayern
 0.0.0.0  go88.ca
 0.0.0.0  go88.club
 0.0.0.0  go88.contractors
 0.0.0.0  go88.food
 0.0.0.0  go88.live
+0.0.0.0  go88.ls
 0.0.0.0  go88.luxury
 0.0.0.0  go88.md
 0.0.0.0  go88.me
@@ -42697,7 +42703,6 @@
 0.0.0.0  haymarketstat.de
 0.0.0.0  haywcfdx.com
 0.0.0.0  hayweb.net
-0.0.0.0  haywin.ac
 0.0.0.0  haywin.ai
 0.0.0.0  haywin.my
 0.0.0.0  haywin.space
@@ -42746,6 +42751,8 @@
 0.0.0.0  hbdnserror7.wo.com.cn
 0.0.0.0  hbdt.luomi.com
 0.0.0.0  hbet.ac
+0.0.0.0  hbet.art
+0.0.0.0  hbet.bar
 0.0.0.0  hbet.bio
 0.0.0.0  hbet.club
 0.0.0.0  hbet.cz
@@ -50991,8 +50998,11 @@
 0.0.0.0  k88.mobi
 0.0.0.0  k88.moe
 0.0.0.0  k88.mov
+0.0.0.0  k88.nz
 0.0.0.0  k88.pro
+0.0.0.0  k88.sx
 0.0.0.0  k88.tel
+0.0.0.0  k88.vc
 0.0.0.0  k88.win
 0.0.0.0  k89bet.com
 0.0.0.0  k8asia79.com
@@ -56066,6 +56076,7 @@
 0.0.0.0  lu88.nz
 0.0.0.0  lu88.pro
 0.0.0.0  lu88.pw
+0.0.0.0  lu88.tv
 0.0.0.0  lu88.tw
 0.0.0.0  lu88.vg
 0.0.0.0  luaccakfoo.com
@@ -57117,7 +57128,6 @@
 0.0.0.0  m.mh89w.cn
 0.0.0.0  m.mhuos.com
 0.0.0.0  m.miaoxinqipei.com
-0.0.0.0  m.mibet.win
 0.0.0.0  m.mibet88.com
 0.0.0.0  m.mig8vn.com
 0.0.0.0  m.mightiger.net
@@ -62196,6 +62206,7 @@
 0.0.0.0  mibet.cc
 0.0.0.0  mibet.mobi
 0.0.0.0  mibet.net
+0.0.0.0  mibet.win
 0.0.0.0  mibet88.win
 0.0.0.0  mibook-10006092.cos.myqcloud.com
 0.0.0.0  mibusinessdaily.com
@@ -65229,7 +65240,6 @@
 0.0.0.0  newsatads.com
 0.0.0.0  newsbiscuit.com
 0.0.0.0  newsbotnet.com
-0.0.0.0  newsbreakers.org
 0.0.0.0  newsbuzzdaily.com
 0.0.0.0  newscadence.com
 0.0.0.0  newscatalanaoccidente.com
@@ -66051,7 +66061,6 @@
 0.0.0.0  northdelconews.com
 0.0.0.0  northdsmnews.com
 0.0.0.0  northegyptnews.com
-0.0.0.0  northernnecktimes.com
 0.0.0.0  northerntiernews.com
 0.0.0.0  northessexnews.com
 0.0.0.0  northfairfaxnews.com
@@ -69062,7 +69071,6 @@
 0.0.0.0  ovngncmkasjyyy.com
 0.0.0.0  ovngwowapygbl.site
 0.0.0.0  ovnudogmtcypg.online
-0.0.0.0  ovocasino.com
 0.0.0.0  ovozxiftkxwtg.online
 0.0.0.0  ovpukbvfluhnw.site
 0.0.0.0  ovrgackuno.in
@@ -69939,7 +69947,6 @@
 0.0.0.0  pasarbola.com
 0.0.0.0  pasbstbovc.com
 0.0.0.0  paschalbrahma.shop
-0.0.0.0  pascoreporter.com
 0.0.0.0  paservices.tech
 0.0.0.0  paslrdcizpgdw.online
 0.0.0.0  paslsa.com
@@ -72216,7 +72223,6 @@
 0.0.0.0  powdryround.com
 0.0.0.0  powe.asian-xxx-videos.com
 0.0.0.0  power.adhacker.online
-0.0.0.0  power.news
 0.0.0.0  power.viggo.com
 0.0.0.0  powerad.ai
 0.0.0.0  poweradblocker.com
@@ -73275,6 +73281,8 @@
 0.0.0.0  pub.servidoresge.com
 0.0.0.0  pub.sheknows.com
 0.0.0.0  pub.sitetag.us
+0.0.0.0  pub88.camera
+0.0.0.0  pub88.channel
 0.0.0.0  pub88.com
 0.0.0.0  pub88.day
 0.0.0.0  pub88.forum
@@ -81491,7 +81499,6 @@
 0.0.0.0  seuszqckmixng.website
 0.0.0.0  sevalleytimes.com
 0.0.0.0  seveelumus.com
-0.0.0.0  sevegasnews.com
 0.0.0.0  sevendeer.com
 0.0.0.0  sevenedgesteve.com
 0.0.0.0  sevenhalves.com
@@ -86210,6 +86217,7 @@
 0.0.0.0  socket.9bet.army
 0.0.0.0  socket.9bet.band
 0.0.0.0  socket.9bet.care
+0.0.0.0  socket.9bet.fund
 0.0.0.0  socket.9bet.green
 0.0.0.0  socket.9bet.mobi
 0.0.0.0  socket.9bet.photo
@@ -87232,7 +87240,6 @@
 0.0.0.0  sportpesa.co.tz
 0.0.0.0  sportradarserving.com
 0.0.0.0  sports-gambling.com
-0.0.0.0  sports.betway.com
 0.0.0.0  sports.br.betboo.com
 0.0.0.0  sports.bwin.com
 0.0.0.0  sports.caliente.mx
@@ -90576,7 +90583,6 @@
 0.0.0.0  sv66.com
 0.0.0.0  sv66s.com
 0.0.0.0  sv66vip6.com
-0.0.0.0  sv88.ae
 0.0.0.0  sv88.cl
 0.0.0.0  sv88.club
 0.0.0.0  sv88.com
@@ -98194,6 +98200,7 @@
 0.0.0.0  tx88.onl
 0.0.0.0  tx88.photo
 0.0.0.0  tx88.pink
+0.0.0.0  tx88.rest
 0.0.0.0  tx88.top
 0.0.0.0  tx88.vet
 0.0.0.0  tx88.zone
@@ -105183,6 +105190,7 @@
 0.0.0.0  wp.9bet.army
 0.0.0.0  wp.9bet.band
 0.0.0.0  wp.9bet.care
+0.0.0.0  wp.9bet.fund
 0.0.0.0  wp.9bet.green
 0.0.0.0  wp.9bet.mobi
 0.0.0.0  wp.9bet.photo
@@ -106242,7 +106250,6 @@
 0.0.0.0  www.casino-pp.net
 0.0.0.0  www.casino.org
 0.0.0.0  www.casinoandfriends.com
-0.0.0.0  www.casinobitco.in
 0.0.0.0  www.casinocalzone.com
 0.0.0.0  www.casinocruise.com
 0.0.0.0  www.casinoeuro.com
@@ -107169,7 +107176,6 @@
 0.0.0.0  www.planetofbets.com
 0.0.0.0  www.playbet.com
 0.0.0.0  www.playclub.com
-0.0.0.0  www.playersonly.ag
 0.0.0.0  www.playfrank.com
 0.0.0.0  www.playojo.com
 0.0.0.0  www.playolg.ca
@@ -107371,7 +107377,6 @@
 0.0.0.0  www.startappexchange.com
 0.0.0.0  www.staticfile.net
 0.0.0.0  www.staticfile.org
-0.0.0.0  www.statusbet.com
 0.0.0.0  www.stoloto.ru
 0.0.0.0  www.strikewin.com
 0.0.0.0  www.sunbets.co.uk
@@ -111681,6 +111686,7 @@
 0.0.0.0  zowin.ci
 0.0.0.0  zowin.esq
 0.0.0.0  zowin.fan
+0.0.0.0  zowin.fm
 0.0.0.0  zowin.im
 0.0.0.0  zowin.is
 0.0.0.0  zowin.kim
