@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-08-27
+# Last update: 2026-08-28
 #
-# Number of domains: 111356
+# Number of domains: 111365
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -402,6 +402,7 @@
 0.0.0.0  11win.mx
 0.0.0.0  11win.net
 0.0.0.0  11win.skin
+0.0.0.0  11win.style
 0.0.0.0  11win.tips
 0.0.0.0  11win.vin
 0.0.0.0  11win.works
@@ -1498,11 +1499,13 @@
 0.0.0.0  3b38.pandasuite.io
 0.0.0.0  3ba1e5d478.com
 0.0.0.0  3bcfbe6fbf.com
+0.0.0.0  3bet.adqc.net
 0.0.0.0  3bet.baby
 0.0.0.0  3bet.bike
 0.0.0.0  3bet.biz
 0.0.0.0  3bet.center
 0.0.0.0  3bet.city
+0.0.0.0  3bet.fund
 0.0.0.0  3bet.host
 0.0.0.0  3bet.la
 0.0.0.0  3bet.llc
@@ -1744,7 +1747,6 @@
 0.0.0.0  4b54db1488.com
 0.0.0.0  4ba48a7822.com
 0.0.0.0  4bo5t8fzd.com
-0.0.0.0  4br824ktty.com
 0.0.0.0  4c0wa2ml2f.com
 0.0.0.0  4c32ecfead.com
 0.0.0.0  4c35d6c7f6.com
@@ -3220,6 +3222,7 @@
 0.0.0.0  9bet.diy
 0.0.0.0  9bet.fund
 0.0.0.0  9bet.green
+0.0.0.0  9bet.krd
 0.0.0.0  9bet.mobi
 0.0.0.0  9bet.net
 0.0.0.0  9bet.photo
@@ -5224,7 +5227,6 @@
 0.0.0.0  a41334.actonservice.com
 0.0.0.0  a41342.actonservice.com
 0.0.0.0  a41385.actonservice.com
-0.0.0.0  a41505.actonservice.com
 0.0.0.0  a41522.actonservice.com
 0.0.0.0  a41547.actonservice.com
 0.0.0.0  a41550.actonservice.com
@@ -6361,7 +6363,6 @@
 0.0.0.0  a8clk.chapup.jp
 0.0.0.0  a8clk.chat-wifi.site
 0.0.0.0  a8clk.checkout.leafee.me
-0.0.0.0  a8clk.chibakan-yachiyo.net
 0.0.0.0  a8clk.chuko-truck.com
 0.0.0.0  a8clk.cleaneo.jp
 0.0.0.0  a8clk.cocorotherapy.com
@@ -12884,6 +12885,7 @@
 0.0.0.0  api.9bet.diy
 0.0.0.0  api.9bet.fund
 0.0.0.0  api.9bet.green
+0.0.0.0  api.9bet.krd
 0.0.0.0  api.9bet.mobi
 0.0.0.0  api.9bet.photo
 0.0.0.0  api.9bet.win
@@ -16647,7 +16649,6 @@
 0.0.0.0  beelinecolor.com
 0.0.0.0  beelinehindu.com
 0.0.0.0  beemray.com
-0.0.0.0  beemrdwn.com
 0.0.0.0  beencoriqvcep.site
 0.0.0.0  beenover.com
 0.0.0.0  beepergaily.com
@@ -23681,7 +23682,6 @@
 0.0.0.0  consent.prismamedia.com
 0.0.0.0  consent.prointernet.com
 0.0.0.0  consent.shutterfly.com
-0.0.0.0  consent.standardadmin.org
 0.0.0.0  consent.stuff.tv
 0.0.0.0  consent.t-mobile.cz
 0.0.0.0  consent.thecountrysmallholder.com
@@ -31255,6 +31255,7 @@
 0.0.0.0  du88.in
 0.0.0.0  du88.info
 0.0.0.0  du88.life
+0.0.0.0  du88.mba
 0.0.0.0  du88.pro
 0.0.0.0  du88.rent
 0.0.0.0  du88.sh
@@ -35028,7 +35029,6 @@
 0.0.0.0  europe-bet.com
 0.0.0.0  europeanivanprestigious.com
 0.0.0.0  europeanplash.com
-0.0.0.0  europuls.eu
 0.0.0.0  europuls.net
 0.0.0.0  euros4click.de
 0.0.0.0  euroslots.com
@@ -41881,6 +41881,7 @@
 0.0.0.0  gw.gen88.com
 0.0.0.0  gw.mubet.media
 0.0.0.0  gw.mubet.talk
+0.0.0.0  gw.mubet.tips
 0.0.0.0  gw.mubet.vip
 0.0.0.0  gw.tot88.store
 0.0.0.0  gw100-10.com
@@ -42513,6 +42514,7 @@
 0.0.0.0  hbet.sh
 0.0.0.0  hbet.so
 0.0.0.0  hbet.spa
+0.0.0.0  hbet.srl
 0.0.0.0  hbet.vc
 0.0.0.0  hbet.win
 0.0.0.0  hbfpml.cn
@@ -50639,6 +50641,7 @@
 0.0.0.0  k88.mobi
 0.0.0.0  k88.moe
 0.0.0.0  k88.mov
+0.0.0.0  k88.now
 0.0.0.0  k88.nz
 0.0.0.0  k88.pro
 0.0.0.0  k88.soy
@@ -54212,7 +54215,6 @@
 0.0.0.0  links.orders.kfc.com
 0.0.0.0  links.ottplay.com
 0.0.0.0  links.outskill.app
-0.0.0.0  links.own.tv
 0.0.0.0  links.oxstreet.com
 0.0.0.0  links.petpartner.co
 0.0.0.0  links.ph.discoveryplus.com
@@ -55658,6 +55660,7 @@
 0.0.0.0  lu88.com
 0.0.0.0  lu88.de
 0.0.0.0  lu88.ec
+0.0.0.0  lu88.foo
 0.0.0.0  lu88.gd
 0.0.0.0  lu88.gdn
 0.0.0.0  lu88.kim
@@ -57597,6 +57600,7 @@
 0.0.0.0  man88.vip
 0.0.0.0  man88.vu
 0.0.0.0  man88.win
+0.0.0.0  man88.wtf
 0.0.0.0  man88.xin
 0.0.0.0  manage.wdfans.cn
 0.0.0.0  manage.wuhancloud.cn
@@ -58304,7 +58308,6 @@
 0.0.0.0  marketing.handt.co.uk
 0.0.0.0  marketing.hardysolutions.com
 0.0.0.0  marketing.harlancapital.com
-0.0.0.0  marketing.harrishealthcare.com
 0.0.0.0  marketing.haughn.com
 0.0.0.0  marketing.havenfinancialgroup.com
 0.0.0.0  marketing.healthcarousel.com
@@ -71045,6 +71048,7 @@
 0.0.0.0  play.vic.hair
 0.0.0.0  play.vicclub.ac
 0.0.0.0  play.vicclub.id
+0.0.0.0  play.vicclub.mx
 0.0.0.0  play.vicclub.sh
 0.0.0.0  play.vip79.top
 0.0.0.0  play.wavelength.zone
@@ -72763,6 +72767,7 @@
 0.0.0.0  pub88.camera
 0.0.0.0  pub88.channel
 0.0.0.0  pub88.charity
+0.0.0.0  pub88.college
 0.0.0.0  pub88.com
 0.0.0.0  pub88.day
 0.0.0.0  pub88.forum
@@ -81978,6 +81983,7 @@
 0.0.0.0  sk.xibet.tax
 0.0.0.0  sk.xibet.vu
 0.0.0.0  sk.xibet.wtf
+0.0.0.0  sk.xibet.you
 0.0.0.0  sk.zbet.ws
 0.0.0.0  sk0.monnierfreres.eu
 0.0.0.0  sk1n.fr
@@ -85612,6 +85618,7 @@
 0.0.0.0  socket.9bet.diy
 0.0.0.0  socket.9bet.fund
 0.0.0.0  socket.9bet.green
+0.0.0.0  socket.9bet.krd
 0.0.0.0  socket.9bet.mobi
 0.0.0.0  socket.9bet.photo
 0.0.0.0  socket.9bet.win
@@ -85989,7 +85996,6 @@
 0.0.0.0  somnit.equinox.com
 0.0.0.0  somniture.chip.de
 0.0.0.0  somniture.compactappliance.com
-0.0.0.0  somniture.edgestar.com
 0.0.0.0  somniture.faucetdirect.com
 0.0.0.0  somniture.handlesets.com
 0.0.0.0  somniture.kegerator.com
@@ -97550,6 +97556,7 @@
 0.0.0.0  tx88.download
 0.0.0.0  tx88.fan
 0.0.0.0  tx88.fashion
+0.0.0.0  tx88.free
 0.0.0.0  tx88.fun
 0.0.0.0  tx88.fund
 0.0.0.0  tx88.fyi
@@ -101812,6 +101819,7 @@
 0.0.0.0  vtzmfhdyaemzg.online
 0.0.0.0  vtzubx.icu
 0.0.0.0  vu88.ac
+0.0.0.0  vu88.best
 0.0.0.0  vu88.com
 0.0.0.0  vu88.cz
 0.0.0.0  vu88.de
@@ -104490,6 +104498,7 @@
 0.0.0.0  wp.9bet.diy
 0.0.0.0  wp.9bet.fund
 0.0.0.0  wp.9bet.green
+0.0.0.0  wp.9bet.krd
 0.0.0.0  wp.9bet.mobi
 0.0.0.0  wp.9bet.photo
 0.0.0.0  wp.9bet.win
