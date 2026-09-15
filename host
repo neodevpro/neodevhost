@@ -6,11 +6,12 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-09-14
+# Last update: 2026-09-15
 #
-# Number of domains: 110863
+# Number of domains: 110851
 #
 #=====================================
+0.0.0.0  0.0.active.tc.skysrt.com
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
@@ -6432,7 +6433,6 @@
 0.0.0.0  a8clk.kihada.jp
 0.0.0.0  a8clk.komochikon.jp
 0.0.0.0  a8clk.kyoyu-mochibun.com
-0.0.0.0  a8clk.label-seal-print.com
 0.0.0.0  a8clk.lasana.co.jp
 0.0.0.0  a8clk.laundry-out.jp
 0.0.0.0  a8clk.lens-1.jp
@@ -8036,7 +8036,6 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
-0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -8441,7 +8440,6 @@
 0.0.0.0  ad2f8c6f8e.com
 0.0.0.0  ad2iction.com
 0.0.0.0  ad2the.net
-0.0.0.0  ad3.sina.com.cn
 0.0.0.0  ad3.udn.com
 0.0.0.0  ad4.bigmir.net
 0.0.0.0  ad4.com.cn
@@ -11776,7 +11774,6 @@
 0.0.0.0  analytics-stage.wildberries.ru
 0.0.0.0  analytics-stamp.confi.com.vc
 0.0.0.0  analytics-static.ugc.bazaarvoice.com
-0.0.0.0  analytics-tracker.thescore.com
 0.0.0.0  analytics-tracking.meetup.com
 0.0.0.0  analytics-union.sandai.net
 0.0.0.0  analytics-union.xunlei.com
@@ -23150,7 +23147,6 @@
 0.0.0.0  communicate.lightningprotection.com
 0.0.0.0  communicate.prnewswire.co.uk
 0.0.0.0  communicate.prnewswire.com
-0.0.0.0  communicatedroopcomer.com
 0.0.0.0  communicatedsuitcompartment.com
 0.0.0.0  communicatefriction.com
 0.0.0.0  communicatelp.keysight.com
@@ -33628,7 +33624,6 @@
 0.0.0.0  email-rapidmail.branch.rocks
 0.0.0.0  email-reflex.com
 0.0.0.0  email-sailthru.branch.io
-0.0.0.0  email-selligent.branch.rocks
 0.0.0.0  email-sender.branch.rocks
 0.0.0.0  email-sendgrid.branch.rocks
 0.0.0.0  email-simple-sailthru.branch.rocks
@@ -35824,7 +35819,6 @@
 0.0.0.0  fakedisguise.com
 0.0.0.0  fakeimg.pl
 0.0.0.0  fakers.co.jp
-0.0.0.0  fakerymethod.shop
 0.0.0.0  fakeschool.com
 0.0.0.0  fakescience.news
 0.0.0.0  fakexa-post.mno.link
@@ -38407,7 +38401,6 @@
 0.0.0.0  fzchpos.com
 0.0.0.0  fzczw7.site
 0.0.0.0  fzddxwb7y3.com
-0.0.0.0  fzdimble.com
 0.0.0.0  fzdwntsrbrodu.space
 0.0.0.0  fze8.carrefour-banque.fr
 0.0.0.0  fzeidx.vidaxl.gr
@@ -44178,7 +44171,6 @@
 0.0.0.0  hwkfzf.meinauto.de
 0.0.0.0  hwkxqzuhlqqin.online
 0.0.0.0  hwlbjqmqcmqfj.site
-0.0.0.0  hwlwuwdcvakal.site
 0.0.0.0  hwmwin.com
 0.0.0.0  hwmwovselgest.space
 0.0.0.0  hwnmhi.sunbeltrentals.com
@@ -46200,6 +46192,7 @@
 0.0.0.0  in1.secure.uu.cc
 0.0.0.0  in3x.net
 0.0.0.0  in5nx9xbd.com
+0.0.0.0  ina.com.cn
 0.0.0.0  inablemoas.shop
 0.0.0.0  inactionaccompanyingstress.com
 0.0.0.0  inad.com
@@ -49219,7 +49212,6 @@
 0.0.0.0  jldnserror5.wo.com.cn
 0.0.0.0  jldsfd.icu
 0.0.0.0  jldtlh.fashionnova.com
-0.0.0.0  jlecgcsdbleti.online
 0.0.0.0  jlfdfodxejpxt.space
 0.0.0.0  jlffeu.nadula.com
 0.0.0.0  jlfiber.advancedtech.com
@@ -64611,7 +64603,6 @@
 0.0.0.0  ngcjqomtyvdhl.site
 0.0.0.0  ngd2rf6mqe.com
 0.0.0.0  ngdrld.icu
-0.0.0.0  ngds.sap.com
 0.0.0.0  ngdwfgdpfgawh.site
 0.0.0.0  ngegas.files.im
 0.0.0.0  ngegyhsuaylyj.site
@@ -90276,7 +90267,6 @@
 0.0.0.0  t.bd.nl
 0.0.0.0  t.beibeia.top
 0.0.0.0  t.beop.io
-0.0.0.0  t.bimvid.com
 0.0.0.0  t.biooncology.com
 0.0.0.0  t.birchlane.com
 0.0.0.0  t.blablacar.com
@@ -98488,7 +98478,6 @@
 0.0.0.0  uppitytime.com
 0.0.0.0  uppropsclub.shop
 0.0.0.0  upqdazjgizzfl.space
-0.0.0.0  upqmpu.leasingtime.de
 0.0.0.0  upravel.com
 0.0.0.0  uprightbent.com
 0.0.0.0  uprightbunnypane.com
@@ -104024,7 +104013,6 @@
 0.0.0.0  wpunkt.newsweek.pl
 0.0.0.0  wpush.biz
 0.0.0.0  wpush.org
-0.0.0.0  wpushorg.com
 0.0.0.0  wpushsdk.com
 0.0.0.0  wpvfgueiphgnw.space
 0.0.0.0  wpwnejtixioio.website
