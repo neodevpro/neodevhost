@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-09-17_19-09-53_UTC
-// COMMIT: 329834e40a8543f3ef6265db543b7af6c4185571
+// VERSION: 2026-09-18_18-42-54_UTC
+// COMMIT: ff02362b20e273fbcc66405b9b3c21e5dd3e4367
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -13624,6 +13624,10 @@ preview.site
 // Filegear Inc. : https://www.filegear.com
 // Submitted by Jason Zhu <jason@owtware.com>
 filegear.me
+
+// Files.com : https://www.files.com/
+// Submitted by Caleb Hearth <ops+public-suffix@files.com>
+hosted-by-files.com
 
 // Firebase, Inc.
 // Submitted by Chris Raynor <chris@firebase.com>
