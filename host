@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-09-21
+# Last update: 2026-09-22
 #
-# Number of domains: 111983
+# Number of domains: 111993
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -155,6 +155,7 @@
 0.0.0.0  0a8de3ea12.com
 0.0.0.0  0af2a962b0102942d9a7df351b20be55.com
 0.0.0.0  0aior18v.xyz
+0.0.0.0  0aokpbwui.com
 0.0.0.0  0b00553438.com
 0.0.0.0  0b6h.cn
 0.0.0.0  0b6rvr210q.com
@@ -412,7 +413,6 @@
 0.0.0.0  11win.vin
 0.0.0.0  11win.works
 0.0.0.0  11zalo.com
-0.0.0.0  12.com
 0.0.0.0  12.cookcai.com
 0.0.0.0  1200555.com
 0.0.0.0  1208344341.rsc.cdn77.org
@@ -454,6 +454,7 @@
 0.0.0.0  123counters.com
 0.0.0.0  123date.me
 0.0.0.0  123juzi.net
+0.0.0.0  123lm.com
 0.0.0.0  123ppk.com
 0.0.0.0  123stat.com
 0.0.0.0  123win.pro
@@ -904,6 +905,7 @@
 0.0.0.0  2022welcome.com
 0.0.0.0  2024xemwc.com
 0.0.0.0  2025luxica.net
+0.0.0.0  2026fusion.net
 0.0.0.0  202warehouses.net
 0.0.0.0  202xs.com
 0.0.0.0  2048hydreo.net
@@ -1026,6 +1028,7 @@
 0.0.0.0  24jp8wjmho.com
 0.0.0.0  24kad.com
 0.0.0.0  24log.com
+0.0.0.0  24log.de
 0.0.0.0  24log.es
 0.0.0.0  24log.it
 0.0.0.0  24log.ru
@@ -1176,6 +1179,7 @@
 0.0.0.0  2juyabihe.com
 0.0.0.0  2k6eh90gs.de
 0.0.0.0  2kbmdtlgme.com
+0.0.0.0  2kn40j226.de
 0.0.0.0  2l6ddsmnm.de
 0.0.0.0  2leep.com
 0.0.0.0  2linkpath.com
@@ -1261,6 +1265,7 @@
 0.0.0.0  3.ssqzj.com
 0.0.0.0  3.up.qingdaonews.com
 0.0.0.0  3000fromenterprises.net
+0.0.0.0  300daytravel.com
 0.0.0.0  300statistics.net
 0.0.0.0  301848.com
 0.0.0.0  301pk.com
@@ -2445,6 +2450,7 @@
 0.0.0.0  7759.com
 0.0.0.0  776.jstatic.xyz
 0.0.0.0  777-partner.com
+0.0.0.0  777-partner.net
 0.0.0.0  777-partners.com
 0.0.0.0  777-partners.net
 0.0.0.0  777.com
@@ -3760,6 +3766,7 @@
 0.0.0.0  a13072.actonservice.com
 0.0.0.0  a13080.actonservice.com
 0.0.0.0  a13083.actonservice.com
+0.0.0.0  a13101.actonservice.com
 0.0.0.0  a13104.actonservice.com
 0.0.0.0  a13111.actonservice.com
 0.0.0.0  a13112.actonservice.com
@@ -3933,6 +3940,7 @@
 0.0.0.0  a15832.actonservice.com
 0.0.0.0  a15833.actonservice.com
 0.0.0.0  a15838.actonservice.com
+0.0.0.0  a15857.actonservice.com
 0.0.0.0  a15877.actonservice.com
 0.0.0.0  a15908.actonservice.com
 0.0.0.0  a15909.actonservice.com
@@ -4461,6 +4469,7 @@
 0.0.0.0  a24584.actonservice.com
 0.0.0.0  a24591.actonservice.com
 0.0.0.0  a24592.actonservice.com
+0.0.0.0  a24600.actonservice.com
 0.0.0.0  a24606.actonservice.com
 0.0.0.0  a24612.actonservice.com
 0.0.0.0  a24630.actonservice.com
@@ -5154,6 +5163,7 @@
 0.0.0.0  a39539.actonservice.com
 0.0.0.0  a39606.actonservice.com
 0.0.0.0  a39662.actonservice.com
+0.0.0.0  a39705.actonservice.com
 0.0.0.0  a39744.actonservice.com
 0.0.0.0  a39780.actonservice.com
 0.0.0.0  a39804.actonservice.com
@@ -5842,7 +5852,7 @@
 0.0.0.0  a45759.actonservice.com
 0.0.0.0  a45760.actonservice.com
 0.0.0.0  a45770.actonservice.com
-0.0.0.0  a45772.active.tc.skysrt.com
+0.0.0.0  a45772.actonservice.com
 0.0.0.0  a45785.actonservice.com
 0.0.0.0  a45794.actonservice.com
 0.0.0.0  a45797.actonservice.com
@@ -13167,6 +13177,7 @@
 0.0.0.0  app-tj.adinall.com
 0.0.0.0  app-uat.latrobehealth.com.au
 0.0.0.0  app-uat.navyhealth.com.au
+0.0.0.0  app.1112.com
 0.0.0.0  app.12thman.com
 0.0.0.0  app.12thmanfoundation.com
 0.0.0.0  app.189tutors.com
@@ -13465,7 +13476,6 @@
 0.0.0.0  app.health2sync.com
 0.0.0.0  app.healthteams.com.au
 0.0.0.0  app.hear.com
-0.0.0.0  app.heponda.com
 0.0.0.0  app.herdzone.com
 0.0.0.0  app.hermo.my
 0.0.0.0  app.hinge.co
@@ -13908,7 +13918,6 @@
 0.0.0.0  app.zirtue.com
 0.0.0.0  app.zmail.zionsbank.com
 0.0.0.0  app.zwilling.com
-0.0.0.0  app03.ikk-classic.de
 0.0.0.0  app1.maatwerkonline.nl
 0.0.0.0  app2.220cordncode.com
 0.0.0.0  appadhoc.com
@@ -14604,6 +14613,7 @@
 0.0.0.0  asqconn.com
 0.0.0.0  asqdfuhwian.com
 0.0.0.0  asqfunkmi.in
+0.0.0.0  asrecord.com
 0.0.0.0  asrop.xyz
 0.0.0.0  assassinationapprenticeedible.com
 0.0.0.0  assassinationscience.com
@@ -16258,7 +16268,6 @@
 0.0.0.0  bbbb.blackboard.com
 0.0.0.0  bbbb.goace.jp
 0.0.0.0  bbbihe.vertbaudet.es
-0.0.0.0  bbc7dcd54670499dbd3ba50c33600830.pages.ubembed.com
 0.0.0.0  bbcc.yxlady.com
 0.0.0.0  bbcc3e012c.com
 0.0.0.0  bbcoe.cn
@@ -21568,7 +21577,6 @@
 0.0.0.0  cheftoondiligord.site
 0.0.0.0  chegoorioles.shop
 0.0.0.0  chelsea.clicks.hqo.co
-0.0.0.0  chemdraw.com
 0.0.0.0  chemdraw.com.cn
 0.0.0.0  chemicals.news
 0.0.0.0  chemicalssmuglyuntying.com
@@ -24004,7 +24012,6 @@
 0.0.0.0  cookedupper.pro
 0.0.0.0  cookie-accept.com
 0.0.0.0  cookie-bar.conversionbear.com
-0.0.0.0  cookie-consent.etisalat.ae
 0.0.0.0  cookie-consent.festo.com
 0.0.0.0  cookie-guard-erdee.ey.r.appspot.com
 0.0.0.0  cookie-lista.cz
@@ -25941,6 +25948,7 @@
 0.0.0.0  d0i5db8gp.com
 0.0.0.0  d0i8m5ddv6.com
 0.0.0.0  d0main.ru
+0.0.0.0  d1.1ppt.com
 0.0.0.0  d1.3158.cn
 0.0.0.0  d1.5h.com
 0.0.0.0  d1.cnr.cn
@@ -26850,7 +26858,6 @@
 0.0.0.0  d3lw2k94jnkvbs.cloudfront.net
 0.0.0.0  d3lwdybbvxc4v9.cloudfront.net
 0.0.0.0  d3m4hp4bp4w996.cloudfront.net
-0.0.0.0  d3m6crjuedf6o.cloudfront.net
 0.0.0.0  d3m6sept6cnil5.cloudfront.net
 0.0.0.0  d3m8nzcefuqu7h.cloudfront.net
 0.0.0.0  d3m9ng807i447x.cloudfront.net
@@ -34225,6 +34232,7 @@
 0.0.0.0  engage.3m.com.py
 0.0.0.0  engage.3m.com.ro
 0.0.0.0  engage.3m.com.sg
+0.0.0.0  engage.3m.com.tr
 0.0.0.0  engage.3m.com.tt
 0.0.0.0  engage.3m.com.tw
 0.0.0.0  engage.3m.com.ua
@@ -34478,6 +34486,7 @@
 0.0.0.0  enzf.cn
 0.0.0.0  enzonewarstle.com
 0.0.0.0  enztaeofhwwzb.site
+0.0.0.0  eo.3y4n.cn
 0.0.0.0  eo.40ic.cn
 0.0.0.0  eo.4s5n.cn
 0.0.0.0  eo.nftqkq.cn
@@ -35726,7 +35735,6 @@
 0.0.0.0  eyqsrrwmvhavp.website
 0.0.0.0  eyrewxoejzwer.website
 0.0.0.0  eyrmhukohppgf.online
-0.0.0.0  eytrijnihxqnx.online
 0.0.0.0  eytrjwnhpugoo.online
 0.0.0.0  eytthwyiszpyd.site
 0.0.0.0  eyuufdyvvbosk.website
@@ -42781,6 +42789,7 @@
 0.0.0.0  heart.news
 0.0.0.0  heartachegrabbedlaunching.com
 0.0.0.0  heartbeat-pearl.vercel.app
+0.0.0.0  heartbeat.pmd.444.hu
 0.0.0.0  heartbreakingmind.com
 0.0.0.0  heartbreakslotserpent.com
 0.0.0.0  heartburnsurroundingcourtroom.com
@@ -44261,6 +44270,7 @@
 0.0.0.0  httpdns.bcelive.com
 0.0.0.0  httpdns.browser.miui.com
 0.0.0.0  httpdns.c.cdnhwc2.com
+0.0.0.0  httpdns.music.163.com
 0.0.0.0  httpdns.ocloud.oppomobile.com
 0.0.0.0  httpdns.pro
 0.0.0.0  httpkafka.unityads.unity3d.com
@@ -58016,6 +58026,7 @@
 0.0.0.0  marketing.aamcompany.com
 0.0.0.0  marketing.abaco.com
 0.0.0.0  marketing.abnbfcu.org
+0.0.0.0  marketing.absoft.co.uk
 0.0.0.0  marketing.acadian-asset.com
 0.0.0.0  marketing.accedo.tv
 0.0.0.0  marketing.acceleratedwealth.com
@@ -70313,7 +70324,6 @@
 0.0.0.0  pets.channeladvisor.com
 0.0.0.0  petsrulefondness.com
 0.0.0.0  peugyiwmgvadr.space
-0.0.0.0  peukasrsihavele.org
 0.0.0.0  peuwacvgrvtrg.space
 0.0.0.0  pevftg.shopee.sg
 0.0.0.0  pevrksshtngcg.site
@@ -73676,6 +73686,7 @@
 0.0.0.0  pzz.events
 0.0.0.0  q-counter.com
 0.0.0.0  q-stats.nl
+0.0.0.0  q.0451106.com
 0.0.0.0  q.i.gdt.qq.com
 0.0.0.0  q.ihgmc.cn
 0.0.0.0  q.nasdaq.com
@@ -81235,7 +81246,7 @@
 0.0.0.0  setantabet.com
 0.0.0.0  setaram.actonservice.com
 0.0.0.0  setennnews.com
-0.0.0.0  setexasrecord.com
+0.0.0.0  setexactive.tc.skysrt.com
 0.0.0.0  setexastimes.com
 0.0.0.0  setksohxkggca.online
 0.0.0.0  setoinc.com
@@ -81606,7 +81617,6 @@
 0.0.0.0  shaugacakro.net
 0.0.0.0  shauladubhe.top
 0.0.0.0  shaumtol.com
-0.0.0.0  shavingwitchcraft.com
 0.0.0.0  shaxiq.com
 0.0.0.0  shbet.com
 0.0.0.0  shbet.id
@@ -82867,6 +82877,7 @@
 0.0.0.0  smetrics.abbottbrasil.com.br
 0.0.0.0  smetrics.abbottcore.com
 0.0.0.0  smetrics.abbottdiagnostics.com
+0.0.0.0  smetrics.abbottgps.com
 0.0.0.0  smetrics.abbottnutrition.com
 0.0.0.0  smetrics.abbottnutrition.com.my
 0.0.0.0  smetrics.abbottstore.com
@@ -94829,7 +94840,6 @@
 0.0.0.0  tr.information.thelist-emirates.fr
 0.0.0.0  tr.informations.harmonie-mutuelle.fr
 0.0.0.0  tr.informations.lcl.fr
-0.0.0.0  tr.infos-admissions.com
 0.0.0.0  tr.infos.afpa.fr
 0.0.0.0  tr.infos.allianz-trade.com
 0.0.0.0  tr.infos.ariase.com
@@ -105646,6 +105656,7 @@
 0.0.0.0  www.888sport.com
 0.0.0.0  www.888zr022.com
 0.0.0.0  www.88asia88.com
+0.0.0.0  www.88cncc.com
 0.0.0.0  www.88nu.info
 0.0.0.0  www.88online.me
 0.0.0.0  www.88sports.com
@@ -106642,7 +106653,6 @@
 0.0.0.0  www.lippybingo.com
 0.0.0.0  www.lixi88.info
 0.0.0.0  www.lldj.com
-0.0.0.0  www.lm.cccab.club
 0.0.0.0  www.lnk0.com
 0.0.0.0  www.lnk8.cn
 0.0.0.0  www.loadsabingo.com
