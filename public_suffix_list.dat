@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-09-23_15-28-19_UTC
-// COMMIT: 8af98195397e1891a32e4ad79fa60c87813fbaf7
+// VERSION: 2026-09-24_13-26-36_UTC
+// COMMIT: a179a48c465e818cfd8d626691cb317985da87fb
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -13786,6 +13786,10 @@ gitlab.io
 // Submitted by Aljaž Starc <me@aljaxus.eu>
 gitapp.si
 gitpage.si
+
+// Glide : https://www.glideapps.com
+// Submitted by Glide Engineering <engineering@heyglide.com>
+glideos.app
 
 // Global NOG Alliance : https://nogalliance.org/
 // Submitted by Sander Steffann <sander@nogalliance.org>
