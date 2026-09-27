@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-09-26
+# Last update: 2026-09-27
 #
-# Number of domains: 113403
+# Number of domains: 113402
 #
 #=====================================
 payload:
@@ -8080,6 +8080,7 @@ payload:
   - 'active-trk7.com'
   - 'active.baofeng.com'
   - 'active.sangfor.com'
+  - 'active.tc.skysrt.com'
   - 'active24stats.nl'
   - 'activeconversion.com'
   - 'activedancer.com'
@@ -14656,7 +14657,6 @@ payload:
   - 'asimgs.pplive.cn'
   - 'asimov-win.settings.data.microsoft.com.akadns.net'
   - 'asinlovewiththem.org'
-  - 'asino.com'
   - 'asistente.christus.mx'
   - 'asjitqwjvodhr.site'
   - 'ask.antalis-verpackungen.at'
@@ -107266,7 +107266,6 @@ payload:
   - 'www.bootcdn.cn'
   - 'www.bootcdn.net'
   - 'www.bootcss.com'
-  - 'www.botbcactive.tc.skysrt.com'
   - 'www.bovada.lv'
   - 'www.boxercrazy.org'
   - 'www.boylesports.com'

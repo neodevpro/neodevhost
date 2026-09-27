@@ -6,9 +6,9 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-09-26
+# Last update: 2026-09-27
 #
-# Number of domains: 113403
+# Number of domains: 113402
 #
 #=====================================
 0.0.0.0  0.myikas.com
@@ -8079,6 +8079,7 @@
 0.0.0.0  active-trk7.com
 0.0.0.0  active.baofeng.com
 0.0.0.0  active.sangfor.com
+0.0.0.0  active.tc.skysrt.com
 0.0.0.0  active24stats.nl
 0.0.0.0  activeconversion.com
 0.0.0.0  activedancer.com
@@ -14655,7 +14656,6 @@
 0.0.0.0  asimgs.pplive.cn
 0.0.0.0  asimov-win.settings.data.microsoft.com.akadns.net
 0.0.0.0  asinlovewiththem.org
-0.0.0.0  asino.com
 0.0.0.0  asistente.christus.mx
 0.0.0.0  asjitqwjvodhr.site
 0.0.0.0  ask.antalis-verpackungen.at
@@ -107265,7 +107265,6 @@
 0.0.0.0  www.bootcdn.cn
 0.0.0.0  www.bootcdn.net
 0.0.0.0  www.bootcss.com
-0.0.0.0  www.botbcactive.tc.skysrt.com
 0.0.0.0  www.bovada.lv
 0.0.0.0  www.boxercrazy.org
 0.0.0.0  www.boylesports.com
