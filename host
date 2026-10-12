@@ -6,13 +6,11 @@
 #
 # Project home page: https://github.com/neodevpro/neodevhost
 #
-# Last update: 2026-10-11
+# Last update: 2026-10-12
 #
-# Number of domains: 113128
+# Number of domains: 113134
 #
 #=====================================
-0.0.0.0  0.03a2ffd59df.com
-0.0.0.0  0.da.58.com.cn
 0.0.0.0  0.myikas.com
 0.0.0.0  0.net.easyjet.com
 0.0.0.0  0.r.msn.com
@@ -871,7 +869,6 @@
 0.0.0.0  2.bashenghuo.com
 0.0.0.0  2.haoxue360.com
 0.0.0.0  2.letvlive.com
-0.0.0.0  2.net
 0.0.0.0  2.tuxi.com.cn
 0.0.0.0  2.up.qingdaonews.com
 0.0.0.0  2.wantsext.me
@@ -987,6 +984,7 @@
 0.0.0.0  22bet.com
 0.0.0.0  22betpartners.com
 0.0.0.0  22blqkmkg.de
+0.0.0.0  22ccaa.com
 0.0.0.0  22ee88.com
 0.0.0.0  22eo9qlbpt.com
 0.0.0.0  22hgc.com
@@ -1504,6 +1502,7 @@
 0.0.0.0  39e6p9p7.de
 0.0.0.0  39mob.com
 0.0.0.0  39q0imqo0.com
+0.0.0.0  3a2ffd59df.com
 0.0.0.0  3a3df91b05.com
 0.0.0.0  3ae7054c01.com
 0.0.0.0  3af72b9c4c.com
@@ -2614,7 +2613,7 @@
 0.0.0.0  78win04.com
 0.0.0.0  78win07.com
 0.0.0.0  78win09.com
-0.0.0.0  79181531227.con1casino.com
+0.0.0.0  79181531227.com
 0.0.0.0  7926ccc537.com
 0.0.0.0  7996epzfh.com
 0.0.0.0  79cm.com
@@ -2983,6 +2982,7 @@
 0.0.0.0  8k8k.me
 0.0.0.0  8k9ynfczfd.com
 0.0.0.0  8kbet.app
+0.0.0.0  8kbet.com
 0.0.0.0  8khgnlxk6.com
 0.0.0.0  8kj1ldt1.de
 0.0.0.0  8le8le.com
@@ -3854,7 +3854,7 @@
 0.0.0.0  a13389.actonservice.com
 0.0.0.0  a13398.actonservice.com
 0.0.0.0  a13404.actonservice.com
-0.0.0.0  a13422.actonservice.comaten.com
+0.0.0.0  a13422.actonservice.com
 0.0.0.0  a13425.actonservice.com
 0.0.0.0  a13460.actonservice.com
 0.0.0.0  a13472.actonservice.com
@@ -13207,7 +13207,7 @@
 0.0.0.0  apistat.wasu.cn
 0.0.0.0  apitiny.net
 0.0.0.0  apiv4.anythinktech.com
-0.0.0.0  apiwmsv288.net
+0.0.0.0  apiwmda.58.com.cn
 0.0.0.0  apiyd.my91app.com
 0.0.0.0  apizqaczw.com
 0.0.0.0  apk.fgzba.com
@@ -37344,6 +37344,7 @@
 0.0.0.0  five88.in
 0.0.0.0  five88.lc
 0.0.0.0  five88.my
+0.0.0.0  five88.net
 0.0.0.0  five88.ng
 0.0.0.0  five88.nl
 0.0.0.0  five88.ro
@@ -37356,7 +37357,6 @@
 0.0.0.0  five88.win
 0.0.0.0  five88.wine
 0.0.0.0  five88.world
-0.0.0.0  five880contacts.com
 0.0.0.0  five88chinhhang.com
 0.0.0.0  fivesidedsquare.com
 0.0.0.0  fiwekmyzlnvjx.site
@@ -57702,7 +57702,7 @@
 0.0.0.0  m.tiaopimiao.net
 0.0.0.0  m.tick0.com
 0.0.0.0  m.tin888.club
-0.0.0.0  m.tin888.to2ccaa.com
+0.0.0.0  m.tin888.top
 0.0.0.0  m.tiojk.com
 0.0.0.0  m.tjiaa.com
 0.0.0.0  m.tkssw.com
@@ -62371,7 +62371,6 @@
 0.0.0.0  metrics3.data.hicloud.com
 0.0.0.0  metrics4.data.hicloud.com
 0.0.0.0  metrics5.data.hicloud.com
-0.0.0.0  metrics8kbet.com
 0.0.0.0  metricsdirect.com
 0.0.0.0  metricsinfo.edc.ca
 0.0.0.0  metricsinfoqac.edc.ca
@@ -64788,6 +64787,7 @@
 0.0.0.0  n0v1cdn.com
 0.0.0.0  n0zwlat83.com
 0.0.0.0  n12rk1r9h.com
+0.0.0.0  n1casino.com
 0.0.0.0  n1yy6blznk.com
 0.0.0.0  n2.clips4sale.com
 0.0.0.0  n2bqyqg5u3.com
@@ -90679,7 +90679,7 @@
 0.0.0.0  sub.ykimg.com
 0.0.0.0  sub1.cosmosdirekt.de
 0.0.0.0  sub1.gebeall.info
-0.0.0.0  sub2.aostreet.com
+0.0.0.0  sub2.abcbest.info
 0.0.0.0  sub2.avgle.com
 0.0.0.0  sub2tech.com
 0.0.0.0  subanunrevive.com
@@ -91122,6 +91122,7 @@
 0.0.0.0  sv1.sv88.vu
 0.0.0.0  sv1.sv88d.com
 0.0.0.0  sv2.biz
+0.0.0.0  sv288.net
 0.0.0.0  sv368.casino
 0.0.0.0  sv368.one
 0.0.0.0  sv368.vin
@@ -94060,7 +94061,6 @@
 0.0.0.0  tin010.com
 0.0.0.0  tin88.top
 0.0.0.0  tin888.net
-0.0.0.0  tin888.top
 0.0.0.0  tinb.net
 0.0.0.0  tineidsreseeds.com
 0.0.0.0  tinewsdaily.com
@@ -97613,6 +97613,7 @@
 0.0.0.0  trck.rework-s.com
 0.0.0.0  trck.spoteffects.net
 0.0.0.0  trck.stefany.co.jp
+0.0.0.0  trck.wargaming.net
 0.0.0.0  trck.www4.earlywarning.com
 0.0.0.0  trck.www4.paze.com
 0.0.0.0  trck.www4.zellepay.com
@@ -101015,6 +101016,7 @@
 0.0.0.0  utiq.xataka.com
 0.0.0.0  utiq.xatakaciencia.com
 0.0.0.0  utiq.xatakafoto.com
+0.0.0.0  utiq.xatakahome.com
 0.0.0.0  utiq.xatakamovil.com
 0.0.0.0  utiq.xatakandroid.com
 0.0.0.0  utiq.xatakawindows.com
@@ -106879,6 +106881,7 @@
 0.0.0.0  www.bingdianhuanyuan.cn
 0.0.0.0  www.bingo.com
 0.0.0.0  www.bingoscotland.net
+0.0.0.0  www.bingostreet.com
 0.0.0.0  www.bingotime.co.uk
 0.0.0.0  www.bitcoinsports.eu
 0.0.0.0  www.biteti.com
@@ -107785,7 +107788,7 @@
 0.0.0.0  www.nmpcdn.com
 0.0.0.0  www.nnnwwwe.com
 0.0.0.0  www.nordicbet.com
-0.0.0.0  www.norgesautbcbest.info
+0.0.0.0  www.norgesautomaten.com
 0.0.0.0  www.norgesspill.com
 0.0.0.0  www.norsk-tipping.no
 0.0.0.0  www.norskeautomater.com
@@ -112326,6 +112329,7 @@
 0.0.0.0  zkcxoywtprkuz.website
 0.0.0.0  zkczzltlhp6y.com
 0.0.0.0  zkdtpucowdlat.website
+0.0.0.0  zkdvaodpyoxvd.online
 0.0.0.0  zkebwy.copenhagenstudios.com
 0.0.0.0  zkfjdxlwwcilg.website
 0.0.0.0  zkggtossfobzd.space
@@ -112533,6 +112537,7 @@
 0.0.0.0  zongzuhulian.com
 0.0.0.0  zonhteso.com
 0.0.0.0  zonjdpdkswtna.online
+0.0.0.0  zononi.com
 0.0.0.0  zonst.com
 0.0.0.0  zontera.com
 0.0.0.0  zontqiwjmdzbv.space
@@ -112901,6 +112906,7 @@
 0.0.0.0  zuvjenxhmiuhj.space
 0.0.0.0  zuvwhajyrtkfq.space
 0.0.0.0  zuwnqfdzojfzk.site
+0.0.0.0  zuxzvxmibplsk.website
 0.0.0.0  zuykihipzrmv.com
 0.0.0.0  zuyloscnskdiu.online
 0.0.0.0  zuzab.com
