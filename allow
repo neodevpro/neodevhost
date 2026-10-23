@@ -75,7 +75,6 @@
 1drv.ms
 1e100.net
 1fgqfml.oloadcdn.net
-1fichier.com
 1gr.cz
 1hosts.cf
 1und1.de
@@ -1994,6 +1993,7 @@ blocklists.settings.services.mozilla.org
 blog-at.line.me
 blog-cdn.feedspot.com
 blog-cdn2.feedspot.com
+blog-cms.line.me
 blog.appsumo.com
 blog.bit.ly
 blog.bitfinex.com
@@ -2412,7 +2412,7 @@ cdn.optinmonster.com
 cdn.paddle.com
 cdn.pardot.com
 cdn.pcbeta.attachment.inimc.com
-cdn.pcbeta.css.inimc.com
+cdn.pcbeta.css.inimc.co1fichier.com
 cdn.pcbeta.static.inimc.com
 cdn.pdst.fm
 cdn.pendo.io
@@ -6838,7 +6838,6 @@ office365.com
 officeclient.microsoft.com
 officedepot.com
 official-blog.line.me
-og-cms.line.me
 ogcrawler.blog.naver.com
 oge.la
 ogs.google.com
@@ -9467,6 +9466,7 @@ vvvvid.it
 vwdservices.com
 vwp.jpto.sonymobile.com
 vy.me
+w.google.co.ke
 w.line.me
 w.soundcloud.com
 w.x.sndcdn.com
@@ -9711,6 +9711,7 @@ ww2.gogoanime.io
 ww2.samsung.se
 ww2.sinaimg.cn
 ww3.gogoanime.io
+ww360.cn
 ww4.gogoanime.io
 ww4.sinaimg.cn
 ww5.gogoanime.io
@@ -10202,7 +10203,6 @@ www.google.co.id
 www.google.co.il
 www.google.co.in
 www.google.co.jp
-www.google.co.ke
 www.google.co.kr
 www.google.co.ls
 www.google.co.ma
