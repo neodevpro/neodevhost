@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-11-08_13-21-08_UTC
-// COMMIT: 7a21dc3491d43db036124fdd6a3a77d1cc44ad8a
+// VERSION: 2026-11-10_11-23-57_UTC
+// COMMIT: 3db7776283b0874634fea8b01168f785360d64f2
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -11275,6 +11275,10 @@ ltd.ua
 a2hosted.com
 cpserver.com
 
+// abyme : https://abyme.studio
+// Submitted by Richard Mathieson <psl@abyme.studio>
+abyme.dev
+
 // ActiveTrail : https://www.activetrail.biz/
 // Submitted by Ofer Kalaora <postmaster@activetrail.com>
 activetrail.biz
@@ -12538,6 +12542,10 @@ bnr.la
 // Submitted by Andy Ortlieb <aortlieb@atlassian.com>
 bitbucket.io
 
+// Bitgate, Inc. : https://ship.page
+// Submitted by Bitgate, Inc. <abuse@bitgate.com>
+ship.place
+
 // Blackbaud, Inc. : https://www.blackbaud.com
 // Submitted by Paul Crowder <paul.crowder@blackbaud.com>
 blackbaudcdn.net
@@ -12545,6 +12553,10 @@ blackbaudcdn.net
 // Blatech : http://www.blatech.net
 // Submitted by Luke Bratch <luke@bratch.co.uk>
 of.je
+
+// BlitzWorks : https://blitz.cloud
+// Submitted by BlitzWorks <hallo@blitzworks.io>
+prod.page
 
 // Block, Inc. : https://block.xyz
 // Submitted by Jonathan Boice <security@block.xyz>
@@ -12777,6 +12789,10 @@ objects.lpg.cloudscale.ch
 objects.rma.cloudscale.ch
 lpg.objectstorage.ch
 rma.objectstorage.ch
+
+// Cloudzyro Ltd : https://cloudzyro.com
+// Submitted by Kofi Agyem <psl@cloudzyro.com>
+cloudzyro.app
 
 // Clovyr : https://clovyr.io
 // Submitted by Patrick Nielsen <patrick@clovyr.io>
@@ -14011,6 +14027,10 @@ goupile.fr
 // GOV.UK Pay : https://www.payments.service.gov.uk/
 // Submitted by Richard Baker <richard.baker@digital.cabinet-office.gov.uk>
 pymnt.uk
+
+// Government of Germany : https://dachmarke.gov.de/
+// Submitted by Digitale Dachmarke <support@dachmarke.gov.de>
+gov.de
 
 // Government of the Netherlands : https://www.government.nl
 // Submitted by <domeinnaam@minaz.nl>
