@@ -28,7 +28,7 @@ fetch_required "https://raw.githubusercontent.com/FusionPlmH/dead-block/refs/hea
 TLD_LIST=$(tail -n +2 "$WORK_DIR/tlds" | tr '[:upper:]' '[:lower:]' | tr '\n' ' ')
 [[ -n "${TLD_LIST// /}" ]] || fail "IANA TLD list contains no TLDs"
 
-# Parse common plain-domain, hosts, dnsmasq, and adblock list formats.
+# Extract hostnames from plain-domain, URL, hosts, dnsmasq, and adblock-style lists.
 extract_candidates() {
   awk '
     {
@@ -36,23 +36,40 @@ extract_candidates() {
       line=$0
       sub(/^[[:space:]]+/, "", line)
       sub(/[[:space:]]+$/, "", line)
-      if (line == "" || line ~ /^#/ || line ~ /^!/ || line ~ /^\[/) next
+      if (line == "" || line ~ /^#/ || line ~ /^!/ || line ~ /^\/\// || line ~ /^\[/) next
 
-      if (line ~ /^address=\//) {
-        sub(/^address=\//, "", line)
-        sub(/\/[^/]*$/, "", line)
-      } else if (line ~ /^\|\|/) {
-        sub(/^\|\|/, "", line)
-        sub(/[\^$].*$/, "", line)
+      # dnsmasq entries such as address=/example.com/0.0.0.0
+      if (line ~ /^(address|server)=\//) {
+        sub(/^(address|server)=\//, "", line)
+        sub(/\/.*$/, "", line)
       } else {
-        sub(/^(0\.0\.0\.0|127\.[0-9.]+|::)[[:space:]]+/, "", line)
+        # Hosts entries: discard the address and retain names on the line.
+        sub(/^(0\.0\.0\.0|127\.[0-9.]+|::1|::)[[:space:]]+/, "", line)
+        # Accept Adblock/AdGuard exception rules as well as blocking rules.
+        sub(/^@@/, "", line)
+        sub(/^\|\|/, "", line)
+        sub(/^\|/, "", line)
       }
 
-      count=split(line, fields, /[[:space:]]+/)
+      count=split(line, fields, /[[:space:],]+/)
       for (i=1; i<=count; i++) {
         candidate=fields[i]
-        sub(/[\^$].*$/, "", candidate)
-        if (candidate != "" && candidate !~ /^#/ && candidate !~ /^!/ && candidate !~ /^\[/) print candidate
+        if (candidate == "" || candidate ~ /^#/ || candidate ~ /^!/) continue
+        sub(/^@@/, "", candidate)
+        sub(/^\|\|/, "", candidate)
+        sub(/^\|/, "", candidate)
+
+        # Convert full URLs to their hostname; ignore URL paths, queries, and fragments.
+        if (candidate ~ /^[[:alpha:]][[:alnum:].+-]*:\/\//) sub(/^[[:alpha:]][[:alnum:].+-]*:\/\//, "", candidate)
+        else if (candidate ~ /^\/\//) sub(/^\/\//, "", candidate)
+        if (candidate ~ /@/) sub(/^.*@/, "", candidate)
+        sub(/[\/?#].*$/, "", candidate)
+        sub(/:[0-9]+$/, "", candidate)
+        sub(/[\^$|;,].*$/, "", candidate)
+        sub(/^\*\./, "", candidate)
+        sub(/^\./, "", candidate)
+        sub(/[.]$/, "", candidate)
+        if (candidate != "" && candidate !~ /^#/ && candidate !~ /^!/) print candidate
       }
     }
   '
