@@ -4,6 +4,14 @@
 echo "Clean..."
 rm -f host adblocker dnsmasq.conf smartdns.conf domain clash allow block public_suffix_list.dat
 
+# Download the upstream non-accessible domain list on every run.
+DEADBLOCK_URL="https://raw.githubusercontent.com/FusionPlmH/dead-block/refs/heads/master/deadblock"
+if ! wget -q --tries=3 --timeout=15 -O deadblock.tmp "$DEADBLOCK_URL"; then
+  echo "Failed to download deadblock from $DEADBLOCK_URL" >&2
+  rm -f deadblock.tmp
+  exit 1
+fi
+mv deadblock.tmp deadblock
 
 # Pre-Fetch TLD list and Public Suffix List
 TLD_LIST=$(wget -qO- "https://data.iana.org/TLD/tlds-alpha-by-domain.txt" | tail -n +2 | tr '[:upper:]' '[:lower:]')
@@ -167,7 +175,7 @@ done
 sed -i -e '14,$s/^/||&/' -e '14,$s/$/&^/' adblocker
 sed -i -e '14,$s/^/0.0.0.0  &/' host
 sed -i -e '14,$s/^/address=\//' -e '14,$s/$/\/0.0.0.0/' dnsmasq.conf
-sed -i -e '14,$s/^/address \//' -e '14,$s/$/\/#/' smartdns.conf
+sed -i -e '14,$s/^/address \/' -e '14,$s/$\/#/' smartdns.conf
 sed -i -e '14i payload:' -e "14,\$s/^/  - '/" -e "14,\$s/$/'/" clash
 
 # Update README with statistics optimized
