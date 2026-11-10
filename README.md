@@ -5,7 +5,7 @@
 ## The Powerful Friendly Uptodate AD Blocking Hosts 最新强大而友善的去广告
 
 
-[![Stargazers over time](https://starchart.cc/neodevpro/neodevhost.svg)](https://starchart.cc/neodevpro/neodevhost)
+
 [![Build Status](https://img.shields.io/github/actions/workflow/status/neodevpro/neodevhost/Auto%20Update.yml)](https://github.com/neodevpro/neodevhost/actions)<br/>
 [![Last commit](https://img.shields.io/github/last-commit/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/commit/master)<br/>
 [![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)<br/>
