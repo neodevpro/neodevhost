@@ -1,243 +1,180 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
-
 export LC_ALL=C
 
 ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 cd "$ROOT_DIR"
-
 WORK_DIR="$(mktemp -d "${RUNNER_TEMP:-/tmp}/neodevhost.XXXXXX")"
 trap 'rm -rf "$WORK_DIR"' EXIT
 
-fail() {
-  echo "Error: $*" >&2
-  exit 1
-}
-
-require_file() {
-  [[ -f "$1" ]] || fail "Required file not found: $1"
-}
-
-for command in awk cat comm date grep mktemp mv sed sort tr uniq wc wget; do
+fail() { echo "Error: $*" >&2; exit 1; }
+for command in awk cat date grep mktemp mv sort tail tr wc wget; do
   command -v "$command" >/dev/null 2>&1 || fail "Required command not found: $command"
 done
-
 for file in allowlist blocklist title README.md; do
-  require_file "$file"
+  [[ -f "$file" ]] || fail "Required file not found: $file"
 done
 
-echo "Downloading domain data..."
-
-DEADBLOCK_URL="https://raw.githubusercontent.com/FusionPlmH/dead-block/refs/heads/master/deadblock"
-TLD_URL="https://data.iana.org/TLD/tlds-alpha-by-domain.txt"
-PSL_URL="https://publicsuffix.org/list/public_suffix_list.dat"
-
 fetch_required() {
-  local url="$1"
-  local output="$2"
+  local url="$1" output="$2"
   wget -q --tries=3 --timeout=20 --waitretry=2 -O "$output" "$url" || fail "Failed to download $url"
   [[ -s "$output" ]] || fail "Downloaded file is empty: $url"
 }
 
-fetch_required "$DEADBLOCK_URL" "$WORK_DIR/deadblock.raw"
-fetch_required "$TLD_URL" "$WORK_DIR/tlds"
-fetch_required "$PSL_URL" "$WORK_DIR/public_suffix_list.dat"
-
+echo "Downloading TLD, PSL, and deadblock data..."
+fetch_required "https://data.iana.org/TLD/tlds-alpha-by-domain.txt" "$WORK_DIR/tlds"
+fetch_required "https://publicsuffix.org/list/public_suffix_list.dat" "$WORK_DIR/psl"
+fetch_required "https://raw.githubusercontent.com/FusionPlmH/dead-block/refs/heads/master/deadblock" "$WORK_DIR/deadblock.raw"
 TLD_LIST=$(tail -n +2 "$WORK_DIR/tlds" | tr '[:upper:]' '[:lower:]' | tr '\n' ' ')
 [[ -n "${TLD_LIST// /}" ]] || fail "IANA TLD list contains no TLDs"
-grep -qvE '^(//|[[:space:]]*$)' "$WORK_DIR/public_suffix_list.dat" || fail "Public Suffix List contains no rules"
 
-process_sources() {
-  local source_file="$1"
-  local output_file="$2"
-  local list_file="$WORK_DIR/${2}.list"
-  local raw_file="$WORK_DIR/${2}.raw"
-  local download_file="$WORK_DIR/${2}.download"
-  local url
-  local fetched=0
+# Parse common plain-domain, hosts, dnsmasq, and adblock list formats.
+extract_candidates() {
+  awk '
+    {
+      sub(/\r$/, "")
+      line=$0
+      sub(/^[[:space:]]+/, "", line)
+      sub(/[[:space:]]+$/, "", line)
+      if (line == "" || line ~ /^#/ || line ~ /^!/ || line ~ /^\[/) next
 
-  sed -e 's/\r$//' \
-      -e 's/^[[:space:]]*//' \
-      -e 's/[[:space:]]*$//' \
-      -e '/^#/d' \
-      -e '/^$/d' \
-      "$source_file" > "$list_file"
+      if (line ~ /^address=\//) {
+        sub(/^address=\//, "", line)
+        sub(/\/[^/]*$/, "", line)
+      } else if (line ~ /^\|\|/) {
+        sub(/^\|\|/, "", line)
+        sub(/[\^$].*$/, "", line)
+      } else {
+        sub(/^(0\.0\.0\.0|127\.[0-9.]+|::)[[:space:]]+/, "", line)
+      }
 
-  : > "$raw_file"
-
-  while IFS= read -r url || [[ -n "$url" ]]; do
-    if wget -q --tries=2 --timeout=20 --waitretry=2 -O "$download_file" "$url" && [[ -s "$download_file" ]]; then
-      cat "$download_file" >> "$raw_file"
-      printf '\n' >> "$raw_file"
-      fetched=$((fetched + 1))
-    else
-      echo "Warning: unable to fetch source; skipping: $url" >&2
-    fi
-  done < "$list_file"
-
-  (( fetched > 0 )) || fail "No sources could be downloaded from $source_file"
-  [[ -s "$raw_file" ]] || fail "All downloaded sources were empty for $source_file"
-
-  sed -E \
-    -e 's/\r$//' \
-    -e '/^[[:space:]]*(#|!|\[|$)/d' \
-    -e 's/^[[:space:]]*0\.0\.0\.0[[:space:]]+//' \
-    -e 's/^[[:space:]]*127\.[0-9.]+[[:space:]]+//' \
-    -e 's/^[[:space:]]*::[[:space:]]+//' \
-    -e 's/^[[:space:]]*address=\\///' \
-    -e 's/\\/0\\.0\\.0\\.0[[:space:]]*$//' \
-    -e 's/^\|\|//' \
-    -e 's/\^.*$//' \
-    -e 's/^[[:space:]]+//' \
-    -e 's/[[:space:]].*$//' \
-    "$raw_file" > "$WORK_DIR/${2}.candidates"
-
-  normalize_and_validate < "$WORK_DIR/${2}.candidates" > "$WORK_DIR/$output_file"
+      count=split(line, fields, /[[:space:]]+/)
+      for (i=1; i<=count; i++) {
+        candidate=fields[i]
+        sub(/[\^$].*$/, "", candidate)
+        if (candidate != "" && candidate !~ /^#/ && candidate !~ /^!/ && candidate !~ /^\[/) print candidate
+      }
+    }
+  '
 }
 
 normalize_and_validate() {
-  local idn_cmd="cat"
+  local input="$1" output="$2"
   if command -v idn >/dev/null 2>&1; then
-    idn_cmd="idn --quiet"
+    idn --quiet < "$input" > "$WORK_DIR/idn.out" || cp "$input" "$WORK_DIR/idn.out"
+    input="$WORK_DIR/idn.out"
   fi
 
-  # shellcheck disable=SC2086
-  $idn_cmd |
-    awk -v tlds="$TLD_LIST" -v psl_file="$WORK_DIR/public_suffix_list.dat" '
-      BEGIN {
-        ntld = split(tlds, tld_values, " ")
-        for (i = 1; i <= ntld; i++) valid_tld[tld_values[i]] = 1
-
-        while ((getline rule < psl_file) > 0) {
-          sub(/\r$/, "", rule)
-          if (rule == "" || rule ~ /^\/\//) continue
-          if (substr(rule, 1, 1) == "!") {
-            exception[substr(rule, 2)] = 1
-            continue
-          }
-          if (substr(rule, 1, 2) == "*.") {
-            wildcard[substr(rule, 3)] = 1
-            continue
-          }
-          public_suffix[rule] = 1
-        }
-        close(psl_file)
-
-        split("example.com example.net example.org test localhost invalid local", reserved_values, " ")
-        for (i in reserved_values) reserved[reserved_values[i]] = 1
+  awk -v tlds="$TLD_LIST" -v psl_file="$WORK_DIR/psl" '
+    BEGIN {
+      count=split(tlds, tld, " ")
+      for (i=1; i<=count; i++) valid_tld[tld[i]]=1
+      while ((getline rule < psl_file) > 0) {
+        sub(/\r$/, "", rule)
+        if (rule == "" || rule ~ /^\/\//) continue
+        if (substr(rule,1,2) == "*.") wildcard[substr(rule,3)]=1
+        else if (substr(rule,1,1) != "!") suffix[rule]=1
       }
-
-      {
-        domain = tolower($0)
-        sub(/\r$/, "", domain)
-        sub(/^[[:space:]]+|[[:space:]]+$/, "", domain)
-        sub(/\.$/, "", domain)
-
-        if (domain == "") next
-        if (length(domain) > 253 || domain ~ /[^a-z0-9.-]/ || domain ~ /\.\./ || domain ~ /^\.|\.$/) next
-
-        n = split(domain, labels, ".")
-        if (n < 2 || !valid_tld[labels[n]]) next
-
-        valid = 1
-        for (i = 1; i <= n; i++) {
-          if (labels[i] == "" || length(labels[i]) > 63 || labels[i] ~ /^-/ || labels[i] ~ /-$/) {
-            valid = 0
-            break
-          }
-          if (substr(labels[i], 3, 2) == "--" && labels[i] !~ /^xn--/) {
-            valid = 0
-            break
-          }
-        }
-        if (!valid) next
-
-        suffix_found = 0
-        for (i = 1; i <= n; i++) {
-          suffix = ""
-          for (j = i; j <= n; j++) {
-            suffix = suffix (suffix == "" ? "" : ".") labels[j]
-          }
-          if (public_suffix[suffix]) suffix_found = 1
-          if (i < n) {
-            wildcard_base = ""
-            for (j = i + 1; j <= n; j++) {
-              wildcard_base = wildcard_base (wildcard_base == "" ? "" : ".") labels[j]
-            }
-            if (wildcard[wildcard_base]) suffix_found = 1
-          }
-        }
-        if (!suffix_found) next
-
-        reject = 0
-        for (parent in reserved) {
-          if (domain == parent || (length(domain) > length(parent) && substr(domain, length(domain) - length(parent), 1) == "." && substr(domain, length(domain) - length(parent) + 1) == parent)) {
-            reject = 1
-            break
-          }
-        }
-        if (!reject) print domain
+      close(psl_file)
+      split("example.com example.net example.org test localhost invalid local", values, " ")
+      for (i in values) reserved[values[i]]=1
+    }
+    {
+      domain=tolower($0)
+      sub(/\r$/, "", domain)
+      sub(/^[[:space:]]+/, "", domain)
+      sub(/[[:space:]]+$/, "", domain)
+      sub(/\.$/, "", domain)
+      if (domain == "" || length(domain)>253 || domain ~ /[^a-z0-9.-]/ || domain ~ /\.\./ || domain ~ /^\.|\.$/) next
+      n=split(domain, label, ".")
+      if (n<2 || !valid_tld[label[n]]) next
+      valid=1
+      for (i=1; i<=n; i++) {
+        if (label[i]=="" || length(label[i])>63 || label[i] ~ /^-/ || label[i] ~ /-$/) { valid=0; break }
+        if (substr(label[i],3,2)=="--" && label[i] !~ /^xn--/) { valid=0; break }
       }
-    ' | sort -u
+      if (!valid) next
+
+      has_suffix=0
+      for (i=1; i<=n; i++) {
+        part=""
+        for (j=i; j<=n; j++) part=part (part=="" ? "" : ".") label[j]
+        if (suffix[part]) has_suffix=1
+        if (i<n) {
+          base=""
+          for (j=i+1; j<=n; j++) base=base (base=="" ? "" : ".") label[j]
+          if (wildcard[base]) has_suffix=1
+        }
+      }
+      if (!has_suffix) next
+      reject=0
+      for (parent in reserved) {
+        if (domain==parent || (length(domain)>length(parent) && substr(domain,length(domain)-length(parent),1)=="." && substr(domain,length(domain)-length(parent)+1)==parent)) { reject=1; break }
+      }
+      if (!reject) print domain
+    }
+  ' "$input" | sort -u > "$output"
 }
 
-process_sources allowlist allow
-process_sources blocklist block
+process_source_file() {
+  local source_file="$1" name="$2"
+  local raw="$WORK_DIR/${name}.raw" url_file="$WORK_DIR/${name}.urls" download="$WORK_DIR/${name}.download"
+  local url fetched=0
+  awk '{sub(/\r$/, ""); sub(/^[[:space:]]+/, ""); sub(/[[:space:]]+$/, ""); if ($0!="" && $0 !~ /^#/) print}' "$source_file" > "$url_file"
+  : > "$raw"
+  while IFS= read -r url || [[ -n "$url" ]]; do
+    if wget -q --tries=2 --timeout=20 --waitretry=2 -O "$download" "$url" && [[ -s "$download" ]]; then
+      cat "$download" >> "$raw"
+      printf '\n' >> "$raw"
+      fetched=$((fetched + 1))
+    else
+      echo "Warning: source unavailable, skipped: $url" >&2
+    fi
+  done < "$url_file"
+  (( fetched > 0 )) || fail "No sources could be downloaded from $source_file"
+  extract_candidates < "$raw" > "$WORK_DIR/${name}.candidates"
+  normalize_and_validate "$WORK_DIR/${name}.candidates" "$WORK_DIR/$name"
+}
 
-normalize_and_validate < "$WORK_DIR/deadblock.raw" > "$WORK_DIR/deadblock"
+process_source_file allowlist allow
+process_source_file blocklist block
+extract_candidates < "$WORK_DIR/deadblock.raw" > "$WORK_DIR/deadblock.candidates"
+normalize_and_validate "$WORK_DIR/deadblock.candidates" "$WORK_DIR/deadblock"
 [[ -s "$WORK_DIR/deadblock" ]] || fail "Downloaded deadblock list contains no valid domains"
 
 remove_redundant_subdomains() {
   awk -F. '
-    {
-      domains[$0] = 1
-      entries[NR] = $0
-    }
+    { present[$0]=1; row[NR]=$0 }
     END {
-      for (line = 1; line <= NR; line++) {
-        domain = entries[line]
-        n = split(domain, labels, ".")
-        redundant = 0
-        for (i = 2; i <= n; i++) {
-          parent = ""
-          for (j = i; j <= n; j++) {
-            parent = parent (parent == "" ? "" : ".") labels[j]
-          }
-          if (domains[parent]) {
-            redundant = 1
-            break
-          }
+      for (r=1; r<=NR; r++) {
+        domain=row[r]; n=split(domain, label, "."); redundant=0
+        for (i=2; i<=n; i++) {
+          parent=""
+          for (j=i; j<=n; j++) parent=parent (parent=="" ? "" : ".") label[j]
+          if (present[parent]) { redundant=1; break }
         }
         if (!redundant) print domain
       }
     }
   ' | sort -u
 }
-
 for list in allow block deadblock; do
-  remove_redundant_subdomains < "$WORK_DIR/$list" > "$WORK_DIR/${list}.reduced"
-  mv "$WORK_DIR/${list}.reduced" "$WORK_DIR/$list"
+  remove_redundant_subdomains < "$WORK_DIR/$list" > "$WORK_DIR/$list.reduced"
+  mv "$WORK_DIR/$list.reduced" "$WORK_DIR/$list"
 done
 
+# Exclude blocked entries covered by an allowlist or upstream dead-domain entry.
 cat "$WORK_DIR/allow" "$WORK_DIR/deadblock" | sort -u > "$WORK_DIR/exclusions"
-
 awk '
-  FNR == NR {
-    excluded[$0] = 1
-    next
-  }
+  FNR==NR { excluded[$0]=1; next }
   {
-    domain = $0
-    blocked = 0
-    while (domain != "") {
-      if (excluded[domain]) {
-        blocked = 1
-        break
-      }
+    domain=$0; omit=0
+    while (domain!="") {
+      if (excluded[domain]) { omit=1; break }
       if (domain !~ /\./) break
       sub(/^[^.]+\./, "", domain)
     }
-    if (!blocked) print $0
+    if (!omit) print
   }
 ' "$WORK_DIR/exclusions" "$WORK_DIR/block" | sort -u > "$WORK_DIR/host.domains"
 
@@ -246,89 +183,49 @@ allow_count=$(wc -l < "$WORK_DIR/allow" | tr -d '[:space:]')
 dead_count=$(wc -l < "$WORK_DIR/deadblock" | tr -d '[:space:]')
 update_date=$(date '+%Y-%m-%d')
 
-cp title "$WORK_DIR/title"
-
 awk -v date="$update_date" -v count="$block_count" '
   /^# Last update:/ { print "# Last update: " date; next }
   /^# Number of domains:/ { print "# Number of domains: " count; next }
   { print }
-' "$WORK_DIR/title" > "$WORK_DIR/title.updated"
-
-mv "$WORK_DIR/title.updated" "$WORK_DIR/title"
+' title > "$WORK_DIR/title"
 
 make_output() {
-  local file="$1"
-  local mode="$2"
-
-  case "$mode" in
-    host)
-      : > "$WORK_DIR/$file"
-      while IFS= read -r domain; do
-        printf '0.0.0.0  %s\n' "$domain" >> "$WORK_DIR/$file"
-      done < "$WORK_DIR/host.domains"
-      ;;
-    adblocker)
-      : > "$WORK_DIR/$file"
-      while IFS= read -r domain; do
-        printf '||%s^\n' "$domain" >> "$WORK_DIR/$file"
-      done < "$WORK_DIR/host.domains"
-      ;;
-    dnsmasq)
-      : > "$WORK_DIR/$file"
-      while IFS= read -r domain; do
-        printf 'address=/%s/0.0.0.0\n' "$domain" >> "$WORK_DIR/$file"
-      done < "$WORK_DIR/host.domains"
-      ;;
-    smartdns)
-      : > "$WORK_DIR/$file"
-      while IFS= read -r domain; do
-        printf 'address /%s/#\n' "$domain" >> "$WORK_DIR/$file"
-      done < "$WORK_DIR/host.domains"
-      ;;
-    domain)
-      cp "$WORK_DIR/host.domains" "$WORK_DIR/$file"
-      ;;
-    clash)
-      {
-        printf 'payload:\n'
-        while IFS= read -r domain; do
-          printf "  - '%s'\n" "$domain"
-        done < "$WORK_DIR/host.domains"
-      } > "$WORK_DIR/$file"
-      ;;
-    *)
-      fail "Unknown output mode: $mode"
-      ;;
-  esac
+  local filename="$1" mode="$2" domain
+  {
+    cat "$WORK_DIR/title"
+    case "$mode" in clash) printf 'payload:\n';; esac
+    while IFS= read -r domain; do
+      case "$mode" in
+        host) printf '0.0.0.0  %s\n' "$domain" ;;
+        adblocker) printf '||%s^\n' "$domain" ;;
+        dnsmasq) printf 'address=/%s/0.0.0.0\n' "$domain" ;;
+        smartdns) printf 'address /%s/#\n' "$domain" ;;
+        domain) printf '%s\n' "$domain" ;;
+        clash) printf "  - '%s'\n" "$domain" ;;
+      esac
+    done < "$WORK_DIR/host.domains"
+  } > "$WORK_DIR/$filename"
 }
-
 make_output host host
 make_output adblocker adblocker
-make_output dnsmasq dnsmasq.conf
-make_output smartdns smartdns.conf
+make_output dnsmasq.conf dnsmasq
+make_output smartdns.conf smartdns
 make_output domain domain
 make_output clash clash
-
-cp "$WORK_DIR/host.domains" "$ROOT_DIR/host"
-cp "$WORK_DIR/allow" "$ROOT_DIR/allow"
-cp "$WORK_DIR/block" "$ROOT_DIR/block"
-cp "$WORK_DIR/deadblock" "$ROOT_DIR/deadblock"
-cp "$WORK_DIR/title" "$ROOT_DIR/title"
-cp "$WORK_DIR/adblocker" "$ROOT_DIR/adblocker"
-cp "$WORK_DIR/dnsmasq.conf" "$ROOT_DIR/dnsmasq.conf"
-cp "$WORK_DIR/smartdns.conf" "$ROOT_DIR/smartdns.conf"
-cp "$WORK_DIR/domain" "$ROOT_DIR/domain"
-cp "$WORK_DIR/clash" "$ROOT_DIR/clash"
+cp "$WORK_DIR/host.domains" "$WORK_DIR/block"
 
 awk -v blocked="$block_count" -v allowed="$allow_count" -v dead="$dead_count" -v date="$update_date" '
   /Total ad \/ tracking block list/ { sub(/[0-9]+$/, blocked); print; next }
   /Total allowlist list/ { sub(/[0-9]+$/, allowed); print; next }
   /Total upstream-non-accessable list/ { sub(/[0-9]+$/, dead); print; next }
-  /^Update 更新时间:/ { sub(/[0-9]{4}-[0-9]{2}-[0-9]{2}$/, date); print; next }
+  /^Update 更新时间:/ { sub(/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]$/, date); print; next }
   /^Number of Domain 域名数目：/ { sub(/[0-9]+$/, blocked); print; next }
   { print }
 ' README.md > "$WORK_DIR/README.md"
 
-cp "$WORK_DIR/README.md" "$ROOT_DIR/README.md"
+# Publish only after all inputs and outputs have been validated/generated.
+for file in title README.md allow block deadblock host adblocker dnsmasq.conf smartdns.conf domain clash; do
+  mv "$WORK_DIR/$file" "$ROOT_DIR/$file"
+done
 
-echo "Done! Blocked: ${block_count}; allowed: ${allow_count}; deadblock: ${dead_count}."
+echo "Done! Blocked: $block_count; allowed: $allow_count; deadblock: $dead_count."
