@@ -152,6 +152,19 @@ EOF
 assert_eq "brand and suffix patterns" "notamazon.com example.com" \
   "$(ignore "$WORK/allowignore.txt" < "$WORK/allow.txt" | tr '\n' ' ' | sed 's/ $//')"
 
+echo "deadblock.awk"
+cat > "$WORK/dead.txt" <<'EOF'
+a.example
+x.example
+EOF
+cat > "$WORK/domains.txt" <<'EOF'
+a.example
+b.a.example
+y.example
+EOF
+assert_eq "dead domains removed exactly, live subdomains kept" "b.a.example y.example" \
+  "$(awk -f "$LIB/deadblock.awk" "$WORK/dead.txt" "$WORK/domains.txt" | tr '\n' ' ' | sed 's/ $//')"
+
 echo "render.awk"
 printf '# title line 1\n# title line 2\n' > "$WORK/title"
 mkdir -p "$WORK/out"

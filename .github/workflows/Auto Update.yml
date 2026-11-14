@@ -20,7 +20,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
+    env:
+      # 1000 keeps the unknown/timeout rate low while still finishing a 250k
+      # domain sweep in well under the job timeout; raise to 2000 if needed.
+      CHECK_CONCURRENCY: 1000
+      CHECK_STRICT_RESOLVERS: "1"
+      CHECK_MIN_OVERSEAS: "2"
+      CHECK_MIN_CHINA: "2"
 
     steps:
       - uses: actions/checkout@v7.0.1
@@ -38,6 +45,9 @@ jobs:
           sudo install -m 0755 /tmp/sing-box-1.14.4-linux-amd64/sing-box /usr/local/bin/sing-box
           sing-box version
 
+      - name: Install python deps (dead-domain check)
+        run: python3 -m pip install --quiet --upgrade dnspython aiohttp
+
       - name: Lint shell scripts
         run: shellcheck -x -s bash host.sh install.sh uninstall.sh tests/run.sh tests/audit.sh
 
@@ -45,7 +55,10 @@ jobs:
         run: bash tests/run.sh
 
       - name: Build lists
-        run: bash ./host.sh ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: |
+          # Bulk DNS lookups hold one socket per worker.
+          ulimit -n 65536 || true
+          bash ./host.sh ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Summary
         if: always()

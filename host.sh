@@ -5,6 +5,7 @@
 # Usage:
 #   ./host.sh              fetch, build and publish
 #   ./host.sh --dry-run    fetch and build, publish nothing (keeps the work dir)
+#   ./host.sh --no-dead-check   reuse the published deadblock
 #   ./host.sh --help
 #
 # Environment:
@@ -14,7 +15,7 @@
 #
 # Pipeline:
 #   reference data -> source lists -> allowignore -> prune -> exclusions
-#   -> checks -> render -> publish
+#   -> dead-domain check -> checks -> render -> publish
 #
 # Each stage writes into $WORK_DIR; the published files are only replaced once
 # every output exists, so a failed build never leaves a half-written repo.
@@ -28,7 +29,6 @@ cd "$ROOT_DIR"
 
 TLD_URL="https://data.iana.org/TLD/tlds-alpha-by-domain.txt"
 PSL_URL="https://publicsuffix.org/list/public_suffix_list.dat"
-DEADBLOCK_URL="https://raw.githubusercontent.com/FusionPlmH/dead-block/refs/heads/master/deadblock"
 
 # Upstream lists legitimately grow and shrink, so the build never compares sizes
 # with the previous run. These thresholds only catch a broken download of the
@@ -39,6 +39,7 @@ MIN_TLDS="${NEODEV_MIN_TLDS:-1000}"
 PUBLISHED=(title README.md allow block deadblock host adblocker dnsmasq.conf smartdns.conf domain clash singbox.json)
 
 DRY_RUN=0
+SKIP_DEAD_CHECK=0
 FETCH_TOOL=""
 IDN_TOOL=""
 TLD_LIST=""
@@ -72,6 +73,7 @@ parse_args() {
   while (( $# > 0 )); do
     case "$1" in
       -n|--dry-run) DRY_RUN=1 ;;
+      --no-dead-check) SKIP_DEAD_CHECK=1 ;;
       -h|--help) usage; exit 0 ;;
       *) fail "Unknown argument: $1 (try --help)" ;;
     esac
@@ -81,15 +83,19 @@ parse_args() {
 
 usage() {
   cat <<'EOF'
-Usage: ./host.sh [--dry-run|--help]
+Usage: ./host.sh [--dry-run] [--no-dead-check] [--help]
 
-  --dry-run   fetch and build, publish nothing (keeps the work directory)
+  --dry-run         fetch and build, publish nothing (keeps the work directory)
+  --no-dead-check   skip the liveness check and reuse the published deadblock
 
 Environment:
 
   NEODEV_MIN_PSL_RULES    minimum public suffix rules expected (5000)
   NEODEV_MIN_TLDS         minimum IANA TLDs expected (1000)
   KEEP_WORK_DIR=1         keep the temporary build directory
+
+  CHECK_CONCURRENCY       liveness-check parallelism (default 400, CI uses 1000)
+  NEODEV_CHECK_LIMIT      check only the first N domains (debugging)
 EOF
 }
 
@@ -101,7 +107,7 @@ check_requirements() {
   for file in allowlist blocklist ownallowlist ownblocklist title README.md; do
     [[ -f "$file" ]] || fail "Required file not found: $file"
   done
-  for file in psl.awk extract.awk validate.awk ignore.awk reduce.awk exclude.awk render.awk; do
+  for file in psl.awk extract.awk validate.awk ignore.awk reduce.awk exclude.awk render.awk deadblock.awk; do
     [[ -f "$LIB_DIR/$file" ]] || fail "Required library not found: lib/$file"
   done
 }
@@ -157,10 +163,9 @@ read_urls() {
 # --------------------------------------------------------------------------
 
 stage_reference_data() {
-  log "Fetching TLD, PSL and deadblock data..."
+  log "Fetching TLD and PSL data..."
   download_required "$TLD_URL" "$WORK_DIR/tlds.raw"
   download_required "$PSL_URL" "$WORK_DIR/psl.raw"
-  download_required "$DEADBLOCK_URL" "$WORK_DIR/deadblock.raw"
 
   TLD_LIST=$(tail -n +2 "$WORK_DIR/tlds.raw" | tr '[:upper:]' '[:lower:]' | tr '\n' ' ')
   local tld_count
@@ -271,8 +276,6 @@ stage_sources() {
   apply_allowignore
   build_list blocklist block block
   build_own_lists
-  normalize_candidates "$WORK_DIR/deadblock.raw" "$WORK_DIR/deadblock"
-  [[ -s "$WORK_DIR/deadblock" ]] || fail "Downloaded deadblock list contains no valid domains"
 }
 
 # --------------------------------------------------------------------------
@@ -281,7 +284,7 @@ stage_sources() {
 
 stage_prune() {
   local list
-  for list in allow block deadblock; do
+  for list in allow block; do
     awk -f "$LIB_DIR/psl.awk" -f "$LIB_DIR/reduce.awk" "$WORK_DIR/$list" \
       | sort -u > "$WORK_DIR/$list.reduced"
     mv "$WORK_DIR/$list.reduced" "$WORK_DIR/$list"
@@ -294,7 +297,7 @@ apply_exclusions() { # stdin: domains
 }
 
 stage_exclusions() {
-  cat "$WORK_DIR/allow" "$WORK_DIR/deadblock" | sort -u > "$WORK_DIR/exclusions"
+  sort -u "$WORK_DIR/allow" > "$WORK_DIR/exclusions"
   apply_exclusions < "$WORK_DIR/block" | sort -u > "$WORK_DIR/host.domains"
 
   # ownblocklist wins even when an upstream allowlist covers its parent domain;
@@ -310,6 +313,43 @@ stage_exclusions() {
     warn "$suppressed ownblocklist entries are covered by an allowlist entry; they were kept anyway:"
     comm -23 "$WORK_DIR/own.block" "$WORK_DIR/own.unblocked" | head -n 10 | sed 's/^/  /' >&2
   fi
+}
+
+# --------------------------------------------------------------------------
+# Stage: dead-domain check
+# --------------------------------------------------------------------------
+
+# Re-check every blocked domain and drop the ones that no longer resolve.
+# tools/check-dead-domains.py resolves through DNS over HTTPS, then plain HTTP,
+# then UDP, and only records a name as dead when two lookups agree. Without
+# python or its dependencies the previously published list is reused as-is.
+stage_dead_domains() {
+  cp deadblock "$WORK_DIR/deadblock.previous" 2>/dev/null || : > "$WORK_DIR/deadblock.previous"
+  cp "$WORK_DIR/deadblock.previous" "$WORK_DIR/deadblock"
+
+  if (( SKIP_DEAD_CHECK )); then
+    warn "dead-domain check skipped; reusing the previous deadblock"
+  elif [[ ! -f "$ROOT_DIR/tools/check-dead-domains.py" ]]; then
+    warn "tools/check-dead-domains.py not found; reusing the previous deadblock"
+  elif ! python3 -c 'import dns.asyncresolver, aiohttp' >/dev/null 2>&1; then
+    warn "python3 with dnspython and aiohttp is required for the liveness check; reusing the previous deadblock"
+  else
+    local check_args=()
+    if [[ -n "${NEODEV_CHECK_LIMIT:-}" ]]; then
+      check_args+=(--limit "$NEODEV_CHECK_LIMIT")
+    fi
+
+    log "Checking $(count_lines "$WORK_DIR/host.domains") domains for liveness..."
+    if ! python3 "$ROOT_DIR/tools/check-dead-domains.py" \
+        --input "$WORK_DIR/host.domains" --output "$WORK_DIR/deadblock" "${check_args[@]}"; then
+      warn "dead-domain check failed; reusing the previous deadblock"
+      cp "$WORK_DIR/deadblock.previous" "$WORK_DIR/deadblock"
+    fi
+  fi
+
+  awk -f "$LIB_DIR/deadblock.awk" "$WORK_DIR/deadblock" "$WORK_DIR/host.domains" \
+    > "$WORK_DIR/host.domains.live"
+  mv "$WORK_DIR/host.domains.live" "$WORK_DIR/host.domains"
 }
 
 # --------------------------------------------------------------------------
@@ -422,6 +462,7 @@ main() {
   stage_sources
   stage_prune
   stage_exclusions
+  stage_dead_domains
   stage_check
   stage_render
   stage_publish

@@ -10,11 +10,11 @@
 [![License](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)
 
 ```
-Total ad / tracking block list 屏蔽追踪广告总数: 223291
+Total ad / tracking block list 屏蔽追踪广告总数: 221277
 
-Total allowlist list 允许名单总数: 114144
+Total allowlist list 允许名单总数: 114143
 
-Total upstream-non-accessable list 上游无法访问域名总数: 31021
+Total upstream-non-accessable list 上游无法访问域名总数: 32981
 
 Update 更新时间: 2026-11-14
 ```
@@ -43,7 +43,7 @@ Rebuilt and validated every day at 08:00 UTC by GitHub Actions.
 
 ## 下载 Download
 
-Number of Domain 域名数目： 223291
+Number of Domain 域名数目： 221277
 
 | Format 格式 | 适用于 Works with | 下载 Raw | 国内加速 China mirror |
 |---|---|:---:|:---:|
@@ -161,7 +161,7 @@ It removes only the domains from this list and leaves your own allow entries unt
 | 白名单语义 Allowlist | 允许条目只覆盖自身及子域，且不得高于目标域名的注册域<br/>An allow entry covers itself and subdomains, never above the registrable domain |
 | 自有名单 Own lists | `ownallowlist` 计入白名单；`ownblocklist` 优先级最高，被覆盖时会加回并告警<br/>`ownblocklist` always wins and conflicts are reported |
 | 品牌豁免 Brand ignore | `allowignore` 中的品牌，其上游白名单条目被忽略（默认 29 个广告品牌）<br/>Upstream entries for brands in `allowignore` are ignored (29 ad brands by default) |
-| 过期域名 Dead domains | 上游 dead-block 列表中的域名被剔除，避免无效规则堆积<br/>Domains from the upstream dead-block list are removed |
+| 过期域名 Dead domains | 每次构建用 `tools/check-dead-domains.py` 实测解析，双解析器确认后才判定为死域并剔除<br/>Every build resolves the list (DoH → HTTP → UDP) and drops names two resolvers agree are dead |
 | 成品检查 Checks | 不比较历史大小（上游增删来源属正常波动）；仅在参考数据残缺（PSL/TLD 下载不完整）或产物为空时中止<br/>Sizes are never compared across runs; the build only aborts on truncated reference data or empty output |
 
 ## 构建与开发 Build
@@ -169,6 +169,7 @@ It removes only the domains from this list and leaves your own allow entries unt
 ```bash
 bash host.sh                       # 构建并发布 / build and publish
 bash host.sh --dry-run             # 只构建不发布 / build only, keep the work dir
+bash host.sh --no-dead-check       # 跳过存活检测 / skip the liveness check
 bash tests/run.sh                  # 阶段单测，不联网 / stage unit tests, offline
 bash tests/audit.sh                # 逐源审计 + 成品校验 / per-source audit (needs network)
 ```
@@ -177,16 +178,18 @@ bash tests/audit.sh                # 逐源审计 + 成品校验 / per-source au
 Requires `bash` plus `curl` (or `wget`); `singbox.srs` is compiled with `sing-box` and skipped when it is missing.
 
 ```
-host.sh                     入口 / entry: fetch → validate → merge → gates → render → publish
+host.sh                     入口 / entry: fetch → validate → merge → dead check → render → publish
 lib/psl.awk                 Public Suffix List 通用函数 / shared PSL helpers
 lib/extract.awk             任意格式 → 候选主机名 / any format → candidate hosts
 lib/validate.awk            候选 → 合法域名 / candidates → valid domains
 lib/ignore.awk              按 allowignore 忽略上游条目 / drop ignored allow entries
 lib/reduce.awk              去掉被父域覆盖的冗余条目 / drop redundant subdomains
-lib/exclude.awk             扣除白名单与过期域名（PSL 感知）/ PSL-aware exclusions
+lib/exclude.awk             扣除白名单（PSL 感知）/ PSL-aware allowlist exclusions
+lib/deadblock.awk           精确剔除已判定死亡的域名 / exact dead-domain subtraction
 lib/render.awk              一次遍历生成七种格式 / render all seven formats
-tests/run.sh                20 项阶段单测 / 20 stage tests
+tests/run.sh                21 项阶段单测 / 21 stage tests
 tests/audit.sh              逐源统计与成品不变量 / per-source stats + invariants
+tools/check-dead-domains.py 域名存活检测（DoH/HTTP/UDP）/ domain liveness checker
 allowlist blocklist         上游源 URL / upstream source URLs
 ownallowlist ownblocklist   自有名单，改完即生效 / local lists, effective immediately
 allowignore                 上游白名单"不得放行"的品牌 / brands upstream may not whitelist
@@ -198,9 +201,13 @@ allowignore                 上游白名单"不得放行"的品牌 / brands upst
 | `NEODEV_MIN_TLDS` | 1000 | IANA TLD 数量下限<br/>Minimum IANA TLDs expected |
 | `KEEP_WORK_DIR` | 0 | 设为 1 保留临时目录<br/>Keep the temporary build directory |
 | `SING_BOX_BIN` | auto | `sing-box` 可执行文件路径，用于编译 `.srs`<br/>Path to the `sing-box` binary used to compile `.srs` |
+| `CHECK_CONCURRENCY` | 400 | 存活检测并发数，CI 用 1000<br/>Liveness-check concurrency (CI uses 1000) |
+| `CHECK_STRICT_RESOLVERS` | 0 | 解析器数量不达标时直接失败（CI 开启）<br/>Fail when a resolver pool is below the required mix (CI) |
+| `CHECK_MIN_OVERSEAS` / `CHECK_MIN_CHINA` | 2 / 2 | 每个池至少要有的海外 / 国内解析器数<br/>Minimum overseas / China resolvers per pool |
+| `NEODEV_CHECK_LIMIT` | 空 | 只检测前 N 个域名（调试用）<br/>Check only the first N domains (debugging) |
 
-CI（`.github/workflows/Auto Update.yml`）：安装 `idn2` 与 `sing-box` v1.14.4 → shellcheck → 单测 → 构建 → 提交。<br/>
-CI runs: install `idn2` and `sing-box` → shellcheck → unit tests → build → commit. 可在 Actions 页面勾选 `dry_run` 只构建不提交 / tick `dry_run` to build without publishing.
+CI（`.github/workflows/Auto Update.yml`）：安装 `idn2`、`sing-box` v1.14.4 与 Python 依赖（`dnspython`、`aiohttp`）→ shellcheck → 单测 → 构建（含存活检测）→ 提交。<br/>
+CI runs: install `idn2`, `sing-box` and the Python deps → shellcheck → unit tests → build (including the liveness sweep) → commit. 可在 Actions 页面勾选 `dry_run` 只构建不提交 / tick `dry_run` to build without publishing.
 
 ## 上游源 Sources
 
@@ -239,10 +246,24 @@ These are exactly the URLs listed in `allowlist`.
 
 ### 过期域名 Dead domains
 
-| List | Link |
-|---|---|
-| Dead-block | [link](https://github.com/FusionPlmH/dead-block) |
-| Dead-allow | [link](https://github.com/neodevpro/dead-allow) |
+`deadblock` 不再从外部仓库下载，而是每次构建由本仓库的 `tools/check-dead-domains.py` 现场检测：
+
+- 输入：本轮候选列表 + 上一版 `deadblock`（这样上游删掉的死域仍会复检，复活的会被移出）
+- 解析链路：DNS over HTTPS（Cloudflare / Google / AliDNS）→ 明文 HTTP 兜底 → UDP 兜底
+- 判定标准：**两个独立解析器都确认**才算死亡；超时/SERVFAIL 记为 unknown，绝不写入
+- 结果先写 `<file>.tmp`，跑完才原子替换，中途失败不会污染上一版
+
+```bash
+python3 tools/check-dead-domains.py --input block --output deadblock
+python3 tools/check-dead-domains.py --limit 500 --dry-run      # 抽样调试
+python3 tools/check-dead-domains.py --transport udp --resolvers 127.0.0.1:53
+```
+
+依赖 `python3` + `dnspython` + `aiohttp`；CI 会自动安装。本地缺依赖或加 `--no-dead-check` 时，
+直接复用仓库里已有的 `deadblock`（不会因为环境缺失把列表改坏）。
+
+The list is now measured in-house on every build instead of being downloaded; without
+python or its dependencies the previous `deadblock` is reused unchanged.
 
 ## 许可 License
 
