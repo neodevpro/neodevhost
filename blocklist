@@ -1,4 +1,5 @@
-https://raw.githubusercontent.com/neodevpro/neodevhost/master/ownblocklist
+# The project's own blocklist (ownblocklist) is read from this checkout by
+# host.sh and must not be listed here.
 https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt
 https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-only/hosts

@@ -1,9 +1,10 @@
 # General domain and Pi-hole allowlists
+# The project's own lists (ownallowlist/ownblocklist) are read from this
+# checkout by host.sh and must not be listed here.
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
 https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list
-https://raw.githubusercontent.com/neodevpro/neodevhost/master/ownallowlist
 https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt
 https://raw.githubusercontent.com/217heidai/adblockfilters/refs/heads/main/rules/white.txt
 https://raw.githubusercontent.com/fun-ed/blahdns/refs/heads/master/hosts/whitelist.txt

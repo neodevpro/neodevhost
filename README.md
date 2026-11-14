@@ -1,122 +1,221 @@
 ![Logo](https://raw.githubusercontent.com/neodevpro/neodevhost/master/logo.png)
-  
-  
-     
-## The Powerful Friendly Uptodate AD Blocking Hosts 最新强大而友善的去广告
 
+# NEO DEV HOST
 
+**强大、友善、持续更新的去广告 Hosts 列表**<br/>
+**Powerful, friendly and always up-to-date ad blocking hosts**
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/neodevpro/neodevhost/Auto%20Update.yml)](https://github.com/neodevpro/neodevhost/actions)<br/>
-[![Last commit](https://img.shields.io/github/last-commit/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/commit/master)<br/>
-[![license](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)<br/>
+[![Build Status](https://img.shields.io/github/actions/workflow/status/neodevpro/neodevhost/Auto%20Update.yml)](https://github.com/neodevpro/neodevhost/actions)
+[![Last commit](https://img.shields.io/github/last-commit/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/commit/master)
+[![License](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)
 
 ```
-Total ad / tracking block list 屏蔽追踪广告总数: 204107
+Total ad / tracking block list 屏蔽追踪广告总数: 223291
 
-Total allowlist list 允许名单总数: 107538
+Total allowlist list 允许名单总数: 114144
 
 Total upstream-non-accessable list 上游无法访问域名总数: 31021
 
 Update 更新时间: 2026-11-14
 ```
-### UPTODATE 保持最新<br/>
-    Merge every day　每天更新
 
-## Supported Platform 支持平台
+每天 UTC 08:00 自动构建，经校验后才发布。<br/>
+Rebuilt and validated every day at 08:00 UTC by GitHub Actions.
+
+## 目录 TOC
+
+- [特性 Features](#特性-features)
+- [下载 Download](#下载-download)
+- [使用 Usage](#使用-usage)
+- [Pi-hole 安装与卸载](#pi-hole-安装与卸载)
+- [数据规则 Data rules](#数据规则-data-rules)
+- [构建与开发 Build](#构建与开发-build)
+- [上游源 Sources](#上游源-sources)
+- [许可 License](#许可-license)
+
+## 特性 Features
+
+- **六种格式 · Six formats**：host / Adblock / dnsmasq / SmartDNS / 纯域名 / Clash，同一份数据一次生成。<br/>One build, six output formats.
+- **只保留真实域名 · Valid domains only**：逐个校验 RFC 标签规则、punycode、IANA TLD 与 Public Suffix List。<br/>Every entry is checked against RFC label rules, punycode, IANA TLDs and the PSL.
+- **白名单不会吞掉整片网络 · No namespace wipe-out**：允许条目只覆盖自身及子域，`com.br`、`cloudfront.net` 这类条目绝不会放行整段命名空间。<br/>Allow entries cover only themselves and their subdomains, never a whole namespace.
+- **自有名单优先 · Your list wins**：`ownblocklist` 的条目即使被上游白名单覆盖也会保留，冲突写进构建日志。<br/>Entries in `ownblocklist` survive upstream allowlists; conflicts are reported.
+- **可复现 · Reproducible**：全部产物在临时目录生成并通过门禁后才发布，构建失败不会留下半成品。<br/>Outputs are built in a temp dir and published only after every gate passes.
+
+## 下载 Download
+
+Number of Domain 域名数目： 223291
+
+| Format 格式 | 适用于 Works with | 下载 Raw | 国内加速 China mirror |
+|---|---|:---:|:---:|
+| Host | Pi-hole, AdAway, hBlock, AdGuard Home | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host) |
+| Adblocker | uBlock Origin, AdGuard / AdGuard Home | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker) | [link](https://neodev.team/adblocker) |
+| Dnsmasq | dnsmasq, OpenWrt | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/dnsmasq.conf) | [link](https://neodev.team/dnsmasq.conf) |
+| SmartDNS | SmartDNS | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/smartdns.conf) | [link](https://neodev.team/smartdns.conf) |
+| Domain | 纯域名 / plain domains | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain) |
+| Clash | Clash / Mihomo rule-provider | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash) |
+| Allowlist | Pi-hole / AdGuard 白名单 allowlist | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/allow) | — |
+
+各格式长这样 / What each format looks like:
 
 ```
--Windows
--Android
--Linux
--Mac OS
--Openwrt
--etc
+host            0.0.0.0  example.com
+adblocker       ||example.com^
+dnsmasq.conf    address=/example.com/0.0.0.0
+smartdns.conf   address /example.com/#
+domain          example.com
+clash             - 'example.com'      # 位于 payload: 之下
 ```
-### Supported adblocker 广告拦截器
-```
--Pihole
--Adaway
--Adblocker/Adguard
--SmartDNS
--Clash
--etc
-``` 
 
-## Download 下载
-Number of Domain 域名数目： 204107
-Format 格式 | Compatible with 适用于 | Raw | 国内加速链接  
---------- |:-------------:|:-------------:|:-------------:
-Host | Pihole，Adaway，hBlock ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/host) | [link](https://neodev.team/host)
-Adblocker | uBlock，Adguard ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker) | [link](https://neodev.team/adblocker) 
-Dnsmasq | Dns ... |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/dnsmasq.conf) | [link](https://neodev.team/dnsmasq.conf)
-SmartDNS | SmartDNS |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/smartdns.conf) | [link](https://neodev.team/smartdns.conf)
-Domain | Domain |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain)
-Clash | Clash |[link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash)
+> **Clash**：`clash` 是 rule-provider 格式（`behavior: domain`），请从 `rule-providers` 引用，不要粘贴进 `rules:`。<br/>
+> **Clash**: the file is a `behavior: domain` rule-provider. Reference it from `rule-providers`; it does nothing inside `rules:`.
 
-## How To Use 如何使用
-```
-1.Download files/copy link of files
-2.Add host and whitelist file/link into adblocker
-3.Update the data source in the app
-```
-```
-1.下载文件/复制下载链接
-2.添加文件或者下载链接到广告拦截器
-3.更新数据规则
-```
-## Pihole Installation 安装导入教程
+## 使用 Usage
 
-### Import and Installation 导入和安装<br/>
+1. 下载文件，或复制上表中的链接。<br/>Download a file or copy a link from the table above.
+2. 把 `host` 加入你的拦截器；建议同时导入 `allow` 白名单以减少误杀。<br/>Add `host` to your blocker; importing `allow` as well keeps false positives low.
+3. 在应用里刷新数据源。<br/>Refresh the list inside the app.
 
-1.Login to pihole website<br/>
-2.Go to Groupmanagement > Adlists<br/>
-3.copy the NEODEV AD host link into "Address:"<br/>
-4.open terminal<br/>
-5. Run the following command :<br/>
-```
+| 平台 Platform | 做法 How |
+|---|---|
+| Pi-hole | Settings → Adlists 填入 `host` 链接，然后执行 `pihole -g`<br/>Settings → Adlists, add the `host` URL, then run `pihole -g` |
+| AdGuard Home | Filters → DNS blocklists → 添加 `host` 链接<br/>Filters → DNS blocklists → add the `host` URL |
+| AdAway (Android) | 添加 host 源 `https://neodev.team/host`<br/>Add the host source |
+| dnsmasq / OpenWrt | 下载 `dnsmasq.conf` 放进 `/etc/dnsmasq.d/` 并重启<br/>Drop `dnsmasq.conf` into `/etc/dnsmasq.d/` and restart |
+| SmartDNS | 下载 `smartdns.conf`，用 `conf-file` 引入<br/>Reference it with `conf-file` |
+| uBlock Origin | 自定义规则列表填 `adblocker` 链接<br/>Add the `adblocker` URL as a custom filter list |
+| Clash / Mihomo | `rule-providers` 指向 `clash`，`behavior: domain`<br/>Point a `rule-providers` entry at `clash` |
+
+## Pi-hole 安装与卸载
+
+### 安装 Install
+
+1. 登录 Pi-hole 后台。<br/>Log in to the Pi-hole admin page.
+2. 打开 Adlists / Lists 页面（v5: Group Management → Adlists；v6: Lists），把 `host` 链接填入 Address。<br/>Open the Adlists / Lists page and paste the `host` URL.
+3. 在终端执行下面的命令。<br/>Run the following in a terminal:
+
+```bash
 sudo -i
-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/neodevpro/neodevhost/master/install.sh | bash
 pihole -g
 ```
-6.Wait for 20 mins around  <br/>
-7.Then it will import both NEODEV host and whitelist into your Pihole <br/>
 
+`install.sh` 会分块导入 `allow` 白名单（v5 用 `pihole -w`，v6 用 `pihole allow`），约几分钟。<br/>
+`install.sh` imports the `allow` list in chunks (v5: `pihole -w`, v6: `pihole allow`); it takes a few minutes.
 
-### Remove and Uninstall 移除和卸载<br/>
-1.Login to pihole website<br/>
-2.Go to Groupmanagement > Adlists<br/>
-3.click the red trash can button<br/>
-4.open terminal<br/>
-5. Run the following command :<br/>
-```
+> 自建镜像可用 `NEODEV_ALLOWLIST_URL=https://你的镜像/allow` 覆盖下载地址。<br/>
+> Point it at your own mirror with `NEODEV_ALLOWLIST_URL`.
+
+### 卸载 Uninstall
+
+1. 在 Adlists 里点红色垃圾桶删除对应条目。<br/>Remove the adlist with the red trash icon.
+2. 在终端执行 / In a terminal:
+
+```bash
 sudo -i
-sudo curl -s https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash
-pihole -g
+curl -fsSL https://raw.githubusercontent.com/neodevpro/neodevhost/master/uninstall.sh | bash
 ```
-6.Wait for 20 mins around  <br/> <br/>
-7.Then it will Remove and Uninstall both NEODEV host and whitelist from your Pihole <br/>
 
-## Sources of AD-hosts data 去广告host源
-AD-hostss | Link  
---------- |:-------------:
-Anti-ad | [link](https://github.com/privacy-protection-tools/anti-AD)
-217heidai | [link](https://github.com/217heidai/adblockfilters)
+只移除**本列表包含的**域名，不会动你自己添加的白名单。<br/>
+It removes only the domains from this list and leaves your own allow entries untouched.
 
+## 数据规则 Data rules
 
-## Sources of Allowlist 允许名单
-Allowlist | Link  
---------- |:-------------:
-AnudeepND | [link](https://github.com/anudeepND/whitelist)
-Ultimate-Hosts-Blacklist | [link](https://github.com/Ultimate-Hosts-Blacklist/whitelist)
-Energized Protection | [link](https://github.com/EnergizedProtection/unblock)
-217heidai | [link](https://github.com/217heidai/adblockfilters)
-oisd | [link](https://oisd.nl)
-blahdns | [link](https://github.com/zoonderkins/blahdns)
-DNS Blocklists | [link](https://github.com/hagezi/dns-blocklists)
-AWAvenue-Ads-Rule | [link](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)
+流程 / Pipeline：`上游下载 fetch → 格式归一 extract → 合法性校验 validate → 去冗余 reduce → 扣除白名单/过期 exclude → 门禁 gates → 发布 publish`
 
-## Dead Domain List 过期域名名单
-Allowlist | Link  
---------- |:-------------:
-Dead-block | [link](https://github.com/FusionPlmH/dead-block)
-Dead-allow | [link](https://github.com/neodevpro/dead-allow)
+| 规则 Rule | 说明 Description |
+|---|---|
+| 格式归一 Format | 支持 plain / hosts / dnsmasq / Adblock `\|\|x^` / `@@` 例外 / URL 列表<br/>Accepts plain, hosts, dnsmasq, Adblock and URL lists |
+| 元素隐藏 Cosmetic | `example.com##.banner` 被丢弃：它不携带 DNS 信息，误用会屏蔽整站<br/>Cosmetic rules are dropped; they carry no DNS information |
+| 域名合法性 Validity | RFC 标签规则、punycode `xn--`、IANA TLD、Public Suffix List 四重校验<br/>RFC labels, punycode, IANA TLDs and the PSL |
+| 公共后缀 Suffixes | 允许名单里本身就是公共后缀的条目（`com.br`、`cloudfront.net`）被丢弃<br/>Bare public suffixes are dropped from allowlists |
+| 白名单语义 Allowlist | 允许条目只覆盖自身及子域，且不得高于目标域名的注册域<br/>An allow entry covers itself and subdomains, never above the registrable domain |
+| 自有名单 Own lists | `ownallowlist` 计入白名单；`ownblocklist` 优先级最高，被覆盖时会加回并告警<br/>`ownblocklist` always wins and conflicts are reported |
+| 品牌豁免 Brand ignore | `allowignore` 中的品牌，其上游白名单条目被忽略（默认 29 个广告品牌）<br/>Upstream entries for brands in `allowignore` are ignored (29 ad brands by default) |
+| 过期域名 Dead domains | 上游 dead-block 列表中的域名被剔除，避免无效规则堆积<br/>Domains from the upstream dead-block list are removed |
+| 发布门禁 Gates | 屏蔽列表跌破上次 90%、允许列表跌破 50%、PSL/TLD 异常时中止，不发布残缺数据<br/>Aborts when lists shrink beyond the thresholds or downloads look truncated |
+
+## 构建与开发 Build
+
+```bash
+bash host.sh              # 构建并发布 / build and publish
+bash host.sh --dry-run    # 只构建不发布 / build only, keep the work dir
+bash tests/run.sh         # 阶段单测，不联网 / stage unit tests, offline
+```
+
+只依赖 `bash` + `curl`（或 `wget`）。数据在运行时从 IANA、Public Suffix List 和各上游源拉取。<br/>
+Requires only `bash` plus `curl` (or `wget`); all data is fetched at build time.
+
+```
+host.sh                     入口 / entry: fetch → validate → merge → gates → render → publish
+lib/psl.awk                 Public Suffix List 通用函数 / shared PSL helpers
+lib/extract.awk             任意格式 → 候选主机名 / any format → candidate hosts
+lib/validate.awk            候选 → 合法域名 / candidates → valid domains
+lib/ignore.awk              按 allowignore 忽略上游条目 / drop ignored allow entries
+lib/reduce.awk              去掉被父域覆盖的冗余条目 / drop redundant subdomains
+lib/exclude.awk             扣除白名单与过期域名（PSL 感知）/ PSL-aware exclusions
+lib/render.awk              一次遍历生成六种格式 / render all six formats
+tests/run.sh                15 项阶段单测 / 15 stage tests
+allowlist blocklist         上游源 URL / upstream source URLs
+ownallowlist ownblocklist   自有名单，改完即生效 / local lists, effective immediately
+allowignore                 上游白名单"不得放行"的品牌 / brands upstream may not whitelist
+```
+
+| 环境变量 Variable | 默认 Default | 作用 Purpose |
+|---|:---:|---|
+| `NEODEV_MIN_BLOCK_RATIO` | 90 | 屏蔽列表相对上次的最低百分比<br/>Minimum block-list size vs the last run (%) |
+| `NEODEV_MIN_ALLOW_RATIO` | 50 | 允许列表相对上次的最低百分比<br/>Minimum allow-list size vs the last run (%) |
+| `NEODEV_MIN_PSL_RULES` | 5000 | PSL 规则数下限<br/>Minimum PSL rules expected |
+| `NEODEV_MIN_TLDS` | 1000 | IANA TLD 数量下限<br/>Minimum IANA TLDs expected |
+| `KEEP_WORK_DIR` | 0 | 设为 1 保留临时目录<br/>Keep the temporary build directory |
+
+CI（`.github/workflows/Auto Update.yml`）：安装 `idn2` → shellcheck → 单测 → 构建 → 提交。<br/>
+CI runs: install `idn2` → shellcheck → unit tests → build → commit. 可在 Actions 页面勾选 `dry_run` 只构建不提交 / tick `dry_run` to build without publishing.
+
+## 上游源 Sources
+
+### 屏蔽源 Blocklists
+
+| Source | Link |
+|---|---|
+| Anti-ad | [link](https://github.com/privacy-protection-tools/anti-AD) |
+| 217heidai | [link](https://github.com/217heidai/adblockfilters) |
+| StevenBlack | [link](https://github.com/StevenBlack/hosts) |
+
+### 允许源 Allowlists
+
+以下即仓库内 `allowlist` 的全部 URL。<br/>
+These are exactly the URLs listed in `allowlist`.
+
+| Source | Link |
+|---|---|
+| AnudeepND | [link](https://github.com/anudeepND/whitelist) |
+| Ultimate-Hosts-Blacklist | [link](https://github.com/Ultimate-Hosts-Blacklist/whitelist) |
+| Energized Protection | [link](https://github.com/EnergizedProtection/unblock) |
+| 217heidai | [link](https://github.com/217heidai/adblockfilters) |
+| blahdns | [link](https://github.com/fun-ed/blahdns) |
+| HaGeZi DNS Blocklists | [link](https://github.com/hagezi/dns-blocklists) |
+| AdAway White List | [link](https://github.com/lingeringsound/10007_auto) |
+| GoodnessJSON Pi-hole Whitelist | [link](https://github.com/GoodnessJSON/PiHole-Whitelist) |
+| Pi-hole VeryHighWL | [link](https://github.com/rahilpathan/pihole-whitelist) |
+| freekers whitelist | [link](https://github.com/freekers/whitelist) |
+| China CDN Domain Whitelist | [link](https://github.com/mawenjian/china-cdn-domain-whitelist) |
+| Discord official domains | [link](https://github.com/Dogino/Discord-Phishing-URLs) |
+| notracking whitelist | [link](https://github.com/notracking/hosts-blocklists-scripts) |
+| URL shorteners | [link](https://github.com/boutetnico/url-shorteners) |
+
+> 上游白名单常包含厂商根域（`google.com`、`doubleclick.net`），这些条目由 `allowignore` 过滤，否则整片广告子域将永远无法屏蔽。<br/>
+> Upstream whitelists contain vendor root domains; `allowignore` drops them so their ad hosts can still be blocked.
+
+### 过期域名 Dead domains
+
+| List | Link |
+|---|---|
+| Dead-block | [link](https://github.com/FusionPlmH/dead-block) |
+| Dead-allow | [link](https://github.com/neodevpro/dead-allow) |
+
+## 许可 License
+
+[LICENSE](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)
+
+数据归各上游项目所有，本项目只做合并、校验与格式转换，请同时遵守上游许可。<br/>
+Data belongs to the upstream projects above; this repository only merges, validates and reformats.

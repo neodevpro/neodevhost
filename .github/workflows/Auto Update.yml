@@ -1,25 +1,63 @@
 name: Auto Update
+
 on:
   schedule:
-    - cron:  "0 8 * * *"
+    - cron: "0 8 * * *"
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build without publishing (for testing)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-update
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
 
     steps:
-    - uses: actions/checkout@v5.0.0
-      
-    - name: Run a one-line script
-      run: bash ./host.sh
-      
-    - name: Git Auto Commit
-      uses: stefanzweifel/git-auto-commit-action@v6.0.1
-      with:
-           commit_message: Auto Update
-           branch: master
-           commit_options: '--no-verify --signoff'
-           repository: .
-           commit_user_name: FusionPlmH
-           commit_user_email: leemenhin@gmail.com
-           push_options: '--force'
+      - uses: actions/checkout@v5
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq idn2 || echo "idn2 unavailable, unicode domains will be skipped"
+
+      - name: Lint shell scripts
+        run: shellcheck -x -s bash host.sh install.sh uninstall.sh tests/run.sh
+
+      - name: Run stage tests
+        run: bash tests/run.sh
+
+      - name: Build lists
+        run: bash ./host.sh ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### neodevhost build"
+            echo ""
+            echo "| list | domains |"
+            echo "| --- | ---: |"
+            echo "| block | $(wc -l < block) |"
+            echo "| allow | $(wc -l < allow) |"
+            echo "| deadblock | $(wc -l < deadblock) |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Git Auto Commit
+        if: ${{ !inputs.dry_run }}
+        uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_message: Auto Update
+          commit_options: '--signoff'
+          commit_user_name: FusionPlmH
+          commit_user_email: leemenhin@gmail.com
+          skip_dirty_check: false

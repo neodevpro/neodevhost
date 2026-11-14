@@ -1,0 +1,67 @@
+# 上游允许名单"不得放行"的品牌 / 域名（可选）
+#
+# 上游白名单里常写着厂商根域（google.com、amazon.com、doubleclick.net …），
+# 一旦被放行，该厂商所有广告子域就永远进不了屏蔽列表。把品牌写在这里，上游允许
+# 名单里属于该品牌的条目会被丢弃，屏蔽列表才能收录对应子域。
+#
+# 匹配规则：
+#   1. 与"注册域的 brand 段"相等 —— amazon 命中 amazon.com / amazon.es / amazon.co.jp
+#   2. 与条目本身相等，或是其后缀 —— adobedc.net 命中 data.adobedc.net
+# 每行一个，`#` 之后为注释。文件不存在或全部注释时不生效。
+#
+# 影响面：只影响"屏蔽源里出现的该品牌子域"，厂商主站本身不会进榜
+#        （实测 taobao.com / baidu.com / qq.com / apple.com / microsoft.com 均仍放行）。
+
+# --- 已启用：广告 / 追踪厂商 ---
+google
+googlesyndication
+googleadservices
+google-analytics
+doubleclick
+amazon
+amazon-adsystem
+adskeeper
+adnxs
+criteo
+taboola
+outbrain
+scorecardresearch
+demdex
+2o7
+adobedc
+pubmatic
+appsflyer
+adjust
+branch
+appmetrica
+yandex
+twitter
+pinterest
+
+# --- 已启用：大厂的广告/分析入口（恢复到 2026-11 之前的行为）---
+# yahoo → ads.yahoo.com，bing → bat.bing.com，facebook → pixel.facebook.com
+# tiktok → analytics.tiktok.com，linkedin → px.ads.linkedin.com
+facebook
+yahoo
+bing
+tiktok
+linkedin
+
+# --- 未启用：整站级品牌（实测 +1,119 条，但开始出现真实误伤，
+#     例如 ju.taobao.com 聚划算页面会被屏蔽；收益低，默认关闭）---
+# apple
+# microsoft
+# xiaomi
+# miui
+# samsung
+# qq
+# baidu
+# taobao
+# alibaba
+# tencent-cloud
+# hicloud
+# adobe
+# rakuten
+# windows
+# cnzz
+# actonservice

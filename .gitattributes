@@ -1,14 +1,22 @@
-[attr]adb linguist-detectable linguist-language=AdBlock
+* text=auto eol=lf
 
-adblocker adb
-allowlist adb
-blocklist adb
-checkallow adb
-checkblock adb
-customallowlist adb
-customblocklist adb
-domain adb
-host adb
-lite_adblocker adb
-lite_domain adb
-lite_host adb
+# Generated lists: kept out of language statistics, still diffed normally.
+adblocker     linguist-detectable=false
+allow         linguist-detectable=false
+block         linguist-detectable=false
+clash         linguist-detectable=false
+deadblock     linguist-detectable=false
+dnsmasq.conf  linguist-detectable=false
+domain        linguist-detectable=false
+host          linguist-detectable=false
+smartdns.conf linguist-detectable=false
+
+# Hand-maintained source lists
+allowlist     linguist-detectable linguist-language=AdBlock
+blocklist     linguist-detectable linguist-language=AdBlock
+ownallowlist  linguist-detectable linguist-language=AdBlock
+ownblocklist  linguist-detectable linguist-language=AdBlock
+allowignore   linguist-detectable linguist-language=AdBlock
+
+# Build code
+lib/*.awk linguist-detectable linguist-language=Awk
