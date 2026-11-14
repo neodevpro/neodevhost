@@ -60,14 +60,11 @@ HTTPS_ENDPOINTS = (
     ("china", "https://doh.360.cn/resolve"),
 )
 # Plain HTTP is only a fallback for networks that block TLS; it is unencrypted.
-# Alibaba is the only provider that still speaks the JSON API over plaintext
-# (Aliyun's two anycast addresses plus the same service on its hostname).
-# Everyone else - Cloudflare, Google, Quad9, DoH.sb - redirects to HTTPS, so
-# this pool is necessarily China-only and gets its own lower region floor.
+# Aliyun is the only provider that still speaks the JSON API over plaintext
+# (everyone else - Cloudflare, Google, Quad9, DoH.sb - redirects to HTTPS), so
+# this pool is China-only and settles for a single endpoint.
 HTTP_ENDPOINTS = (
     ("china", "http://223.5.5.5/resolve"),
-    ("china", "http://223.6.6.6/resolve"),
-    ("china", "http://dns.alidns.com/resolve"),
 )
 UDP_RESOLVERS = (
     ("overseas", "1.1.1.1"),
@@ -76,7 +73,7 @@ UDP_RESOLVERS = (
     ("overseas", "208.67.222.222"),
     ("china", "223.5.5.5"),
     ("china", "119.29.29.29"),
-    ("china", "180.76.76.76"),
+    ("china", "114.114.114.114"),
 )
 SINKHOLE_ADDRESSES = frozenset({"0.0.0.0", "127.0.0.1", "::", "::1"})
 RRTYPE_NUMBERS = {"A": 1, "AAAA": 28, "MX": 15}
@@ -338,9 +335,9 @@ async def build_transport(args: argparse.Namespace):
         pools = https_pool if mode == "https" else http_pool if mode == "http" else https_pool + http_pool
 
         for label, pool in pools:
-            # The plaintext pool has no overseas member by nature, so it only
-            # has to keep the China requirement to stay usable.
-            floor = {"min_overseas": 0, "min_china": args.min_china} if label == "HTTP" else {}
+            # The plaintext pool is a single China endpoint, so it opts out of
+            # the region mix instead of being permanently unusable.
+            floor = {"min_overseas": 0, "min_china": 1} if label == "HTTP" else {}
             endpoints = await _select(f"DNS over {label}", pool, _doh_reachable, args, **floor)
             if endpoints:
                 # The plain HTTP endpoints are heavily rate limited; a few hundred

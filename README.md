@@ -250,7 +250,7 @@ These are exactly the URLs listed in `allowlist`.
 
 - 输入：本轮候选列表 + 上一版 `deadblock`（这样上游删掉的死域仍会复检，复活的会被移出）
 - 解析器池：**3 海外 + 3 国内**（Cloudflare、Google、DoH.sb ｜ AliDNS、DNSPod、360）。启动时逐个探活，不达 `CHECK_MIN_*` 就失败
-- 兜底链路：DNS over HTTPS → 明文 HTTP → UDP；明文只有阿里一家（其余厂商一律 301 到 HTTPS），所以该池只要求国内数量
+- 兜底链路：DNS over HTTPS → 明文 HTTP → UDP。明文只有阿里一个端点（其余厂商一律 301 到 HTTPS）；UDP 池为 4 海外 + 3 国内（Quad9 取未过滤版，否则恶意域会被答成 NXDOMAIN）
 - 判定标准：**两个独立解析器都确认**才算死亡，两次查询按区域交替（先海外再国内）；超时/SERVFAIL 记为 unknown，绝不写入
 - 结果先写 `<file>.tmp`，跑完才原子替换，中途失败不会污染上一版
 
@@ -267,9 +267,10 @@ The list is now measured in-house on every build instead of being downloaded; wi
 python or its dependencies the previous `deadblock` is reused unchanged.
 
 Resolver pools are `3 overseas` (Cloudflare, Google, DoH.sb) + `3 China` (AliDNS, DNSPod,
-360), probed at startup. The fallback order is DoH → plaintext HTTP → UDP; plaintext JSON
-DoH only exists at Aliyun today, so that pool is China-only by nature. A name is dropped
-only when two resolvers from different regions agree it is dead.
+360) for DoH, `4 overseas + 3 China` for UDP, probed at startup. The fallback order is
+DoH → plaintext HTTP → UDP; plaintext JSON DoH only exists at Aliyun, so that pool is a
+single China endpoint. A name is dropped only when two resolvers from different regions
+agree it is dead.
 
 ## 许可 License
 
