@@ -37,7 +37,7 @@ MIN_ALLOW_RATIO="${NEODEV_MIN_ALLOW_RATIO:-50}"
 MIN_PSL_RULES="${NEODEV_MIN_PSL_RULES:-5000}"
 MIN_TLDS="${NEODEV_MIN_TLDS:-1000}"
 
-PUBLISHED=(title README.md allow block deadblock host adblocker dnsmasq.conf smartdns.conf domain clash)
+PUBLISHED=(title README.md allow block deadblock host adblocker dnsmasq.conf smartdns.conf domain clash singbox.json)
 
 DRY_RUN=0
 FETCH_TOOL=""
@@ -169,15 +169,18 @@ stage_reference_data() {
   tld_count=$(printf '%s' "$TLD_LIST" | tr ' ' '\n' | grep -c '[a-z0-9]' || true)
   (( tld_count >= MIN_TLDS )) || fail "IANA TLD list looks truncated ($tld_count entries)"
 
-  # Normalize to "<e|w> <suffix>" (e = exact, w = wildcard base) so every awk
-  # pass reads the same cheap representation.
+  # Normalize to "<flags> <suffix>" so every awk pass reads the same cheap
+  # representation. Flags: i/p = ICANN/private section, trailing w = wildcard.
   awk -v out="$WORK_DIR/psl.rules" '
-    /^\/\// { next }
+    /^\/\/ ===BEGIN ICANN/   { section = "i"; next }
+    /^\/\/ ===END ICANN/     { section = "";  next }
+    /^\/\/ ===BEGIN PRIVATE/ { section = "p"; next }
+    /^\/\/ ===END PRIVATE/   { section = "";  next }
     {
       sub(/\r$/, "")
-      if ($0 == "" || $0 ~ /^!/) next
-      if (substr($0, 1, 2) == "*.") print "w " substr($0, 3) > out
-      else print "e " $0 > out
+      if (section == "" || $0 == "" || $0 ~ /^\/\// || $0 ~ /^!/) next
+      if (substr($0, 1, 2) == "*.") print section "w " substr($0, 3) > out
+      else print section " " $0 > out
     }
   ' "$WORK_DIR/psl.raw"
 
@@ -365,6 +368,24 @@ update_readme() { # date
     || fail "README.md summary lines could not be updated (did the wording change?)"
 }
 
+# sing-box rule-set (binary). Optional: skipped when the compiler is missing,
+# in which case the previously published singbox.srs is left untouched.
+compile_singbox_rule_set() {
+  local binary="${SING_BOX_BIN:-}"
+  if [[ -z "$binary" ]]; then
+    binary=$(command -v sing-box || true)
+  fi
+
+  if [[ -z "$binary" ]] || [[ ! -x "$binary" ]]; then
+    warn "sing-box not found: singbox.srs not regenerated (install sing-box or set SING_BOX_BIN)"
+    return 0
+  fi
+
+  "$binary" rule-set compile --output "$WORK_DIR/out/singbox.srs" "$WORK_DIR/out/singbox.json" \
+    || fail "sing-box rule-set compile failed"
+  log "singbox.srs: $(wc -c < "$WORK_DIR/out/singbox.srs" | tr -d '[:space:]') bytes"
+}
+
 stage_render() {
   local update_date
   update_date=$(date '+%Y-%m-%d')
@@ -377,6 +398,7 @@ stage_render() {
   cp "$WORK_DIR/allow" "$WORK_DIR/out/allow"
   cp "$WORK_DIR/deadblock" "$WORK_DIR/out/deadblock"
   update_readme "$update_date"
+  compile_singbox_rule_set
 }
 
 # --------------------------------------------------------------------------
@@ -385,14 +407,22 @@ stage_render() {
 
 stage_publish() {
   local file
+  local files=("${PUBLISHED[@]}")
+
   if (( DRY_RUN )); then
     log "Dry run: nothing published."
     return 0
   fi
-  for file in "${PUBLISHED[@]}"; do
+
+  # Only publish the binary rule-set when this run could build it.
+  if [[ -s "$WORK_DIR/out/singbox.srs" ]]; then
+    files+=(singbox.srs)
+  fi
+
+  for file in "${files[@]}"; do
     [[ -s "$WORK_DIR/out/$file" ]] || fail "Output is missing or empty: $file"
   done
-  for file in "${PUBLISHED[@]}"; do
+  for file in "${files[@]}"; do
     mv "$WORK_DIR/out/$file" "$ROOT_DIR/$file"
   done
 }
@@ -414,4 +444,7 @@ main() {
   log "Done! Blocked: $block_count; allowed: $allow_count; deadblock: $dead_count."
 }
 
-main "$@"
+# Allow the audit tool (tests/audit.sh) to source the stages without building.
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+  main "$@"
+fi

@@ -9,7 +9,11 @@ deadblock     linguist-detectable=false
 dnsmasq.conf  linguist-detectable=false
 domain        linguist-detectable=false
 host          linguist-detectable=false
+singbox.json  linguist-detectable=false
 smartdns.conf linguist-detectable=false
+
+# Compiled sing-box rule-set
+singbox.srs binary
 
 # Hand-maintained source lists
 allowlist     linguist-detectable linguist-language=AdBlock

@@ -98,6 +98,16 @@ EOF
 assert_eq "public suffixes dropped from allowlists" "foo.com.br" \
   "$(validate 1 < "$WORK/suffixes.txt" | tr '\n' ' ' | sed 's/ $//')"
 
+cat > "$WORK/icann.txt" <<'EOF'
+com.br
+github.io
+foo.com.br
+EOF
+assert_eq "ICANN suffixes rejected everywhere, private ones kept" "github.io foo.com.br" \
+  "$(validate 0 < "$WORK/icann.txt" | tr '\n' ' ' | sed 's/ $//')"
+
+
+
 echo "reduce.awk"
 assert_eq "parent kept when child sorts first" "foo.com" \
   "$(printf 'a.foo.com\nfoo.com\n' | reduce | tr '\n' ' ' | sed 's/ $//')"
@@ -153,6 +163,10 @@ assert_eq "smartdns format" "address /b.example/#" "$(sed -n '4p' "$WORK/out/sma
 assert_eq "domain format" "b.example" "$(sed -n '4p' "$WORK/out/domain")"
 assert_eq "clash payload header" "payload:" "$(sed -n '3p' "$WORK/out/clash")"
 assert_eq "clash entry" "  - 'a.example'" "$(sed -n '4p' "$WORK/out/clash")"
+assert_eq "singbox version" '  "version": 1,' "$(sed -n '2p' "$WORK/out/singbox.json")"
+assert_eq "singbox suffix list opens" '      "domain_suffix": [' "$(sed -n '5p' "$WORK/out/singbox.json")"
+assert_eq "singbox entry separator" '        "a.example",' "$(sed -n '6p' "$WORK/out/singbox.json")"
+assert_eq "singbox last entry without comma" '        "b.example"' "$(sed -n '7p' "$WORK/out/singbox.json")"
 
 printf '\n%d passed, %d failed\n' "$passes" "$failures"
 (( failures == 0 ))

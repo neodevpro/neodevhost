@@ -35,7 +35,7 @@ Rebuilt and validated every day at 08:00 UTC by GitHub Actions.
 
 ## 特性 Features
 
-- **六种格式 · Six formats**：host / Adblock / dnsmasq / SmartDNS / 纯域名 / Clash，同一份数据一次生成。<br/>One build, six output formats.
+- **七种格式 · Seven formats**：host / Adblock / dnsmasq / SmartDNS / 纯域名 / Clash / sing-box（含 .srs），同一份数据一次生成。<br/>One build, seven formats including sing-box.
 - **只保留真实域名 · Valid domains only**：逐个校验 RFC 标签规则、punycode、IANA TLD 与 Public Suffix List。<br/>Every entry is checked against RFC label rules, punycode, IANA TLDs and the PSL.
 - **白名单不会吞掉整片网络 · No namespace wipe-out**：允许条目只覆盖自身及子域，`com.br`、`cloudfront.net` 这类条目绝不会放行整段命名空间。<br/>Allow entries cover only themselves and their subdomains, never a whole namespace.
 - **自有名单优先 · Your list wins**：`ownblocklist` 的条目即使被上游白名单覆盖也会保留，冲突写进构建日志。<br/>Entries in `ownblocklist` survive upstream allowlists; conflicts are reported.
@@ -53,6 +53,8 @@ Number of Domain 域名数目： 223291
 | SmartDNS | SmartDNS | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/smartdns.conf) | [link](https://neodev.team/smartdns.conf) |
 | Domain | 纯域名 / plain domains | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain) |
 | Clash | Clash / Mihomo rule-provider | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash) |
+| sing-box JSON | sing-box 1.8+ 源码 rule-set | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/singbox.json) | — |
+| sing-box SRS | sing-box 1.8+ 二进制 rule-set | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/singbox.srs) | — |
 | Allowlist | Pi-hole / AdGuard 白名单 allowlist | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/allow) | — |
 
 各格式长这样 / What each format looks like:
@@ -64,10 +66,36 @@ dnsmasq.conf    address=/example.com/0.0.0.0
 smartdns.conf   address /example.com/#
 domain          example.com
 clash             - 'example.com'      # 位于 payload: 之下
+singbox.json    {"version": 1, "rules": [{"domain_suffix": ["example.com"]}]}
 ```
 
 > **Clash**：`clash` 是 rule-provider 格式（`behavior: domain`），请从 `rule-providers` 引用，不要粘贴进 `rules:`。<br/>
 > **Clash**: the file is a `behavior: domain` rule-provider. Reference it from `rule-providers`; it does nothing inside `rules:`.
+
+**sing-box 用法 / Usage**（`domain_suffix` 自动包含子域 / matches subdomains too）:
+
+```json
+{
+  "route": {
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "neodevhost",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/neodevpro/neodevhost/master/singbox.srs",
+        "download_detour": "direct"
+      }
+    ],
+    "rules": [{ "rule_set": "neodevhost", "action": "reject" }]
+  }
+}
+```
+
+源码格式 / source format（`singbox.json`）适合自行编译：
+
+```bash
+sing-box rule-set compile --output singbox.srs singbox.json
+```
 
 ## 使用 Usage
 
@@ -127,7 +155,7 @@ It removes only the domains from this list and leaves your own allow entries unt
 | 格式归一 Format | 支持 plain / hosts / dnsmasq / Adblock `\|\|x^` / `@@` 例外 / URL 列表<br/>Accepts plain, hosts, dnsmasq, Adblock and URL lists |
 | 元素隐藏 Cosmetic | `example.com##.banner` 被丢弃：它不携带 DNS 信息，误用会屏蔽整站<br/>Cosmetic rules are dropped; they carry no DNS information |
 | 域名合法性 Validity | RFC 标签规则、punycode `xn--`、IANA TLD、Public Suffix List 四重校验<br/>RFC labels, punycode, IANA TLDs and the PSL |
-| 公共后缀 Suffixes | 允许名单里本身就是公共后缀的条目（`com.br`、`cloudfront.net`）被丢弃<br/>Bare public suffixes are dropped from allowlists |
+| 公共后缀 Suffixes | 允许名单中本身就是公共后缀的条目被丢弃；屏蔽名单中出现 ICANN 公共后缀（`com.br`）视为数据错误<br/>Bare suffixes are dropped from allowlists; ICANN suffixes in blocklists are treated as data errors |
 | 白名单语义 Allowlist | 允许条目只覆盖自身及子域，且不得高于目标域名的注册域<br/>An allow entry covers itself and subdomains, never above the registrable domain |
 | 自有名单 Own lists | `ownallowlist` 计入白名单；`ownblocklist` 优先级最高，被覆盖时会加回并告警<br/>`ownblocklist` always wins and conflicts are reported |
 | 品牌豁免 Brand ignore | `allowignore` 中的品牌，其上游白名单条目被忽略（默认 29 个广告品牌）<br/>Upstream entries for brands in `allowignore` are ignored (29 ad brands by default) |
@@ -137,13 +165,14 @@ It removes only the domains from this list and leaves your own allow entries unt
 ## 构建与开发 Build
 
 ```bash
-bash host.sh              # 构建并发布 / build and publish
-bash host.sh --dry-run    # 只构建不发布 / build only, keep the work dir
-bash tests/run.sh         # 阶段单测，不联网 / stage unit tests, offline
+bash host.sh                       # 构建并发布 / build and publish
+bash host.sh --dry-run             # 只构建不发布 / build only, keep the work dir
+bash tests/run.sh                  # 阶段单测，不联网 / stage unit tests, offline
+bash tests/audit.sh                # 逐源审计 + 成品校验 / per-source audit (needs network)
 ```
 
-只依赖 `bash` + `curl`（或 `wget`）。数据在运行时从 IANA、Public Suffix List 和各上游源拉取。<br/>
-Requires only `bash` plus `curl` (or `wget`); all data is fetched at build time.
+只依赖 `bash` + `curl`（或 `wget`）；`singbox.srs` 由 `sing-box` 编译，未安装时跳过该文件。<br/>
+Requires `bash` plus `curl` (or `wget`); `singbox.srs` is compiled with `sing-box` and skipped when it is missing.
 
 ```
 host.sh                     入口 / entry: fetch → validate → merge → gates → render → publish
@@ -153,8 +182,9 @@ lib/validate.awk            候选 → 合法域名 / candidates → valid domai
 lib/ignore.awk              按 allowignore 忽略上游条目 / drop ignored allow entries
 lib/reduce.awk              去掉被父域覆盖的冗余条目 / drop redundant subdomains
 lib/exclude.awk             扣除白名单与过期域名（PSL 感知）/ PSL-aware exclusions
-lib/render.awk              一次遍历生成六种格式 / render all six formats
-tests/run.sh                15 项阶段单测 / 15 stage tests
+lib/render.awk              一次遍历生成七种格式 / render all seven formats
+tests/run.sh                20 项阶段单测 / 20 stage tests
+tests/audit.sh              逐源统计与成品不变量 / per-source stats + invariants
 allowlist blocklist         上游源 URL / upstream source URLs
 ownallowlist ownblocklist   自有名单，改完即生效 / local lists, effective immediately
 allowignore                 上游白名单"不得放行"的品牌 / brands upstream may not whitelist
@@ -167,9 +197,10 @@ allowignore                 上游白名单"不得放行"的品牌 / brands upst
 | `NEODEV_MIN_PSL_RULES` | 5000 | PSL 规则数下限<br/>Minimum PSL rules expected |
 | `NEODEV_MIN_TLDS` | 1000 | IANA TLD 数量下限<br/>Minimum IANA TLDs expected |
 | `KEEP_WORK_DIR` | 0 | 设为 1 保留临时目录<br/>Keep the temporary build directory |
+| `SING_BOX_BIN` | auto | `sing-box` 可执行文件路径，用于编译 `.srs`<br/>Path to the `sing-box` binary used to compile `.srs` |
 
-CI（`.github/workflows/Auto Update.yml`）：安装 `idn2` → shellcheck → 单测 → 构建 → 提交。<br/>
-CI runs: install `idn2` → shellcheck → unit tests → build → commit. 可在 Actions 页面勾选 `dry_run` 只构建不提交 / tick `dry_run` to build without publishing.
+CI（`.github/workflows/Auto Update.yml`）：安装 `idn2` 与 `sing-box` v1.14.4 → shellcheck → 单测 → 构建 → 提交。<br/>
+CI runs: install `idn2` and `sing-box` → shellcheck → unit tests → build → commit. 可在 Actions 页面勾选 `dry_run` 只构建不提交 / tick `dry_run` to build without publishing.
 
 ## 上游源 Sources
 

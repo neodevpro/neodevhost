@@ -30,8 +30,16 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq idn2 || echo "idn2 unavailable, unicode domains will be skipped"
 
+      - name: Install sing-box (for the .srs rule-set)
+        run: |
+          curl -fsSL --retry 3 -o /tmp/sing-box.tar.gz \
+            https://github.com/SagerNet/sing-box/releases/download/v1.14.4/sing-box-1.14.4-linux-amd64.tar.gz
+          tar -xzf /tmp/sing-box.tar.gz -C /tmp
+          sudo install -m 0755 /tmp/sing-box-1.14.4-linux-amd64/sing-box /usr/local/bin/sing-box
+          sing-box version
+
       - name: Lint shell scripts
-        run: shellcheck -x -s bash host.sh install.sh uninstall.sh tests/run.sh
+        run: shellcheck -x -s bash host.sh install.sh uninstall.sh tests/run.sh tests/audit.sh
 
       - name: Run stage tests
         run: bash tests/run.sh

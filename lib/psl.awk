@@ -1,8 +1,10 @@
 # Public Suffix List helpers shared by every pass.
 #
-# host.sh pre-normalizes the list into "<e|w> <suffix>" lines:
-#   e example.com   exact rule
-#   w ck            wildcard rule (*.ck)
+# host.sh pre-normalizes the list into "<flags> <suffix>" lines:
+#   i  com.br    exact rule from the ICANN section
+#   iw ck        wildcard rule (*.ck) from the ICANN section
+#   p  github.io exact rule from the PRIVATE section
+#   pw run.app   wildcard rule from the PRIVATE section
 #
 # The rule file is passed in `psl_rules`; call psl_load() from BEGIN.
 # Arrays must be supplied by the caller because awk passes them by reference.
@@ -12,7 +14,8 @@ function psl_load(   rule, fields) {
   while ((getline rule < psl_rules) > 0) {
     split(rule, fields, " ")
     PSL_SUFFIX[fields[2]] = 1
-    if (fields[1] == "w") PSL_WILDCARD[fields[2]] = 1
+    if (fields[1] ~ /w$/) PSL_WILDCARD[fields[2]] = 1
+    if (fields[1] ~ /^i/) PSL_ICANN[fields[2]] = 1
   }
   close(psl_rules)
   psl_loaded = 1
