@@ -53,9 +53,9 @@ Number of Domain 域名数目： 223291
 | SmartDNS | SmartDNS | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/smartdns.conf) | [link](https://neodev.team/smartdns.conf) |
 | Domain | 纯域名 / plain domains | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/domain) | [link](https://neodev.team/domain) |
 | Clash | Clash / Mihomo rule-provider | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash) | [link](https://neodev.team/clash) |
-| sing-box JSON | sing-box 1.8+ 源码 rule-set | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/singbox.json) | — |
-| sing-box SRS | sing-box 1.8+ 二进制 rule-set | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/singbox.srs) | — |
-| Allowlist | Pi-hole / AdGuard 白名单 allowlist | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/allow) | — |
+| sing-box JSON | sing-box 1.8+ 源码 rule-set | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/singbox.json) | [link](https://neodev.team/singbox.json) |
+| sing-box SRS | sing-box 1.8+ 二进制 rule-set | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/singbox.srs) | [link](https://neodev.team/singbox.srs) |
+| Allowlist | Pi-hole / AdGuard 白名单 allowlist | [link](https://raw.githubusercontent.com/neodevpro/neodevhost/master/allow) | [link](https://neodev.team/allow) |
 
 各格式长这样 / What each format looks like:
 
@@ -90,6 +90,8 @@ singbox.json    {"version": 1, "rules": [{"domain_suffix": ["example.com"]}]}
   }
 }
 ```
+
+国内加速可把 `url` 换成 `https://neodev.team/singbox.srs`。<br/>Use the China mirror URL above if GitHub is slow.
 
 源码格式 / source format（`singbox.json`）适合自行编译：
 
