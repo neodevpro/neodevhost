@@ -39,7 +39,7 @@ Rebuilt and validated every day at 08:00 UTC by GitHub Actions.
 - **只保留真实域名 · Valid domains only**：逐个校验 RFC 标签规则、punycode、IANA TLD 与 Public Suffix List。<br/>Every entry is checked against RFC label rules, punycode, IANA TLDs and the PSL.
 - **白名单不会吞掉整片网络 · No namespace wipe-out**：允许条目只覆盖自身及子域，`com.br`、`cloudfront.net` 这类条目绝不会放行整段命名空间。<br/>Allow entries cover only themselves and their subdomains, never a whole namespace.
 - **自有名单优先 · Your list wins**：`ownblocklist` 的条目即使被上游白名单覆盖也会保留，冲突写进构建日志。<br/>Entries in `ownblocklist` survive upstream allowlists; conflicts are reported.
-- **可复现 · Reproducible**：全部产物在临时目录生成并通过门禁后才发布，构建失败不会留下半成品。<br/>Outputs are built in a temp dir and published only after every gate passes.
+- **可复现 · Reproducible**：全部产物在临时目录生成、校验齐全后才发布，构建失败不会留下半成品。<br/>Outputs are built in a temp dir and published only once every file is complete.
 
 ## 下载 Download
 
@@ -148,7 +148,7 @@ It removes only the domains from this list and leaves your own allow entries unt
 
 ## 数据规则 Data rules
 
-流程 / Pipeline：`上游下载 fetch → 格式归一 extract → 合法性校验 validate → 去冗余 reduce → 扣除白名单/过期 exclude → 门禁 gates → 发布 publish`
+流程 / Pipeline：`上游下载 fetch → 格式归一 extract → 合法性校验 validate → 去冗余 reduce → 扣除白名单/过期 exclude → 成品检查 checks → 发布 publish`
 
 | 规则 Rule | 说明 Description |
 |---|---|
@@ -160,7 +160,7 @@ It removes only the domains from this list and leaves your own allow entries unt
 | 自有名单 Own lists | `ownallowlist` 计入白名单；`ownblocklist` 优先级最高，被覆盖时会加回并告警<br/>`ownblocklist` always wins and conflicts are reported |
 | 品牌豁免 Brand ignore | `allowignore` 中的品牌，其上游白名单条目被忽略（默认 29 个广告品牌）<br/>Upstream entries for brands in `allowignore` are ignored (29 ad brands by default) |
 | 过期域名 Dead domains | 上游 dead-block 列表中的域名被剔除，避免无效规则堆积<br/>Domains from the upstream dead-block list are removed |
-| 发布门禁 Gates | 屏蔽列表跌破上次 90%、允许列表跌破 50%、PSL/TLD 异常时中止，不发布残缺数据<br/>Aborts when lists shrink beyond the thresholds or downloads look truncated |
+| 成品检查 Checks | 不比较历史大小（上游增删来源属正常波动）；仅在参考数据残缺（PSL/TLD 下载不完整）或产物为空时中止<br/>Sizes are never compared across runs; the build only aborts on truncated reference data or empty output |
 
 ## 构建与开发 Build
 
@@ -192,8 +192,6 @@ allowignore                 上游白名单"不得放行"的品牌 / brands upst
 
 | 环境变量 Variable | 默认 Default | 作用 Purpose |
 |---|:---:|---|
-| `NEODEV_MIN_BLOCK_RATIO` | 90 | 屏蔽列表相对上次的最低百分比<br/>Minimum block-list size vs the last run (%) |
-| `NEODEV_MIN_ALLOW_RATIO` | 50 | 允许列表相对上次的最低百分比<br/>Minimum allow-list size vs the last run (%) |
 | `NEODEV_MIN_PSL_RULES` | 5000 | PSL 规则数下限<br/>Minimum PSL rules expected |
 | `NEODEV_MIN_TLDS` | 1000 | IANA TLD 数量下限<br/>Minimum IANA TLDs expected |
 | `KEEP_WORK_DIR` | 0 | 设为 1 保留临时目录<br/>Keep the temporary build directory |

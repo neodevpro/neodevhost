@@ -23,7 +23,7 @@ jobs:
     timeout-minutes: 60
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7.0.1
 
       - name: Install tools
         run: |
@@ -62,7 +62,7 @@ jobs:
 
       - name: Git Auto Commit
         if: ${{ !inputs.dry_run }}
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7.2.1
         with:
           commit_message: Auto Update
           commit_options: '--signoff'

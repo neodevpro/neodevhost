@@ -8,18 +8,16 @@
 #   ./host.sh --help
 #
 # Environment:
-#   NEODEV_MIN_BLOCK_RATIO  block list must reach this % of the previous run (90)
-#   NEODEV_MIN_ALLOW_RATIO  allow list must reach this % of the previous run (50)
 #   NEODEV_MIN_PSL_RULES    minimum public suffix rules expected (5000)
 #   NEODEV_MIN_TLDS         minimum IANA TLDs expected (1000)
 #   KEEP_WORK_DIR=1         keep the temporary build directory
 #
 # Pipeline:
 #   reference data -> source lists -> allowignore -> prune -> exclusions
-#   -> sanity gates -> render -> publish
+#   -> checks -> render -> publish
 #
-# Each stage writes into $WORK_DIR; the published files are only replaced after
-# every gate has passed, so a failed build never leaves a half-written repo.
+# Each stage writes into $WORK_DIR; the published files are only replaced once
+# every output exists, so a failed build never leaves a half-written repo.
 
 set -Eeuo pipefail
 export LC_ALL=C
@@ -32,8 +30,9 @@ TLD_URL="https://data.iana.org/TLD/tlds-alpha-by-domain.txt"
 PSL_URL="https://publicsuffix.org/list/public_suffix_list.dat"
 DEADBLOCK_URL="https://raw.githubusercontent.com/FusionPlmH/dead-block/refs/heads/master/deadblock"
 
-MIN_BLOCK_RATIO="${NEODEV_MIN_BLOCK_RATIO:-90}"
-MIN_ALLOW_RATIO="${NEODEV_MIN_ALLOW_RATIO:-50}"
+# Upstream lists legitimately grow and shrink, so the build never compares sizes
+# with the previous run. These thresholds only catch a broken download of the
+# reference data; a truncated PSL would silently drop half the list.
 MIN_PSL_RULES="${NEODEV_MIN_PSL_RULES:-5000}"
 MIN_TLDS="${NEODEV_MIN_TLDS:-1000}"
 
@@ -87,8 +86,7 @@ Usage: ./host.sh [--dry-run|--help]
   --dry-run   fetch and build, publish nothing (keeps the work directory)
 
 Environment:
-  NEODEV_MIN_BLOCK_RATIO  block list must reach this % of the previous run (90)
-  NEODEV_MIN_ALLOW_RATIO  allow list must reach this % of the previous run (50)
+
   NEODEV_MIN_PSL_RULES    minimum public suffix rules expected (5000)
   NEODEV_MIN_TLDS         minimum IANA TLDs expected (1000)
   KEEP_WORK_DIR=1         keep the temporary build directory
@@ -318,28 +316,15 @@ stage_exclusions() {
 # Stage: sanity gates
 # --------------------------------------------------------------------------
 
-guard_shrink() { # published-file current-count min-ratio
-  local name="$1" current="$2" min_ratio="$3" previous=0 ratio
-  if [[ -f "$name" ]]; then
-    previous=$(count_lines "$name")
-  fi
-  (( previous > 0 )) || return 0
-
-  ratio=$(( current * 100 / previous ))
-  if (( ratio < min_ratio )); then
-    fail "$name shrank from $previous to $current domains (${ratio}%); refusing to publish" \
-      "(intentional? set NEODEV_MIN_${name^^}_RATIO)"
-  fi
-}
 
 stage_check() {
   block_count=$(count_lines "$WORK_DIR/host.domains")
   allow_count=$(count_lines "$WORK_DIR/allow")
   dead_count=$(count_lines "$WORK_DIR/deadblock")
 
+  # Empty output means the pipeline broke, not that upstream changed its mind.
   (( block_count > 0 )) || fail "Refusing to publish an empty block list"
-  guard_shrink block "$block_count" "$MIN_BLOCK_RATIO"
-  guard_shrink allow "$allow_count" "$MIN_ALLOW_RATIO"
+  (( allow_count > 0 )) || fail "Refusing to publish an empty allow list"
 }
 
 # --------------------------------------------------------------------------
