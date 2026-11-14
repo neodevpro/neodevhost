@@ -1,0 +1,6 @@
+# Python bytecode from local tooling
+__pycache__/
+*.pyc
+
+# Liveness checker intermediate file
+deadblock.tmp
