@@ -162,7 +162,7 @@ It removes only the domains from this list and leaves your own allow entries unt
 | 自有名单 Own lists | `ownallowlist` 计入白名单；`ownblocklist` 优先级最高，被覆盖时会加回并告警<br/>`ownblocklist` always wins and conflicts are reported |
 | 品牌豁免 Brand ignore | `allowignore` 中的品牌，其上游白名单条目被忽略（默认 29 个广告品牌）<br/>Upstream entries for brands in `allowignore` are ignored (29 ad brands by default) |
 | 过期域名 Dead domains | 每次构建用 `tools/check-dead-domains.py` 实测解析，双解析器确认后才判定为死域并剔除<br/>Every build resolves the list (DoH → HTTP → UDP) and drops names two resolvers agree are dead |
-| 成品检查 Checks | 不比较历史大小（上游增删来源属正常波动）；仅在参考数据残缺（PSL/TLD 下载不完整）或产物为空时中止<br/>Sizes are never compared across runs; the build only aborts on truncated reference data or empty output |
+| 成品检查 Checks | 不比较历史大小（上游增删来源属正常波动）；仅在参考数据残缺（PSL/TLD 下载不完整）、产物为空，或单轮死域超过存活数一半（解析器被劫持）时中止<br/>Sizes are never compared across runs; the build aborts on truncated reference data, empty output, or a run where dead domains outnumber live ones (hijacked resolvers) |
 
 ## 构建与开发 Build
 
@@ -249,8 +249,9 @@ These are exactly the URLs listed in `allowlist`.
 `deadblock` 不再从外部仓库下载，而是每次构建由本仓库的 `tools/check-dead-domains.py` 现场检测：
 
 - 输入：本轮候选列表 + 上一版 `deadblock`（这样上游删掉的死域仍会复检，复活的会被移出）
-- 解析链路：DNS over HTTPS（Cloudflare / Google / AliDNS）→ 明文 HTTP 兜底 → UDP 兜底
-- 判定标准：**两个独立解析器都确认**才算死亡；超时/SERVFAIL 记为 unknown，绝不写入
+- 解析器池：**3 海外 + 3 国内**（Cloudflare、Google、DoH.sb ｜ AliDNS、DNSPod、360）。启动时逐个探活，不达 `CHECK_MIN_*` 就失败
+- 兜底链路：DNS over HTTPS → 明文 HTTP → UDP；明文只有阿里一家（其余厂商一律 301 到 HTTPS），所以该池只要求国内数量
+- 判定标准：**两个独立解析器都确认**才算死亡，两次查询按区域交替（先海外再国内）；超时/SERVFAIL 记为 unknown，绝不写入
 - 结果先写 `<file>.tmp`，跑完才原子替换，中途失败不会污染上一版
 
 ```bash
@@ -264,6 +265,11 @@ python3 tools/check-dead-domains.py --transport udp --resolvers 127.0.0.1:53
 
 The list is now measured in-house on every build instead of being downloaded; without
 python or its dependencies the previous `deadblock` is reused unchanged.
+
+Resolver pools are `3 overseas` (Cloudflare, Google, DoH.sb) + `3 China` (AliDNS, DNSPod,
+360), probed at startup. The fallback order is DoH → plaintext HTTP → UDP; plaintext JSON
+DoH only exists at Aliyun today, so that pool is China-only by nature. A name is dropped
+only when two resolvers from different regions agree it is dead.
 
 ## 许可 License
 

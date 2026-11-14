@@ -365,6 +365,12 @@ stage_check() {
   # Empty output means the pipeline broke, not that upstream changed its mind.
   (( block_count > 0 )) || fail "Refusing to publish an empty block list"
   (( allow_count > 0 )) || fail "Refusing to publish an empty allow list"
+
+  # Half the list dying in one run means the resolvers lied (captive portal,
+  # hijacked plaintext DNS, a filtering endpoint) rather than upstream changing.
+  if (( dead_count > block_count / 2 )); then
+    fail "Refusing to publish: $dead_count dead against $block_count live domains"
+  fi
 }
 
 # --------------------------------------------------------------------------

@@ -46,17 +46,28 @@ SINKHOLED = "sinkholed"
 # pool is only accepted when it still has enough of both.
 #
 # DoH here means the JSON API (status/answer fields); endpoints that only speak
-# RFC 8484 wire format (Quad9, AdGuard, Mullvad, ...) cannot be used.
+# RFC 8484 wire format (Quad9, Mullvad, OpenDNS, dns0.eu, ...) cannot be used.
+# `https://dns.adguard-dns.com/resolve` does answer JSON, but it fronts a
+# filtering service that returns NXDOMAIN for ad domains by design, so it must
+# never be part of a liveness check. `https://dns-unfiltered.adguard-dns.com`
+# answers without a `Status` field. NextDNS works but bills by query.
 HTTPS_ENDPOINTS = (
     ("overseas", "https://cloudflare-dns.com/dns-query"),
     ("overseas", "https://dns.google/resolve"),
+    ("overseas", "https://doh.sb/dns-query"),
     ("china", "https://dns.alidns.com/resolve"),
     ("china", "https://doh.pub/dns-query"),
     ("china", "https://doh.360.cn/resolve"),
 )
 # Plain HTTP is only a fallback for networks that block TLS; it is unencrypted.
+# Alibaba is the only provider that still speaks the JSON API over plaintext
+# (Aliyun's two anycast addresses plus the same service on its hostname).
+# Everyone else - Cloudflare, Google, Quad9, DoH.sb - redirects to HTTPS, so
+# this pool is necessarily China-only and gets its own lower region floor.
 HTTP_ENDPOINTS = (
     ("china", "http://223.5.5.5/resolve"),
+    ("china", "http://223.6.6.6/resolve"),
+    ("china", "http://dns.alidns.com/resolve"),
 )
 UDP_RESOLVERS = (
     ("overseas", "1.1.1.1"),
@@ -98,7 +109,14 @@ async def _probe_pool(pool: tuple[tuple[str, str], ...], probe, timeout: float) 
     return [pair for pair, ok in zip(pool, results) if ok]
 
 
-async def _select(label: str, pool: tuple[tuple[str, str], ...], probe, args: argparse.Namespace):
+async def _select(
+    label: str,
+    pool: tuple[tuple[str, str], ...],
+    probe,
+    args: argparse.Namespace,
+    min_overseas: int | None = None,
+    min_china: int | None = None,
+):
     """Return the reachable endpoints of a pool, or None when it is unusable.
 
     A pool is accepted when it still has ``--min-overseas`` overseas and
@@ -111,12 +129,14 @@ async def _select(label: str, pool: tuple[tuple[str, str], ...], probe, args: ar
         print(f"{label}: no endpoint reachable", file=sys.stderr)
         return None
 
+    required_overseas = args.min_overseas if min_overseas is None else min_overseas
+    required_china = args.min_china if min_china is None else min_china
     counts = _region_counts(reachable)
     overseas = counts.get("overseas", 0)
     china = counts.get("china", 0)
     detail = f"{overseas} overseas, {china} china"
 
-    if overseas >= args.min_overseas and china >= args.min_china:
+    if overseas >= required_overseas and china >= required_china:
         endpoints = _interleave(reachable)
         print(f"using {label} ({detail}): {', '.join(endpoints)}")
         return endpoints
@@ -318,7 +338,10 @@ async def build_transport(args: argparse.Namespace):
         pools = https_pool if mode == "https" else http_pool if mode == "http" else https_pool + http_pool
 
         for label, pool in pools:
-            endpoints = await _select(f"DNS over {label}", pool, _doh_reachable, args)
+            # The plaintext pool has no overseas member by nature, so it only
+            # has to keep the China requirement to stay usable.
+            floor = {"min_overseas": 0, "min_china": args.min_china} if label == "HTTP" else {}
+            endpoints = await _select(f"DNS over {label}", pool, _doh_reachable, args, **floor)
             if endpoints:
                 # The plain HTTP endpoints are heavily rate limited; a few hundred
                 # parallel requests already produce SERVFAIL/timeouts.
