@@ -10,13 +10,13 @@
 [![License](https://img.shields.io/github/license/neodevpro/neodevhost.svg)](https://github.com/neodevpro/neodevhost/blob/master/LICENSE)
 
 ```
-Total ad / tracking block list 屏蔽追踪广告总数: 221003
+Total ad / tracking block list 屏蔽追踪广告总数: 220877
 
-Total allowlist list 允许名单总数: 114128
+Total allowlist list 允许名单总数: 114134
 
-Total upstream-non-accessable list 上游无法访问域名总数: 33252
+Total upstream-non-accessable list 上游无法访问域名总数: 33376
 
-Update 更新时间: 2026-11-15
+Update 更新时间: 2026-11-16
 ```
 
 每天 UTC 08:00 自动构建，经校验后才发布。<br/>
@@ -43,7 +43,7 @@ Rebuilt and validated every day at 08:00 UTC by GitHub Actions.
 
 ## 下载 Download
 
-Number of Domain 域名数目： 221003
+Number of Domain 域名数目： 220877
 
 | Format 格式 | 适用于 Works with | 下载 Raw | 国内加速 China mirror |
 |---|---|:---:|:---:|
